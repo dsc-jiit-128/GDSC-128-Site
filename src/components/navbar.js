@@ -3,22 +3,14 @@ import { Box, Flex, Button, Stack, Image, Text } from '@chakra-ui/react';
 export default function Nav() {
   return (
     <>
-      <Box
-        px={4}
-        pb={3}
-        // boxShadow={"0px 4px 10px rgba(0, 0, 0, 0.1)"}
-        zIndex={1}
-      >
-        <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
-          <Flex
-            fontFamily={'heading'}
-            fontSize={40}
-            fontWeight={'semibold'}
-            color="white"
-          >
+      <Box px={4} pb={3} zIndex={1}>
+        <Flex p={5} justifyContent={'space-between'}>
+          <Flex fontSize={40} color="white">
             <Stack direction={'row'} spacing="35px">
-              <Image borderRadius="full" boxSize="36px" src="/image 2.png" />
-              <Text fontSize="20px">GDSC JIIT 128</Text>
+              <Image borderRadius="full" boxSize="7vw" src="/image 2.png" />
+              <Text pt={'1.5vw'} fontSize="2.5vw" fontWeight={'semibold'}>
+                GDSC JIIT 128
+              </Text>
             </Stack>
           </Flex>
 
@@ -26,27 +18,30 @@ export default function Nav() {
             <Stack direction={'row'} spacing={7} justifyContent="space-between">
               <Button
                 color="white"
-                
                 variant="link"
-                fontSize={'sm'}
+                fontSize={'1.5vw'}
+                fontWeight={'normal'}
+                p={'3vw'}
               >
                 Events
               </Button>
 
               <Button
                 color="white"
-                
-                fontSize={'sm'}
                 variant="link"
+                fontSize={'1.5vw'}
+                fontWeight={'normal'}
+                p={'3vw'}
               >
                 Team
               </Button>
 
               <Button
-                fontSize={'sm'}
                 color="white"
-                
                 variant="link"
+                fontSize={'1.5vw'}
+                fontWeight={'normal'}
+                p={'2.55vw'}
               >
                 Login
               </Button>
