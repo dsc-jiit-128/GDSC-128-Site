@@ -13,7 +13,7 @@ export default function WhatDoWeDo() {
         <Grid templateColumns="repeat(2, 1fr)" gap={0}>
           <GridItem w="100%" colSpan={1}>
             <Box textAlign={'center'} width={'65%'} ml={'25%'}>
-              <Text ml={10} mr={10} mt={10} textAlign="left">
+              <Text ml={10} mr={10} mt={10} textAlign="left"   color='white'>
                 With our team's moto being "Giving Direction to Greatness", we
                 help the students to climb mountains on their own, as high as
                 possible. We conduct two flagship events, namely, Hackovation
@@ -21,8 +21,8 @@ export default function WhatDoWeDo() {
                 and fun events as well.
               </Text>
 
-              <Button bgColor={'#3586FF'} size="lg" mt={10}>
-                Register as a student
+              <Button bgColor={'#3586FF'} size="lg" mt={10}><Text   color='white'>
+                Register as a student</Text>
               </Button>
             </Box>
           </GridItem>

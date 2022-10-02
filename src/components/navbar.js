@@ -8,7 +8,7 @@ export default function Nav() {
           <Flex fontSize={40} color="white">
             <Stack direction={'row'} spacing="35px">
               <Image borderRadius="full" boxSize="7vw" src="/image 2.png" />
-              <Text pt={'1.5vw'} fontSize="2.5vw" fontWeight={'semibold'}>
+              <Text pt={'1.5vw'} fontSize="2.5vw" fontWeight={'semibold'}   color='white'>
                 GDSC JIIT 128
               </Text>
             </Stack>

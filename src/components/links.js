@@ -28,14 +28,15 @@ export default function Links() {
                 display="inline"
                 mr={'1vw'}
                 mb={'1vw'}
-                border={'4px green solid'}
+              
                 p={'1vw'}
               />
               <Text
+              color='white'
                 display={'inline'}
                 fontSize={'2.6vw'}
                 p={'2vw'}
-                border={'4px green solid'}
+                
               >
                 GDSC
               </Text>
@@ -100,7 +101,7 @@ export default function Links() {
             </Flex>
           </GridItem>
 
-          <GridItem w="100%" colSpan={1} ml={10}>
+          <GridItem w="100%" colSpan={1} ml={10}   color='white'>
             <Text mt={5} fontSize={'2.5vw'}>
               Quick Links
             </Text>
@@ -119,7 +120,7 @@ export default function Links() {
             </Link>
           </GridItem>
 
-          <GridItem w="100%" colSpan={1} ml={10} mr={10}>
+          <GridItem w="100%" colSpan={1} ml={10} mr={10}   color='white'>
             <Text mt={5} fontSize={'2.5vw'} width={'60%'} align={'center'}>
               UPCOMING EVENTS
             </Text>
