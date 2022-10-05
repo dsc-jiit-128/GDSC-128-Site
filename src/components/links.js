@@ -28,15 +28,13 @@ export default function Links() {
                 display="inline"
                 mr={'1vw'}
                 mb={'1vw'}
-              
                 p={'1vw'}
               />
               <Text
-              color='white'
+                color="white"
                 display={'inline'}
                 fontSize={'2.6vw'}
                 p={'2vw'}
-                
               >
                 GDSC
               </Text>
@@ -101,7 +99,7 @@ export default function Links() {
             </Flex>
           </GridItem>
 
-          <GridItem w="100%" colSpan={1} ml={10}   color='white'>
+          <GridItem w="100%" colSpan={1} ml={10} color="white">
             <Text mt={5} fontSize={'2.5vw'}>
               Quick Links
             </Text>
@@ -120,7 +118,7 @@ export default function Links() {
             </Link>
           </GridItem>
 
-          <GridItem w="100%" colSpan={1} ml={10} mr={10}   color='white'>
+          <GridItem w="100%" colSpan={1} ml={10} mr={10} color="white">
             <Text mt={5} fontSize={'2.5vw'} width={'60%'} align={'center'}>
               UPCOMING EVENTS
             </Text>
@@ -134,7 +132,16 @@ export default function Links() {
           mt={'4%'}
         />
 
-        <Image src="/Image 19.png" ml={'auto'} mr={'auto'} align="center" />
+        <Box textAlign={'center'} alignItems="center">
+          <Text mb={'1%'}>Made with 🤍 by</Text>
+          <Flex alignItems={'center'} justifyContent="center">
+            <Image src="/white logo.png" width={'3%'} mr={'0.5%'} />
+            <Text>Google Developer Student Clubs</Text>
+          </Flex>
+          <Text mb={'2%'}>
+            Jaypee Institute of Information Technology - Sec 128
+          </Text>
+        </Box>
       </Box>
     </>
   );
