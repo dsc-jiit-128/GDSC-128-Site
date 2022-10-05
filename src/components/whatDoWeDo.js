@@ -6,7 +6,7 @@ export default function WhatDoWeDo() {
     <>
       <Box>
         <Box textAlign={'center'} pt={10}>
-          <Text as={'b'} fontSize="2.5vw" mt={100}>
+          <Text as={'b'} fontSize="2.5vw" mt={100} color='white'>
             What do we do?
           </Text>
         </Box>

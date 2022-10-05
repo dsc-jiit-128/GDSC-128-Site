@@ -42,9 +42,14 @@ export default function BuildTogether() {
                 />
               </Box>
 
-              <Button size={'lg'} p={9} borderRadius={15}>
-                Register for BITBOX 2.0
-              </Button>
+              <Button size={'lg'} p={9} borderRadius={15}
+  // bgGradient="linear(to-r, #838181 , #FFFFFF )"
+  bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)" 
+ // bgOpacity="25%"
+
+              ><Text color='white'>
+                Register for BITBOX 2.0</Text>
+              </Button> 
             </Box>
           </GridItem>
 
