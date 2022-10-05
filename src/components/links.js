@@ -132,13 +132,13 @@ export default function Links() {
           mt={'4%'}
         />
 
-        <Box textAlign={'center'} alignItems="center">
-          <Text mb={'1%'}>Made with 🤍 by</Text>
+        <Box textAlign={'center'} alignItems="center" color={'white'}>
+          <Text mb={'0.61%'} fontSize={20} mt={3}>Made with 🤍 by</Text>
           <Flex alignItems={'center'} justifyContent="center">
             <Image src="/white logo.png" width={'3%'} mr={'0.5%'} />
-            <Text>Google Developer Student Clubs</Text>
+            <Text fontSize={22}>Google Developer Student Clubs</Text>
           </Flex>
-          <Text mb={'2%'}>
+          <Text mb={'2%'} fontSize={18}>
             Jaypee Institute of Information Technology - Sec 128
           </Text>
         </Box>

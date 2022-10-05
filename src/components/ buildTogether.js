@@ -15,7 +15,10 @@ export default function BuildTogether() {
                   left="0"
                   ml={'auto'}
                   mr={'auto'}
-                  width={'50%'}
+                  width={'48%'}
+                  size={'auto'}
+                  mt={12}
+                  
                 />
                 <Image
                   // border= "2px solid green"
@@ -42,7 +45,7 @@ export default function BuildTogether() {
                 />
               </Box>
 
-              <Button size={'lg'} p={9} borderRadius={15}
+              <Button size={'lg'} p={9} borderRadius={15} 
   // bgGradient="linear(to-r, #838181 , #FFFFFF )"
   bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)" 
  // bgOpacity="25%"
