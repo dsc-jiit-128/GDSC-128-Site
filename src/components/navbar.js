@@ -60,7 +60,7 @@ export default function Nav() {
                 // p={'2.55vw'}
                 p={{ base: '1px', md: '20px' }}
               >
-                <Link href="/" style={{ textDecoration: 'none' }}>
+                <Link href="/login" style={{ textDecoration: 'none' }}>
                   Login
                 </Link>
               </Button>
