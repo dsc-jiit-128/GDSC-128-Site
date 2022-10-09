@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
-import { GridItem, Grid, Image, Text, Flex, Link } from '@chakra-ui/react';
+import { GridItem, Grid, Image, Text, Flex,Link } from '@chakra-ui/react';
+
 
 export default function Links() {
   return (
