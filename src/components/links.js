@@ -1,72 +1,90 @@
 import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
-import { GridItem, Grid, Image, Text, Flex,Link } from '@chakra-ui/react';
+import {
+  GridItem,
+  Grid,
+  Image,
+  Text,
+  Flex,
+  Link,
+  Divider,
+  SimpleGrid,
+} from '@chakra-ui/react';
+import {
+  FaFacebook,
+  FaDiscord,
+  FaTwitter,
+  FaGithub,
+  FaYoutube,
+  FaInstagram,
+} from 'react-icons/fa';
+
+import { BsEnvelope } from 'react-icons/bs';
+
 import { Route } from 'react-router-dom';
 import Teampage from '../Pages/Teams';
-
 
 export default function Links() {
   return (
     <>
       <Box
-        // alignItems={'center'}
+        alignItems={'center'}
         // justifyContent={'space-between'}
         // border={'4px green solid'}
         display={'flex'}
-        alignItems={'center'}
+        // justifyContent={'space-evenly'}
+        // alignItems={'center'}
+        // textAlign={'center'}
         flexDirection={'column'}
+        color={'white'}
       >
-        <Grid
-          templateColumns="repeat(3, 1fr)"
+        <SimpleGrid
+          columns={{ base: 1, md: 3 }}
           gap={0}
           width={'85%'}
-          // border={'4px green solid'}
+          textAlign="center"
         >
-          <GridItem w="20vw" colSpan={1} ml={10}>
-            <Box display={'inline'} textAlign={'center'}>
+          <Box p={'20px'} m={'10px'} mr={'100px'} >
+            <Flex display={'inline'}>
               <Image
                 src="/image 2.png"
-                width={'5vw'}
-                height={'5vw'}
+                width={'40px'}
+                height={'40px'}
                 display="inline"
-                mr={'1vw'}
-                mb={'1vw'}
-                p={'1vw'}
               />
-              <Text
-                color="white"
-                display={'inline'}
-                fontSize={'2.6vw'}
-                p={'2vw'}
-              >
+              <Box display="inline" ml={'10px'} fontSize="40px">
                 GDSC
-              </Text>
-            </Box>
+              </Box>
+            </Flex>
 
-            <Box
-              bgColor="gray"
-              align="center"
+            <Flex
+              bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+              // align="center"
               mb={10}
-              p={'1% 5%'}
+              // p={'1% 5%'}
               borderRadius={'2.5vw'}
-              display={'flex'}
+              // display={'flex'}
               alignContent={'center'}
               justifyContent={'center'}
               opacity={'80%'}
               mt={'10%'}
-              boxSize={'auto'}
+              // boxSize={'auto'}
             >
-              <Text fontSize={'2vw'}>Contact Us</Text>
-              <Image
-                ml={'6%'}
-                src="/Vector.png"
-                width={'2.7vw'}
-                height={'2.7vw'}
-              />
-            </Box>
+              <Text
+                fontSize={{ base: '14px', md: '31px' }}
+                mr="20px"
+                display="inline"
+                color={'white'}
+              >
+                Contact Us
+              </Text>
+              <Box display="inline" float={'inline'}>
+                <BsEnvelope size={'31px'} ml={'10px'} display="inline" />
+              </Box>
+            </Flex>
 
-            <Flex
-              bgColor={'gray'}
+            <Box
+              bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
               borderRadius={'10px'}
               display="block"
               p={'6%'}
@@ -74,75 +92,111 @@ export default function Links() {
               pl={'9%'}
               pb={'9%'}
               opacity={'80%'}
+              justify="space-evenly"
             >
-              <Grid
-                templateColumns="repeat(3, 1fr)"
-                rowGap={'1vw'}
-                columnGap={'1vw'}
+              <SimpleGrid
+                columns={{ base: 3, md: 3 }}
+                gap={{ base: '10px', md: '40px' }}
+                width={'85%'}
+                justifyContent="space-evenly"
               >
-                <GridItem>
-                  <Image src="/Hover 10.png" pr={'1vw'} />
-                </GridItem>
-                <GridItem>
-                  <Image src="/Hover 8.png" pr={'1vw'} />
-                </GridItem>
-                <GridItem>
-                  <Image src="/Hover 7.png" pr={'1vw'} />
-                </GridItem>
-                <GridItem>
-                  <Image src="/Hover 6.png" pr={'1vw'} />
-                </GridItem>
-                <GridItem>
-                  <Image src="/Hover 9.png" pr={'1vw'} />
-                </GridItem>
-                <GridItem>
-                  <Image src="/Hover 5.png" pr={'1vw'} />
-                </GridItem>
-              </Grid>
-            </Flex>
-          </GridItem>
+                <Box m={'10px'}>
+                  <a href="https://www.facebook.com/gdscjiit/">
+                    <FaFacebook
+                      size={{ base: '20px', md: '50px' }}
+                      color="#4267B2"
+                    />
+                  </a>
+                </Box>
+                <Box m={'10px'}>
+                  <a href="https://discord.com/invite/HqatsVyq5H">
+                    <FaDiscord size={{ base: '20px', md: '50px' }} />
+                  </a>
+                </Box>
+                <Box m={'10px'}>
+                  <a href="https://twitter.com/Dsc128">
+                    <FaTwitter size={{ base: '20px', md: '50px' }} />
+                  </a>
+                </Box>
+                <Box m={'10px'}>
+                  <a href="https://github.com/dsc-jiit-128">
+                    <FaGithub size={{ base: '20px', md: '50px' }} />
+                  </a>
+                </Box>
+                <Box m={'10px'}>
+                  <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
+                    <FaYoutube size={{ base: '20px', md: '50px' }} />
+                  </a>
+                </Box>
+                <Box m={'10px'}>
+                  <a href="https://www.instagram.com/gdscj128/">
+                    <FaInstagram size={{ base: '20px', md: '50px' }} />
+                  </a>
+                </Box>
+              </SimpleGrid>
+            </Box>
+          </Box>
 
-          <GridItem w="100%" colSpan={1} ml={10} color="white">
-            <Text mt={5} fontSize={'2.5vw'}>
+          <Box>
+            <Text mt={5} fontSize={{ base: '20px', md: '40px' }}>
               Quick Links
             </Text>
-            <Link display={'block'} mt={10} fontSize={'1.5vw'}>
+            <Link
+              display={'block'}
+              mt={10}
+              fontSize={{ base: '18px', md: '32px' }}
+            >
               EVENTS
             </Link>
-           
-            <Link  to="/teams"  display={'block'} fontSize={'1.5vw'}>
+
+            <Link
+              to="/teams"
+              display={'block'}
+              fontSize={{ base: '18px', md: '32px' }}
+            >
               TEAM
             </Link>
-            <Link display={'block'} fontSize={'1.5vw'}>
+            <Link display={'block'} fontSize={{ base: '18px', md: '32px' }}>
               LOGIN
             </Link>
 
-            <Link display={'block'} fontSize={'1.5vw'}>
+            <Link display={'block'} fontSize={{ base: '18px', md: '32px' }}>
               OUR LOCATION
             </Link>
-          </GridItem>
+          </Box>
 
           <GridItem w="100%" colSpan={1} ml={10} mr={10} color="white">
             <Text mt={5} fontSize={'2.5vw'} width={'60%'} align={'center'}>
               UPCOMING EVENTS
             </Text>
           </GridItem>
-        </Grid>
-        <Image
-          src="/Line 3.png"
-          ml={'auto'}
+        </SimpleGrid>
+        <Divider
+          size={'10px'}
+          variant="solid"
+          borderBottomWidth={'3px'}
+          borderColor={'#ffffff'}
+          width={'50%'}
+          ml="auto"
           mr={'auto'}
-          align="center"
-          mt={'4%'}
-        />
+          mt={'10'}
+        ></Divider>
 
         <Box textAlign={'center'} alignItems="center" color={'white'}>
-          <Text mb={'0.61%'} fontSize={20} mt={3}>Made with 🤍 by</Text>
+          <Text mb={'0.61%'} fontSize={{ base: 12, md: 20 }} mt={3} mr="3%">
+            Made with 🤍 by
+          </Text>
           <Flex alignItems={'center'} justifyContent="center">
-            <Image src="/white logo.png" width={'3%'} mr={'0.5%'} />
-            <Text fontSize={22}>Google Developer Student Clubs</Text>
+            <Image
+              src="/white logo.png"
+              width={{ base: '5%', md: '3%' }}
+              mr={'1%'}
+            />
+            <Text fontSize={{ base: 12, md: 22 }}>
+              Google Developer Student Clubs
+            </Text>
           </Flex>
-          <Text mb={'2%'} fontSize={18}>
+          <Text mb={'2%'} fontSize={{ base: 10, md: 18 }}>
             Jaypee Institute of Information Technology - Sec 128
           </Text>
         </Box>
