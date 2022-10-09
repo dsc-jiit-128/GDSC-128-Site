@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Button, Stack, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Button, Stack, Image, Text,Link } from '@chakra-ui/react';
 export default function Nav() {
   return (
     <>
@@ -27,14 +27,18 @@ export default function Nav() {
               </Button>
 
               <Button
+              
+              
                 color="white"
                 variant="link"
                 fontSize={'1.5vw'}
                 fontWeight={'normal'}
                 p={'3vw'}
               >
-                Team
+                <Link href="/teams">Team</Link>
+               
               </Button>
+            
 
               <Button
                 color="white"

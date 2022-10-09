@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom';
 import Teampage from '../Pages/Teams';
 
 
-
 export default function Links() {
   return (
     <>
