@@ -17,14 +17,14 @@ export default function WhatDoWeDo() {
         <Box textAlign={'center'} pt={10}>
           <Text
             as={'b'}
-            fontSize={{ base: '20px', md: '40px' }}
+            fontSize={{ base: '20px', md: '4.5vw' }}
             mt={100}
             color="white"
           >
             What do we do?
           </Text>
         </Box>
-        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={0}>
+        <SimpleGrid columns={{ sm: 2, md: 2 }} gap={0}>
           <Box alignItems={'center'}>
             <Box
               textAlign={'center'}
@@ -37,7 +37,7 @@ export default function WhatDoWeDo() {
                 mt={10}
                 textAlign="left"
                 color="white"
-                fontSize={{ base: 14, md: '27px' }}
+                fontSize={{ base: '3vw', md: '1.5vw' }}
                 width={'65%'}
               >
                 With our team's moto being "Giving Direction to Greatness", we
@@ -51,15 +51,15 @@ export default function WhatDoWeDo() {
                   size="lg"
                   mt={10}
                   bg="linear-gradient(93.17deg, #3586FF 0%, #2F92ED 97.37%) "
-                  width={{ base: '200px', md: '504px' }}
-                  height={{ base: '50px', md: '117px' }}
+                  width={{ base: '200px', md: '25.2vw' }}
+                  height={{ base: '50px', md: '5.85vw' }}
                   borderRadius={'25px'}
                   ml={{base: '0', md:'-45%'}}
                 >
                   <Text
                     align={'left'}
                     color="white"
-                    fontSize={{ base: '14px', md: '31px' }}
+                    fontSize={{ base: '14px', md: '1.6vw' }}
                   >
                     Register as a student
                   </Text>

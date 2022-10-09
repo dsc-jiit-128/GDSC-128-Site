@@ -44,7 +44,7 @@ export default function Links() {
           width={'85%'}
           textAlign="center"
         >
-          <Box p={'20px'} m={'10px'} mr={'100px'} >
+          <Box p={'20px'} m={'10px'} mr={'100px'}>
             <Flex display={'inline'}>
               <Image
                 src="/image 2.png"
@@ -52,7 +52,7 @@ export default function Links() {
                 height={'40px'}
                 display="inline"
               />
-              <Box display="inline" ml={'10px'} fontSize="40px">
+              <Box display="inline" ml={'10px'} fontSize="2vw">
                 GDSC
               </Box>
             </Flex>
@@ -71,7 +71,7 @@ export default function Links() {
               // boxSize={'auto'}
             >
               <Text
-                fontSize={{ base: '14px', md: '31px' }}
+                fontSize={{ base: '14px', md: '1.6vw' }}
                 mr="20px"
                 display="inline"
                 color={'white'}
@@ -96,14 +96,14 @@ export default function Links() {
             >
               <SimpleGrid
                 columns={{ base: 3, md: 3 }}
-                gap={{ base: '10px', md: '40px' }}
+                gap={{ base: '10px', md: '2vw' }}
                 width={'85%'}
-                justifyContent="space-evenly"
+                // justifyContent="space-evenly"
               >
                 <Box m={'10px'}>
                   <a href="https://www.facebook.com/gdscjiit/">
                     <FaFacebook
-                      size={{ base: '20px', md: '50px' }}
+                      size={{ base: '3vw', md: '100px' }}
                       color="#4267B2"
                     />
                   </a>
@@ -138,13 +138,13 @@ export default function Links() {
           </Box>
 
           <Box>
-            <Text mt={5} fontSize={{ base: '20px', md: '40px' }}>
+            <Text mt={5} fontSize={{ base: '20px', md: '2vw' }}>
               Quick Links
             </Text>
             <Link
               display={'block'}
               mt={10}
-              fontSize={{ base: '18px', md: '32px' }}
+              fontSize={{ base: '18px', md: '1.6vw' }}
             >
               EVENTS
             </Link>
@@ -152,21 +152,21 @@ export default function Links() {
             <Link
               to="/teams"
               display={'block'}
-              fontSize={{ base: '18px', md: '32px' }}
+              fontSize={{ base: '18px', md: '1.6vw' }}
             >
               TEAM
             </Link>
-            <Link display={'block'} fontSize={{ base: '18px', md: '32px' }}>
+            <Link display={'block'} fontSize={{ base: '18px', md: '1.6vw' }}>
               LOGIN
             </Link>
 
-            <Link display={'block'} fontSize={{ base: '18px', md: '32px' }}>
+            <Link display={'block'} fontSize={{ base: '18px', md: '1.6vw' }}>
               OUR LOCATION
             </Link>
           </Box>
 
           <GridItem w="100%" colSpan={1} ml={10} mr={10} color="white">
-            <Text mt={5} fontSize={'2.5vw'} width={'60%'} align={'center'}>
+            <Text mt={5} fontSize={{base:'3.5vw', md: '2vw'}} width={'60%'} align={'center'}>
               UPCOMING EVENTS
             </Text>
           </GridItem>

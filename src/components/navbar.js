@@ -11,7 +11,7 @@ export default function Nav() {
               <Link href="/" style={{ textDecoration: 'none' }}>
                 <Text
                   pt={'1.5vw'}
-                  fontSize="2.5vw"
+                  fontSize="2vw"
                   fontWeight={'semibold'}
                   color="white"
                 >
@@ -30,7 +30,7 @@ export default function Nav() {
               <Button
                 color="white"
                 variant="link"
-                fontSize={'1.5vw'}
+                fontSize={'1.6vw'}
                 fontWeight={'normal'}
                 p={{ base: '1px', md: '20px' }}
               >
@@ -42,7 +42,7 @@ export default function Nav() {
               <Button
                 color="white"
                 variant="link"
-                fontSize={'1.5vw'}
+                fontSize={'1.6vw'}
                 fontWeight={'normal'}
                 // p={'3vw'}
                 p={{ base: '1px', md: '20px' }}
@@ -55,7 +55,7 @@ export default function Nav() {
               <Button
                 color="white"
                 variant="link"
-                fontSize={'1.5vw'}
+                fontSize={'1.6vw'}
                 fontWeight={'normal'}
                 // p={'2.55vw'}
                 p={{ base: '1px', md: '20px' }}

@@ -73,10 +73,10 @@ export default function BuildTogether() {
                 bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
                 // bgOpacity="25%"
                 mb={{ base: '5%', md: '1%' }}
-                width={{ base: '30vw', md: '30vw' }}
-                height={{ base: '6vw', md: '6vw' }}
+                width={{ base: '200px', md: '25.2vw' }}
+                height={{ base: '50px', md: '5.85vw' }}
               >
-                <Text color="white" fontSize={{ base: '2vw', md: '1.7vw' }}>
+                <Text color="white" fontSize={{ base: '3vw', md: '1.7vw' }}>
                   Register for BITBOX 2.0
                 </Text>
               </Button>
@@ -90,9 +90,9 @@ export default function BuildTogether() {
             {/* <Box > */}
             <Text
               as={'b'}
-              fontSize={{ base: '4vw', md: '4vw' }}
+              fontSize={{ base: '3.45vw', md: '3.45vw' }}
               noOfLines={1}
-              mb={{ base: '-2vw', md: '-3.5vw' }}
+              mb={{ base: '-3.5vw', md: '-3.5vw' }}
               color="white"
               pl={{ base: '6%' }}
               pr={{ base: '6%' }}
@@ -103,7 +103,7 @@ export default function BuildTogether() {
               bgGradient="linear(to-r, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
               w="100%"
               bgClip="text"
-              fontSize={{ base: '13vw', md: '13vw' }}
+              fontSize={{ base: '12.4vw', md: '12.4vw' }}
               fontWeight="extrabold"
               align={'center'}
               display={'inline'}
@@ -115,9 +115,9 @@ export default function BuildTogether() {
             </Text>
             <Text
               as={'b'}
-              fontSize={{ base: '4vw', md: '4vw' }}
+              fontSize={{ base: '3.45vw', md: '3.45vw' }}
               noOfLines={1}
-              mt={{ base: '-20px', md: '-3.5vw' }}
+              mt={{ base: '-3.5vw', md: '-3.5vw' }}
               color="white"
               pr={{ base: '6%' }}
               pl={{ base: '6%' }}
@@ -135,7 +135,7 @@ export default function BuildTogether() {
               pl={{ base: '6%' }}
               pr={{ base: '6%' }}
               // width={{ base: '85%', md: '65%' }}
-              fontSize={{ base: '3.5vw', md: '1.2vw' }}
+              fontSize={{ base: '3vw', md: '1.35vw' }}
             >
               GDSC(Google Developers Student Club) - JIIT128 is a Google
               Developers program aimed for college students to help them build
