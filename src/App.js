@@ -18,7 +18,7 @@ function App() {
     <ChakraProvider>
       <>
       <Route path="/" exact component={Home} />
-      <Route path="/Teams" exact component={Teampage} />
+      <Route path="/teams" exact component={Teampage} />
 
        
       </>
