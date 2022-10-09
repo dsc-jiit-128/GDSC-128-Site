@@ -1,6 +1,9 @@
 import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import { GridItem, Grid, Image, Text, Flex,Link } from '@chakra-ui/react';
+import { Route } from 'react-router-dom';
+import Teampage from '../Pages/Teams';
+
 
 
 export default function Links() {
@@ -107,7 +110,8 @@ export default function Links() {
             <Link display={'block'} mt={10} fontSize={'1.5vw'}>
               EVENTS
             </Link>
-            <Link display={'block'} fontSize={'1.5vw'}>
+           
+            <Link  to="/teams"  display={'block'} fontSize={'1.5vw'}>
               TEAM
             </Link>
             <Link display={'block'} fontSize={'1.5vw'}>
