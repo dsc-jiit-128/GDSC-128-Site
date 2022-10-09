@@ -12,6 +12,7 @@ import WhatDoWeDo from './components/whatDoWeDo';
 import Links from './components/links';
 import Home from './Pages/Home';
 import Teampage from './Pages/Teams';
+import Events from './Pages/Events';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <>
       <Route path="/" exact component={Home} />
       <Route path="/teams" exact component={Teampage} />
+      <Route path="/events" exact component={Events} />
+
 
        
       </>

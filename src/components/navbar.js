@@ -4,13 +4,16 @@ export default function Nav() {
   return (
     <>
       <Box px={4} pb={3} zIndex={1}>
+        
         <Flex p={5} justifyContent={'space-between'}>
           <Flex fontSize={40} color="white">
             <Stack direction={'row'} spacing="35px">
+           
               <Image borderRadius="full" boxSize="7vw" src="/image 2.png" />
+              <Link href="/" style={{ textDecoration: 'none' }}>
               <Text pt={'1.5vw'} fontSize="2.5vw" fontWeight={'semibold'}   color='white'>
                 GDSC JIIT 128
-              </Text>
+              </Text></Link>
             </Stack>
           </Flex>
 
@@ -23,7 +26,7 @@ export default function Nav() {
                 fontWeight={'normal'}
                 p={'3vw'}
               >
-                Events
+                <Link href="/events" style={{ textDecoration: 'none' }}>Events</Link>
               </Button>
 
               <Button
@@ -35,7 +38,7 @@ export default function Nav() {
                 fontWeight={'normal'}
                 p={'3vw'}
               >
-                <Link href="/teams">Team</Link>
+                <Link href="/teams" style={{ textDecoration: 'none' }}>Team</Link>
                
               </Button>
             
@@ -47,7 +50,7 @@ export default function Nav() {
                 fontWeight={'normal'}
                 p={'2.55vw'}
               >
-                Login
+                <Link href="/" style={{ textDecoration: 'none' }}>Login</Link>
               </Button>
             </Stack>
           </Flex>
