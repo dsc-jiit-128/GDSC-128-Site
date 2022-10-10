@@ -6,7 +6,9 @@ import { GridItem, Grid, Image, Text, Flex, Link, } from '@chakra-ui/react';
 export default function Teamnav() {
     return (
       <>
+   <Flex align={'center'} justify='center' >
       <VStack >
+      
       <Box>
         
 
@@ -34,9 +36,11 @@ export default function Teamnav() {
 
 
 </Box>
-      
-<Box mt={4} ml={0}  alignContent='center' alignItems={'center'} align='center' alignSelf={'center'} ali>
-<HStack spacing={19} align="center" ml={125}>
+
+     
+<Box mt={4}   alignContent='center' position={'relative'} pl={75} ml={50}>
+
+<HStack spacing={19} align={'center'} position='relative' >
 
 <Image
                   src="/14.png"
@@ -169,8 +173,12 @@ export default function Teamnav() {
 
 
 </Box>
-      
+
+
+
 </VStack>
+</Flex>
+
  </>
     );
     }

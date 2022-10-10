@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Box } from '@chakra-ui/react';
+import { Box,Flex } from '@chakra-ui/react';
 import Nav from '../components/navbar';
 import Head from '../components/heading';
 import BuildTogether from '../components/ buildTogether';
@@ -18,13 +18,14 @@ function Teampage() {
       <Box bgColor={'#111111'} height={'100%'} m={0}>
           <Nav />
           <Head />
+         
 
         
 <Teams/>
 <Teamnav/>
 
 
-         
+        
         </Box>
 
 

@@ -6,13 +6,18 @@ import { GridItem, Grid, Image, Text, Flex, Link } from '@chakra-ui/react';
 export default function Teams() {
   return (
     <>
- 
+ <Flex
+ justify={'center'}
+ align={'center'}
+ >
 
 
         <Box
+        justifySelf={'center'}
         alignContent={'center'}
+        bgPosition={'center'}
         alignItems={'center'}
-            width={950} height={400} mt={1} ml={145} mr={95} paddingLeft={10}  paddingTop={10} paddingBottom={20} borderRadius={15} 
+            width={950} height={400} mt={1} ml={145} mr={145} paddingLeft={10} paddingRight={10} paddingTop={10} paddingBottom={20} borderRadius={15} 
             bg = "linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
             >
                <Image
@@ -35,6 +40,7 @@ export default function Teams() {
             
 
             </Box>
+            </Flex>
 
 
     
