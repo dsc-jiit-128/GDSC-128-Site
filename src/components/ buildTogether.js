@@ -3,8 +3,6 @@ import {
   Box,
   Image,
   Text,
-  Grid,
-  GridItem,
   SimpleGrid,
   Button,
   fontFamily,
@@ -73,10 +71,10 @@ export default function BuildTogether() {
                 bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
                 // bgOpacity="25%"
                 mb={{ base: '5%', md: '1%' }}
-                width={{ base: '200px', md: '25.2vw' }}
-                height={{ base: '50px', md: '5.85vw' }}
+                width={{ base: '30.2vw', md: '25.2vw' }}
+                height={{ base: '5.85vw', md: '5.85vw' }}
               >
-                <Text color="white" fontSize={{ base: '3vw', md: '1.7vw' }}>
+                <Text color="white" fontSize={{ base: '2vw', md: '1.7vw' }}>
                   Register for BITBOX 2.0
                 </Text>
               </Button>

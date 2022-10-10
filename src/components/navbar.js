@@ -10,10 +10,12 @@ export default function Nav() {
               <Image borderRadius="full" boxSize="7vw" src="/image 2.png" />
               <Link href="/" style={{ textDecoration: 'none' }}>
                 <Text
-                  pt={'1.5vw'}
+                  // pt={'1.5vw'}
                   fontSize="2vw"
                   fontWeight={'semibold'}
                   color="white"
+                  pl={0}
+                  pt = {'1.8vw'}
                 >
                   GDSC JIIT 128
                 </Text>

@@ -1,15 +1,6 @@
 import React from 'react';
-import { Box, Heading } from '@chakra-ui/react';
-import {
-  GridItem,
-  Grid,
-  Image,
-  Text,
-  Flex,
-  Link,
-  Divider,
-  SimpleGrid,
-} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { Image, Text, Flex, Link, Divider, SimpleGrid } from '@chakra-ui/react';
 import {
   FaFacebook,
   FaDiscord,
@@ -43,99 +34,123 @@ export default function Links() {
           gap={0}
           width={'85%'}
           textAlign="center"
+          // alignItems={'center'}
         >
-          <Box p={'20px'} m={'10px'} mr={'100px'}>
-            <Flex display={'inline'}>
-              <Image
-                src="/image 2.png"
-                width={'40px'}
-                height={'40px'}
-                display="inline"
-              />
-              <Box display="inline" ml={'10px'} fontSize="2vw">
-                GDSC
-              </Box>
-            </Flex>
-
-            <Flex
-              bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-              // align="center"
-              mb={10}
-              // p={'1% 5%'}
-              borderRadius={'2.5vw'}
-              // display={'flex'}
-              alignContent={'center'}
-              justifyContent={'center'}
-              opacity={'80%'}
-              mt={'10%'}
-              // boxSize={'auto'}
-            >
-              <Text
-                fontSize={{ base: '14px', md: '1.6vw' }}
-                mr="20px"
-                display="inline"
-                color={'white'}
+          <Flex>
+            <Box p={'20px'} m={'10px'}>
+              <Flex
+                lineHeight={'40px'}
+                alignContent={'center'}
+                justifyContent="center"
               >
-                Contact Us
-              </Text>
-              <Box display="inline" float={'inline'}>
-                <BsEnvelope size={'31px'} ml={'10px'} display="inline" />
-              </Box>
-            </Flex>
+                <Image
+                  src="/image 2.png"
+                  width={'40px'}
+                  height={'40px'}
+                  display="inline"
+                  // ml={'5vw'}
+                  // mr={'auto'}
+                  // p={2}
+                  // border={'4px green solid'}
+                />
+                <Box
+                  // display="inline"
+                  fontSize={{ base: '3vw', md: '2vw' }}
+                  // ml="10px"
+                  textAlign={'center'}
+                  alignItems="center"
+                  alignContent={'center'}
+                  ml={{ base: '3vw', md: '1vw' }}
+                >
+                  GDSC
+                </Box>
+              </Flex>
 
-            <Box
-              bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-              borderRadius={'10px'}
-              display="block"
-              p={'6%'}
-              pr={'0%'}
-              pl={'9%'}
-              pb={'9%'}
-              opacity={'80%'}
-              justify="space-evenly"
-            >
-              <SimpleGrid
-                columns={{ base: 3, md: 3 }}
-                gap={{ base: '10px', md: '2vw' }}
-                width={'85%'}
-                // justifyContent="space-evenly"
+              <Flex
+                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                // align="center"
+                mb={'2vw'}
+                // p={'1% 5%'}
+                borderRadius={'2.5vw'}
+                // display={'flex'}
+                alignContent={'center'}
+                justifyContent={'center'}
+                opacity={'80%'}
+                mt={'10%'}
+                height={{ base: '4vw', md: '2.8vw' }}
+                width={{ base: '22vw', md: '15.7vw' }}
+                ml={'auto'}
+                mr="auto"
+
+                // boxSize={'auto'}
               >
-                <Box m={'10px'}>
-                  <a href="https://www.facebook.com/gdscjiit/">
-                    <FaFacebook
-                      size={{ base: '3vw', md: '100px' }}
-                      color="#4267B2"
-                    />
-                  </a>
+                <Text
+                  fontSize={{ base: '2vw', md: '1.6vw' }}
+                  mr="20px"
+                  display="inline"
+                  color={'white'}
+                >
+                  CONTACT US
+                </Text>
+                <Box display="inline" pt="0.3vw">
+                  <BsEnvelope size={'2vw'} display="inline" />
                 </Box>
-                <Box m={'10px'}>
-                  <a href="https://discord.com/invite/HqatsVyq5H">
-                    <FaDiscord size={{ base: '20px', md: '50px' }} />
-                  </a>
-                </Box>
-                <Box m={'10px'}>
-                  <a href="https://twitter.com/Dsc128">
-                    <FaTwitter size={{ base: '20px', md: '50px' }} />
-                  </a>
-                </Box>
-                <Box m={'10px'}>
-                  <a href="https://github.com/dsc-jiit-128">
-                    <FaGithub size={{ base: '20px', md: '50px' }} />
-                  </a>
-                </Box>
-                <Box m={'10px'}>
-                  <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
-                    <FaYoutube size={{ base: '20px', md: '50px' }} />
-                  </a>
-                </Box>
-                <Box m={'10px'}>
-                  <a href="https://www.instagram.com/gdscj128/">
-                    <FaInstagram size={{ base: '20px', md: '50px' }} />
-                  </a>
-                </Box>
-              </SimpleGrid>
+              </Flex>
+
+              <Box
+                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                borderRadius={'10px'}
+                display="block"
+                p={'6%'}
+                pr={'0%'}
+                pl={'9%'}
+                pb={'9%'}
+                opacity={'80%'}
+                justify="space-evenly"
+              >
+                <SimpleGrid
+                  columns={{ base: 3, md: 3 }}
+                  gap={{ base: '10px', md: '2vw' }}
+                  width={'85%'}
+                  // justifyContent="space-evenly"
+                >
+                  <Box m={'10px'}>
+                    <a href="https://www.facebook.com/gdscjiit/">
+                      <FaFacebook
+                        size={{ base: '3vw', md: '100px' }}
+                        color="#4267B2"
+                      />
+                    </a>
+                  </Box>
+                  <Box m={'10px'}>
+                    <a href="https://discord.com/invite/HqatsVyq5H">
+                      <FaDiscord size={{ base: '20px', md: '50px' }} />
+                    </a>
+                  </Box>
+                  <Box m={'10px'}>
+                    <a href="https://twitter.com/Dsc128">
+                      <FaTwitter size={{ base: '20px', md: '50px' }} />
+                    </a>
+                  </Box>
+                  <Box m={'10px'}>
+                    <a href="https://github.com/dsc-jiit-128">
+                      <FaGithub size={{ base: '20px', md: '50px' }} />
+                    </a>
+                  </Box>
+                  <Box m={'10px'}>
+                    <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
+                      <FaYoutube size={{ base: '20px', md: '50px' }} />
+                    </a>
+                  </Box>
+                  <Box m={'10px'}>
+                    <a href="https://www.instagram.com/gdscj128/">
+                      <FaInstagram size={{ base: '20px', md: '50px' }} />
+                    </a>
+                  </Box>
+                </SimpleGrid>
+              </Box>
             </Box>
-          </Box>
+          </Flex>
 
           <Box>
             <Text mt={5} fontSize={{ base: '20px', md: '2vw' }}>
@@ -165,11 +180,16 @@ export default function Links() {
             </Link>
           </Box>
 
-          <GridItem w="100%" colSpan={1} ml={10} mr={10} color="white">
-            <Text mt={5} fontSize={{base:'3.5vw', md: '2vw'}} width={'60%'} align={'center'}>
+          <Box w="100%" colSpan={1} color="white">
+            <Text
+              mt={5}
+              fontSize={{ base: '3.5vw', md: '2vw' }}
+              width={'100%'}
+              align="center"
+            >
               UPCOMING EVENTS
             </Text>
-          </GridItem>
+          </Box>
         </SimpleGrid>
         <Divider
           size={'10px'}

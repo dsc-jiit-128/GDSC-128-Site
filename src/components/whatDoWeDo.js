@@ -24,21 +24,19 @@ export default function WhatDoWeDo() {
             What do we do?
           </Text>
         </Box>
-        <SimpleGrid columns={{ sm: 2, md: 2 }} gap={0}>
-          <Box alignItems={'center'}>
+        <SimpleGrid columns={{ sm: 2, md: 2 }} gap={5} textAlign='center'>
+          <Box textAlign={'center'}>
             <Box
               textAlign={'center'}
-              width={{ base: '85%', md: '100%' }}
+              width={{ base: '100%', md: '100%' }}
               ml={{ base: '4%', md: '22%' }}
             >
               <Text
-                ml={10}
-                mr={10}
-                mt={10}
-                textAlign="left"
+                textAlign={{base: "center", md: 'left'}}
                 color="white"
                 fontSize={{ base: '3vw', md: '1.5vw' }}
-                width={'65%'}
+                width={{base: '90%', md: '65%'}}
+                mt={'5vw'}
               >
                 With our team's moto being "Giving Direction to Greatness", we
                 help the students to climb mountains on their own, as high as
@@ -54,7 +52,7 @@ export default function WhatDoWeDo() {
                   width={{ base: '200px', md: '24.2vw' }}
                   height={{ base: '50px', md: '5.85vw' }}
                   borderRadius={15}
-                  ml={{base: '0', md:'-38%'}}
+                  ml={{base: '-10%', md:'-38%'}}
                 >
                   <Text
                     align={'left'}
