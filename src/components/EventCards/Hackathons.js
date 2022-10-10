@@ -3,7 +3,7 @@ import { Box, Center, Heading, HStack, VStack } from '@chakra-ui/react';
 import { GridItem, Grid, Image, Text, Flex, Link,SimpleGrid } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Highlight } from '@chakra-ui/react'
- function abc() {
+ function Hackathons() {
     return (
 
     
@@ -49,5 +49,5 @@ HACKATHONS
         
 );
 }
-export default abc;
+export default Hackathons;
 

@@ -25,6 +25,7 @@ function Home() {
         <BuildTogether />
         <WhatDoWeDo />
         <Links />
+        
       </Box>
     </>
   );
