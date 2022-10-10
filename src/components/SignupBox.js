@@ -48,24 +48,24 @@ import {
                 <Box>
                   <FormControl id="firstName" isRequired>
                     <FormLabel>First Name</FormLabel>
-                    <Input type="text" />
+                    <Input placeholder="Abhishek" type="text" />
                   </FormControl>
                 </Box>
                 <Box>
                   <FormControl id="lastName">
                     <FormLabel>Last Name</FormLabel>
-                    <Input type="text" />
+                    <Input placeholder="Kumar" type="text" />
                   </FormControl>
                 </Box>
               </HStack>
-              <FormControl id="email" isRequired>
+              <FormControl id="email/Name" isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <Input placeholder="xyz@abc.com" />
               </FormControl>
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
                 <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} />
+                  <Input type={showPassword ? 'text' : 'password'}  placeholder="**********"/>
                   <InputRightElement h={'full'}>
                     <Button
                       variant={'ghost'}
@@ -103,7 +103,7 @@ import {
     </Center>
               <Stack pt={6}>
                 <Text align={'center'}>
-                  Already a user? <Link color={'blue.400'}>Login</Link>
+                  Already a user? <Link color={'blue.400'} href="/login">Login</Link>
                 </Text>
               </Stack>
             </Stack>

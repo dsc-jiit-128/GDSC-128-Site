@@ -37,12 +37,12 @@ import {
             p={8}>
             <Stack spacing={4}>
               <FormControl id="email">
-                <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <FormLabel>Email address/Phone Number</FormLabel>
+                <Input placeholder="xyz@abc.com" />
               </FormControl>
               <FormControl id="password">
                 <FormLabel>Password</FormLabel>
-                <Input type="password" />
+                <Input placeholder="********" type="password" />
               </FormControl>
               <Stack spacing={10}>
                 <Stack
