@@ -2,9 +2,7 @@ import React from 'react';
 // import { ChakraProvider } from '@chakra-ui/react';
 import { Box, Text } from '@chakra-ui/react';
 import Fonts from '../fonts';
-import {fontFamily} from '@chakra-ui/react';
-import { extendTheme } from "@chakra-ui/react";
-import theme from "./theme";
+
 
 export default function Head() {
   return (
