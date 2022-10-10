@@ -1,12 +1,16 @@
 import React from 'react';
 // import { ChakraProvider } from '@chakra-ui/react';
 import { Box, Text } from '@chakra-ui/react';
+import Fonts from '../fonts';
+import {fontFamily} from '@chakra-ui/react';
+import { extendTheme } from "@chakra-ui/react";
+import theme from "./theme";
 
 export default function Head() {
   return (
     <>
       <Box align="center" pb={10}>
-        <Text as="b" fontSize={{ base: '2.5vw', md: '2vw' }} color="white ">
+        <Text as="b" fontSize={{ base: '2.5vw', md: '2vw' }} color="white " >
           Google Developer Students
         </Text>
         <Text fontSize={{ base: '2.5vw', md: '1.6vw' }} color="white">
