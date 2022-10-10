@@ -51,10 +51,10 @@ export default function WhatDoWeDo() {
                   size="lg"
                   mt={10}
                   bg="linear-gradient(93.17deg, #3586FF 0%, #2F92ED 97.37%) "
-                  width={{ base: '200px', md: '25.2vw' }}
+                  width={{ base: '200px', md: '24.2vw' }}
                   height={{ base: '50px', md: '5.85vw' }}
-                  borderRadius={'25px'}
-                  ml={{base: '0', md:'-45%'}}
+                  borderRadius={15}
+                  ml={{base: '0', md:'-38%'}}
                 >
                   <Text
                     align={'left'}
