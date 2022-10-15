@@ -20,10 +20,10 @@ app.use(express.json());
 // app.use("/panel", express.static(helpers.buildPath("public", "admin")));
 // app.use("/", express.static(helpers.buildPath("public", "frontend")));
 
-// // toa configuration
-// app.use("/api-docs", swaggerUi.serve, async (_req: any, res: any) => {
-//     return res.send(swaggerUi.generateHTML(await import("./swagger/swagger.json")));
-// });
+// tsoa configuration
+app.use("/api-docs-gdsc", swaggerUi.serve, async (_req: any, res: any) => {
+    return res.send(swaggerUi.generateHTML(await import("./swagger/swagger.json")));
+});
 
 app.use(appRoutes);
 
