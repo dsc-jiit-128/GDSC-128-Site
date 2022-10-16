@@ -12,9 +12,9 @@ import Links from '../components/links';
 import Teams from '../components/teambox';
 import Teamnav from '../components/footerofteams';
 import Bottomteam from '../components/bottomnav_teamspage';
-
-
-
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+//import css
+import '../css/Animation.css'
 
 
 const TeamNavMember = (props) => {
@@ -23,8 +23,9 @@ const TeamNavMember = (props) => {
   return (
     <Box
       pos="relative"
-      w={props.isSelected ? '150px' : '100px'}
-      h={props.isSelected ? '150px' : '100px'}
+      onClick={() => props.onClick()}
+      w={props.isSelected ? '120px' : '100px'}
+      h={props.isSelected ? '120px' : '100px'}
       borderRadius="50%"
       overflow="hidden"
       //onHover
@@ -66,8 +67,12 @@ const TeamNav = (props) => {
   const setPosArray = props.setPosArray;
   // selectedPos will always be in the center and bigger than the other positions
 
+  
 
-  const handleClicked = (index) => {
+
+  const handleClicked = (it) => {
+    //find the index of the clicked item
+    const index = posArray.findIndex((item) => item.name === it.name);
     // if the selectedPos is clicked, do nothing
     if (index === selectedPos) return;
     // if the selectedPos is not clicked, set the selectedPos to the clicked index
@@ -80,58 +85,73 @@ const TeamNav = (props) => {
     //set the new array
     setPosArray(temp);
   }
+  
+  const [parent] = useAutoAnimate(/* optional config */)
 
   return (
     <HStack 
     spacing={5}
     p={5}
-    
+    ref={parent}
+    minH="200px"
     >
-      {posArray.map((it, index) => (
-        <Box onClick={() => handleClicked(index)}>
+      {
+      
+      posArray.map(it => (
           <TeamNavMember
             image={it.image}
             name={it.name}
-            isSelected={index === selectedPos}
+            onClick={() => handleClicked(it)}
+            key={it.key}
+            isSelected={posArray.indexOf(it) === selectedPos}
           />
-        </Box>
+       
+        
       ))}
     </HStack>
   );
 }
 
 function Teampage() {
-  const [selectedPos, setSelectedPos] = useState(0);
+  
   const [posArray, setPosArray] = useState([
     {
       image: '/13.png',
       name: 'UI/UX Designer',
+      key: '1',
     },
     {
       image: '/14.png',
       name: 'Frontend Developer',
+      key: '2',
     },
     {
       image: '/15.png',
       name: 'Backend Developer',
+      key: '3',
     },
     {
       image: '/16.png',
       name: 'ML Engineer',
+      key: '4',
     },
     {
       image: '/17.png',
       name: 'Tech Writer',
+      key: '5',
     }
   ])
-
+  const [selectedPos, setSelectedPos] = useState(Math.ceil(posArray.length-1)/2);
+  const [parent] = useAutoAnimate(/* optional config */)
   return (
     <ChakraProvider>
       <>
         <Box bgColor={'#111111'} height={'100%'} m={0}>
           <Nav />
           <Head />
-          <Flex justify={'center'} align={'center'}>
+          <Flex
+          
+          justify={'center'} align={'center'}>
             <Box
               justifySelf={'center'}
               alignContent={'center'}
@@ -142,14 +162,16 @@ function Teampage() {
               p={10}
               borderRadius={15}
               bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+              
             >
               <Text
                 fontSize={'2xl'}
                 fontWeight={'bold'}
                 color={'white'}
                 ml={4}
-                
+                className="fade-in"
                 textAlign={'center'}
+                key={posArray[selectedPos].key}
               >
                 {posArray[selectedPos].name}
               </Text>
