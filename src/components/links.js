@@ -114,35 +114,35 @@ export default function Links() {
                   width={'85%'}
                   // justifyContent="space-evenly"
                 >
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{  color: 'blue.500' }}>
                     <a href="https://www.facebook.com/gdscjiit/">
                       <FaFacebook
                         size={{ base: '3vw', md: '100px' }}
-                        color="#4267B2"
+                        
                       />
                     </a>
                   </Box>
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{  color: '#5865F2' }}>
                     <a href="https://discord.com/invite/HqatsVyq5H">
                       <FaDiscord size={{ base: '20px', md: '50px' }} />
                     </a>
                   </Box>
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{color: '#00acee'}}>
                     <a href="https://twitter.com/Dsc128">
                       <FaTwitter size={{ base: '20px', md: '50px' }} />
                     </a>
                   </Box>
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{color: 'black'}}>
                     <a href="https://github.com/dsc-jiit-128">
                       <FaGithub size={{ base: '20px', md: '50px' }} />
                     </a>
                   </Box>
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{color: '#FF0000'}}>
                     <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
                       <FaYoutube size={{ base: '20px', md: '50px' }} />
                     </a>
                   </Box>
-                  <Box m={'10px'}>
+                  <Box m={'10px'} _hover={{color: '#C13584'}}>
                     <a href="https://www.instagram.com/gdscj128/">
                       <FaInstagram size={{ base: '20px', md: '50px' }} />
                     </a>
