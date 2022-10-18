@@ -6,26 +6,21 @@ import Nav from '../components/navbar';
 import Head from '../components/heading';
 import Eventsbar from '../components/bar_events';
 function Events() {
-    return (
-      <ChakraProvider>
-        <>
+  return (
+    <ChakraProvider>
+      <>
         <Box bgColor={'#111111'} height={'100%'} m={0}>
-            <Nav />
+          <Nav />
+          <Box>
             <Head />
-            <Eventsbar/>
-         
-  
-   
-  
-           
           </Box>
-  
-  
-  
-        </>
-      </ChakraProvider>
-    );
-  }
-  
-  export default Events;
-  
+          <Box>
+            <Eventsbar />
+          </Box>
+        </Box>
+      </>
+    </ChakraProvider>
+  );
+}
+
+export default Events;

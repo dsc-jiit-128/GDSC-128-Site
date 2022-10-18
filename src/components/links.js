@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from 'react-icons/fa';
+import { useMediaQuery } from '@chakra-ui/react';
 
 import { BsEnvelope } from 'react-icons/bs';
 
@@ -28,6 +29,7 @@ export default function Links() {
         // textAlign={'center'}
         flexDirection={'column'}
         color={'white'}
+        justifyContent="center"
       >
         <SimpleGrid
           columns={{ base: 1, md: 3 }}
@@ -35,131 +37,180 @@ export default function Links() {
           width={'85%'}
           textAlign="center"
           // alignItems={'center'}
+          alignContent={'center'}
+          justifyContent="center"
         >
-          <Flex>
-            <Box p={'20px'} m={'10px'}>
-              <Flex
-                lineHeight={'40px'}
-                alignContent={'center'}
-                justifyContent="center"
-              >
-                <Image
-                  src="/image 2.png"
-                  width={'40px'}
-                  height={'40px'}
-                  display="inline"
-                  // ml={'5vw'}
-                  // mr={'auto'}
-                  // p={2}
-                  // border={'4px green solid'}
-                />
-                <Box
-                  // display="inline"
-                  fontSize={{ base: '3vw', md: '2vw' }}
-                  // ml="10px"
-                  textAlign={'center'}
-                  alignItems="center"
+          <Box display={'box'} alignSelf="center">
+            <Box
+              p={'10px'}
+              m={{ base: '50px', md: '10px' }}
+              mt={{ base: '10px' }}
+            >
+              <Box ml={'auto'} mr="auto">
+                <Flex
+                  lineHeight={'40px'}
                   alignContent={'center'}
-                  ml={{ base: '3vw', md: '1vw' }}
+                  justifyContent="center"
                 >
-                  GDSC
+                  <Image
+                    src="/image 2.png"
+                    width={'40px'}
+                    height={'40px'}
+                    display="inline"
+                    // ml={'5vw'}
+                    // mr={'auto'}
+                    // p={2}
+                    // border={'4px green solid'}
+                  />
+                  <Box
+                    // display="inline"
+                    fontSize={{ base: '3vw', md: '2vw' }}
+                    // ml="10px"
+                    textAlign={'center'}
+                    alignItems="center"
+                    alignContent={'center'}
+                    ml={{ base: '3vw', md: '1vw' }}
+                  >
+                    GDSC
+                  </Box>
+                </Flex>
+
+                <Flex
+                  bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  // align="center"
+                  mb={'2vw'}
+                  // p={'1% 5%'}
+                  borderRadius={'2.5vw'}
+                  // display={'flex'}
+                  alignContent={'center'}
+                  justifyContent={'center'}
+                  opacity={'80%'}
+                  mt={'10%'}
+                  height={{ base: '5vw', md: '3vw' }}
+                  width={{ base: '35vw', md: '20vw' }}
+                  // ml={'auto'}
+                  // mr="auto"
+                  ml={{ base: '10vw', md: '2vw' }}
+
+                  // boxSize={'auto'}
+                >
+                  <Text
+                    fontSize={{ base: '12px', md: '1.6vw' }}
+                    mr="10px"
+                    mt={{ base: 0, md: 1 }}
+                    display="inline"
+                    color={'white'}
+                    alignSelf="center"
+                  >
+                    CONTACT US
+                  </Text>
+                  <Box>
+                    <BsEnvelope
+                      size={{ base: '25px', md: '1vw' }}
+                      // display="inline"
+                    />
+                  </Box>
+                </Flex>
+
+                <Box
+                  bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                  borderRadius={'10px'}
+                  display="box"
+                  p={'6%'}
+                  pr={'4%'}
+                  pl={'6%'}
+                  pb={'9%'}
+                  opacity={'80%'}
+                  justify="space-evenly"
+                  width={{ base: '40vw', md: '20vw' }}
+                  alignSelf="center"
+                  ml={{ base: '8vw', md: '2vw' }}
+                  // border={'4px green solid'}
+                >
+                  <SimpleGrid
+                    columns={{ base: 3, md: 3 }}
+                    gap={{ base: '10px', md: '2vw' }}
+                    width={'95%'}
+                    // justifyContent="space-evenly"
+                  >
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: 'blue.500' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://www.facebook.com/gdscjiit/">
+                        <FaFacebook size={'25px'} />
+                      </a>
+                    </Box>
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: '#5865F2' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://discord.com/invite/HqatsVyq5H">
+                        <FaDiscord size={'25px'} />
+                      </a>
+                    </Box>
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: '#00acee' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://twitter.com/Dsc128">
+                        <FaTwitter size={'25px'} />
+                      </a>
+                    </Box>
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: 'black' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://github.com/dsc-jiit-128">
+                        <FaGithub size={'25px'} />
+                      </a>
+                    </Box>
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: '#FF0000' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
+                        <FaYoutube size={'25px'} />
+                      </a>
+                    </Box>
+                    <Box
+                      m={'10px'}
+                      _hover={{ color: '#C13584' }}
+                      width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '35px' }}
+                    >
+                      <a href="https://www.instagram.com/gdscj128/">
+                        <FaInstagram size={'25px'} />
+                      </a>
+                    </Box>
+                  </SimpleGrid>
                 </Box>
-              </Flex>
-
-              <Flex
-                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-                // align="center"
-                mb={'2vw'}
-                // p={'1% 5%'}
-                borderRadius={'2.5vw'}
-                // display={'flex'}
-                alignContent={'center'}
-                justifyContent={'center'}
-                opacity={'80%'}
-                mt={'10%'}
-                height={{ base: '4vw', md: '2.8vw' }}
-                width={{ base: '22vw', md: '15.7vw' }}
-                ml={'auto'}
-                mr="auto"
-
-                // boxSize={'auto'}
-              >
-                <Text
-                  fontSize={{ base: '2vw', md: '1.6vw' }}
-                  mr="20px"
-                  display="inline"
-                  color={'white'}
-                >
-                  CONTACT US
-                </Text>
-                <Box display="inline" pt="0.3vw">
-                  <BsEnvelope size={'2vw'} display="inline" />
-                </Box>
-              </Flex>
-
-              <Box
-                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-                borderRadius={'10px'}
-                display="block"
-                p={'6%'}
-                pr={'0%'}
-                pl={'9%'}
-                pb={'9%'}
-                opacity={'80%'}
-                justify="space-evenly"
-              >
-                <SimpleGrid
-                  columns={{ base: 3, md: 3 }}
-                  gap={{ base: '10px', md: '2vw' }}
-                  width={'85%'}
-                  // justifyContent="space-evenly"
-                >
-                  <Box m={'10px'} _hover={{  color: 'blue.500' }}>
-                    <a href="https://www.facebook.com/gdscjiit/">
-                      <FaFacebook
-                        size={{ base: '3vw', md: '100px' }}
-                        
-                      />
-                    </a>
-                  </Box>
-                  <Box m={'10px'} _hover={{  color: '#5865F2' }}>
-                    <a href="https://discord.com/invite/HqatsVyq5H">
-                      <FaDiscord size={{ base: '20px', md: '50px' }} />
-                    </a>
-                  </Box>
-                  <Box m={'10px'} _hover={{color: '#00acee'}}>
-                    <a href="https://twitter.com/Dsc128">
-                      <FaTwitter size={{ base: '20px', md: '50px' }} />
-                    </a>
-                  </Box>
-                  <Box m={'10px'} _hover={{color: 'black'}}>
-                    <a href="https://github.com/dsc-jiit-128">
-                      <FaGithub size={{ base: '20px', md: '50px' }} />
-                    </a>
-                  </Box>
-                  <Box m={'10px'} _hover={{color: '#FF0000'}}>
-                    <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
-                      <FaYoutube size={{ base: '20px', md: '50px' }} />
-                    </a>
-                  </Box>
-                  <Box m={'10px'} _hover={{color: '#C13584'}}>
-                    <a href="https://www.instagram.com/gdscj128/">
-                      <FaInstagram size={{ base: '20px', md: '50px' }} />
-                    </a>
-                  </Box>
-                </SimpleGrid>
               </Box>
             </Box>
-          </Flex>
+          </Box>
+          {/* </Flex> */}
 
           <Box>
-            <Text mt={5} fontSize={{ base: '20px', md: '2vw' }}>
+            <Text
+              fontSize={{ base: '7vw', md: '2vw' }}
+              mt={{ base: -5, md: 5 }}
+            >
               Quick Links
             </Text>
             <Link
               display={'block'}
-              mt={10}
-              fontSize={{ base: '18px', md: '1.6vw' }}
+              mt={5}
+              fontSize={{ base: '4vw', md: '1.6vw' }}
             >
               EVENTS
             </Link>
@@ -167,15 +218,15 @@ export default function Links() {
             <Link
               to="/teams"
               display={'block'}
-              fontSize={{ base: '18px', md: '1.6vw' }}
+              fontSize={{ base: '4vw', md: '1.6vw' }}
             >
               TEAM
             </Link>
-            <Link display={'block'} fontSize={{ base: '18px', md: '1.6vw' }}>
+            <Link display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }}>
               LOGIN
             </Link>
 
-            <Link display={'block'} fontSize={{ base: '18px', md: '1.6vw' }}>
+            <Link display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }}>
               OUR LOCATION
             </Link>
           </Box>
@@ -183,7 +234,7 @@ export default function Links() {
           <Box w="100%" colSpan={1} color="white">
             <Text
               mt={5}
-              fontSize={{ base: '3.5vw', md: '2vw' }}
+              fontSize={{ base: '7vw', md: '2vw' }}
               width={'100%'}
               align="center"
             >
