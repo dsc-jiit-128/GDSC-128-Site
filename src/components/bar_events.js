@@ -30,15 +30,38 @@ export default function Eventsbar() {
           borderRadius={15}
           display="block"
         >
-          <Tabs isFitted variant="soft-rounded">
+          <Tabs isFitted variant="soft-rounded" size="sm">
             <TabList>
-              <Tab _selected={{ color: 'white', bg: '#FF0F0F' }}>
+              <Tab
+                _selected={{ color: 'white', bg: '#FF0F0F' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+              >
                 HACKATHONS
               </Tab>
-              <Tab _selected={{ color: 'white', bg: '#FBBC04' }}>SESSIONS</Tab>
-              <Tab _selected={{ color: 'black', bg: 'white' }}>ALL</Tab>
-              <Tab _selected={{ color: 'white', bg: '#4285F4' }}>STUDYJAMS</Tab>
-              <Tab _selected={{ color: 'white', bg: '#0F9D58' }}>MEETUPS</Tab>
+              <Tab
+                _selected={{ color: 'white', bg: '#FBBC04' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+              >
+                SESSIONS
+              </Tab>
+              <Tab
+                _selected={{ color: 'black', bg: 'white' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+              >
+                ALL
+              </Tab>
+              <Tab
+                _selected={{ color: 'white', bg: '#4285F4' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+              >
+                STUDYJAMS
+              </Tab>
+              <Tab
+                _selected={{ color: 'white', bg: '#0F9D58' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+              >
+                MEETUPS
+              </Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
