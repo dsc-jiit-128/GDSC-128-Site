@@ -101,14 +101,15 @@ export default function Links() {
                     display="inline"
                     color={'white'}
                     alignSelf="center"
-                  >
-                    CONTACT US
+                    fontFamily={'Gilroy-SemiBold'}
+                  ><Link href="mailto:dscjiit128@gmail.com">
+                    CONTACT US </Link>
                   </Text>
-                  <Box>
+                  <Box><Link href="mailto:dscjiit128@gmail.com">
                     <BsEnvelope
                       size={{ base: '25px', md: '1vw' }}
                       // display="inline"
-                    />
+                    /></Link>
                   </Box>
                 </Flex>
 
@@ -204,6 +205,7 @@ export default function Links() {
             <Text
               fontSize={{ base: '7vw', md: '2vw' }}
               mt={{ base: -5, md: 5 }}
+              fontFamily={'Gilroy-SemiBold'}
             >
               Quick Links
             </Text>
@@ -211,6 +213,8 @@ export default function Links() {
               display={'block'}
               mt={5}
               fontSize={{ base: '4vw', md: '1.6vw' }}
+              to="/events"
+              fontFamily={'Gilroy-Medium'}
             >
               EVENTS
             </Link>
@@ -218,15 +222,23 @@ export default function Links() {
             <Link
               to="/teams"
               display={'block'}
+              mt={2}
+
               fontSize={{ base: '4vw', md: '1.6vw' }}
+              fontFamily={'Gilroy-Medium'}
             >
               TEAM
             </Link>
-            <Link display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }}>
+            <Link to="/login"            mt={2}
+ display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }} fontFamily={'Gilroy-Medium'}>
+ 
+
               LOGIN
             </Link>
 
-            <Link display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }}>
+            < Link             mt={2}
+ display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }} fontFamily={'Gilroy-Medium'}>
+
               OUR LOCATION
             </Link>
           </Box>
@@ -237,6 +249,7 @@ export default function Links() {
               fontSize={{ base: '7vw', md: '2vw' }}
               width={'100%'}
               align="center"
+              fontFamily={'Gilroy-Medium'}
             >
               UPCOMING EVENTS
             </Text>
@@ -254,7 +267,7 @@ export default function Links() {
         ></Divider>
 
         <Box textAlign={'center'} alignItems="center" color={'white'}>
-          <Text mb={'0.61%'} fontSize={{ base: 12, md: 20 }} mt={3} mr="3%">
+          <Text mb={'0.61%'} fontSize={{ base: 12, md: 20 }} mt={3} mr="3%" fontFamily={'Gilroy-Medium'}>
             Made with 🤍 by
           </Text>
           <Flex alignItems={'center'} justifyContent="center">
@@ -263,11 +276,11 @@ export default function Links() {
               width={{ base: '5%', md: '3%' }}
               mr={'1%'}
             />
-            <Text fontSize={{ base: 12, md: 22 }}>
+            <Text fontSize={{ base: 12, md: 22 }} fontFamily={'Gilroy-Medium'}>
               Google Developer Student Clubs
             </Text>
           </Flex>
-          <Text mb={'2%'} fontSize={{ base: 10, md: 18 }}>
+          <Text mb={'2%'} fontSize={{ base: 10, md: 18 }} fontFamily={'Gilroy-Medium'}>
             Jaypee Institute of Information Technology - Sec 128
           </Text>
         </Box>

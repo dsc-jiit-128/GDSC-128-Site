@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box } from '@chakra-ui/react';
+import './App.css';
 import { Route } from 'react-router-dom';
 
 
@@ -14,12 +15,16 @@ import Home from './Pages/Home';
 import Teampage from './Pages/Teams';
 import Events from './Pages/Events';
 import Login from './Pages/Login';
+import Fonts from './fonts';
 import Signup from './Pages/Signup';
+import { Theme } from '@chakra-ui/react';
+import { theme } from './theme'
 
 function App() {
   return (
-    <ChakraProvider>
-      <>
+    <ChakraProvider theme={theme}>
+      <Fonts/>
+      
       <Route path="/" exact component={Home} />
       <Route path="/teams" exact component={Teampage} />
       <Route path="/events" exact component={Events} />
@@ -28,7 +33,7 @@ function App() {
 
 
        
-      </>
+      
     </ChakraProvider>
   );
 }

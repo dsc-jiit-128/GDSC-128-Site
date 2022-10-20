@@ -7,10 +7,14 @@ import {
   Button,
   fontFamily,
   Divider,
+  
 } from '@chakra-ui/react';
+import Fonts from '../fonts';
 export default function BuildTogether() {
   return (
     <>
+  <Fonts></Fonts>  
+  
       <Box
         bgImage="url('/image 3.png')"
         bgPosition="center"
@@ -21,6 +25,7 @@ export default function BuildTogether() {
         position={'relative'}
         // display={{ md: 'flex' }}
       >
+   
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={0}>
           <Box>
             <Box textAlign={'center'}>
@@ -74,7 +79,7 @@ export default function BuildTogether() {
                 width={{ base: '200px', md: '24.2vw' }}
                 height={{ base: '50px', md: '5.85vw' }}
               >
-                <Text color="white" fontSize={{ base: '14px', md: '1.7vw' }}>
+                <Text color="white" fontFamily={'Gilroy'} fontSize={{ base: '14px', md: '1.7vw' }} >
                   Register for BITBOX 2.0
                 </Text>
               </Button>
@@ -129,7 +134,7 @@ export default function BuildTogether() {
               // pb={10}
               // pr={10}
               color="white"
-              fontFamily={'Gilroy-bold'}
+              fontFamily={'Gilroy-Medium'}
               pl={{ base: '6%' }}
               pr={{ base: '6%' }}
               // width={{ base: '85%', md: '65%' }}

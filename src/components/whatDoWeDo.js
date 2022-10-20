@@ -37,6 +37,7 @@ export default function WhatDoWeDo() {
                 fontSize={{ base: '3vw', md: '1.5vw' }}
                 width={{base: '90%', md: '65%'}}
                 mt={'5vw'}
+                fontFamily={'Gilroy-Medium'}
               >
                 With our team's moto being "Giving Direction to Greatness", we
                 help the students to climb mountains on their own, as high as
@@ -58,6 +59,7 @@ export default function WhatDoWeDo() {
                     align={'left'}
                     color="white"
                     fontSize={{ base: '14px', md: '1.6vw' }}
+                    fontFamily={'Gilroy-Bold'}
                   >
                     Register as a student
                   </Text>

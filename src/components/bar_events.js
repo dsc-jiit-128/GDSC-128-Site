@@ -18,7 +18,7 @@ import StudyJams from './EventCards/StudyJams';
 export default function Eventsbar() {
   return (
     <>
-      <Flex justify={'center'} minH={'100vh'}>
+      <Flex justify={'center'} minH={'100vh'} fontFamily={'Gilroy-Medium'}>
         <Box
           alignContent={'center'}
           alignItems={'center'}
@@ -29,36 +29,42 @@ export default function Eventsbar() {
           paddingRight={10}
           borderRadius={15}
           display="block"
+          fontFamily={'Gilroy-Medium'}
         >
           <Tabs isFitted variant="soft-rounded" size="sm">
             <TabList>
               <Tab
                 _selected={{ color: 'white', bg: '#FF0F0F' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
               >
                 HACKATHONS
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: '#FBBC04' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
               >
                 SESSIONS
               </Tab>
               <Tab
                 _selected={{ color: 'black', bg: 'white' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
               >
                 ALL
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: '#4285F4' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
               >
-                STUDYJAMS
+                STUDY-JAMS
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: '#0F9D58' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
               >
                 MEETUPS
               </Tab>

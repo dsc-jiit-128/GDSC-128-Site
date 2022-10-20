@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Flex, Button, Stack, Image, Text, Link } from '@chakra-ui/react';
+import { StyleConfig } from '@chakra-ui/react';
+
 export default function Nav() {
   return (
     <>
@@ -16,6 +18,9 @@ export default function Nav() {
                   color="white"
                   pl={0}
                   pt = {'1.8vw'}
+                  style={{ textDecoration: 'none' }}
+                  fontFamily={'Gilroy-Bold'}
+                  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}
                 >
                   GDSC JIIT 128
                 </Text>
@@ -35,8 +40,9 @@ export default function Nav() {
                 fontSize={'1.6vw'}
                 fontWeight={'normal'}
                 p={{ base: '1px', md: '20px' }}
+                style={{ textDecoration: 'none' }}
               >
-                <Link href="/events" style={{ textDecoration: 'none' }}>
+                <Link href="/events" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
                   Events
                 </Link>
               </Button>
@@ -48,8 +54,11 @@ export default function Nav() {
                 fontWeight={'normal'}
                 // p={'3vw'}
                 p={{ base: '1px', md: '20px' }}
+                style={{ textDecoration: 'none' }}
+                _hover={{color: 'grey.200' }}
+              
               >
-                <Link href="/teams" style={{ textDecoration: 'none' }}>
+                <Link href="/teams" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
                   Team
                 </Link>
               </Button>
@@ -61,8 +70,9 @@ export default function Nav() {
                 fontWeight={'normal'}
                 // p={'2.55vw'}
                 p={{ base: '1px', md: '20px' }}
+                style={{ textDecoration: 'none' }}
               >
-                <Link href="/login" style={{ textDecoration: 'none' }}>
+                <Link href="/login"  fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
                   Login
                 </Link>
               </Button>

@@ -27,6 +27,7 @@ function Hackathons() {
             color="white"
             query="HACKATHONS"
             styles={{ color: 'white', bg: '#FF0F0F' }}
+            
           >
             HACKATHONS
           </Highlight>
