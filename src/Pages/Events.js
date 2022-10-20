@@ -9,7 +9,7 @@ function Events() {
   return (
     <ChakraProvider>
       <>
-        <Box bgColor={'#111111'} height={'100%'} m={0}>
+        <Box bgColor={'#111111'} height={'100%'} m={0} margin={0} overflowX='hidden'>
           <Nav />
           <Box>
             <Head />
