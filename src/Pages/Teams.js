@@ -99,7 +99,7 @@ const TeamNav = (props) => {
       
       posArray.map(it => (
           <TeamNavMember
-            image={it.image}
+            image={it.image1}
             name={it.name}
             onClick={() => handleClicked(it)}
             key={it.key}
@@ -116,27 +116,32 @@ function Teampage() {
   
   const [posArray, setPosArray] = useState([
     {
-      image: '/13.png',
+      image: '/sanat.png',
+      image1: '/sanat_white.png',
       name: 'UI/UX Designer',
       key: '1',
     },
     {
-      image: '/14.png',
-      name: 'Frontend Developer',
+      image: '/chaaya.png',
+      image1: '/chaaya_white.png',
+      name: 'Management',
       key: '2',
     },
     {
-      image: '/15.png',
+      image: '/parth_garg.png',
+      image1: '/parth_garg_white.png',
       name: 'Backend Developer',
       key: '3',
     },
     {
-      image: '/16.png',
+      image: '/pariyashi.png',
+      image1: '/pariyashi_white.png',
       name: 'ML Engineer',
       key: '4',
     },
     {
-      image: '/17.png',
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
       name: 'Tech Writer',
       key: '5',
     }
@@ -175,7 +180,7 @@ function Teampage() {
               >
                 {posArray[selectedPos].name}
               </Text>
-              <Image
+           <HStack>  <Image
                 src={posArray[selectedPos].image}
                 position="relative"
                 ml={4}
@@ -184,6 +189,22 @@ function Teampage() {
                 size={'auto'}
                 mt={7}
               />
+              <Box pl={20} ml={10} pt={-5} mt={-2}  position='relative' >
+            <Text
+               
+                color={'white'}
+                ml={4}
+                className="fade-in"
+                textAlign={'center'}
+                key={posArray[selectedPos].key}
+              >
+                {posArray[selectedPos].name}
+              </Text>
+              </Box>
+             
+
+
+             </HStack>
               
 
             </Box>
@@ -193,7 +214,9 @@ function Teampage() {
             <VStack>
               <Box>
                 <Box textAlign={'center'} alignItems="center" color={'white'}>
-                  <Text mb={'0.61%'} fontSize={30} mt={5}>
+                  <Text mb={'0.61%'} fontSize={30} mt={5}
+                  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}
+                                    >
                     Core Team
                   </Text>
 

@@ -42,7 +42,7 @@ export default function Nav() {
                 p={{ base: '1px', md: '20px' }}
                 style={{ textDecoration: 'none' }}
               >
-                <Link href="/events" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
+                <Link href="/events" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }} >
                   Events
                 </Link>
               </Button>
@@ -58,7 +58,7 @@ export default function Nav() {
                 _hover={{color: 'grey.200' }}
               
               >
-                <Link href="/teams" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
+                <Link href="/teams" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}>
                   Team
                 </Link>
               </Button>
@@ -72,7 +72,7 @@ export default function Nav() {
                 p={{ base: '1px', md: '20px' }}
                 style={{ textDecoration: 'none' }}
               >
-                <Link href="/login"  fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}>
+                <Link href="/login"  fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }} >
                   Login
                 </Link>
               </Button>

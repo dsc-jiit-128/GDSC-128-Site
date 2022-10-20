@@ -11,7 +11,6 @@ function Login() {
       <>
         <Box
           bgColor={'#111111'}
-          
           w={'100%'}
           minWidth={'100%'}
           m={'0'}
