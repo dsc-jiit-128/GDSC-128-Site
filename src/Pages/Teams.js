@@ -3,7 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
 import { Stack, VStack } from '@chakra-ui/react';
-import { GridItem, Grid, Image, Text, Flex, Link } from '@chakra-ui/react';
+import { GridItem,SimpleGrid, Grid, Image, Text, Flex, Link } from '@chakra-ui/react';
 import Nav from '../components/navbar';
 import Head from '../components/heading';
 import BuildTogether from '../components/ buildTogether';
@@ -13,6 +13,15 @@ import Teams from '../components/teambox';
 import Teamnav from '../components/footerofteams';
 import Bottomteam from '../components/bottomnav_teamspage';
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import {
+  FaFacebook,
+  FaDiscord,
+  FaTwitter,
+  FaGithub,
+  FaYoutube,
+  FaInstagram,
+  FaLinkedin,
+} from 'react-icons/fa';
 //import css
 import '../App.css';
 import '../css/Animation.css'
@@ -119,20 +128,38 @@ function Teampage() {
     {
       image: '/sanat.png',
       image1: '/sanat_white.png',
+      insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
+      linkedin:'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
+      instahandle: '@sanatbhatia',
+      Linkedinhandle: 'Sanat Bhatia',
+      id: 'Sanat Bhatia',
       name: 'UI/UX Designer',
       content: 'A UI/UX designer of GDSC JIIT-128, Sanat is responsible for designing websites,creating videos and creating posters for various events organized by GDSC JIIT-128.',
       key: '1',
+     
     },
     {
       image: '/chaaya.png',
       image1: '/chaaya_white.png',
+      id: 'Chaaya Agarwal',
+      insta:'https://www.instagram.com/chaaya._06/',
+      instahandle: '@chaaya._06',
+      Linkedinhandle: 'Chaaya Agarwal',
+      linkedin:'https://www.linkedin.com/in/chaaya-agarwal-992812246/',
       content: 'One of the content writers of GDSC JIIT-128, she is brightly creative and imaginative and knows how to present the community to others with her talent of content writing.',
       name: 'Management',
       key: '2',
     },
     {
       image: '/parth_garg.png',
+      insta:'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
+      instahandle:'@_parthahuja12_',
+      linkedin:'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
+      Linkedinhandle:'Parth Ahuja',
+      github:'https://github.com/ravenclaw03',
+      githubhandle:'ravenclaw03',
       image1: '/parth_garg_white.png',
+      id: 'Parth Garg',
       content:'Social media handler of GDSC JIIT- 128, Parth is responsible for creating awareness through our Social Media Platform to provide information about the community and contact with volunteers who show interest in the society.',
       name: 'Social Media',
       key: '3',
@@ -140,6 +167,13 @@ function Teampage() {
     {
       image: '/pariyashi.png',
       image1: '/pariyashi_white.png',
+      insta:'https://instagram.com/_justhappy.uknow?igshid=YmMyMTA2M2Y',
+      instahandle:'@_justhappy.uknow',
+      linkedin:'https://www.linkedin.com/in/pariyashi-sahu-b91614243/',
+      Linkedinhandle:'Pariyashi Sahu',
+      github:'https://github.com/justhappyuknow',
+      githubhandle:'justhappyuknow',
+      id: 'Pariyashi Sahu',
       content: ' The content writer of GDSC JIIT- 128, creatively presenting the community ideas and events, the bridge to communication that is content is her responsibility.',
       name: 'Content Writer',
       key: '4',
@@ -147,6 +181,11 @@ function Teampage() {
     {
       image: '/aanya.png',
       image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
       content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
       name: 'Tech Writer',
       key: '5',
@@ -175,42 +214,157 @@ function Teampage() {
               bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
               
             >
-              <Text
-                fontSize={'2xl'}
-                fontWeight={'bold'}
-                color={'white'}
-                ml={4}
-                className="fade-in"
-                textAlign={'center'}
-                key={posArray[selectedPos].key}
-              >
-                {posArray[selectedPos].name}
-              </Text>
-           <HStack>  <Image
+              
+              <Grid
+  templateAreas={`
+                  "nav main"
+                  "nav footer"
+                  "nav social"
+                `}
+  gridTemplateRows={'0.5fr 0.7fr 1fr' }
+  gridTemplateColumns={'0.5fr  1fr'}>
+            
+           
+            
+            <GridItem pl='2'  area={'nav'}>
+            <Image
                 src={posArray[selectedPos].image}
                 position="relative"
                 ml={4}
                 mb={3}
-                width={'25%'}
+                width={'80%'}
                 size={'auto'}
-                mt={7}
+                mt={12}
               />
-              <Box pl={20} ml={10} pt={-5} mt={-2}  position='relative' >
+            </GridItem>
+            <GridItem pl='2'  area={'main'}>
             <Text
-               
+           
+            mt={2}
+                
                 color={'white'}
                 ml={4}
                 className="fade-in"
-                textAlign={'center'}
+
+                textAlign={'left'}
                 key={posArray[selectedPos].key}
+                fontFamily={'Gilroy-SemiBold'}
+            
+                fontSize={'4xl'}
+                display='inline'
+
+              //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
               >
-                {posArray[selectedPos].name}
+
+
+               Hi,my name is <span className='gradient-text'>{posArray[selectedPos].id}</span>
               </Text>
-              </Box>
+              
+            </GridItem>
+            <GridItem pl='2'  area={'footer'}>
+            <Text
+            mt={2}
+              
+            
+                fontFamily={'Gilroy-Regular'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                
+                
+                color={'white'}
+                ml={4}
+                className="fade-in"
+
+                textAlign={'left'}
+                key={posArray[selectedPos].key}
+
+              >
+                
+
+                {posArray[selectedPos].content}
+              </Text>
+            </GridItem>
+            <GridItem  mt={3}  area={'social'}>
+            <SimpleGrid columns={2} spacingX='20px' spacingY='20px' mt={1} ml={4}>
+            <Box  height='35px'>
+            <Box
+                     
+                      _hover={{ color: '#833AB4' }}
+                      color={'white'}
+                     width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '40px' }}
+                      display='inline'
+                    >
+                   <HStack>  
+                      
+                   <Link href={posArray[selectedPos].insta} display={'inline'} >
+                   <FaInstagram size={'40px'} />                      </Link>
+                   <Link href={posArray[selectedPos].insta} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'2xl'}>
+                        {posArray[selectedPos].instahandle}</Text>
+                      </Link></HStack>
+                    </Box></Box>
+                    <Box  height='35px'>
+                    
+                    
+                    <Box
+                    
+                      _hover={{ color: '#0072b1' }}
+                      color={'white'}
+                     width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '40px' }}
+                      display='inline'
+                    >
+                   <HStack>  
+                      
+                   <Link href={posArray[selectedPos].linkedin} display={'inline'} >
+                   <FaLinkedin size={'40px'} />                      </Link>
+                   <Link href={posArray[selectedPos].linkedin} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'xl'}>
+                        {posArray[selectedPos].Linkedinhandle}</Text>
+                      </Link></HStack>
+                    </Box></Box>
+ 
+
+  <Box  height='35px'>
+                    <Box
+                    
+                      _hover={{ color: 'Black' }}
+                      color={'white'}
+                     width={{ base: '20px', md: '35px' }}
+                      height={{ base: '20px', md: '40px' }}
+                      display='inline'
+                    >
+                   <HStack>  
+                      
+                   <Link href={posArray[selectedPos].github} display={'inline'} >
+                   <FaGithub size={'40px'} />                      </Link>
+                   <Link href={posArray[selectedPos].github} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'xl'}>
+                        {posArray[selectedPos].githubhandle}</Text>
+                      </Link></HStack>
+                    </Box>
+
+
+
+  </Box>
+  <Box  height='35px'>
+
+
+
+
+
+
+  </Box>
+
+</SimpleGrid>
+       
+
+              </GridItem>
+          </Grid>
+             
+          
+              
              
 
 
-             </HStack>
+          
               
 
             </Box>
