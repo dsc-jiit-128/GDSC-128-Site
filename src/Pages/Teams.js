@@ -14,6 +14,7 @@ import Teamnav from '../components/footerofteams';
 import Bottomteam from '../components/bottomnav_teamspage';
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 //import css
+import '../App.css';
 import '../css/Animation.css'
 
 
