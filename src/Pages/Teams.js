@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
@@ -13,6 +13,10 @@ import Teams from '../components/teambox';
 import Teamnav from '../components/footerofteams';
 import Bottomteam from '../components/bottomnav_teamspage';
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai';
+// Import Swiper styles
+import 'swiper/css';
 import {
   FaFacebook,
   FaDiscord,
@@ -70,8 +74,12 @@ const TeamNavMember = (props) => {
 
 
 const TeamNav = (props) => {
+
+  // if elements are more than 5, then show arrows
+
   // available pos must be in odd numbers
-  const posArray = props.posArray;
+  
+  var posArray = props.posArray;
   const selectedPos = props.selectedPos;
   const setSelectedPos = props.setSelectedPos;
   const setPosArray = props.setPosArray;
@@ -115,10 +123,99 @@ const TeamNav = (props) => {
             key={it.key}
             isSelected={posArray.indexOf(it) === selectedPos}
           />
-       
-        
       ))}
     </HStack>
+  );
+}
+
+const CurrentTeamNav = (props) => {
+  const allPosArray = props.posArray
+  const [selectedPosArray, setSelectedPosArray] = useState(0);
+  const [posArray, setPosArray] = useState(
+    // get the first 5 elements
+    allPosArray.slice(selectedPosArray, 5)
+  )
+  useEffect(() => {
+    console.log("posArray", posArray);
+    const key = posArray[selectedPos].key;
+    console.log("key", key);
+    props.parentSetSelectedPos(key-1);
+  }, [posArray])
+  
+  const [selectedPos, setSelectedPos] = useState(Math.ceil(posArray.length-1)/2);
+  
+  return (
+    <HStack>
+        
+        {allPosArray.length > 5 && (
+          <Box
+            
+            w="50px"
+            h="50px"
+            
+            bg={selectedPosArray > 0 ? "black" : "blackAlpha.300"}
+            borderRadius="50%"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            cursor="pointer"
+            onClick={() => {
+              // set the new array
+              //selectedPosArray is the index of the first element in the array
+              // selectedPosArray >= 0 and selectedPosArray < allPosArray.length-5
+              if(selectedPosArray - 5 >= 0) {
+                setSelectedPosArray(selectedPosArray - 5);
+                setPosArray(allPosArray.slice(selectedPosArray - 5, selectedPosArray));
+              }
+              else{
+                setSelectedPosArray(0);
+                setPosArray(allPosArray.slice(0, 5));
+              }
+            }}
+          >
+            <AiOutlineLeft color="white" />
+          </Box>
+        )}
+
+
+        <TeamNav
+        posArray={posArray}
+        selectedPos={selectedPos}
+        setSelectedPos={setSelectedPos}
+        setPosArray={setPosArray}
+      />
+      // right arrow
+      {allPosArray.length > 5 && (
+        <Box
+          w="50px"
+          h="50px"
+          bg={selectedPosArray < allPosArray.length-5 ? "black" : "blackAlpha.300"}
+          borderRadius="50%"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          cursor="pointer"
+          onClick={() => {
+            // set the new array
+            //selectedPosArray is the index of the first element in the array
+            // selectedPosArray >= 0 and selectedPosArray < allPosArray.length-5
+            if(selectedPosArray + 10 < allPosArray.length) {
+              setSelectedPosArray(selectedPosArray + 5);
+              setPosArray(allPosArray.slice(selectedPosArray + 5, selectedPosArray + 10));
+            }
+            else{
+              setSelectedPosArray(allPosArray.length - 5);
+              setPosArray(allPosArray.slice(allPosArray.length - 5, allPosArray.length));
+            }
+            
+          }}
+        >
+          <AiOutlineRight color="white" />
+        </Box>
+      )}
+    
+    </HStack>
+    
   );
 }
 
@@ -178,6 +275,7 @@ function Teampage() {
       name: 'Content Writer',
       key: '4',
     },
+    
     {
       image: '/aanya.png',
       image1: '/aanya_white.png',
@@ -189,19 +287,94 @@ function Teampage() {
       content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
       name: 'Tech Writer',
       key: '5',
+    },
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '6',
+    }
+    ,
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '7',
+    },
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '8',
+    }
+    ,
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '9',
+    },
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '10',
+    }
+    ,
+    {
+      image: '/aanya.png',
+      image1: '/aanya_white.png',
+      id: 'Aanya Garg',
+      insta:'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      instahandle:'@aanyag275',
+      linkedin:'https://www.linkedin.com/in/aanya-garg-695543246/',
+      Linkedinhandle:'Aanya Garg',
+      content:' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
+      name: 'Tech Writer',
+      key: '11',
     }
   ])
   const [selectedPos, setSelectedPos] = useState(Math.ceil(posArray.length-1)/2);
+  
+  
   const [parent] = useAutoAnimate(/* optional config */)
   return (
     <ChakraProvider>
       <>
         <Box bgColor={'#111111'} height={'100%'} m={0}>
           <Nav />
-          <Head />
-          <Flex
           
-          justify={'center'} align={'center'}>
+          <Flex justify={'center'} align={'center'}>
             <Box
               justifySelf={'center'}
               alignContent={'center'}
@@ -212,161 +385,164 @@ function Teampage() {
               p={10}
               borderRadius={15}
               bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-              
             >
-              
               <Grid
-  templateAreas={`
+                templateAreas={`
                   "nav main"
                   "nav footer"
                   "nav social"
                 `}
-  gridTemplateRows={'0.5fr 0.7fr 1fr' }
-  gridTemplateColumns={'0.5fr  1fr'}>
-            
-           
-            
-            <GridItem pl='2'  area={'nav'}>
-            <Image
-                src={posArray[selectedPos].image}
-                position="relative"
-                ml={4}
-                mb={3}
-                width={'80%'}
-                size={'auto'}
-                mt={12}
-              />
-            </GridItem>
-            <GridItem pl='2'  area={'main'}>
-            <Text
-           
-            mt={2}
-                
-                color={'white'}
-                ml={4}
-                className="fade-in"
-
-                textAlign={'left'}
-                key={posArray[selectedPos].key}
-                fontFamily={'Gilroy-SemiBold'}
-            
-                fontSize={'4xl'}
-                display='inline'
-
-              //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
+                gridTemplateRows={'0.5fr 0.7fr 1fr'}
+                gridTemplateColumns={'0.5fr  1fr'}
               >
+                <GridItem pl="2" area={'nav'}>
+                  <Image
+                    src={posArray[selectedPos].image}
+                    position="relative"
+                    ml={4}
+                    mb={3}
+                    width={'80%'}
+                    size={'auto'}
+                    mt={12}
+                  />
+                </GridItem>
+                <GridItem pl="2" area={'main'}>
+                  <Text
+                    mt={2}
+                    color={'white'}
+                    ml={4}
+                    className="fade-in"
+                    textAlign={'left'}
+                    key={posArray[selectedPos].key}
+                    fontFamily={'Gilroy-SemiBold'}
+                    fontSize={'4xl'}
+                    display="inline"
 
-
-               Hi,my name is <span className='gradient-text'>{posArray[selectedPos].id}</span>
-              </Text>
-              
-            </GridItem>
-            <GridItem pl='2'  area={'footer'}>
-            <Text
-            mt={2}
-              
-            
-                fontFamily={'Gilroy-Regular'}
-                fontSize={{ base: 'sm', md: 'md' }}
-                
-                
-                color={'white'}
-                ml={4}
-                className="fade-in"
-
-                textAlign={'left'}
-                key={posArray[selectedPos].key}
-
-              >
-                
-
-                {posArray[selectedPos].content}
-              </Text>
-            </GridItem>
-            <GridItem  mt={3}  area={'social'}>
-            <SimpleGrid columns={2} spacingX='20px' spacingY='20px' mt={1} ml={4}>
-            <Box  height='35px'>
-            <Box
-                     
-                      _hover={{ color: '#833AB4' }}
-                      color={'white'}
-                     width={{ base: '20px', md: '35px' }}
-                      height={{ base: '20px', md: '40px' }}
-                      display='inline'
-                    >
-                   <HStack>  
-                      
-                   <Link href={posArray[selectedPos].insta} display={'inline'} >
-                   <FaInstagram size={'40px'} />                      </Link>
-                   <Link href={posArray[selectedPos].insta} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'2xl'}>
-                        {posArray[selectedPos].instahandle}</Text>
-                      </Link></HStack>
-                    </Box></Box>
-                    <Box  height='35px'>
-                    
-                    
-                    <Box
-                    
-                      _hover={{ color: '#0072b1' }}
-                      color={'white'}
-                     width={{ base: '20px', md: '35px' }}
-                      height={{ base: '20px', md: '40px' }}
-                      display='inline'
-                    >
-                   <HStack>  
-                      
-                   <Link href={posArray[selectedPos].linkedin} display={'inline'} >
-                   <FaLinkedin size={'40px'} />                      </Link>
-                   <Link href={posArray[selectedPos].linkedin} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'xl'}>
-                        {posArray[selectedPos].Linkedinhandle}</Text>
-                      </Link></HStack>
-                    </Box></Box>
- 
-
-  <Box  height='35px'>
-                    <Box
-                    
-                      _hover={{ color: 'Black' }}
-                      color={'white'}
-                     width={{ base: '20px', md: '35px' }}
-                      height={{ base: '20px', md: '40px' }}
-                      display='inline'
-                    >
-                   <HStack>  
-                      
-                   <Link href={posArray[selectedPos].github} display={'inline'} >
-                   <FaGithub size={'40px'} />                      </Link>
-                   <Link href={posArray[selectedPos].github} display={'inline'} ><Text display={'inline'} fontFamily={'Gilroy-Medium'} fontSize={'xl'}>
-                        {posArray[selectedPos].githubhandle}</Text>
-                      </Link></HStack>
+                    //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
+                  >
+                    Hi,my name is{' '}
+                    <span className="gradient-text">
+                      {posArray[selectedPos].id}
+                    </span>
+                  </Text>
+                </GridItem>
+                <GridItem pl="2" area={'footer'}>
+                  <Text
+                    mt={2}
+                    fontFamily={'Gilroy-Regular'}
+                    fontSize={{ base: 'sm', md: 'md' }}
+                    color={'white'}
+                    ml={4}
+                    className="fade-in"
+                    textAlign={'left'}
+                    key={posArray[selectedPos].key}
+                  >
+                    {posArray[selectedPos].content}
+                  </Text>
+                </GridItem>
+                <GridItem mt={3} area={'social'}>
+                  <SimpleGrid
+                    columns={2}
+                    spacingX="20px"
+                    spacingY="20px"
+                    mt={1}
+                    ml={4}
+                  >
+                    <Box height="35px">
+                      <Box
+                        _hover={{ color: '#833AB4' }}
+                        color={'white'}
+                        width={{ base: '20px', md: '35px' }}
+                        height={{ base: '20px', md: '40px' }}
+                        display="inline"
+                      >
+                        <HStack>
+                          <Link
+                            href={posArray[selectedPos].insta}
+                            display={'inline'}
+                          >
+                            <FaInstagram size={'40px'} />{' '}
+                          </Link>
+                          <Link
+                            href={posArray[selectedPos].insta}
+                            display={'inline'}
+                          >
+                            <Text
+                              display={'inline'}
+                              fontFamily={'Gilroy-Medium'}
+                              fontSize={'2xl'}
+                            >
+                              {posArray[selectedPos].instahandle}
+                            </Text>
+                          </Link>
+                        </HStack>
+                      </Box>
+                    </Box>
+                    <Box height="35px">
+                      <Box
+                        _hover={{ color: '#0072b1' }}
+                        color={'white'}
+                        width={{ base: '20px', md: '35px' }}
+                        height={{ base: '20px', md: '40px' }}
+                        display="inline"
+                      >
+                        <HStack>
+                          <Link
+                            href={posArray[selectedPos].linkedin}
+                            display={'inline'}
+                          >
+                            <FaLinkedin size={'40px'} />{' '}
+                          </Link>
+                          <Link
+                            href={posArray[selectedPos].linkedin}
+                            display={'inline'}
+                          >
+                            <Text
+                              display={'inline'}
+                              fontFamily={'Gilroy-Medium'}
+                              fontSize={'xl'}
+                            >
+                              {posArray[selectedPos].Linkedinhandle}
+                            </Text>
+                          </Link>
+                        </HStack>
+                      </Box>
                     </Box>
 
-
-
-  </Box>
-  <Box  height='35px'>
-
-
-
-
-
-
-  </Box>
-
-</SimpleGrid>
-       
-
-              </GridItem>
-          </Grid>
-             
-          
-              
-             
-
-
-          
-              
-
+                    <Box height="35px">
+                      <Box
+                        _hover={{ color: 'Black' }}
+                        color={'white'}
+                        width={{ base: '20px', md: '35px' }}
+                        height={{ base: '20px', md: '40px' }}
+                        display="inline"
+                      >
+                        <HStack>
+                          <Link
+                            href={posArray[selectedPos].github}
+                            display={'inline'}
+                          >
+                            <FaGithub size={'40px'} />{' '}
+                          </Link>
+                          <Link
+                            href={posArray[selectedPos].github}
+                            display={'inline'}
+                          >
+                            <Text
+                              display={'inline'}
+                              fontFamily={'Gilroy-Medium'}
+                              fontSize={'xl'}
+                            >
+                              {posArray[selectedPos].githubhandle}
+                            </Text>
+                          </Link>
+                        </HStack>
+                      </Box>
+                    </Box>
+                    <Box height="35px"></Box>
+                  </SimpleGrid>
+                </GridItem>
+              </Grid>
             </Box>
           </Flex>
 
@@ -374,9 +550,16 @@ function Teampage() {
             <VStack>
               <Box>
                 <Box textAlign={'center'} alignItems="center" color={'white'}>
-                  <Text mb={'0.61%'} fontSize={30} mt={5}
-                  _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}
-                                    >
+                  <Text
+                    mb={'0.61%'}
+                    fontSize={30}
+                    mt={5}
+                    _hover={{
+                      bgGradient:
+                        'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
+                      bgClip: 'text',
+                    }}
+                  >
                     Core Team
                   </Text>
 
@@ -394,17 +577,14 @@ function Teampage() {
                 alignContent="center"
                 position={'relative'}
                 w="100%"
-                
                 ml={50}
               >
-               
-                <TeamNav
+                <CurrentTeamNav
                   posArray={posArray}
-                  selectedPos={selectedPos}
-                  setSelectedPos={setSelectedPos}
-                  setPosArray={setPosArray}
+                  parentSetSelectedPos={setSelectedPos}
                 />
 
+                
               </Box>
             </VStack>
           </Flex>
