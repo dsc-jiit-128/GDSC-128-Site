@@ -43,10 +43,17 @@ const TeamNavMember = props => {
   const [hover, setHover] = useState(false);
   return (
     <Box
-      pos="relative"
+      pos="inherit"
       onClick={() => props.onClick()}
-      w={props.isSelected ? '120px' : '100px'}
-      h={props.isSelected ? '120px' : '100px'}
+      h={{
+        base: props.isSelected ? '60px' : '40px',
+        md: props.isSelected ? '120px' : '100px',
+      }}
+      w={{
+        base: props.isSelected ? '60px' : '40px',
+        md: props.isSelected ? '120px' : '100px',
+      }}
+      // border="4px green solid"
       // borderRadius="50%"
       overflow="hidden"
       //onHover
@@ -55,18 +62,18 @@ const TeamNavMember = props => {
     >
       <Image
         src={props.image}
-        width={{ base: '50%', md: '100%' }}
-        height={{ base: '50%', md: '100%' }}
+        width={{ base: '100%', md: '100%' }}
+        height={{ base: '100%', md: '100%' }}
         objectFit="cover"
-        // border={'4px solid green'}
+        // border={'4px solid yellow'}
       />
       {hover && (
         <Box
           pos="absolute"
-          top={{base: 0, md:0}}
-          left={{base: 0, md: 0}}
-          w={{ base: '50%', md: '100%' }}
-          h={{ base: '50%', md: '100%' }}
+          top={{ base: 0, md: 0 }}
+          left={{ base: 0, md: 0 }}
+          w={{ base: '100%', md: '100%' }}
+          h={{ base: '100%', md: '100%' }}
           bg="rgba(0,0,0,0.5)"
           display="flex"
           borderRadius={{ base: '100', md: 100 }}
@@ -76,7 +83,7 @@ const TeamNavMember = props => {
             color="white"
             m="auto"
             p={2}
-            fontSize={{ base: '1.5vw', md: '1.2rem' }}
+            fontSize={{ base: '1.5vw', md: '1.2vw' }}
             textAlign="center"
           >
             {props.name}
@@ -118,7 +125,7 @@ const TeamNav = props => {
 
   return (
     <HStack
-      spacing={{ base: '-30px', md: '20px' }}
+      spacing={{ base: '10px', md: '20px' }}
       p={0}
       ref={parent}
       minH="20px"
@@ -394,7 +401,7 @@ function Teampage() {
   return (
     <ChakraProvider>
       <>
-        <Box bgColor={'#111111'} minH="100%" border="4px green solid">
+        <Box bgColor={'#111111'} minH="100%">
           <Box bgColor={'#111111'} minH="100vh" m={0}>
             <Nav />
             <Head />
