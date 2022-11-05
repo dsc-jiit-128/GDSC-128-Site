@@ -47,28 +47,36 @@ const TeamNavMember = props => {
       onClick={() => props.onClick()}
       w={props.isSelected ? '120px' : '100px'}
       h={props.isSelected ? '120px' : '100px'}
-      borderRadius="50%"
+      // borderRadius="50%"
       overflow="hidden"
       //onHover
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <Image src={props.image} w="100%" h="100%" objectFit="cover" />
+      <Image
+        src={props.image}
+        width={{ base: '50%', md: '100%' }}
+        height={{ base: '50%', md: '100%' }}
+        objectFit="cover"
+        // border={'4px solid green'}
+      />
       {hover && (
         <Box
           pos="absolute"
-          top="0"
-          left="0"
-          w="100%"
-          h="100%"
+          top={{base: 0, md:0}}
+          left={{base: 0, md: 0}}
+          w={{ base: '50%', md: '100%' }}
+          h={{ base: '50%', md: '100%' }}
           bg="rgba(0,0,0,0.5)"
           display="flex"
+          borderRadius={{ base: '100', md: 100 }}
+          // border={'4px solid yellow'}
         >
           <Text
             color="white"
             m="auto"
             p={2}
-            fontSize="1.2rem"
+            fontSize={{ base: '1.5vw', md: '1.2rem' }}
             textAlign="center"
           >
             {props.name}
@@ -109,7 +117,14 @@ const TeamNav = props => {
   const [parent] = useAutoAnimate(/* optional config */);
 
   return (
-    <HStack spacing={5} p={5} ref={parent} minH="200px">
+    <HStack
+      spacing={{ base: '-30px', md: '20px' }}
+      p={0}
+      ref={parent}
+      minH="20px"
+      // border={'4px red solid'}
+      display="flex"
+    >
       {posArray.map(it => (
         <TeamNavMember
           image={it.image1}
@@ -145,14 +160,16 @@ const CurrentTeamNav = props => {
     <HStack>
       {allPosArray.length > 5 && (
         <Box
-          w="50px"
-          h="50px"
+          w={{ base: '20px', md: '40px' }}
+          h={{ base: '20px', md: '40px' }}
           bg={selectedPosArray > 0 ? 'black' : 'blackAlpha.300'}
           borderRadius="50%"
           display="flex"
           alignItems="center"
           justifyContent="center"
           cursor="pointer"
+          // border={'4px blue solid'}
+          ml={-10}
           onClick={() => {
             // set the new array
             //selectedPosArray is the index of the first element in the array
@@ -177,21 +194,23 @@ const CurrentTeamNav = props => {
         setSelectedPos={setSelectedPos}
         setPosArray={setPosArray}
       />
-      // right arrow
+
       {allPosArray.length > 5 && (
         <Box
-          w="50px"
-          h="50px"
+          w={{ base: '20px', md: '40px' }}
+          h={{ base: '20px', md: '40px' }}
           bg={
             selectedPosArray < allPosArray.length - 5
               ? 'black'
               : 'blackAlpha.300'
           }
+          // border="4px green solid"
           borderRadius="50%"
           display="flex"
           alignItems="center"
           justifyContent="center"
           cursor="pointer"
+          ml={120}
           onClick={() => {
             // set the new array
             //selectedPosArray is the index of the first element in the array
@@ -375,227 +394,240 @@ function Teampage() {
   return (
     <ChakraProvider>
       <>
-        <Box bgColor={'#111111'} height={'100%'} m={0}>
-          <Nav />
-          <Head />
-          <Flex justify={'center'} align={'center'}>
-            <Box
-              justifySelf={'center'}
-              alignContent={'center'}
-              bgPosition={'center'}
-              alignItems={'center'}
-              width={{ base: '90%', md: 950 }}
-              height={{ base: '40vh', md: 400 }}
-              p={{ base: 4, md: 10 }}
-              mt={{ base: '-5', md: '5' }}
-              borderRadius={15}
-              bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-            >
-              <Grid
-                templateAreas={`
+        <Box bgColor={'#111111'} minH="100%" border="4px green solid">
+          <Box bgColor={'#111111'} minH="100vh" m={0}>
+            <Nav />
+            <Head />
+            <Flex justify={'center'} align={'center'}>
+              <Box
+                justifySelf={'center'}
+                alignContent={'center'}
+                bgPosition={'center'}
+                alignItems={'center'}
+                width={{ base: '90%', md: 950 }}
+                height={{ base: '350', md: 400 }}
+                p={{ base: 4, md: 10 }}
+                mt={{ base: '-5', md: '5' }}
+                borderRadius={15}
+                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+              >
+                <Grid
+                  templateAreas={`
                   "nav main"
                   "nav footer"
                   "nav social"
                 `}
-                gridTemplateRows={'0.5fr 0.7fr 1fr'}
-                gridTemplateColumns={'0.5fr  1fr'}
-              >
-                <GridItem pl="2" area={'nav'}>
-                  <Image
-                    src={posArray[selectedPos].image}
-                    position="relative"
-                    ml={{ base: -4, md: 4 }}
-                    mb={3}
-                    width={{ base: '120%', md: '80%' }}
-                    size={'auto'}
-                    mt={{ base: 20, md: 12 }}
-                  />
-                </GridItem>
-                <GridItem pl={{ base: 2, md: '2' }} area={'main'}>
-                  <Text
-                    mt={2}
-                    color={'white'}
-                    ml={{ base: 0, md: 4 }}
-                    className="fade-in"
-                    textAlign={'left'}
-                    key={posArray[selectedPos].key}
-                    fontFamily={'Gilroy-SemiBold'}
-                    fontSize={{ base: '5vw', md: '4xl' }}
-                    display="inline"
-
-                    //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
-                  >
-                    Hi, my name is{' '}
-                    <span className="gradient-text">
-                      {posArray[selectedPos].id}
-                    </span>
-                  </Text>
-                </GridItem>
-                <GridItem pl="2" area={'footer'}>
-                  <Text
-                    mt={2}
-                    fontFamily={'Gilroy-Regular'}
-                    fontSize={{ base: '2.5vw', md: 'md' }}
-                    color={'white'}
-                    ml={{ base: 0, md: 4 }}
-                    className="fade-in"
-                    textAlign={'left'}
-                    key={posArray[selectedPos].key}
-                    // mb='-5'
-
-                    // mb = '20px'
-                  >
-                    {posArray[selectedPos].content}
-                  </Text>
-                </GridItem>
-                <GridItem area={'social'}>
-                  <SimpleGrid
-                    columns={{ base: 1, md: 2 }}
-                    spacingX="20px"
-                    spacingY={{ base: '0px', md: '30px' }}
-                    ml={{ base: 2, md: 4 }}
-                    mt={{ base: -1, md: 2 }}
-                  >
-                    <Box height="35px">
-                      <Box
-                        _hover={{ color: '#833AB4' }}
-                        color={'white'}
-                        width={{ base: '20px', md: '35px' }}
-                        height={{ base: '20px', md: '40px' }}
-                        display="inline"
-                      >
-                        <HStack>
-                          <Link
-                            href={posArray[selectedPos].insta}
-                            display={'inline'}
-                          >
-                            <FaInstagram size={'4vw'} />{' '}
-                          </Link>
-                          <Link
-                            href={posArray[selectedPos].insta}
-                            display={'inline'}
-                          >
-                            <Text
-                              display={'inline'}
-                              fontFamily={'Gilroy-Medium'}
-                              fontSize={{ base: '3vw', md: '2xl' }}
-                            >
-                              {posArray[selectedPos].instahandle}
-                            </Text>
-                          </Link>
-                        </HStack>
-                      </Box>
-                    </Box>
-                    <Box height="35px">
-                      <Box
-                        _hover={{ color: '#0072b1' }}
-                        color={'white'}
-                        width={{ base: '20px', md: '35px' }}
-                        height={{ base: '20px', md: '40px' }}
-                        display="inline"
-                      >
-                        <HStack>
-                          <Link
-                            href={posArray[selectedPos].linkedin}
-                            display={'inline'}
-                          >
-                            <FaLinkedin size={'4vw'} />{' '}
-                          </Link>
-                          <Link
-                            href={posArray[selectedPos].linkedin}
-                            display={'inline'}
-                          >
-                            <Text
-                              display={'inline'}
-                              fontFamily={'Gilroy-Medium'}
-                              fontSize={{ base: '3vw', md: '2xl' }}
-                            >
-                              {posArray[selectedPos].Linkedinhandle}
-                            </Text>
-                          </Link>
-                        </HStack>
-                      </Box>
-                    </Box>
-
-                    <Box height="35px">
-                      <Box
-                        _hover={{ color: 'Black' }}
-                        color={'white'}
-                        width={{ base: '20px', md: '35px' }}
-                        height={{ base: '20px', md: '40px' }}
-                        display="inline"
-                      >
-                        <HStack>
-                          <Link
-                            href={posArray[selectedPos].github}
-                            display={'inline'}
-                          >
-                            <FaGithub size={'4vw'} />{' '}
-                          </Link>
-                          <Link
-                            href={posArray[selectedPos].github}
-                            display={'inline'}
-                          >
-                            <Text
-                              display={'inline'}
-                              fontFamily={'Gilroy-Medium'}
-                              fontSize={{ base: '3vw', md: '2xl' }}
-                            >
-                              {posArray[selectedPos].githubhandle}
-                            </Text>
-                          </Link>
-                        </HStack>
-                      </Box>
-                    </Box>
-                    <Box height="35px"></Box>
-                  </SimpleGrid>
-                </GridItem>
-              </Grid>
-            </Box>
-          </Flex>
-
-          <Flex align={'center'} justify="center">
-            <VStack>
-              <Box>
-                <Box textAlign={'center'} alignItems="center" color={'white'}>
-                  <Text
-                    mb={'0.61%'}
-                    fontSize={{ base: '4vw', md: 30 }}
-                    mt={5}
-                    _hover={{
-                      bgGradient:
-                        'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
-                      bgClip: 'text',
-                    }}
-                  >
-                    Core Team
-                  </Text>
-
-                  <Image
-                    src="/Line 3.png"
-                    ml={'auto'}
-                    mr={'auto'}
-                    align="center"
-                    width={{ base: '50%', md: '80%' }}
-                  />
-                </Box>
-              </Box>
-              <Flex maxW={'100vw'}>
-                <Box
-                  mt={4}
-                  alignContent="center"
-                  position={'relative'}
-                  w="100%"
-                  ml={50}
+                  gridTemplateRows={{ md: '0.5fr 0.7fr 1fr' }}
+                  gridTemplateColumns={{ md: '0.5fr  1fr' }}
                 >
-                  <CurrentTeamNav
-                    posArray={posArray}
-                    parentSetSelectedPos={setSelectedPos}
-                  />
+                  <GridItem pl="2" area={'nav'}>
+                    <Image
+                      src={posArray[selectedPos].image}
+                      position="relative"
+                      ml={{ base: -4, md: 4 }}
+                      mb={3}
+                      width={{ base: '100%', md: '80%' }}
+                      size={'auto'}
+                      mt={{ base: 20, md: 12 }}
+                    />
+                  </GridItem>
+                  <GridItem pl={{ base: 2, md: '2' }} area={'main'}>
+                    <Text
+                      mt={2}
+                      color={'white'}
+                      ml={{ base: 0, md: 4 }}
+                      className="fade-in"
+                      textAlign={'left'}
+                      key={posArray[selectedPos].key}
+                      fontFamily={'Gilroy-SemiBold'}
+                      fontSize={{ base: '5vw', md: '4xl' }}
+                      display="inline"
+                      mb={2}
+
+                      //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
+                    >
+                      Hi, my name is{' '}
+                      <span className="gradient-text">
+                        {posArray[selectedPos].id}
+                      </span>
+                    </Text>
+                  </GridItem>
+                  <GridItem
+                    pl="2"
+                    area={'footer'}
+                    pb={0}
+                    mb={0}
+                    display="inline"
+                  >
+                    <Text
+                      mt={{ base: 2, md: 2 }}
+                      fontFamily={'Gilroy-Regular'}
+                      fontSize={{ base: '2.5vw', md: 'md' }}
+                      color={'white'}
+                      ml={{ base: 0, md: 4 }}
+                      className="fade-in"
+                      textAlign={'left'}
+                      key={posArray[selectedPos].key}
+                      // mb={{ base: '0', md: '0' }}
+
+                      // mb = '20px'
+                      display={'box'}
+                      p={0}
+                    >
+                      {posArray[selectedPos].content}
+                    </Text>
+                  </GridItem>
+                  <GridItem area={'social'}>
+                    <SimpleGrid
+                      columns={{ base: 1, md: 2 }}
+                      spacingX="20px"
+                      spacingY={{ base: '0px', md: '30px' }}
+                      ml={{ base: 2, md: 4 }}
+                      mt={{ base: 2, md: 2 }}
+                      // border = {'4px green solid '}
+                    >
+                      <Box height="35px">
+                        <Box
+                          _hover={{ color: '#833AB4' }}
+                          color={'white'}
+                          width={{ base: '20px', md: '35px' }}
+                          height={{ base: '20px', md: '40px' }}
+                          display="inline"
+                        >
+                          <HStack>
+                            <Link
+                              href={posArray[selectedPos].insta}
+                              display={'inline'}
+                            >
+                              <FaInstagram size={'4vw'} />{' '}
+                            </Link>
+                            <Link
+                              href={posArray[selectedPos].insta}
+                              display={'inline'}
+                            >
+                              <Text
+                                display={'inline'}
+                                fontFamily={'Gilroy-Medium'}
+                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                mr={1}
+                              >
+                                {posArray[selectedPos].instahandle}
+                              </Text>
+                            </Link>
+                          </HStack>
+                        </Box>
+                      </Box>
+                      <Box height="35px">
+                        <Box
+                          _hover={{ color: '#0072b1' }}
+                          color={'white'}
+                          width={{ base: '20px', md: '35px' }}
+                          height={{ base: '20px', md: '40px' }}
+                          display="inline"
+                        >
+                          <HStack>
+                            <Link
+                              href={posArray[selectedPos].linkedin}
+                              display={'inline'}
+                            >
+                              <FaLinkedin size={'4vw'} />{' '}
+                            </Link>
+                            <Link
+                              href={posArray[selectedPos].linkedin}
+                              display={'inline'}
+                            >
+                              <Text
+                                display={'inline'}
+                                fontFamily={'Gilroy-Medium'}
+                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                              >
+                                {posArray[selectedPos].Linkedinhandle}
+                              </Text>
+                            </Link>
+                          </HStack>
+                        </Box>
+                      </Box>
+
+                      <Box height="35px">
+                        <Box
+                          _hover={{ color: 'Black' }}
+                          color={'white'}
+                          width={{ base: '20px', md: '35px' }}
+                          height={{ base: '20px', md: '40px' }}
+                          display="inline"
+                        >
+                          <HStack>
+                            <Link
+                              href={posArray[selectedPos].github}
+                              display={'inline'}
+                            >
+                              <FaGithub size={'4vw'} />{' '}
+                            </Link>
+                            <Link
+                              href={posArray[selectedPos].github}
+                              display={'inline'}
+                            >
+                              <Text
+                                display={'inline'}
+                                fontFamily={'Gilroy-Medium'}
+                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                              >
+                                {posArray[selectedPos].githubhandle}
+                              </Text>
+                            </Link>
+                          </HStack>
+                        </Box>
+                      </Box>
+                      <Box height="35px"></Box>
+                    </SimpleGrid>
+                  </GridItem>
+                </Grid>
+              </Box>
+            </Flex>
+
+            <Flex align={'center'} justify="center">
+              <VStack>
+                <Box>
+                  <Box textAlign={'center'} alignItems="center" color={'white'}>
+                    <Text
+                      mb={'0.61%'}
+                      fontSize={{ base: '4vw', md: 30 }}
+                      mt={5}
+                      _hover={{
+                        bgGradient:
+                          'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
+                        bgClip: 'text',
+                      }}
+                    >
+                      Core Team
+                    </Text>
+
+                    <Image
+                      src="/Line 3.png"
+                      ml={'auto'}
+                      mr={'auto'}
+                      align="center"
+                      width={{ base: '50%', md: '80%' }}
+                    />
+                  </Box>
                 </Box>
-              </Flex>
-            </VStack>
-          </Flex>
+                <Flex maxW={'100vw'}>
+                  <Box
+                    mt={4}
+                    alignContent="center"
+                    position={'relative'}
+                    w="100%"
+                    ml={50}
+                  >
+                    <CurrentTeamNav
+                      posArray={posArray}
+                      parentSetSelectedPos={setSelectedPos}
+                    />
+                  </Box>
+                </Flex>
+              </VStack>
+            </Flex>
+          </Box>
         </Box>
       </>
     </ChakraProvider>
