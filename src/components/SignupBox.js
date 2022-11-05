@@ -78,6 +78,7 @@ import {
                 </InputGroup>
               </FormControl>
               <Stack spacing={10} pt={2}>
+              
                 <Button
                   loadingText="Submitting"
                   size="lg"
@@ -85,8 +86,9 @@ import {
                   color={'white'}
                   _hover={{
                     bg: 'blue.500',
-                  }}>
-                  Sign up
+                  }}><Link href='/verifyemail'>
+                    
+                  Sign up</Link>
                 </Button>
               </Stack>
               <Center pt={2}>

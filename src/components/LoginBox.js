@@ -6,11 +6,11 @@ import {
     Input,
     Checkbox,
     Stack,
-    Link,
     Button,
     Heading,
     Text,
     Center,
+    Link,
     useColorModeValue,
   } from '@chakra-ui/react';
   import { FcGoogle } from 'react-icons/fc';
@@ -50,7 +50,7 @@ import {
                   align={'start'}
                   justify={'space-between'}>
                   <Checkbox>Remember me</Checkbox>
-                  <Link color={'blue.400'} >Forgot password?</Link>
+                  <Link color={'blue.400'} href='/forgotpass' >Forgot password?</Link>
                 </Stack>
                 <Button
                   bg={'blue.400'}

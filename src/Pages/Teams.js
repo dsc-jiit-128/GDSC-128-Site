@@ -242,8 +242,13 @@ function Teampage() {
       image1: '/sanat_white.png',
       insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
       linkedin: 'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
+      github:'https://github.com/TheCringedSoul',
+      githubhandle:'TheCringedSoul',
+      discord:'http://discordapp.com/users/TheCringedSoul#7900',
+      discordhandle:'TheCringedSoul#7900',
       instahandle: '@sanatbhatia',
       Linkedinhandle: 'Sanat Bhatia',
+
       id: 'Sanat Bhatia',
       name: 'UI/UX Designer',
       content:
@@ -251,32 +256,146 @@ function Teampage() {
       key: '1',
     },
     {
+      image: '/Sahil.png',
+      image1: '/Sahil_w.png',
+      id: 'Sahilsher Singh',
+      insta: 'https://instagram.com/sandhu._.sahil_',
+      instahandle: '@sandhu._.sahil_',
+      linkedin: 'https://www.linkedin.com/in/sahilsher-singh/',
+      Linkedinhandle: ' Sahilsher Singh',
+      github: 'hhttps://github.com/Sandhu-Sahil',
+      githubhandle: 'Sandhu-Sahil',
+      discord:'http://discordapp.com/users/Sahil Sandhu#5673',
+      discordhandle:'Sahil Sandhu#5673',
+     
+      content:
+        'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
+      name: 'Web Dev',
+      key: '2',
+    },
+    {
+      image: '/doyel.png',
+      image1: '/doyel_white.png',
+      id: 'Doyel Agrawal',
+      //insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
+      //instahandle: '@aanyag275',
+      github: 'https://github.com/DoyelA',
+      githubhandle: 'DoyelA',
+      discord:'http://discordapp.com/users/DolaMandola#9233',
+      discordhandle:'DolaMandola#9233',
+      linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
+      Linkedinhandle: 'Doyel Agrawal',
+      instahandle: '(Inactive)',
+      content:
+        ' Always pet a cat when you meet one.',
+      name: 'Backend Dev',
+      key: '3',
+    },
+    {
+      image: '/Shivansh.png',
+      image1: '/Shivansh_w.png',
+      id: 'Shivansh Pandey',
+      insta: 'https://www.instagram.com/_shivansh04/',
+      instahandle: '@_shivansh04',
+      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
+      Linkedinhandle: ' Shivansh Pandey',
+      github: 'https://github.com/Shivansh-25',
+      githubhandle: 'Shivansh-25',
+      discord:'https://discordapp.com/users/513042268190408714',
+      discordhandle:'Shivansh#4027',
+     
+      content:
+        'I like to explore, travel and know more people. ',
+      name: 'Web Dev/',
+      key: '4',
+    },
+    {
+      image: '/Bhav.png',
+      image1: '/Bhav_w.png',
+      id: 'Bhav Goyal',
+      insta: 'https://www.instagram.com/goyalbhav/',
+      instahandle: '@goyalbhav',
+      linkedin: 'https://www.linkedin.com/in/goyalbhav',
+      Linkedinhandle: ' Bhav Goyal',
+      github: 'https://github.com/w3rew0lf',
+      githubhandle: 'w3rew0lf',
+      discord:'http://discordapp.com/users/w3rew01f#4027',
+      discordhandle:'w3rew01f#4027',
+     
+      content:
+        'I like to explore, travel and know more people. ',
+      name: 'Cyber Security',
+      key: '5',
+    },
+    {
+      image: '/Tanay.png',
+      image1: '/Tanay_w.png',
+      id: 'Tanay Kedia',
+      insta: 'https://instagram.com/tanay_7',
+      instahandle: '@tanay_7',
+      linkedin: 'https://www.linkedin.com/in/tanay-k-755340177',
+      Linkedinhandle: 'Tanay Kedia',
+      github: 'https://github.com/tanayk07',
+      githubhandle: 'tanayk07',
+      discord:'http://discordapp.com/users/Tanay#3729',
+      discordhandle:'Tanay#3729',
+     
+      content:
+        'In progress ',
+      name: 'Android/Web Dev',
+      key: '6',
+    },
+    {
+      image: '/Vishesh.png',
+      image1: '/Vishesh_w.png',
+      id: 'Vishesh Raheja',
+      insta: 'https://instagram.com/rogue__amoeba',
+      instahandle: '@rogue__amoeba',
+      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
+      Linkedinhandle: 'Vishesh Raheja',
+      github: 'https://github.com/entropyconquers',
+      githubhandle: 'entropyconquers',
+      discord:'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle:'ViShEsH#2452',
+     
+      content:
+        'I am a curious and enthusiastic full stack developer who likes to solve day to day problems through programming. I focus on creating visual solutions and creative concepts through identifying problems and research.',
+      name: 'Mobile/Web Dev',
+      key: '7',
+    },
+    {
       image: '/chaaya.png',
       image1: '/chaaya_white.png',
       id: 'Chaaya Agarwal',
       insta: 'https://www.instagram.com/chaaya._06/',
       instahandle: '@chaaya._06',
+      github:'https://github.com/Chaaya0605',
+      githubhandle:'Chaaya0605',
+      discord:'http://discordapp.com/users/Chaaya Agarwal#5763',
+      discordhandle:'Chaaya Agarwal#5763',
       Linkedinhandle: 'Chaaya Agarwal',
       linkedin: 'https://www.linkedin.com/in/chaaya-agarwal-992812246/',
       content:
         'One of the content writers of GDSC JIIT-128, she is brightly creative and imaginative and knows how to present the community to others with her talent of content writing.',
-      name: 'Management',
-      key: '2',
+      name: 'Content Writer',
+      key: '8',
     },
     {
       image: '/parth_garg.png',
+      image1: '/parth_garg_white.png',
       insta: 'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
       instahandle: '@_parthahuja12_',
       linkedin: 'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
       Linkedinhandle: 'Parth Ahuja',
       github: 'https://github.com/ravenclaw03',
       githubhandle: 'ravenclaw03',
-      image1: '/parth_garg_white.png',
+      discord:'http://discordapp.com/users/ravenclaw03#4283',
+      discordhandle:'ravenclaw03#4283',
       id: 'Parth Garg',
       content:
         'Social media handler of GDSC JIIT- 128, Parth is responsible for creating awareness through our Social Media Platform to provide information about the community and contact with volunteers who show interest in the society.',
       name: 'Social Media',
-      key: '3',
+      key: '9',
     },
     {
       image: '/pariyashi.png',
@@ -287,104 +406,72 @@ function Teampage() {
       Linkedinhandle: 'Pariyashi Sahu',
       github: 'https://github.com/justhappyuknow',
       githubhandle: 'justhappyuknow',
+      discord:'http://discordapp.com/users/Pariyashihere#9072',
+      discordhandle:'Pariyashihere#9072',
       id: 'Pariyashi Sahu',
       content:
         ' The content writer of GDSC JIIT- 128, creatively presenting the community ideas and events, the bridge to communication that is content is her responsibility.',
-      name: 'Content Writer',
-      key: '4',
-    },
-
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
-      key: '5',
-    },
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
-      key: '6',
-    },
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
-      key: '7',
-    },
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
-      key: '8',
-    },
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
-      key: '9',
-    },
-    {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
-      content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
+      name: 'Content Writer/',
       key: '10',
     },
+
+ 
     {
-      image: '/aanya.png',
-      image1: '/aanya_white.png',
-      id: 'Aanya Garg',
-      insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      instahandle: '@aanyag275',
-      linkedin: 'https://www.linkedin.com/in/aanya-garg-695543246/',
-      Linkedinhandle: 'Aanya Garg',
+      image: '/kanavagarwal.png',
+      image1: '/kanavagarwal_white.png',
+      id: 'Kanav Agarwal',
+      insta: 'https://www.instagram.com/kanav_ag/',
+      instahandle: '@kanav_ag',
+      linkedin: 'https://www.linkedin.com/in/kanav-agarwal-30663421b/',
+      Linkedinhandle: 'Kanav Agarwal',
       content:
-        ' One of the Social media handlers of GDSC JIIT-128, she is responsible for making announcements about the events and sessions hosted by the community.',
-      name: 'Tech Writer',
+        ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
+      name: 'Management//',
       key: '11',
     },
+ 
+ 
+   
+  {
+    image: '/AryanK.png',
+    image1: '/AryanK_white.png',
+    id: 'Aryan Kulshrestha',
+    insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
+    instahandle: '@_aryan_15_9',
+    linkedin: 'https://www.linkedin.com/in/aryan-kulshrestha-993248221',
+    Linkedinhandle: ' Aryan Kulshrestha',
+    github: 'https://github.com/aryankul15',
+    githubhandle: 'aryankul15',
+    discord:'https://discordapp.com/users/Aryan Kulshrestha#5249',
+    discordhandle:'Aryan Kulshrestha#5249',
+   
+    content:
+      'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
+    name: 'Management///',
+    key: '12',
+  },
+ 
+  
+  {
+    image: '/AryanC.png',
+    image1: '/AryanC_white.png',
+    id: 'Aryan Chauhan',
+    insta: 'https://www.instagram.com/ayoaryann/',
+    instahandle: '@ayoaryann',
+    linkedin: 'https://www.linkedin.com/in/aryan-chauhan-791b5a247/',
+    Linkedinhandle: 'Aryan Chauhan',
+    github: 'https://github.com/IAmAnonymousAryan07',
+    githubhandle: 'IAmAnonymousAryan07',
+    discord:'http://discordapp.com/users/Aryan007#9721',
+    discordhandle:'Aryan007#9721',
+   
+    content:
+      '"Success hits different when nobody believed in you" . ',
+    name: 'Management',
+   
+    key: '13',
+  }
+ 
   ]);
   const [selectedPos, setSelectedPos] = useState(
     Math.ceil(posArray.length - 1) / 2
@@ -548,8 +635,9 @@ function Teampage() {
                         </Box>
                       </Box>
 
+                   
                       <Box height="35px">
-                        <Box
+                      <Box
                           _hover={{ color: 'Black' }}
                           color={'white'}
                           width={{ base: '20px', md: '35px' }}
@@ -578,7 +666,36 @@ function Teampage() {
                           </HStack>
                         </Box>
                       </Box>
-                      <Box height="35px"></Box>
+                      <Box height="35px">
+                        <Box
+                          _hover={{ color: "#7289d9"}}
+                          color={'white'}
+                          width={{ base: '20px', md: '35px' }}
+                          height={{ base: '20px', md: '40px' }}
+                          display="inline"
+                        >
+                          <HStack>
+                            <Link
+                              href={posArray[selectedPos].discord}
+                              display={'inline'}
+                            >
+                              <FaDiscord size={'4vw'} />{' '}
+                            </Link>
+                            <Link
+                              href={posArray[selectedPos].discord}
+                              display={'inline'}
+                            >
+                              <Text
+                                display={'inline'}
+                                fontFamily={'Gilroy-Medium'}
+                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                              >
+                                {posArray[selectedPos].discordhandle}
+                              </Text>
+                            </Link>
+                          </HStack>
+                        </Box>
+                      </Box>
                     </SimpleGrid>
                   </GridItem>
                 </Grid>
