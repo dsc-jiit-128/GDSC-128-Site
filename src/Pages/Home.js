@@ -10,6 +10,10 @@ import BuildTogether from '../components/ buildTogether';
 import WhatDoWeDo from '../components/whatDoWeDo';
 import Links from '../components/links';
 
+
+
+
+
 function Home() {
   return (
     <>
@@ -25,7 +29,6 @@ function Home() {
         <BuildTogether />
         <WhatDoWeDo />
         <Links />
-        
       </Box>
     </>
   );
