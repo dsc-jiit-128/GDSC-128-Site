@@ -9,6 +9,12 @@ import swaggerUi from "swagger-ui-express";
 import authService from './services/auth.service';
 import variables from './variables/variables';
 
+import dotEnv from "dotenv";
+dotEnv.config();
+
+const port = process.env.port as string;
+const host = process.env.host as string;
+
 const app = express();
 app.set("view engine", "ejs");
 app.use(cors({ origin: "*" }));
@@ -30,7 +36,7 @@ app.use(appRoutes);
 
 DB.then((rs) => {
     console.log("DB is connected.");
-    app.listen(variables.port,variables.host, async () => {
-        console.log(`server started on port ${variables.port} running on link: http://${variables.host}:${variables.port}/ `);
+    app.listen(parseInt(port), host, async () => {
+        console.log(`server started on port ${port} running on link: http://${host}:${port}/ `);
     });
 }).catch((err) => console.log(err));

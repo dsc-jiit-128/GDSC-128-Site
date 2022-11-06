@@ -8,9 +8,9 @@ import variables from "../variables/variables";
 const SibApiV3Sdk = require("sib-api-v3-typescript");
 
 // Configuration of send in blue
-const sendBlueApiKey = variables.SEND_IN_BLUE_API_KEY as string;
-const senderEmail = variables.SEND_IN_EMAIL as string;
-const senderName = variables.SEND_IN_NAME as string;
+const sendBlueApiKey = process.env.SEND_IN_BLUE_API_KEY as string;
+const senderEmail = process.env.SEND_IN_EMAIL as string;
+const senderName = process.env.SEND_IN_NAME as string;
 
 // Creating instances of Apos
 
