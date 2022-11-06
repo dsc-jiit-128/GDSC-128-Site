@@ -3,6 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
 import { Stack, VStack } from '@chakra-ui/react';
+import './xyz.css';
 import {
   GridItem,
   SimpleGrid,
@@ -593,7 +594,7 @@ function Teampage() {
                               href={posArray[selectedPos].insta}
                               display={'inline'}
                             >
-                              <FaInstagram size={'4vw'} />{' '}
+                              <FaInstagram className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].insta}
@@ -602,7 +603,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                                 mr={1}
                               >
                                 {posArray[selectedPos].instahandle}
@@ -624,7 +625,7 @@ function Teampage() {
                               href={posArray[selectedPos].linkedin}
                               display={'inline'}
                             >
-                              <FaLinkedin size={'4vw'} />{' '}
+                              <FaLinkedin className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].linkedin}
@@ -633,7 +634,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].Linkedinhandle}
                               </Text>
@@ -656,7 +657,7 @@ function Teampage() {
                               href={posArray[selectedPos].github}
                               display={'inline'}
                             >
-                              <FaGithub size={'4vw'} />{' '}
+                              <FaGithub className='gfg-div'   />
                             </Link>
                             <Link
                               href={posArray[selectedPos].github}
@@ -665,7 +666,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].githubhandle}
                               </Text>
@@ -686,7 +687,7 @@ function Teampage() {
                               href={posArray[selectedPos].discord}
                               display={'inline'}
                             >
-                              <FaDiscord size={'4vw'} />{' '}
+                              <FaDiscord className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].discord}
@@ -695,7 +696,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].discordhandle}
                               </Text>
