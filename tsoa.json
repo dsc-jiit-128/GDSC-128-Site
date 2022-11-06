@@ -1,0 +1,38 @@
+{
+    "entryFile": "src/index.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/swagger/controllers/**/*controller.ts"],
+    "spec": {
+      "version": "1.1.1",
+      "name": "GDSC JIIT-128 API Documentaion",
+      "description": "Routes of main site of gdsc jiit-128 api documentation",
+      "outputDirectory": "src/swagger",
+      "specVersion": 3,
+      "basePath": "/api/v1",
+      "spec": {
+        "servers": [
+          {
+            "url": "http://localhost:3000/api/v1",
+            "description": "Local environment"
+          },
+          {
+            "url": "https://something.com/api/v1",
+            "description": "Some environment"
+          }
+        ]
+      },
+      "securityDefinitions":{
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": "Add Bearer prefix on jwt token"
+        }
+      },
+      "schemes":["http","https"]
+    },
+    "routes": {
+      "routesDir": "src/swagger",
+      "authenticationModule": "./src/swagger/controllers/authentication.ts"
+    }
+}
