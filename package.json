@@ -1,5 +1,4 @@
 {
-  "homepage": "https://dsc-jiit-128.github.io/GDSC-128-Site",
   "name": "website",
   "version": "0.1.0",
   "private": true,
@@ -26,9 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
