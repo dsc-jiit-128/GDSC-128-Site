@@ -60,6 +60,40 @@ const mailBox = async (
   }
 };
 
+const mailBoxTwo = async (
+  toMailEmails: [],
+  subject: string,
+  htmlContent: string
+) => {
+  try {
+    console.log("reached here too");
+    sendSmtpEmail.subject = "{{params.subject}}";
+    sendSmtpEmail.htmlContent = htmlContent;
+    sendSmtpEmail.sender = { name: senderName, email: senderEmail };
+    sendSmtpEmail.to = [...toMailEmails];
+    sendSmtpEmail.headers = { "Some-Custom-Name": "unique-id-1234" };
+    sendSmtpEmail.params = {
+      parameter: "My param value",
+      subject: subject,
+    };
+
+    apiInstance.sendTransacEmail(sendSmtpEmail).then(
+      function (data: any) {
+        console.log(
+          "API called successfully. Returned data: " + JSON.stringify(data)
+        );
+      },
+      function (error: any) {
+        console.error(error);
+      }
+    );
+  } catch (error) {
+    console.log(error);
+  } finally {
+    return toMailEmails;
+  }
+};
+
 /*
 * send password change otp
 *
@@ -78,6 +112,20 @@ const changePassword = async (toMail:string, name:string, otp:string) => {
   }
 }
 
+const multiEmail = async (data:string, toMailEmails:[]) => {
+  try{
+    let subject = "GDSC Updates";
+    let htmlContent = emailTemplates.default_email.defaultEmail(data);
+
+    await mailBoxTwo(toMailEmails,subject, htmlContent);
+
+  }
+  catch(error){
+    console.log(error);
+  }
+}
+
 export default {
-  changePassword
+  changePassword,
+  multiEmail
 };
