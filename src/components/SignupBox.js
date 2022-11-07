@@ -21,6 +21,8 @@ import * as Yup from "yup";
 import { signUpApi, socialSignIn } from "../services/apis.js";
 import {useHistory} from "react-router-dom"
 import GoogleLogin from "react-google-login";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
   import { FcGoogle } from 'react-icons/fc';
 
@@ -77,6 +79,7 @@ import GoogleLogin from "react-google-login";
           history.push("/");
         })
         .catch((error) => {
+          toast.error(error?.response?.data?.message);
           console.log("here", error);
         });
     };
@@ -97,7 +100,7 @@ import GoogleLogin from "react-google-login";
         localStorage.setItem("token", res?.data?.data?.token);
         history.push("/");
       }).catch(error => {
-        console.log(error?.response?.data?.message);
+        toast.error(error?.response?.data?.message);
       })
     };
   
@@ -252,6 +255,7 @@ import GoogleLogin from "react-google-login";
             </Stack>
           </Box>
         </Stack>
+        <ToastContainer />
       </Flex>
     );
   }
