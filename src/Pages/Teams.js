@@ -349,7 +349,7 @@ function Teampage() {
       discordhandle:'Tanay#3729',
      
       content:
-        'In progress ',
+        '',
       name: 'Android/Web Dev',
       key: '6',
     },
@@ -432,6 +432,10 @@ function Teampage() {
       instahandle: '@kanav_ag',
       linkedin: 'https://www.linkedin.com/in/kanav-agarwal-30663421b/',
       Linkedinhandle: 'Kanav Agarwal',
+      github: 'https://github.com/Kanav31',
+      githubhandle: 'Kanav31',
+      discord:'http://discordapp.com/users/Kanav Agarwal#9540',
+      discordhandle:'Kanav Agarwal#9540',
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
       name: 'Management//',
