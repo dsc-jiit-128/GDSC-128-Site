@@ -34,18 +34,18 @@ export default function Eventsbar() {
           <Tabs isFitted variant="soft-rounded" size="sm">
             <TabList>
               <Tab
-                _selected={{ color: 'white', bg: '#FF0F0F' }}
-                fontSize={{ base: '2.3vw', md: '1.2vw' }}
-                fontFamily={'Gilroy-Medium'}
-              >
-                HACKATHONS
-              </Tab>
-              <Tab
                 _selected={{ color: 'white', bg: '#FBBC04' }}
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
                 fontFamily={'Gilroy-Medium'}
               >
                 SESSIONS
+              </Tab>
+              <Tab
+                _selected={{ color: 'white', bg: '#FF0F0F' }}
+                fontSize={{ base: '2.3vw', md: '1.2vw' }}
+                fontFamily={'Gilroy-Medium'}
+              >
+                HACKATHONS
               </Tab>
               <Tab
                 _selected={{ color: 'black', bg: 'white' }}
@@ -59,7 +59,7 @@ export default function Eventsbar() {
                 fontSize={{ base: '2.3vw', md: '1.2vw' }}
                 fontFamily={'Gilroy-Medium'}
               >
-                STUDY-JAMS
+                UPCOMING
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: '#0F9D58' }}
@@ -72,32 +72,33 @@ export default function Eventsbar() {
             <TabPanels>
               <TabPanel>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <Hackathons />
+                <Sessions />
                 </SimpleGrid>
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <Sessions />
+                  
+                
                 </SimpleGrid>
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <Hackathons />
-                  <Meetups />
+                 
+                  
 
                   <Sessions />
 
-                  <StudyJams />
+                
                 </SimpleGrid>
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <StudyJams />
+               
                 </SimpleGrid>
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  <Meetups />
+              
                 </SimpleGrid>
               </TabPanel>
             </TabPanels>

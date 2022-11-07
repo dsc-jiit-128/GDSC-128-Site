@@ -7,6 +7,7 @@ import {
   Button,
   fontFamily,
   Divider,
+  Link
   
 } from '@chakra-ui/react';
 import Fonts from '../fonts';
@@ -80,7 +81,9 @@ export default function BuildTogether() {
                 height={{ base: '50px', md: '5.85vw' }}
               >
                 <Text color="white" fontFamily={'Gilroy'} fontSize={{ base: '14px', md: '1.7vw' }} >
-                  Register for BITBOX 2.0
+                  <Link href="/signup">
+                  Register as Student
+                  </Link>
                 </Text>
               </Button>
             </Box>
@@ -93,7 +96,7 @@ export default function BuildTogether() {
             {/* <Box > */}
             <Text
               as={'b'}
-              fontSize={{ base: '3.45vw', md: '3.45vw' }}
+              fontSize={{ base: '7vw', md: '3.45vw' }}
               noOfLines={1}
               mb={{ base: '-3.5vw', md: '-3.5vw' }}
               color="white"
@@ -106,7 +109,7 @@ export default function BuildTogether() {
               bgGradient="linear(to-r, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
               w="100%"
               bgClip="text"
-              fontSize={{ base: '12.4vw', md: '12.4vw' }}
+              fontSize={{ base: '20vw', md: '12.4vw' }}
               fontWeight="extrabold"
               align={'center'}
               display={'inline'}
@@ -114,11 +117,11 @@ export default function BuildTogether() {
               pr={{ base: '6%' }}
               mt="5%"
             >
-              Build
+            Build
             </Text>
             <Text
               as={'b'}
-              fontSize={{ base: '3.45vw', md: '3.45vw' }}
+              fontSize={{ base: '7vw', md: '3.45vw' }}
               noOfLines={1}
               mt={{ base: '-3.5vw', md: '-3.5vw' }}
               color="white"

@@ -3,6 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
 import { Stack, VStack } from '@chakra-ui/react';
+import './xyz.css';
 import {
   GridItem,
   SimpleGrid,
@@ -284,15 +285,15 @@ function Teampage() {
       image: '/doyel.png',
       image1: '/doyel_white.png',
       id: 'Doyel Agrawal',
-      //insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      //instahandle: '@aanyag275',
+      insta: 'https://instagram.com/_.doyel._',
+      instahandle: '@_.doyel._',
       github: 'https://github.com/DoyelA',
       githubhandle: 'DoyelA',
       discord:'http://discordapp.com/users/DolaMandola#9233',
       discordhandle:'DolaMandola#9233',
       linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
       Linkedinhandle: 'Doyel Agrawal',
-      instahandle: '(Inactive)',
+      
       content:
         ' Always pet a cat when you meet one.',
       name: 'Backend Dev',
@@ -348,7 +349,7 @@ function Teampage() {
       discordhandle:'Tanay#3729',
      
       content:
-        'In progress ',
+        '"Making the World a better place" -Gavin Belson',
       name: 'Android/Web Dev',
       key: '6',
     },
@@ -398,7 +399,7 @@ function Teampage() {
       githubhandle: 'ravenclaw03',
       discord:'http://discordapp.com/users/ravenclaw03#4283',
       discordhandle:'ravenclaw03#4283',
-      id: 'Parth Garg',
+      id: 'Parth Ahuja',
       content:
         'Social media handler of GDSC JIIT- 128, Parth is responsible for creating awareness through our Social Media Platform to provide information about the community and contact with volunteers who show interest in the society.',
       name: 'Social Media',
@@ -431,6 +432,10 @@ function Teampage() {
       instahandle: '@kanav_ag',
       linkedin: 'https://www.linkedin.com/in/kanav-agarwal-30663421b/',
       Linkedinhandle: 'Kanav Agarwal',
+      github: 'https://github.com/Kanav31',
+      githubhandle: 'Kanav31',
+      discord:'http://discordapp.com/users/Kanav Agarwal#9540',
+      discordhandle:'Kanav Agarwal#9540',
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
       name: 'Management//',
@@ -593,7 +598,7 @@ function Teampage() {
                               href={posArray[selectedPos].insta}
                               display={'inline'}
                             >
-                              <FaInstagram size={'4vw'} />{' '}
+                              <FaInstagram className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].insta}
@@ -602,7 +607,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                                 mr={1}
                               >
                                 {posArray[selectedPos].instahandle}
@@ -624,7 +629,7 @@ function Teampage() {
                               href={posArray[selectedPos].linkedin}
                               display={'inline'}
                             >
-                              <FaLinkedin size={'4vw'} />{' '}
+                              <FaLinkedin className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].linkedin}
@@ -633,7 +638,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].Linkedinhandle}
                               </Text>
@@ -656,7 +661,7 @@ function Teampage() {
                               href={posArray[selectedPos].github}
                               display={'inline'}
                             >
-                              <FaGithub size={'4vw'} />{' '}
+                              <FaGithub className='gfg-div'   />
                             </Link>
                             <Link
                               href={posArray[selectedPos].github}
@@ -665,7 +670,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].githubhandle}
                               </Text>
@@ -686,7 +691,7 @@ function Teampage() {
                               href={posArray[selectedPos].discord}
                               display={'inline'}
                             >
-                              <FaDiscord size={'4vw'} />{' '}
+                              <FaDiscord className='gfg-div' />{' '}
                             </Link>
                             <Link
                               href={posArray[selectedPos].discord}
@@ -695,7 +700,7 @@ function Teampage() {
                               <Text
                                 display={'inline'}
                                 fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.5vw' }}
+                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
                                 {posArray[selectedPos].discordhandle}
                               </Text>
