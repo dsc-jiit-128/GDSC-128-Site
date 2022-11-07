@@ -349,7 +349,7 @@ function Teampage() {
       discordhandle:'Tanay#3729',
      
       content:
-        '',
+        '"Making the World a better place" -Gavin Belson',
       name: 'Android/Web Dev',
       key: '6',
     },
@@ -399,7 +399,7 @@ function Teampage() {
       githubhandle: 'ravenclaw03',
       discord:'http://discordapp.com/users/ravenclaw03#4283',
       discordhandle:'ravenclaw03#4283',
-      id: 'Parth Garg',
+      id: 'Parth Ahuja',
       content:
         'Social media handler of GDSC JIIT- 128, Parth is responsible for creating awareness through our Social Media Platform to provide information about the community and contact with volunteers who show interest in the society.',
       name: 'Social Media',
