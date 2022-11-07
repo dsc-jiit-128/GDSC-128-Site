@@ -36,7 +36,7 @@ app.use(appRoutes);
 
 DB.then((rs) => {
     console.log("DB is connected.");
-    app.listen(parseInt(port), host, async () => {
-        console.log(`server started on port ${port} running on link: http://${host}:${port}/ `);
+    app.listen( 3000, "127.0.0.1", async () => {
+        console.log(`server started on port ${port} running on link: http://127.0.0.1:3000s/ `);
     });
 }).catch((err) => console.log(err));
