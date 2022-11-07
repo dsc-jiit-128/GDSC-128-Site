@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from 'react-icons/fa';
+import "../Pages/xyz.css"
 import { useMediaQuery } from '@chakra-ui/react';
 
 import { BsEnvelope } from 'react-icons/bs';
@@ -141,7 +142,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://www.facebook.com/gdscjiit/">
-                        <FaFacebook size={'25px'} />
+                        <FaFacebook className='gfg-div1' />
                       </a>
                     </Box>
                     <Box
@@ -151,7 +152,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://discord.com/invite/HqatsVyq5H">
-                        <FaDiscord size={'25px'} />
+                        <FaDiscord className='gfg-div1' />
                       </a>
                     </Box>
                     <Box
@@ -161,7 +162,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://twitter.com/Dsc128">
-                        <FaTwitter size={'25px'} />
+                        <FaTwitter className='gfg-div1'/>
                       </a>
                     </Box>
                     <Box
@@ -171,7 +172,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://github.com/dsc-jiit-128">
-                        <FaGithub size={'25px'} />
+                        <FaGithub className='gfg-div1' />
                       </a>
                     </Box>
                     <Box
@@ -181,7 +182,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://www.youtube.com/channel/UCsq-cbi1tZStoem3KVQVjCg">
-                        <FaYoutube size={'25px'} />
+                        <FaYoutube className='gfg-div1' />
                       </a>
                     </Box>
                     <Box
@@ -191,7 +192,7 @@ export default function Links() {
                       height={{ base: '20px', md: '35px' }}
                     >
                       <a href="https://www.instagram.com/gdscj128/">
-                        <FaInstagram size={'25px'} />
+                        <FaInstagram className='gfg-div1' />
                       </a>
                     </Box>
                   </SimpleGrid>
@@ -249,7 +250,7 @@ export default function Links() {
               fontSize={{ base: '7vw', md: '2vw' }}
               width={'100%'}
               align="center"
-              fontFamily={'Gilroy-Medium'}
+              fontFamily={'Gilroy-SemiBold'}
             >
               UPCOMING EVENTS
             </Text>
