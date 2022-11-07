@@ -29,6 +29,7 @@ import GoogleLogin from "react-google-login";
   
   export default function Signupbox() {
     const [showPassword, setShowPassword] = useState(false);
+    const error = { fontSize: "12px", paddingLeft: "20px", color: "red" };
     let history = useHistory();
 
     const initialValues = {
@@ -135,6 +136,11 @@ import GoogleLogin from "react-google-login";
                       value={formik.values.fname}
                       onChange={formik.handleChange}                    
                     />
+                    {formik.touched.fname && formik.errors.fname ? (
+                      <div className="err" style={error}>
+                        {formik.errors.fname}
+                      </div>
+                    ) : null}
                   </FormControl>
                 </Box>
                 <Box>
@@ -144,6 +150,11 @@ import GoogleLogin from "react-google-login";
                       value={formik.values.lname}
                       onChange={formik.handleChange} 
                     />
+                    {formik.touched.lname && formik.errors.lname ? (
+                      <div className="err" style={error}>
+                        {formik.errors.lname}
+                      </div>
+                    ) : null}
                   </FormControl>
                 </Box>
               </HStack>
@@ -153,6 +164,11 @@ import GoogleLogin from "react-google-login";
                   value={formik.values.mobileNumber}
                   onChange={formik.handleChange} 
                 />
+                {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
+                  <div className="err" style={error}>
+                    {formik.errors.mobileNumber}
+                  </div>
+                ) : null}
               </FormControl>
               <FormControl id="email/Name" isRequired>
                 <FormLabel>Email address</FormLabel>
@@ -160,6 +176,11 @@ import GoogleLogin from "react-google-login";
                   value={formik.values.email}
                   onChange={formik.handleChange} 
                 />
+                {formik.touched.email && formik.errors.email ? (
+                  <div className="err" style={error}>
+                    {formik.errors.email}
+                  </div>
+                ) : null}
               </FormControl>
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
@@ -178,6 +199,11 @@ import GoogleLogin from "react-google-login";
                     </Button>
                   </InputRightElement>
                 </InputGroup>
+                {formik.touched.password && formik.errors.password ? (
+                  <div className="err" style={error}>
+                    {formik.errors.password}
+                  </div>
+                ) : null}
               </FormControl>
               <Stack spacing={10} pt={2}>
               
