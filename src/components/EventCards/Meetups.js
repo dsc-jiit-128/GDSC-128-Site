@@ -13,7 +13,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Highlight } from '@chakra-ui/react';
 function Meetups() {
   return (
-    <Box alignItems={'center'}>
+   <Box alignItems={'center'}>
       <Image
         src="/image 24.png"
         width={{ base: '50vw', md: '28vw' }}

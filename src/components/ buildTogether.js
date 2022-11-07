@@ -7,6 +7,7 @@ import {
   Button,
   fontFamily,
   Divider,
+  Link
   
 } from '@chakra-ui/react';
 import Fonts from '../fonts';
@@ -80,7 +81,9 @@ export default function BuildTogether() {
                 height={{ base: '50px', md: '5.85vw' }}
               >
                 <Text color="white" fontFamily={'Gilroy'} fontSize={{ base: '14px', md: '1.7vw' }} >
-                  Register for BITBOX 2.0
+                  <Link href="/signup">
+                  Register as Student
+                  </Link>
                 </Text>
               </Button>
             </Box>

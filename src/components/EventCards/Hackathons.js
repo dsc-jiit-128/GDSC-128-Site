@@ -13,7 +13,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Highlight } from '@chakra-ui/react';
 function Hackathons() {
   return (
-    <Box alignItems={'center'}>
+   <Box alignItems={'center'}>
       <Image
         src="/image 21.png"
         width={{ base: '50vw', md: '28vw' }}
@@ -38,6 +38,6 @@ function Hackathons() {
         <Text></Text>
       </Box>
     </Box>
-  );
+  )
 }
 export default Hackathons;

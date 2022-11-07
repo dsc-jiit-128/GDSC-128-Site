@@ -213,14 +213,14 @@ export default function Links() {
               display={'block'}
               mt={5}
               fontSize={{ base: '4vw', md: '1.6vw' }}
-              to="/events"
+              href="/events"
               fontFamily={'Gilroy-Medium'}
             >
               EVENTS
             </Link>
 
             <Link
-              to="/teams"
+              href="/teams"
               display={'block'}
               mt={2}
 
@@ -229,7 +229,7 @@ export default function Links() {
             >
               TEAM
             </Link>
-            <Link to="/login"            mt={2}
+            <Link href="/login"            mt={2}
  display={'block'} fontSize={{ base: '4vw', md: '1.6vw' }} fontFamily={'Gilroy-Medium'}>
  
 

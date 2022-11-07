@@ -285,15 +285,15 @@ function Teampage() {
       image: '/doyel.png',
       image1: '/doyel_white.png',
       id: 'Doyel Agrawal',
-      //insta: 'https://instagram.com/aanyag275?igshid=YmMyMTA2M2Y=',
-      //instahandle: '@aanyag275',
+      insta: 'https://instagram.com/_.doyel._',
+      instahandle: '@_.doyel._',
       github: 'https://github.com/DoyelA',
       githubhandle: 'DoyelA',
       discord:'http://discordapp.com/users/DolaMandola#9233',
       discordhandle:'DolaMandola#9233',
       linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
       Linkedinhandle: 'Doyel Agrawal',
-      instahandle: '(Inactive)',
+      
       content:
         ' Always pet a cat when you meet one.',
       name: 'Backend Dev',
