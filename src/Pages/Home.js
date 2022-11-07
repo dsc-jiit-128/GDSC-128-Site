@@ -23,6 +23,7 @@ function Home() {
         w={'100%'}
         minWidth={'100%'}
         m={'0'}
+        overflowX={'hidden'}
       >
         <Nav />
         <Head />

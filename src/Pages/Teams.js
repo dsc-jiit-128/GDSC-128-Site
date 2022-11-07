@@ -260,7 +260,7 @@ function Teampage() {
       id: 'Sanat Bhatia',
       name: 'UI/UX Designer',
       content:
-        'A UI/UX designer of GDSC JIIT-128, Sanat is responsible for designing websites,creating videos and creating posters for various events organized by GDSC JIIT-128.',
+        '"I am silently judging your font choice."',
       key: '1',
     },
     {
@@ -306,14 +306,14 @@ function Teampage() {
       insta: 'https://www.instagram.com/_shivansh04/',
       instahandle: '@_shivansh04',
       linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
-      Linkedinhandle: ' Shivansh Pandey',
+      Linkedinhandle: 'Shivansh Pandey',
       github: 'https://github.com/Shivansh-25',
       githubhandle: 'Shivansh-25',
       discord:'https://discordapp.com/users/513042268190408714',
       discordhandle:'Shivansh#4027',
      
       content:
-        'I like to explore, travel and know more people. ',
+        '“If you think math is hard, try web design.” ',
       name: 'Web Dev/',
       key: '4',
     },
@@ -367,9 +367,27 @@ function Teampage() {
       discordhandle:'ViShEsH#2452',
      
       content:
-        'I am a curious and enthusiastic full stack developer who likes to solve day to day problems through programming. I focus on creating visual solutions and creative concepts through identifying problems and research.',
+        'curious and enthusiastic full stack dev, who likes to solve day to day problems through programming. Creating visual solutions & creative concepts through identifying problems & research.',
       name: 'Mobile/Web Dev',
       key: '7',
+    },
+    {
+      image: '/Ritik.png',
+      image1: '/Ritik_w.png',
+      id: 'Ritik Shukla',
+      insta: 'https://github.com/rittik112',
+      instahandle: '@rittik112',
+      linkedin: 'https://www.linkedin.com/in/ritik-shukla-8b3928203',
+      Linkedinhandle: 'Ritik Shukla',
+      github: 'https://github.com/rittik112',
+      githubhandle: 'rittik112',
+      discord:'http://discordapp.com/users/bruhhtik#9344',
+      discordhandle:'bruhhtik#9344',
+     
+      content:
+       'I like to play around with cp every now and then.',
+      name: 'Competitive Programming',
+      key: '8',
     },
     {
       image: '/chaaya.png',
@@ -384,9 +402,9 @@ function Teampage() {
       Linkedinhandle: 'Chaaya Agarwal',
       linkedin: 'https://www.linkedin.com/in/chaaya-agarwal-992812246/',
       content:
-        'One of the content writers of GDSC JIIT-128, she is brightly creative and imaginative and knows how to present the community to others with her talent of content writing.',
+        '"Never give up on something you really want, it may be difficult to wait but it is much more difficult to regret!"',
       name: 'Content Writer',
-      key: '8',
+      key: '9',
     },
     {
       image: '/parth_garg.png',
@@ -401,9 +419,9 @@ function Teampage() {
       discordhandle:'ravenclaw03#4283',
       id: 'Parth Ahuja',
       content:
-        'Social media handler of GDSC JIIT- 128, Parth is responsible for creating awareness through our Social Media Platform to provide information about the community and contact with volunteers who show interest in the society.',
+        'What is meant for you will find you even if you feel like it has already passed you.',
       name: 'Social Media',
-      key: '9',
+      key: '10',
     },
     {
       image: '/pariyashi.png',
@@ -418,9 +436,9 @@ function Teampage() {
       discordhandle:'Pariyashihere#9072',
       id: 'Pariyashi Sahu',
       content:
-        ' The content writer of GDSC JIIT- 128, creatively presenting the community ideas and events, the bridge to communication that is content is her responsibility.',
+        'Void full of space, learning and improving myself while gazing the stars at night!',
       name: 'Content Writer/',
-      key: '10',
+      key: '11',
     },
 
  
@@ -439,7 +457,7 @@ function Teampage() {
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
       name: 'Management//',
-      key: '11',
+      key: '12',
     },
  
  
@@ -460,7 +478,7 @@ function Teampage() {
     content:
       'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
     name: 'Management///',
-    key: '12',
+    key: '13',
   },
  
   
@@ -481,7 +499,28 @@ function Teampage() {
       '"Success hits different when nobody believed in you" . ',
     name: 'Management',
    
-    key: '13',
+    key: '14',
+  },
+  
+  
+  {
+    image: '/AmanD.png',
+    image1: '/AmanD_w.png',
+    id: 'Aman Dixit',
+    insta: 'https://www.instagram.com/',
+    instahandle: '(Inactive)',
+    linkedin: 'https://www.linkedin.com/in/aman-dixit-463774149',
+    Linkedinhandle: 'Aman Dixit',
+    github: 'https://github.com/Aman0-3-0Dixit',
+    githubhandle: 'Aman0-3-0Dixit',
+    discord:'http://discordapp.com/users/aman_dixit#3101',
+    discordhandle:'aman_dixit#3101',
+   
+    content:
+      'The greatest arsenal one can bring to the party is the resources of his own mind ,his intelligence ,strategies and the force of will and i prefer sticking to that.',
+    name: 'Management 101',
+   
+    key: '15',
   }
  
   ]);
@@ -504,7 +543,7 @@ function Teampage() {
                 bgPosition={'center'}
                 alignItems={'center'}
                 width={{ base: '90%', md: 950 }}
-                height={{ base: '350', md: 400 }}
+                height={{ base: '300', md: 400 }}
                 p={{ base: 4, md: 10 }}
                 mt={{ base: '-5', md: '5' }}
                 borderRadius={15}
