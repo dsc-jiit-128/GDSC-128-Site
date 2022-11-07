@@ -15,8 +15,12 @@ function httpConfig() {
   return config;
 }
 
-
 export function signUpApi(data) {
     const URL = httpConfig() + "auth/signup-user";
     return axios.post(URL, data, getConfig());
+}
+
+export function socialSignIn(data) {
+  const URL = httpConfig() + "auth/social-network-authentication";
+  return axios.post(URL, data, getConfig());
 }

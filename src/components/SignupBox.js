@@ -18,8 +18,9 @@ import {
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { signUpApi } from "../services/apis.js";
+import { signUpApi, socialSignIn } from "../services/apis.js";
 import {useHistory} from "react-router-dom"
+import GoogleLogin from "react-google-login";
 
   import { FcGoogle } from 'react-icons/fc';
 
@@ -78,6 +79,30 @@ import {useHistory} from "react-router-dom"
           console.log("here", error);
         });
     };
+
+    const successResponseGoogle = (response) => {
+      // console.log("response", response);
+      const fetchedObject = response?.profileObj;
+      // console.log(fetchedObject);
+      const data = {
+        name: `${fetchedObject?.givenName} ${fetchedObject?.familyName}`,
+        email : fetchedObject?.email,
+        role: "USER",
+        socialId: fetchedObject?.googleId,
+        avatar: fetchedObject?.imageUrl
+      }
+  
+      socialSignIn(data).then((res) => {
+        localStorage.setItem("token", res?.data?.data?.token);
+        history.push("/");
+      }).catch(error => {
+        console.log(error?.response?.data?.message);
+      })
+    };
+  
+    const failureResponseGoogle = (error) => {
+      console.log("error", error);
+    }
 
     console.log(formik.values);
   
@@ -171,17 +196,28 @@ import {useHistory} from "react-router-dom"
                 </Button>
               </Stack>
               <Center pt={2}>
-      <Button
-        w={'full'}
-        maxW={'md'}
-        variant={'outline'}
-        bg={'gray.700'}
-        leftIcon={<FcGoogle />}>
-        <Center>
-          <Text color={'white'}>Sign up with Google</Text>
-        </Center>
-      </Button>
-    </Center>
+              <GoogleLogin
+                render={(renderProps) => (
+                  <Button
+                    w={'full'}
+                    maxW={'md'}
+                    variant={'outline'}
+                    bg={'gray.700'}
+                    leftIcon={<FcGoogle />}
+                    onClick={renderProps.onClick}
+                    >
+                    <Center>
+                      <Text color={'white'}>Sign up with Google</Text>
+                    </Center>
+                  </Button>
+                )}
+                clientId=".apps.googleusercontent.com"
+                buttonText="Login"
+                onSuccess={successResponseGoogle}
+                onFailure={failureResponseGoogle}
+                cookiePolicy={"single_host_origin"}
+              />
+              </Center>
               <Stack pt={6}>
                 <Text align={'center'}>
                   Already a user? <Link color={'blue.400'} href="/login">Login</Link>
