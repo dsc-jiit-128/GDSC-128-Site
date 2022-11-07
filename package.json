@@ -1,14 +1,20 @@
 {
   "name": "backend-gdsc-mainsite",
+  "engines": { "node": "16.17.1" },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "start2": "npm run build && node build/index.js",
     "tsoa:gen": "tsoa routes && tsoa swagger",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon src/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
   "author": "",
