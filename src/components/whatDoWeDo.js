@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   Divider,
+  Link,
 } from '@chakra-ui/react';
 import React from 'react';
 
@@ -60,8 +61,8 @@ export default function WhatDoWeDo() {
                     color="white"
                     fontSize={{ base: '14px', md: '1.6vw' }}
                     fontFamily={'Gilroy-Bold'}
-                  >
-                    Register as a student
+                  ><Link href="/events">
+                    Check out our Events!</Link>
                   </Text>
                 </Button>
               </Box>

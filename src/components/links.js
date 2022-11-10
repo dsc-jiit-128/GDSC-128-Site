@@ -81,17 +81,17 @@ export default function Links() {
                   // align="center"
                   mb={'2vw'}
                   // p={'1% 5%'}
-                  borderRadius={'2.5vw'}
+                  borderRadius={'1vw'}
                   // display={'flex'}
                   alignContent={'center'}
                   justifyContent={'center'}
                   opacity={'80%'}
                   mt={'10%'}
-                  height={{ base: '5vw', md: '3vw' }}
-                  width={{ base: '35vw', md: '20vw' }}
+                  height={{ base: '7vw', md: '3.5vw' }}
+                  width={{ base: '40vw', md: '20vw' }}
                   // ml={'auto'}
                   // mr="auto"
-                  ml={{ base: '10vw', md: '2vw' }}
+                  ml={{ base: '8vw', md: '2vw' }}
 
                   // boxSize={'auto'}
                 >
@@ -102,12 +102,14 @@ export default function Links() {
                     display="inline"
                     color={'white'}
                     alignSelf="center"
-                    fontFamily={'Gilroy-SemiBold'}
+                    fontFamily={'Gilroy-Medium'}
                   ><Link href="mailto:dscjiit128@gmail.com">
                     CONTACT US </Link>
                   </Text>
-                  <Box><Link href="mailto:dscjiit128@gmail.com">
+                  <Box
+                  ml={{base:1,md:3}}><Link href="mailto:dscjiit128@gmail.com">
                     <BsEnvelope
+                    
                       size={{ base: '25px', md: '1vw' }}
                       // display="inline"
                     /></Link>
@@ -188,6 +190,7 @@ export default function Links() {
                     <Box
                       m={'10px'}
                       _hover={{ color: '#C13584' }}
+                     
                       width={{ base: '20px', md: '35px' }}
                       height={{ base: '20px', md: '35px' }}
                     >
