@@ -10,7 +10,9 @@ import {
   Link,
 } from '@chakra-ui/react';
 import React from 'react';
-
+//import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
+import animationData from "../assets/animation.json";
 export default function WhatDoWeDo() {
   return (
     <>
@@ -25,7 +27,7 @@ export default function WhatDoWeDo() {
             What do we do?
           </Text>
         </Box>
-        <SimpleGrid columns={{ sm: 2, md: 2 }} gap={5} textAlign='center'>
+        <SimpleGrid columns={{ sm: 2, md: 2 }} gap={5} textAlign="center">
           <Box textAlign={'center'}>
             <Box
               textAlign={'center'}
@@ -33,7 +35,7 @@ export default function WhatDoWeDo() {
               ml={{ base: '4%', md: '22%' }}
             >
               <Text
-                textAlign={{base: "center", md: 'left'}}
+                textAlign={{base: 'center', md: 'left'}}
                 color="white"
                 fontSize={{ base: '3vw', md: '1.5vw' }}
                 width={{base: '90%', md: '65%'}}
@@ -68,7 +70,11 @@ export default function WhatDoWeDo() {
               </Box>
             </Box>
           </Box>
-          <Box textAlign={'center'}>Vishesh</Box>
+          <Box pl={'auto'} pr={'auto'}>
+            <Box maxW={500} overflow="hidden">
+              <Lottie animationData={animationData} />
+            </Box>
+          </Box>
         </SimpleGrid>
 
         <Divider

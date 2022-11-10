@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider,Image } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box } from '@chakra-ui/react';
 import { Route } from 'react-router-dom';
@@ -24,7 +24,24 @@ function Home() {
         minWidth={'100%'}
         m={'0'}
         overflowX={'hidden'}
+        overflow={'hidden'}
       >
+        
+                <Image
+            src="/blurblob1.png"
+            position="absolute"
+            top="200%"
+            left="-30%"
+            
+            ml={'auto'}
+            mr={'auto'}
+            width={'55%'}
+            objectFit={'contain'}
+            size={'auto'}
+            mt={{ base: '1%', md: 12 }}
+            flexShrink={0}
+           
+                />
         <Nav />
         <Head />
         <BuildTogether />

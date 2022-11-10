@@ -30,7 +30,24 @@ export default function BuildTogether() {
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={0}>
           <Box>
             <Box textAlign={'center'}>
-              <Box>
+            <Box
+              position={'relative'}
+              overflow={'visible'}
+              >
+              <Image
+                  src="/blurblob1.png"
+                  position="absolute"
+                  top="50%"
+                  left="50%"
+                  transform="translate(-50%, -30%)"
+                  ml={'auto'}
+                  mr={'auto'}
+                  width={'55%'}
+                  objectFit={'contain'}
+                  size={'auto'}
+                  mt={{ base: '1%', md: 12 }}
+                  flexShrink={0}
+                />
                 <Image
                   src="/image 2.png"
                   position="relative"
