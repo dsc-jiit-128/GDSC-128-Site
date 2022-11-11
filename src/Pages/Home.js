@@ -25,6 +25,7 @@ function Home() {
         m={'0'}
         overflowX={'hidden'}
         overflow={'hidden'}
+        overflowY={'hidden'}
       >
         
                 <Image
