@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58722bab.css",
+    "main.js": "/static/js/main.a1cf27d9.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/Gilroy-Light.ttf": "/static/media/Gilroy-Light.1822a291dd62fe2cca72.ttf",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1b4da6582f83f45ea039.ttf",
+    "static/media/Gilroy-SemiBold.ttf": "/static/media/Gilroy-SemiBold.07b9100a72fe7d46d20a.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
+    "static/media/Gilroy-Black.ttf": "/static/media/Gilroy-Black.3566c87fe5eaaa7052d5.ttf",
+    "static/media/Gilroy-Heavy.ttf": "/static/media/Gilroy-Heavy.41ca3e2d8c1dc7d3cde9.ttf",
+    "static/media/hinted-Gilroy-HeavyItalic.woff2": "/static/media/hinted-Gilroy-HeavyItalic.773925098dd83d39008a.woff2",
+    "static/media/hinted-Gilroy-BoldItalic.woff2": "/static/media/hinted-Gilroy-BoldItalic.f907a204daa0e6413d0e.woff2",
+    "static/media/hinted-Gilroy-BlackItalic.woff2": "/static/media/hinted-Gilroy-BlackItalic.a137a7df140807dbd1ef.woff2",
+    "static/media/hinted-Gilroy-MediumItalic.woff2": "/static/media/hinted-Gilroy-MediumItalic.01baafc6aa9d4d7c05c1.woff2",
+    "static/media/hinted-Gilroy-SemiBoldItalic.woff2": "/static/media/hinted-Gilroy-SemiBoldItalic.391d9bbbb991559c1827.woff2",
+    "static/media/hinted-Gilroy-RegularItalic.woff2": "/static/media/hinted-Gilroy-RegularItalic.1e08f40697f3fd12e4e7.woff2",
+    "static/media/hinted-Gilroy-Black.woff2": "/static/media/hinted-Gilroy-Black.3f17271331da4f9ec1bc.woff2",
+    "static/media/hinted-Gilroy-UltraLightItalic.woff2": "/static/media/hinted-Gilroy-UltraLightItalic.a604b31c32b92c8d3311.woff2",
+    "static/media/hinted-Gilroy-LightItalic.woff2": "/static/media/hinted-Gilroy-LightItalic.f80a958706798cbaeed0.woff2",
+    "static/media/hinted-Gilroy-ThinItalic.woff2": "/static/media/hinted-Gilroy-ThinItalic.e3da8eee251fc5c4ab72.woff2",
+    "static/media/hinted-Gilroy-UltraLight.woff2": "/static/media/hinted-Gilroy-UltraLight.7f27d5ef8cd3771487cf.woff2",
+    "static/media/hinted-Gilroy-Light.woff2": "/static/media/hinted-Gilroy-Light.3ff0f6411258b8c41296.woff2",
+    "static/media/hinted-Gilroy-Thin.woff2": "/static/media/hinted-Gilroy-Thin.e1584ca9a201d6902258.woff2",
+    "index.html": "/index.html",
+    "main.58722bab.css.map": "/static/css/main.58722bab.css.map",
+    "main.a1cf27d9.js.map": "/static/js/main.a1cf27d9.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58722bab.css",
+    "static/js/main.a1cf27d9.js"
+  ]
+}

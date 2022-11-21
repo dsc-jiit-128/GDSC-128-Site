@@ -24,7 +24,7 @@ app.use(express.json());
 // serve static files
 // app.use("/super-panel", express.static(helpers.buildPath("public", "super-admin")));
 // app.use("/panel", express.static(helpers.buildPath("public", "admin")));
-// app.use("/", express.static(helpers.buildPath("public", "frontend")));
+app.use("/", express.static(helpers.buildPath("public", "frontend")));
 
 // tsoa configuration
 app.use("/api-docs-gdsc", swaggerUi.serve, async (_req: any, res: any) => {
@@ -37,6 +37,6 @@ app.use(appRoutes);
 DB.then((rs) => {
     console.log("DB is connected.");
     app.listen( 3000, "127.0.0.1", async () => {
-        console.log(`server started on port ${port} running on link: http://127.0.0.1:3000s/ `);
+        console.log(`server started on port ${port} running on link: http://127.0.0.1:3000/ `);
     });
 }).catch((err) => console.log(err));

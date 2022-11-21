@@ -13,15 +13,9 @@ router.use('/api/v1/admin', adminRoutes);
 //router.use('/api/v1/super-admin', superAdminRoutes);
 router.use("/api/*", errorController.handle404);
 
-
-// router.use("/panel", (req, res) => {
-//     res.status(200).sendFile(helper.buildPath("public", "admin", "index.html"));
-// });
-
-
-// router.use("/", (req, res) => {
-//     res.status(200).sendFile(helper.buildPath("public", "frontend", "index.html"));
-// });
+router.use("/", (req, res) => {
+    res.status(200).sendFile(helper.buildPath("public", "frontend", "index.html"));
+});
 
 router.use(errorController.errorHandler);
 
