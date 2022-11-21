@@ -75,6 +75,7 @@ import "react-toastify/dist/ReactToastify.css";
       console.log(values,"main")
       signUpApi(values)
         .then((res) => {
+          toast.success(res?.data?.message);
           localStorage.setItem("token", res?.data?.data?.token);
           history.push("/");
         })
@@ -97,6 +98,7 @@ import "react-toastify/dist/ReactToastify.css";
       }
   
       socialSignIn(data).then((res) => {
+        toast.success(res?.data?.message);
         localStorage.setItem("token", res?.data?.data?.token);
         history.push("/");
       }).catch(error => {

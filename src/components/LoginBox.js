@@ -14,9 +14,39 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import { FcGoogle } from 'react-icons/fc';
+  import GoogleLogin from 'react-google-login';
+  import { socialSignIn } from '../services/apis';
+  import { toast } from 'react-toastify';
+  import { useHistory } from 'react-router-dom';
 
   
   export default function SimpleCard() {
+    let history = useHistory();
+
+    const successResponseGoogle = (response) => {
+      // console.log("response", response);
+      const fetchedObject = response?.profileObj;
+      // console.log(fetchedObject);
+      const data = {
+        name: `${fetchedObject?.givenName} ${fetchedObject?.familyName}`,
+        email : fetchedObject?.email,
+        role: "USER",
+        socialId: fetchedObject?.googleId,
+        avatar: fetchedObject?.imageUrl
+      }
+  
+      socialSignIn(data).then((res) => {
+        toast.success(res?.data?.message);
+        localStorage.setItem("token", res?.data?.data?.token);
+        history.push("/");
+      }).catch(error => {
+        toast.error(error?.response?.data?.message);
+      })
+    };
+  
+    const failureResponseGoogle = (error) => {
+      console.log("error", error);
+    }
     return (
       <Flex
         minH={'100vh'}
@@ -63,17 +93,28 @@ import {
               </Stack>
             </Stack>
             <Center pt={2}>
-      <Button
-        w={'full'}
-        maxW={'md'}
-        variant={'outline'}
-        bg={'gray.700'}
-        leftIcon={<FcGoogle />}>
-        <Center>
-          <Text color={'white'}>Sign in with Google</Text>
-        </Center>
-      </Button>
-    </Center>
+            <GoogleLogin
+                render={(renderProps) => (
+                  <Button
+                    w={'full'}
+                    maxW={'md'}
+                    variant={'outline'}
+                    bg={'gray.700'}
+                    leftIcon={<FcGoogle />}
+                    onClick={renderProps.onClick}
+                    >
+                    <Center>
+                      <Text color={'white'}>Sign up with Google</Text>
+                    </Center>
+                  </Button>
+                )}
+                clientId=".apps.googleusercontent.com"
+                buttonText="Login"
+                onSuccess={successResponseGoogle}
+                onFailure={failureResponseGoogle}
+                cookiePolicy={"single_host_origin"}
+              />
+            </Center>
     <Stack pt={6}>
               <Text align={'center'}>
                 New user? <Link color={'blue.400'} href='/signup'>Sign Up</Link>
