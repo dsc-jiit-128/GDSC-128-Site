@@ -11,7 +11,8 @@ function getConfig() {
 }
 
 function httpConfig() {
-  const config = "http://localhost:3000/api/v1/"; //local host
+  // const config = "http://localhost:3000/api/v1/"; //local host
+  const config = "https://gdsc-jiit128.herokuapp.com/api/v1/" // heroku deploy
   return config;
 }
 
