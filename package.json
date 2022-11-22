@@ -10,7 +10,7 @@
     "start2": "npm install && npm run build",
     "tsoa:gen": "tsoa routes && tsoa swagger",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
+    "start": "nodemon",
     "postinstall": "tsc",
     "watch-node": "nodemon src/index.js",
     "watch-ts": "tsc -w",
