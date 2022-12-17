@@ -33,4 +33,5 @@ DSC(Developers Student Club) - JIIT128 is a Google Developers program aimed at c
 
 Thanks to everyone who has contributed to this amazing website!
 
+
 <a href="https://github.com/dsc-jiit-128/GDSC-128-Site/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=dsc-jiit-128/GDSC-128-Site" alt="Image of contributors"></a>
