@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Flex, Button, Stack, Image, Text, Link } from '@chakra-ui/react';
 import { StyleConfig } from '@chakra-ui/react';
+import NavigationBar from './navBar'
+import ResponsiveNavbar from './responsiveNavbar'
 
 export default function Nav() {
   return (
@@ -17,7 +19,7 @@ export default function Nav() {
                   fontWeight={'semibold'}
                   color="white"
                   pl={0}
-                  pt = {'1.8vw'}
+                  pt = {'2.2vw'}
                   style={{ textDecoration: 'none' }}
                   fontFamily={'Gilroy-Bold'}
                   _hover={{   bgGradient:"linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)", bgClip:"text"}}
@@ -34,48 +36,8 @@ export default function Nav() {
               spacing={{ base: 3, md: 7 }}
               justifyContent="space-between"
             >
-              <Button
-                color="white"
-                variant="link"
-                fontSize={'1.6vw'}
-                fontWeight={'normal'}
-                p={{ base: '1px', md: '20px' }}
-                style={{ textDecoration: 'none' }}
-              >
-                <Link href="/events" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }} >
-                  Events
-                </Link>
-              </Button>
-
-              <Button
-                color="white"
-                variant="link"
-                fontSize={'1.6vw'}
-                fontWeight={'normal'}
-                // p={'3vw'}
-                p={{ base: '1px', md: '20px' }}
-                style={{ textDecoration: 'none' }}
-                _hover={{color: 'grey.200' }}
-              
-              >
-                <Link href="/teams" fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }}>
-                  Team
-                </Link>
-              </Button>
-
-              <Button
-                color="white"
-                variant="link"
-                fontSize={'1.6vw'}
-                fontWeight={'normal'}
-                // p={'2.55vw'}
-                p={{ base: '1px', md: '20px' }}
-                style={{ textDecoration: 'none' }}
-              >
-                <Link href="/login"  fontFamily={'Gilroy-Medium'} style={{ textDecoration: 'none' }} >
-                  Login
-                </Link>
-              </Button>
+              <NavigationBar />
+              <ResponsiveNavbar />
             </Stack>
           </Flex>
         </Flex>
