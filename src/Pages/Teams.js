@@ -300,23 +300,24 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/Shivansh.png',
-      image1: '/Shivansh_w.png',
-      id: 'Shivansh Pandey',
-      insta: 'https://www.instagram.com/_shivansh04/',
-      instahandle: '@_shivansh04',
-      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
-      Linkedinhandle: 'Shivansh Pandey',
-      github: 'https://github.com/Shivansh-25',
-      githubhandle: 'Shivansh-25',
-      discord:'https://discordapp.com/users/513042268190408714',
-      discordhandle:'Shivansh#4027',
+      image: '/Vishesh.png',
+      image1: '/Vishesh_w.png',
+      id: 'Vishesh Raheja',
+      insta: 'https://instagram.com/rogue__amoeba',
+      instahandle: '@rogue__amoeba',
+      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
+      Linkedinhandle: 'Vishesh Raheja',
+      github: 'https://github.com/entropyconquers',
+      githubhandle: 'entropyconquers',
+      discord:'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle:'ViShEsH#2452',
      
       content:
-        '“If you think math is hard, try web design.” ',
-      name: 'Web Dev/',
+        'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
+      name: 'Mobile/Web Dev',
       key: '4',
     },
+    
     {
       image: '/Bhav.png',
       image1: '/Bhav_w.png',
@@ -354,23 +355,24 @@ function Teampage() {
       key: '6',
     },
     {
-      image: '/Vishesh.png',
-      image1: '/Vishesh_w.png',
-      id: 'Vishesh Raheja',
-      insta: 'https://instagram.com/rogue__amoeba',
-      instahandle: '@rogue__amoeba',
-      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
-      Linkedinhandle: 'Vishesh Raheja',
-      github: 'https://github.com/entropyconquers',
-      githubhandle: 'entropyconquers',
-      discord:'https://discordapp.com/users/deadbeat_galvanometer#2452',
-      discordhandle:'ViShEsH#2452',
+      image: '/Shivansh.png',
+      image1: '/Shivansh_w.png',
+      id: 'Shivansh Pandey',
+      insta: 'https://www.instagram.com/_shivansh04/',
+      instahandle: '@_shivansh04',
+      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
+      Linkedinhandle: 'Shivansh Pandey',
+      github: 'https://github.com/Shivansh-25',
+      githubhandle: 'Shivansh-25',
+      discord:'https://discordapp.com/users/513042268190408714',
+      discordhandle:'Shivansh#4027',
      
       content:
-        'curious and enthusiastic full stack dev, who likes to solve day to day problems through programming. Creating visual solutions & creative concepts through identifying problems & research.',
-      name: 'Mobile/Web Dev',
+        '“If you think math is hard, try web design.” ',
+      name: 'Web Dev/',
       key: '7',
     },
+    
     {
       image: '/Ritik.png',
       image1: '/Ritik_w.png',
@@ -532,11 +534,36 @@ function Teampage() {
   return (
     <ChakraProvider>
       <>
-        <Box bgColor={'#111111'} minH="100%">
-          <Box bgColor={'#111111'} minH="100vh" m={0}>
+        <Box bgColor={'#111111'} minH="100%"
+          alignItems={'center'}
+          w="100%"
+          justifyContent={'center'}
+          display={'flex'}
+        >
+          <Box bgColor={'#111111'} minH="100vh" m={0}
+            w="100%"
+          >
             <Nav />
             <Head />
-            <Flex justify={'center'} align={'center'}>
+            <VStack
+              justify={'center'}
+              align={'center'}
+              direction={'column'}
+              display={'flex'}
+              flexGrow={1}
+              py={{ base: '5', md: '10' }}
+              pb={{ base: '5', md: '20' }}
+              //fill remaining height
+              
+              
+            >
+
+           
+            <Flex 
+            
+            justify={'center'} align={'center'}
+            
+            >
               <Box
                 justifySelf={'center'}
                 alignContent={'center'}
@@ -761,6 +788,7 @@ function Teampage() {
                       mb={'0.61%'}
                       fontSize={{ base: '4vw', md: 30 }}
                       mt={5}
+                      fontFamily={'Gilroy-Bold'}
                       _hover={{
                         bgGradient:
                           'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
@@ -795,6 +823,7 @@ function Teampage() {
                 </Flex>
               </VStack>
             </Flex>
+            </VStack>
           </Box>
         </Box>
       </>
