@@ -11,89 +11,64 @@ import {
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Highlight } from '@chakra-ui/react';
+import { Badge } from '@chakra-ui/react'
+
+const EventCard = (props) => {
+  return (
+    <Box alignItems={'center'}>
+      <Image
+        src={props.image}
+        //src="/techworldabc.jpg"
+        width={{ base: '50vw', md: '28vw' }}
+        height={{ base: '25vw', md: '14vw' }}
+        ml="auto"
+        mr="auto"
+      />
+      <Box p={6} textAlign={{ base: 'center', md: 'left' }}>
+        <Text color="white" fontFamily={'Gilroy-Medium'}>
+          <Badge colorScheme={'yellow'}>{
+            props.badge
+          }</Badge>
+
+          <Heading mb={4} fontFamily={'Gilroy-SemiBold'}>
+            {props.heading}
+            {/* Roadmap */}
+          </Heading>
+          <Text fontSize="m" fontFamily={'Gilroy-Medium'}>
+            {props.text}
+            {/* Introduction to Web development, Competitive programming, DSA and
+            internship opportunities. */}
+          </Text>
+        </Text>
+        <Text></Text>
+      </Box>
+    </Box>
+  );
+}
+
 function Sessions() {
   return (
     <>
-    <Box alignItems={'center'}>
-      <Image
-        src="/techworldabc.jpg"
-        width={{ base: '50vw', md: '28vw' }}
-        height={{ base: '25vw', md: '14vw' }}
-        ml="auto"
-        mr = 'auto'
-
+      <EventCard
+        image="/techworldabc.jpg"
+        badge="SESSION-1"
+        heading="Roadmap"
+        text="Introduction to Web development, Competitive programming, DSA and internship opportunities."
       />
-      <Box p={6} textAlign={{base:'center', md: 'left'}}>
-        <Text color="white" fontFamily={'Gilroy-Medium'}>
-          <Highlight
-            color="white"
-            query="SESSION-1"
-            styles={{ color: 'white', bg: '#FBBC04' }}
-            
-          >
-            SESSION-1
-          </Highlight>
 
-          <Heading mb={4} fontFamily={'Gilroy-SemiBold'} >Roadmap</Heading>
-          <Text fontSize="m" fontFamily={'Gilroy-Medium'} >Introduction to Web development, Competitive programming, DSA and internship opportunities.</Text>
-        </Text>
-        <Text></Text>
-      </Box>
-    </Box>
-    <Box alignItems={'center'}>
-    <Image
-      src="/githubabc.jpg"
-      width={{ base: '50vw', md: '28vw' }}
-      height={{ base: '25vw', md: '14vw' }}
-      ml="auto"
-      mr = 'auto'
-
-    />
-    <Box p={6} textAlign={{base:'center', md: 'left'}}>
-      <Text color="white" fontFamily={'Gilroy-Medium'}>
-        <Highlight
-          color="white"
-          query="SESSION-2"
-          styles={{ color: 'white', bg: '#FBBC04' }}
-          
-        >
-          SESSION-2
-        </Highlight>
-
-        <Heading mb={4} fontFamily={'Gilroy-SemiBold'} >Git & Github</Heading>
-        <Text fontSize="m" fontFamily={'Gilroy-Medium'} >Hands-on session of git and GitHub and introduction to HacktoberFest.</Text>
-      </Text>
-      <Text></Text>
-    </Box>
-  </Box>
-  <Box alignItems={'center'}>
-      <Image
-        src="/composeabc.jpg"
-        width={{ base: '50vw', md: '28vw' }}
-        height={{ base: '25vw', md: '14vw' }}
-        ml="auto"
-        mr = 'auto'
-
+      <EventCard
+        image="githubabc.jpg"
+        badge="SESSION-2"
+        heading="Git & Github"
+        text="Hands-on session of git and GitHub and introduction to HacktoberFest."
       />
-      <Box p={6} textAlign={{base:'center', md: 'left'}}>
-        <Text color="white" fontFamily={'Gilroy-Medium'}>
-          <Highlight
-            color="white"
-            query="SESSION-3"
-            styles={{ color: 'white', bg: '#FBBC04' }}
-            
-          >
-            SESSION-3
-          </Highlight>
-
-          <Heading mb={4} fontFamily={'Gilroy-SemiBold'} >Compose-Camp</Heading>
-          <Text fontSize="m" fontFamily={'Gilroy-Medium'} >Hands-on session on Android development using Jetpack Compose</Text>
-        </Text>
-        <Text></Text>
-      </Box>
-    </Box>
-  </>
-    
+      <EventCard
+        image="/composeabc.jpg"
+        badge="SESSION-3"
+        heading="Compose-Camp"
+        text="Hands-on session on Android development using Jetpack Compose"
+      />
+    </>
   );
 }
 export default Sessions;
