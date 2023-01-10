@@ -254,4 +254,11 @@ head,body{
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('fonts/BebasNeue/BebasNeue-Regular.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   

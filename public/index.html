@@ -9,7 +9,10 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,5 +42,37 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="x-shader/x-vertex" id="vertexshader">
+
+      attribute float size;
+      attribute vec3 customColor;
+      varying vec3 vColor;
+    
+      void main() {
+    
+        vColor = customColor;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = size * ( 300.0 / -mvPosition.z );
+        gl_Position = projectionMatrix * mvPosition;
+    
+      }
+    
+    </script>
+    <script type="x-shader/x-fragment" id="fragmentshader">
+    
+     uniform vec3 color;
+     uniform sampler2D pointTexture;
+    
+     varying vec3 vColor;
+    
+     void main() {
+    
+       gl_FragColor = vec4( vColor, 1.0 );
+       gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+    
+     }
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
