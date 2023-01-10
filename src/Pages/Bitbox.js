@@ -16,6 +16,9 @@ import Nav from '../components/navbar';
 import Head from '../components/heading';
 import { useEffect } from 'react';
 import Timer from '../components/Bitbox/TimerCard';
+import Video from '../components/Bitbox/Video';
+import Sponsors from '../components/Bitbox/Sponsors';
+import FAQ from '../components/Bitbox/FAQ';
 
 const TimerCard = ({type, number}) => {
     return <Box
@@ -143,6 +146,9 @@ export default function Bitbox() {
           </Text>
         </HStack>
       </VStack>
+      <Video />
+      <Sponsors />
+     <FAQ />
     </Box>
   );
 }
