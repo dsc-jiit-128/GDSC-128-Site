@@ -1,0 +1,12 @@
+.sponsor:hover 
+{
+    background-color: black;
+    
+}
+
+.sponsor:hover img
+{
+    
+    width: 60%;
+    height: 60%;
+}
