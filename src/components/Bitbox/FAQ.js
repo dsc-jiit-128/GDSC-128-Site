@@ -54,9 +54,9 @@ FAQ        </Text>
         >
 What is hackathon?            </Box>
             {isExpanded ? (
-              < CloseIcon fontSize='12px' color={'white'} bgColor={'red'} />
+              < CloseIcon fontSize='18px' color={'white'} bgColor={'red'} />
             ) : (
-              <AddIcon fontSize='12px'color={'white'} bgColor={'red'} />
+              <AddIcon fontSize='18px'color={'white'} bgColor={'red'} />
             )}
           </AccordionButton>
         </h2>
@@ -84,9 +84,9 @@ What is hackathon?            </Box>
         >
 Why would someone participate in a hackathon?            </Box>
             {isExpanded ? (
-              < CloseIcon fontSize='15px' color={'white'} bgColor={"#FBBC04"} />
+              < CloseIcon fontSize='18px' color={'white'} bgColor={"#FBBC04"} />
             ) : (
-              <AddIcon fontSize='15px'color={'white'} bgColor={"#FBBC04"} />
+              <AddIcon fontSize='18px'color={'white'} bgColor={"#FBBC04"} />
             )}
           </AccordionButton>
         </h2>
@@ -109,9 +109,9 @@ Why would someone participate in a hackathon?            </Box>
         >
 Who can participate?  Are there any perquisites?            </Box>
             {isExpanded ? (
-              < CloseIcon fontSize='15px' color={'white'} bgColor={"#0F9D58"} />
+              < CloseIcon fontSize='18px' color={'white'} bgColor={"#0F9D58"} />
             ) : (
-              <AddIcon fontSize='15px'color={'white'} bgColor={"#0F9D58"} />
+              <AddIcon fontSize='18px'color={'white'} bgColor={"#0F9D58"} />
             )}
           </AccordionButton>
         </h2>
@@ -134,9 +134,9 @@ Who can participate?  Are there any perquisites?            </Box>
         >
 Do I need a team?            </Box>
             {isExpanded ? (
-              < CloseIcon fontSize='15px' color={'white'} bgColor={"#4285F4"} />
+              < CloseIcon fontSize='18px' color={'white'} bgColor={"#4285F4"} />
             ) : (
-              <AddIcon fontSize='15px'color={'white'} bgColor={"#4285F4"} />
+              <AddIcon fontSize='18px'color={'white'} bgColor={"#4285F4"} />
             )}
           </AccordionButton>
         </h2>
@@ -160,9 +160,9 @@ Do I need a team?            </Box>
             Will I get a participation certificate?
             </Box>
             {isExpanded ? (
-              < CloseIcon fontSize='12px' color={'white'} bgColor={"#EA4335"} />
+              < CloseIcon fontSize='18px' color={'white'} bgColor={'red'} />
             ) : (
-              <AddIcon fontSize='12px'color={'white'} bgColor={"#EA4335"} />
+              <AddIcon fontSize='18px'color={'white'} bgColor={'red'} />
             )}
           </AccordionButton>
         </h2>
