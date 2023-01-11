@@ -16,17 +16,27 @@ export default function Video() {
     return (
       <>
        <Box margin='auto' marginTop={'100px'}>
-        <Text fontSize={'64px'} textAlign='center' textColor={'white'} >
+        <Text fontSize={'6xl'} textAlign='center' color={'white'} >
           {' '}
           Watch the teaser{' '}
         </Text>
-        <AspectRatio maxW='1097px' maxH='750px' ratio={1} margin='auto' marginTop={'100px'}>
+        <Box mt='8vw'>
+        <Box className = 'outer2'>
+          <Box className = 'inner2'>
+          </Box>
+        </Box>
+        <AspectRatio maxW='70%' maxH='50%' margin='auto' >
           <iframe
           title='naruto'
           src='https://www.youtube.com/watch?v=XJ7E5l2YfB0'
           allowFullScreen
           />
         </AspectRatio>
+        <Box className = 'outer' >
+          <Box className = 'inner' >
+          </Box>
+        </Box>
+        </Box>
       </Box>
       <Box>
 

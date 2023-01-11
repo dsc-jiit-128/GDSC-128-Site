@@ -4,9 +4,54 @@
     
 }
 
+.outer {
+    margin-left: 71vw;
+    margin-top: -14vw;
+    width: 16vw;
+    height: 16vw;
+    z-index: -10;
+    background: linear-gradient(225deg, #4285F4 0%, #FF0000 100%);
+}
+
+.inner {
+    
+    width: 14vw;
+    height: 14vw;
+    z-index: -10;
+    display: inline-block;
+    margin-top:-1px;
+    margin-left:-1px;
+    background:#161515;
+    
+}
+
+.outer2 {
+    margin-left: 13vw;
+    margin-bottom: -14vw;
+    width: 16vw;
+    height: 16vw;
+    z-index: -10;
+    background: linear-gradient(225deg, #FFA800 0%, #0F9D58 100%);
+    transform: rotate(-180deg);
+}
+
+.inner2 {
+    width: 14vw;
+    height: 14vw;
+    z-index: -10;
+    display: inline-block;
+    margin-top:-1px;
+    margin-left:-1px;
+    background:#161515;
+}
+
 .sponsor:hover img
 {
     
     width: 60%;
     height: 60%;
+}
+
+.sponsor{
+    vertical-align: middle;
 }

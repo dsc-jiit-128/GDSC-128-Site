@@ -16,20 +16,23 @@ import '../../css/Sponsors.css'
 export default function Sponsors() {
     return (
       <>
-       <Box margin={'50px'}>
-        <Text fontSize={'64px'} align="center" marginTop={'120px'} textColor='white'>
+             <Box margin={'50px'}>
+        <Text fontSize={'6xl'} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
           Sponsors
         </Text>
         <Grid
           templateColumns="repeat(4, 0fr)"
           gap={0}
-          margin='auto'
-          width={'70%'}
+          alignContent={'center'}
+          justifyContent={'center'}
+          ml='310px'
+          mr='310px'
           mt={'150px'}
+          // w={'50vw'}
         >
           <GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -40,8 +43,8 @@ export default function Sponsors() {
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           <GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -51,8 +54,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -62,8 +65,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -73,8 +76,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -84,8 +87,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -95,8 +98,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -106,8 +109,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -117,8 +120,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -128,8 +131,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -139,8 +142,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -150,8 +153,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -161,8 +164,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -172,8 +175,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -183,8 +186,8 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -194,16 +197,18 @@ export default function Sponsors() {
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
-            w="275px"
-            h="275px"
+            w="17vw"
+            h="17vw"
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
             display={'flex'}
             justifyContent={'center'}
+            alignItems='center'
+            
             
           >
-            <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <Text fontSize={'2vw'}  color = 'white' margin = '2vw'textAlign='center'>And there's space for you too </Text>
           </GridItem>
         </Grid>
       </Box>
