@@ -21,7 +21,7 @@ export default function Video() {
           Watch the teaser{' '}
         </Text>
         <Box mt='8vw'>
-        <Box className = 'outer2'>
+        <Box className = 'outer2 redd'>
           <Box className = 'inner2'>
           </Box>
         </Box>
@@ -32,7 +32,7 @@ export default function Video() {
           allowFullScreen
           />
         </AspectRatio>
-        <Box className = 'outer' >
+        <Box className = 'outer yelloww' >
           <Box className = 'inner' >
           </Box>
         </Box>

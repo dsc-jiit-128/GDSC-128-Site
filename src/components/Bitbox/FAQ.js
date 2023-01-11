@@ -37,7 +37,7 @@ export default function FAQ() {
 FAQ        </Text>
 
       </Box>
-      <Box>
+      <Box margin='130px'>
   
 
         <Accordion allowToggle>

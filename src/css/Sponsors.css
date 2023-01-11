@@ -10,8 +10,19 @@
     width: 16vw;
     height: 16vw;
     z-index: -10;
+    
+}
+
+.outer:hover{
+    margin-left: 71vw;
+    margin-top: -14vw;
+    width: 16vw;
+    height: 16vw;
+    z-index: -10;
+    
     background: linear-gradient(225deg, #4285F4 0%, #FF0000 100%);
 }
+
 
 .inner {
     
@@ -31,6 +42,15 @@
     width: 16vw;
     height: 16vw;
     z-index: -10;
+    
+    transform: rotate(-180deg);
+}
+.outer2:hover{
+    margin-left: 13vw;
+    margin-bottom: -14vw;
+    width: 16vw;
+    height: 16vw;
+    z-index: -10;
     background: linear-gradient(225deg, #FFA800 0%, #0F9D58 100%);
     transform: rotate(-180deg);
 }
@@ -45,6 +65,8 @@
     background:#161515;
 }
 
+
+
 .sponsor:hover img
 {
     
@@ -54,4 +76,23 @@
 
 .sponsor{
     vertical-align: middle;
+}
+
+.last:hover .us
+{
+    display: block;
+}
+.last:hover .space
+{
+    display: none;
+}
+
+.redd
+{
+    background: linear-gradient(225deg, #4285F4 0%, #FF0000 100%);
+}
+
+.yelloww
+{
+    background: linear-gradient(225deg, #FFA800 0%, #0F9D58 100%);
 }

@@ -196,19 +196,21 @@ export default function Sponsors() {
             
           >
             <Image src= "/logo-google.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-          </GridItem><GridItem
+            </GridItem><GridItem
             w="17vw"
             h="17vw"
             bg="#161515"
             border={'1px solid white'}
-            className='sponsor'
+            className='sponsor last'
             display={'flex'}
             justifyContent={'center'}
             alignItems='center'
+
             
             
           >
-            <Text fontSize={'2vw'}  color = 'white' margin = '2vw'textAlign='center'>And there's space for you too </Text>
+            <Text fontSize={'2vw'}  color = 'white' margin = '2vw'textAlign='center' className  = 'space'>And there's space for you too </Text>
+            <Text fontSize={'2vw'}  color = 'white' margin = '2vw'textAlign='center' className ='us' display={'none'} >Sponsor us</Text>
           </GridItem>
         </Grid>
       </Box>
