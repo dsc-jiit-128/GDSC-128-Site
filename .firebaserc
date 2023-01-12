@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "vishesh-dev"
+  },
+  "targets": {
+    "vishesh-dev": {
+      "hosting": {
+        "app": [
+          "bitbox-staging"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

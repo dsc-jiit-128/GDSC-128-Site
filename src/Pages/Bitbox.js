@@ -103,7 +103,7 @@ export default function Bitbox() {
         }}
       ></div>
 
-      <Image src="/bitbox/frontBg.svg" w={'100%'} />
+      <Image src="/frontBg.svg" w={'100%'} />
       <Box pos={'absolute'} top={'0'} zIndex={'1'} w={'100%'}>
         <Nav />
         <Box>

@@ -7,7 +7,7 @@ const preload = () => {
 
     var typo = null;
     const loader = new THREE.FontLoader(manager);
-    const font = loader.load('BebasNeue_Regular.json', function(font) {
+    const font = loader.load('https://res.cloudinary.com/dgrvyyhzc/raw/upload/v1673533892/BebasNeue_Regular_k8uv99.json', function(font) {
         typo = font;
     });
     const particle = new THREE.TextureLoader(manager).load('https://res.cloudinary.com/dfvtkoboz/image/upload/v1605013866/particle_a64uzf.png');
