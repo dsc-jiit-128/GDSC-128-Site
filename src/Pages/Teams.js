@@ -258,7 +258,7 @@ function Teampage() {
       Linkedinhandle: 'Sanat Bhatia',
 
       id: 'Sanat Bhatia',
-      name: 'UI/UX Designer',
+      name: 'UI/UX Designer;',
       content:
         '"I am silently judging your font choice."',
       key: '1',
@@ -278,7 +278,7 @@ function Teampage() {
      
       content:
         'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
-      name: 'Web Dev',
+      name: 'Web Dev ',
       key: '2',
     },
     {
@@ -351,7 +351,7 @@ function Teampage() {
      
       content:
         '"Making the World a better place" -Gavin Belson',
-      name: 'Android/Web Dev',
+      name: 'Android/Web-Dev',
       key: '6',
     },
     {
@@ -369,7 +369,7 @@ function Teampage() {
      
       content:
         '“If you think math is hard, try web design.” ',
-      name: 'Web Dev/',
+      name: 'Web Dev  ',
       key: '7',
     },
     
@@ -439,7 +439,7 @@ function Teampage() {
       id: 'Pariyashi Sahu',
       content:
         'Void full of space, learning and improving myself while gazing the stars at night!',
-      name: 'Content Writer/',
+      name: 'Content Writer  ',
       key: '11',
     },
 
@@ -458,7 +458,7 @@ function Teampage() {
       discordhandle:'Kanav Agarwal#9540',
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
-      name: 'Management//',
+      name: 'Management  ',
       key: '12',
     },
  
@@ -479,7 +479,7 @@ function Teampage() {
    
     content:
       'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
-    name: 'Management///',
+    name: 'Management    ',
     key: '13',
   },
  
@@ -520,7 +520,7 @@ function Teampage() {
    
     content:
       'The greatest arsenal one can bring to the party is the resources of his own mind ,his intelligence ,strategies and the force of will and i prefer sticking to that.',
-    name: 'Management 101',
+    name: 'Management ',
    
     key: '15',
   }
