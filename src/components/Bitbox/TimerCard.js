@@ -16,14 +16,14 @@ import React from 'react'
 
 const TimerCard = ({type, number}) => {
     return <Box
-        px={6}
-        py={2}
+        px={{base:'3vw', md:6}}
+        py={{base:1, md:2}}
 
-        borderRadius="3xl"
+        borderRadius= {{base:'10px', md:"3xl"}}
         border={"3px solid #FFF"}
     >
         <Text
-            fontSize={30}
+            fontSize={{base:'3vw', md:30}}
             
             fontFamily={"Gilroy-Bold"}
             color="white"
@@ -31,7 +31,7 @@ const TimerCard = ({type, number}) => {
             {type}
         </Text>
         <Text
-            fontSize={160}
+            fontSize={{base:'7vw', md:160}}
             fontWeight="bold"
             fontFamily={"BebasNeue-Regular"}
             color="white"
@@ -54,7 +54,7 @@ const Timer = ({futureDate}) => {
         return () => clearInterval(interval)
     }, [futureDate])
 
-    return <HStack spacing={10}>
+    return <HStack spacing={{base:3, md:10}} ml={{base: '-5vw', md: '3vw'}}>
         <TimerCard type="D" 
             number={date.getDate()}
         />

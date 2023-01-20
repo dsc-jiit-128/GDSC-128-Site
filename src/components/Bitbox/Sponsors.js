@@ -16,8 +16,8 @@ import '../../css/Sponsors.css'
 export default function Sponsors() {
     return (
       <>
-             <Box margin={'50px'}>
-        <Text fontSize={'6xl'} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
+             <Box margin={'50px'} mt={{base: '-15vw', md:'3vw'}}>
+        <Text fontSize={{base:'8vw', md:'6xl'}} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
           Sponsors
         </Text>
         <Grid
@@ -25,9 +25,9 @@ export default function Sponsors() {
           gap={0}
           alignContent={'center'}
           justifyContent={'center'}
-          ml='310px'
-          mr='310px'
-          mt={'150px'}
+          ml={{base:'auto',md:'310px'}}
+          mr={{base:'auto',md:'310px'}}
+          mt={{base:'10vw',md:'10vw'}}
           // w={'50vw'}
         >
           <GridItem

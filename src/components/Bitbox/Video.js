@@ -15,8 +15,8 @@ import { AspectRatio } from '@chakra-ui/react'
 export default function Video() {
     return (
       <>
-       <Box margin='auto' marginTop={'100px'}>
-        <Text fontSize={'6xl'} textAlign='center' color={'white'} >
+       <Box margin='auto' marginTop={{base:'10vw',md:'100px'}} mb={{base:'5vw', md:'auto'}}>
+        <Text fontSize={{base:'8vw', md:'6xl'}} textAlign='center' color={'white'} >
           {' '}
           Watch the teaser{' '}
         </Text>
