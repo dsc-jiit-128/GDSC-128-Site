@@ -593,46 +593,9 @@ function Teampage() {
   },
  
   
-  {
-    image: '/AryanC.png',
-    image1: '/AryanC_white.png',
-    id: 'Aryan Chauhan',
-    insta: 'https://www.instagram.com/ayoaryann/',
-    instahandle: '@ayoaryann',
-    linkedin: 'https://www.linkedin.com/in/aryan-chauhan-791b5a247/',
-    Linkedinhandle: 'Aryan Chauhan',
-    github: 'https://github.com/IAmAnonymousAryan07',
-    githubhandle: 'IAmAnonymousAryan07',
-    discord:'http://discordapp.com/users/Aryan007#9721',
-    discordhandle:'Aryan007#9721',
-   
-    content:
-      '"Success hits different when nobody believed in you" . ',
-    name: 'Management',
-   
-    key: '14',
-  },
   
   
-  {
-    image: '/AmanD.png',
-    image1: '/AmanD_w.png',
-    id: 'Aman Dixit',
-    insta: 'https://www.instagram.com/',
-    instahandle: '(Inactive)',
-    linkedin: 'https://www.linkedin.com/in/aman-dixit-463774149',
-    Linkedinhandle: 'Aman Dixit',
-    github: 'https://github.com/Aman0-3-0Dixit',
-    githubhandle: 'Aman0-3-0Dixit',
-    discord:'http://discordapp.com/users/aman_dixit#3101',
-    discordhandle:'aman_dixit#3101',
-   
-    content:
-      'The greatest arsenal one can bring to the party is the resources of his own mind ,his intelligence ,strategies and the force of will and i prefer sticking to that.',
-    name: 'Management ',
-   
-    key: '15',
-  }
+  
  
   ]
 
