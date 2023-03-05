@@ -23,6 +23,7 @@ export default function WhatDoWeDo() {
             fontSize={{ base: '20px', md: '4.5vw' }}
             mt={100}
             color="white"
+            fontFamily={'Gilroy-SemiBold'}
           >
             What do we do?
           </Text>

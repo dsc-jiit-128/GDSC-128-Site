@@ -6,11 +6,7 @@ import './App.css';
 import { Route,Switch,Redirect } from 'react-router-dom';
 
 
-import Nav from './components/navbar';
-import Head from './components/heading';
-import BuildTogether from './components/ buildTogether';
-import WhatDoWeDo from './components/whatDoWeDo';
-import Links from './components/links';
+
 import Home from './Pages/Home';
 import Teampage from './Pages/Teams';
 import Events from './Pages/Events';
@@ -19,7 +15,6 @@ import Events from './Pages/Events';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import ForgotPass from './Pages/ForgotPassword';
-import { Theme } from '@chakra-ui/react';
 import { theme } from './theme'
 import ResetP from './Pages/ResetPassword';
 import verifyemail from './Pages/VerifyEmail';

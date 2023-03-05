@@ -97,9 +97,9 @@ export default function BuildTogether() {
                 width={{ base: '200px', md: '24.2vw' }}
                 height={{ base: '50px', md: '5.85vw' }}
               >
-                <Text color="white" fontFamily={'Gilroy'} fontSize={{ base: '14px', md: '1.7vw' }} >
-                  <Link href="/signup">
-                  Register as Student
+                <Text color="white" fontFamily={'Gilroy-Bold'} fontSize={{ base: '14px', md: '1.7vw' }} >
+                  <Link href="/bitbox">
+                  BITBOX 3.0
                   </Link>
                 </Text>
               </Button>

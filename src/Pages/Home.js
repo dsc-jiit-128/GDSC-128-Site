@@ -8,7 +8,8 @@ import Nav from '../components/navbar';
 import Head from '../components/heading';
 import BuildTogether from '../components/ buildTogether';
 import WhatDoWeDo from '../components/whatDoWeDo';
-import Links from '../components/links';
+
+import HomepageEvents from '../components/Homepage_events';
 
 
 
@@ -47,7 +48,8 @@ function Home() {
         <Head />
         <BuildTogether />
         <WhatDoWeDo />
-        <Links />
+        <HomepageEvents />
+
       </Box>
     </>
   );

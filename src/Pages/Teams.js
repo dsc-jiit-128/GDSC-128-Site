@@ -15,14 +15,8 @@ import {
 } from '@chakra-ui/react';
 import Nav from '../components/navbar';
 import Head from '../components/heading';
-import BuildTogether from '../components/ buildTogether';
-import WhatDoWeDo from '../components/whatDoWeDo';
-import Links from '../components/links';
-import Teams from '../components/teambox';
-import Teamnav from '../components/footerofteams';
-import Bottomteam from '../components/bottomnav_teamspage';
+
 import { useAutoAnimate } from '@formkit/auto-animate/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 // Import Swiper styles
 import 'swiper/css';
