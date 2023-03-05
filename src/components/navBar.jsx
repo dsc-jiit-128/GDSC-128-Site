@@ -14,9 +14,7 @@ function NavigationBar() {
             <NavLink to="/teams">
               <li>TEAMS</li>
             </NavLink>
-            <NavLink to="/login">
-              <li>LOGIN</li>
-            </NavLink>
+            
           </div>
         </div>
       </div>

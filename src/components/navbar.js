@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Button, Stack, Image, Text, Link } from '@chakra-ui/react';
+import { Box, Flex, Button, Stack, Image, Text, Link, HStack } from '@chakra-ui/react';
 import { StyleConfig } from '@chakra-ui/react';
 import NavigationBar from './navBar.jsx'
 import ResponsiveNavbar from './responsiveNavbar'
@@ -11,11 +11,16 @@ export default function Nav() {
       <Box px={4} pb={1} pt={0} mt={0} zIndex={1}>
         <Flex p={'1%'} justifyContent={'space-between'}>
           <Flex fontSize={40} color="white">
-            <Stack direction={'row'} spacing={{ base: '15px', md: '35px' }}>
+            <HStack spacing={{ base: '15px', md: '35px' }}
+              justifyContent="center"
+              alignItems="center"
+            >
               <Link
                 href="/"
                 display={{ base: 'flex', md: 'flex' }}
                 style={{ textDecoration: 'none' }}
+                justifyContent="center"
+                alignItems="center"
               >
                 <Image
                   borderRadius="full"
@@ -25,13 +30,14 @@ export default function Nav() {
                 {
                   <Text
                     // pt={'1.5vw'}
+                    
                     fontSize={[20]}
                     opacity={[0, 1]}
                     ml={5}
                     fontWeight={'semibold'}
                     color="white"
                     pl={0}
-                    pt={'2.2vw'}
+                    //pt={'2.2vw'}
                     style={{ textDecoration: 'none' }}
                     fontFamily={'Gilroy-Bold'}
                     _hover={{
@@ -44,7 +50,7 @@ export default function Nav() {
                   </Text>
                 }
               </Link>
-            </Stack>
+            </HStack>
           </Flex>
 
           <Flex alignItems={'center'} justifyContent="space-between">
