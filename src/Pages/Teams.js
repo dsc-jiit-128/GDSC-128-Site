@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
@@ -94,24 +94,24 @@ const TeamNav = props => {
 
   // available pos must be in odd numbers
 
-  var posArray = props.posArray;
-  const selectedPos = props.selectedPos;
-  const setSelectedPos = props.setSelectedPos;
+  var posArrayCoreTeam = props.posArrayCoreTeam;
+  const selectedPosCoreTeam = props.selectedPosCoreTeam;
+  const setSelectedPosCoreTeam = props.setSelectedPosCoreTeam;
   const setPosArray = props.setPosArray;
-  // selectedPos will always be in the center and bigger than the other positions
+  // selectedPosCoreTeam will always be in the center and bigger than the other positions
 
   const handleClicked = it => {
     //find the index of the clicked item
-    const index = posArray.findIndex(item => item.name === it.name);
-    // if the selectedPos is clicked, do nothing
-    if (index === selectedPos) return;
-    // if the selectedPos is not clicked, set the selectedPos to the clicked index
+    const index = posArrayCoreTeam.findIndex(item => item.name === it.name);
+    // if the selectedPosCoreTeam is clicked, do nothing
+    if (index === selectedPosCoreTeam) return;
+    // if the selectedPosCoreTeam is not clicked, set the selectedPosCoreTeam to the clicked index
 
-    const temp = [...posArray];
+    const temp = [...posArrayCoreTeam];
     //get element at index and put it in the center
     const selectedElement = temp.splice(index, 1);
     temp.splice(temp.length / 2, 0, selectedElement[0]);
-    setSelectedPos(Math.ceil(temp.length - 1) / 2);
+    setSelectedPosCoreTeam(Math.floor(temp.length - 1) / 2);
     //set the new array
     setPosArray(temp);
   };
@@ -127,13 +127,13 @@ const TeamNav = props => {
       // border={'4px red solid'}
       display="flex"
     >
-      {posArray.map(it => (
+      {posArrayCoreTeam.map(it => (
         <TeamNavMember
           image={it.image1}
           name={it.name}
           onClick={() => handleClicked(it)}
           key={it.key}
-          isSelected={posArray.indexOf(it) === selectedPos}
+          isSelected={posArrayCoreTeam.indexOf(it) === selectedPosCoreTeam}
         />
       ))}
     </HStack>
@@ -141,21 +141,24 @@ const TeamNav = props => {
 };
 
 const CurrentTeamNav = props => {
-  const allPosArray = props.posArray;
+  const allPosArray = props.posArrayCoreTeam;
   const [selectedPosArray, setSelectedPosArray] = useState(0);
-  const [posArray, setPosArray] = useState(
+  const [posArrayCoreTeam, setPosArray] = useState(
     // get the first 5 elements
     allPosArray.slice(selectedPosArray, 5)
   );
   useEffect(() => {
-    console.log('posArray', posArray);
-    const key = posArray[selectedPos].key;
+    console.log('posArrayCoreTeam', posArrayCoreTeam);
+    const key = posArrayCoreTeam[selectedPosCoreTeam]?.key;
     console.log('key', key);
     props.parentSetSelectedPos(key - 1);
-  }, [posArray]);
+  }, [posArrayCoreTeam]);
 
-  const [selectedPos, setSelectedPos] = useState(
-    Math.ceil(posArray.length - 1) / 2
+  
+
+
+  const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
+    Math.floor((posArrayCoreTeam.length - 1) / 2)
   );
 
   return (
@@ -191,9 +194,9 @@ const CurrentTeamNav = props => {
         </Box>
       )}
       <TeamNav
-        posArray={posArray}
-        selectedPos={selectedPos}
-        setSelectedPos={setSelectedPos}
+        posArrayCoreTeam={posArrayCoreTeam}
+        selectedPosCoreTeam={selectedPosCoreTeam}
+        setSelectedPosCoreTeam={setSelectedPosCoreTeam}
         setPosArray={setPosArray}
       />
 
@@ -238,7 +241,119 @@ const CurrentTeamNav = props => {
 };
 
 function Teampage() {
-  const [posArray, setPosArray] = useState([
+  const TeamLeads = [
+    {
+      image: '/sanat.png',
+      image1: '/sanat_white.png',
+      insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
+      linkedin: 'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
+      github:'https://github.com/TheCringedSoul',
+      githubhandle:'TheCringedSoul',
+      discord:'http://discordapp.com/users/TheCringedSoul#7900',
+      discordhandle:'TheCringedSoul#7900',
+      instahandle: '@sanatbhatia',
+      Linkedinhandle: 'Lead 1',
+
+      id: 'Sanat Bhatia',
+      name: 'UI/UX Designer;',
+      content:
+        '"I am silently judging your font choice."',
+      key: '1',
+    },
+    {
+      image: '/Sahil.png',
+      image1: '/Sahil_w.png',
+      id: 'Lead 2',
+      insta: 'https://instagram.com/sandhu._.sahil_',
+      instahandle: '@sandhu._.sahil_',
+      linkedin: 'https://www.linkedin.com/in/sahilsher-singh/',
+      Linkedinhandle: ' Sahilsher Singh',
+      github: 'hhttps://github.com/Sandhu-Sahil',
+      githubhandle: 'Sandhu-Sahil',
+      discord:'http://discordapp.com/users/Sahil Sandhu#5673',
+      discordhandle:'Sahil Sandhu#5673',
+     
+      content:
+        'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
+      name: 'Web Dev ',
+      key: '2',
+    },
+    {
+      image: '/doyel.png',
+      image1: '/doyel_white.png',
+      id: 'Lead 3',
+      insta: 'https://instagram.com/_.doyel._',
+      instahandle: '@_.doyel._',
+      github: 'https://github.com/DoyelA',
+      githubhandle: 'DoyelA',
+      discord:'http://discordapp.com/users/DolaMandola#9233',
+      discordhandle:'DolaMandola#9233',
+      linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
+      Linkedinhandle: 'Doyel Agrawal',
+      
+      content:
+        ' Always pet a cat when you meet one.',
+      name: 'Backend Dev',
+      key: '3',
+    },
+    {
+      image: '/Vishesh.png',
+      image1: '/Vishesh_w.png',
+      id: 'Lead 4',
+      insta: 'https://instagram.com/rogue__amoeba',
+      instahandle: '@rogue__amoeba',
+      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
+      Linkedinhandle: 'Vishesh Raheja',
+      github: 'https://github.com/entropyconquers',
+      githubhandle: 'entropyconquers',
+      discord:'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle:'ViShEsH#2452',
+     
+      content:
+        'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
+      name: 'Mobile/Web Dev',
+      key: '4',
+    },
+    
+    {
+      image: '/Bhav.png',
+      image1: '/Bhav_w.png',
+      id: 'Lead 5',
+      insta: 'https://www.instagram.com/goyalbhav/',
+      instahandle: '@goyalbhav',
+      linkedin: 'https://www.linkedin.com/in/goyalbhav',
+      Linkedinhandle: ' Bhav Goyal',
+      github: 'https://github.com/w3rew0lf',
+      githubhandle: 'w3rew0lf',
+      discord:'http://discordapp.com/users/w3rew01f#4027',
+      discordhandle:'w3rew01f#4027',
+     
+      content:
+        'I like to explore, travel and know more people. ',
+      name: 'Cyber Security',
+      key: '5',
+    },
+    {
+      image: '/Tanay.png',
+      image1: '/Tanay_w.png',
+      id: 'Lead 6',
+      insta: 'https://instagram.com/tanay_7',
+      instahandle: '@tanay_7',
+      linkedin: 'https://www.linkedin.com/in/tanay-k-755340177',
+      Linkedinhandle: 'Tanay Kedia',
+      github: 'https://github.com/tanayk07',
+      githubhandle: 'tanayk07',
+      discord:'http://discordapp.com/users/Tanay#3729',
+      discordhandle:'Tanay#3729',
+     
+      content:
+        '"Making the World a better place" -Gavin Belson',
+      name: 'Android/Web-Dev',
+      key: '6',
+    }
+  ]
+
+  const CoreTeam = [
     {
       image: '/sanat.png',
       image1: '/sanat_white.png',
@@ -519,24 +634,44 @@ function Teampage() {
     key: '15',
   }
  
-  ]);
-  const [selectedPos, setSelectedPos] = useState(
-    Math.ceil(posArray.length - 1) / 2
+  ]
+
+
+  
+  const [posArrayCoreTeam, setPosArray] = useState(TeamLeads);
+  const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
+    Math.floor((posArrayCoreTeam.length - 1) / 2)
   );
+  const [selectedPosCoreTeamX, setSelectedPosCoreTeamX] = useState(
+    Math.floor((posArrayCoreTeam.length - 1) / 2)
+  );
+  const [mountState, setMountState] = useState(true);
+  useEffect(() => {
+    setMountState(false);
+  }, [posArrayCoreTeam])
+
+  useEffect(() => {
+    //50 ms timeout to allow the animation to finish
+    setTimeout(() => {
+      setMountState(true);
+    }, 50);
+  }, [mountState])
+  
+  const [selectedTeam, setSelectedTeam] = useState('leads');
 
   const [parent] = useAutoAnimate(/* optional config */);
   return (
     <ChakraProvider>
       <>
-        <Box bgColor={'#111111'} minH="100%"
+        <Box
+          bgColor={'#111111'}
+          minH="100%"
           alignItems={'center'}
           w="100%"
           justifyContent={'center'}
           display={'flex'}
         >
-          <Box bgColor={'#111111'} minH="100vh" m={0}
-            w="100%"
-          >
+          <Box bgColor={'#111111'} minH="100vh" m={0} w="100%">
             <Nav />
             <Head />
             <VStack
@@ -548,275 +683,365 @@ function Teampage() {
               py={{ base: '5', md: '10' }}
               pb={{ base: '5', md: '20' }}
               //fill remaining height
-              
-              
             >
-
-           
-            <Flex 
-            
-            justify={'center'} align={'center'}
-            
-            >
-              <Box
-                justifySelf={'center'}
-                alignContent={'center'}
-                bgPosition={'center'}
-                alignItems={'center'}
-                width={{ base: '90%', md: 950 }}
-                height={{ base: '300', md: 400 }}
-                p={{ base: 4, md: 10 }}
-                mt={{ base: '-5', md: '5' }}
-                borderRadius={15}
-                bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
-              >
-                <Grid
-                  templateAreas={`
+              <Flex justify={'center'} align={'center'}>
+                <Box
+                  justifySelf={'center'}
+                  alignContent={'center'}
+                  bgPosition={'center'}
+                  alignItems={'center'}
+                  width={{ base: '90%', md: 950 }}
+                  height={{ base: '300', md: 400 }}
+                  p={{ base: 4, md: 10 }}
+                  mt={{ base: '-5', md: '5' }}
+                  borderRadius={15}
+                  bg="linear-gradient(93.17deg, rgba(131, 129, 129, 0.2) 0%, rgba(255, 255, 255, 0.2) 97.37%)"
+                >
+                  <Grid
+                    templateAreas={`
                   "nav main"
                   "nav footer"
                   "nav social"
                 `}
-                  gridTemplateRows={{ md: '0.5fr 0.7fr 1fr' }}
-                  gridTemplateColumns={{ md: '0.5fr  1fr' }}
-                >
-                  <GridItem pl="2" area={'nav'}>
-                    <Image
-                      src={posArray[selectedPos].image}
-                      position="relative"
-                      ml={{ base: -4, md: 4 }}
-                      mb={3}
-                      width={{ base: '100%', md: '80%' }}
-                      size={'auto'}
-                      mt={{ base: 20, md: 12 }}
-                    />
-                  </GridItem>
-                  <GridItem pl={{ base: 2, md: '2' }} area={'main'}>
-                    <Text
-                      mt={2}
-                      color={'white'}
-                      ml={{ base: 0, md: 4 }}
-                      className="fade-in"
-                      textAlign={'left'}
-                      key={posArray[selectedPos].key}
-                      fontFamily={'Gilroy-SemiBold'}
-                      fontSize={{ base: '5vw', md: '4xl' }}
+                    gridTemplateRows={{ md: '0.5fr 0.7fr 1fr' }}
+                    gridTemplateColumns={{ md: '0.5fr  1fr' }}
+                  >
+                    <GridItem pl="2" area={'nav'}>
+                      <Image
+                        src={posArrayCoreTeam[selectedPosCoreTeam]?.image}
+                        position="relative"
+                        ml={{ base: -4, md: 4 }}
+                        mb={3}
+                        width={{ base: '100%', md: '80%' }}
+                        size={'auto'}
+                        mt={{ base: 20, md: 12 }}
+                      />
+                    </GridItem>
+                    <GridItem pl={{ base: 2, md: '2' }} area={'main'}>
+                      <Text
+                        mt={2}
+                        color={'white'}
+                        ml={{ base: 0, md: 4 }}
+                        className="fade-in"
+                        textAlign={'left'}
+                        key={posArrayCoreTeam[selectedPosCoreTeam]?.key}
+                        fontFamily={'Gilroy-SemiBold'}
+                        fontSize={{ base: '5vw', md: '4xl' }}
+                        display="inline"
+                        mb={2}
+
+                        //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
+                      >
+                        Hi, my name is{' '}
+                        <span className="gradient-text">
+                          {posArrayCoreTeam[selectedPosCoreTeam]?.id}
+                        </span>
+                      </Text>
+                    </GridItem>
+                    <GridItem
+                      pl="2"
+                      area={'footer'}
+                      pb={0}
+                      mb={0}
                       display="inline"
-                      mb={2}
-
-                      //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
                     >
-                      Hi, my name is{' '}
-                      <span className="gradient-text">
-                        {posArray[selectedPos].id}
-                      </span>
-                    </Text>
-                  </GridItem>
-                  <GridItem
-                    pl="2"
-                    area={'footer'}
-                    pb={0}
-                    mb={0}
-                    display="inline"
-                  >
-                    <Text
-                      mt={{ base: 2, md: 2 }}
-                      fontFamily={'Gilroy-Regular'}
-                      fontSize={{ base: '2.5vw', md: 'md' }}
-                      color={'white'}
-                      ml={{ base: 0, md: 4 }}
-                      className="fade-in"
-                      textAlign={'left'}
-                      key={posArray[selectedPos].key}
-                      // mb={{ base: '0', md: '0' }}
+                      <Text
+                        mt={{ base: 2, md: 2 }}
+                        fontFamily={'Gilroy-Regular'}
+                        fontSize={{ base: '2.5vw', md: 'md' }}
+                        color={'white'}
+                        ml={{ base: 0, md: 4 }}
+                        className="fade-in"
+                        textAlign={'left'}
+                        key={posArrayCoreTeam[selectedPosCoreTeam]?.key}
+                        // mb={{ base: '0', md: '0' }}
 
-                      // mb = '20px'
-                      display={'box'}
-                      p={0}
-                    >
-                      {posArray[selectedPos].content}
-                    </Text>
-                  </GridItem>
-                  <GridItem area={'social'}>
-                    <SimpleGrid
-                      columns={{ base: 1, md: 2 }}
-                      spacingX="20px"
-                      spacingY={{ base: '0px', md: '30px' }}
-                      ml={{ base: 2, md: 4 }}
-                      mt={{ base: 2, md: 2 }}
-                      // border = {'4px green solid '}
-                    >
-                      <Box height="35px">
-                        <Box
-                          _hover={{ color: '#833AB4' }}
-                          color={'white'}
-                          width={{ base: '20px', md: '35px' }}
-                          height={{ base: '20px', md: '40px' }}
-                          display="inline"
-                        >
-                          <HStack>
-                            <Link
-                              href={posArray[selectedPos].insta}
-                              display={'inline'}
-                            >
-                              <FaInstagram className='gfg-div' />{' '}
-                            </Link>
-                            <Link
-                              href={posArray[selectedPos].insta}
-                              display={'inline'}
-                            >
-                              <Text
+                        // mb = '20px'
+                        display={'box'}
+                        p={0}
+                      >
+                        {posArrayCoreTeam[selectedPosCoreTeam]?.content}
+                      </Text>
+                    </GridItem>
+                    <GridItem area={'social'}>
+                      <SimpleGrid
+                        columns={{ base: 1, md: 2 }}
+                        spacingX="20px"
+                        spacingY={{ base: '0px', md: '30px' }}
+                        ml={{ base: 2, md: 4 }}
+                        mt={{ base: 2, md: 2 }}
+                        // border = {'4px green solid '}
+                      >
+                        <Box height="35px">
+                          <Box
+                            _hover={{ color: '#833AB4' }}
+                            color={'white'}
+                            width={{ base: '20px', md: '35px' }}
+                            height={{ base: '20px', md: '40px' }}
+                            display="inline"
+                          >
+                            <HStack>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.insta
+                                }
                                 display={'inline'}
-                                fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.2vw' }}
-                                mr={1}
                               >
-                                {posArray[selectedPos].instahandle}
-                              </Text>
-                            </Link>
-                          </HStack>
-                        </Box>
-                      </Box>
-                      <Box height="35px">
-                        <Box
-                          _hover={{ color: '#0072b1' }}
-                          color={'white'}
-                          width={{ base: '20px', md: '35px' }}
-                          height={{ base: '20px', md: '40px' }}
-                          display="inline"
-                        >
-                          <HStack>
-                            <Link
-                              href={posArray[selectedPos].linkedin}
-                              display={'inline'}
-                            >
-                              <FaLinkedin className='gfg-div' />{' '}
-                            </Link>
-                            <Link
-                              href={posArray[selectedPos].linkedin}
-                              display={'inline'}
-                            >
-                              <Text
+                                <FaInstagram className="gfg-div" />{' '}
+                              </Link>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.insta
+                                }
                                 display={'inline'}
-                                fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
-                                {posArray[selectedPos].Linkedinhandle}
-                              </Text>
-                            </Link>
-                          </HStack>
+                                <Text
+                                  display={'inline'}
+                                  fontFamily={'Gilroy-Medium'}
+                                  fontSize={{ base: '3vw', md: '1.2vw' }}
+                                  mr={1}
+                                >
+                                  {
+                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                      ?.instahandle
+                                  }
+                                </Text>
+                              </Link>
+                            </HStack>
+                          </Box>
                         </Box>
-                      </Box>
+                        <Box height="35px">
+                          <Box
+                            _hover={{ color: '#0072b1' }}
+                            color={'white'}
+                            width={{ base: '20px', md: '35px' }}
+                            height={{ base: '20px', md: '40px' }}
+                            display="inline"
+                          >
+                            <HStack>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]
+                                    ?.linkedin
+                                }
+                                display={'inline'}
+                              >
+                                <FaLinkedin className="gfg-div" />{' '}
+                              </Link>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]
+                                    ?.linkedin
+                                }
+                                display={'inline'}
+                              >
+                                <Text
+                                  display={'inline'}
+                                  fontFamily={'Gilroy-Medium'}
+                                  fontSize={{ base: '3vw', md: '1.2vw' }}
+                                >
+                                  {
+                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                      ?.Linkedinhandle
+                                  }
+                                </Text>
+                              </Link>
+                            </HStack>
+                          </Box>
+                        </Box>
 
-                   
-                      <Box height="35px">
-                      <Box
-                          _hover={{ color: 'Black' }}
-                          color={'white'}
-                          width={{ base: '20px', md: '35px' }}
-                          height={{ base: '20px', md: '40px' }}
-                          display="inline"
-                        >
-                          <HStack>
-                            <Link
-                              href={posArray[selectedPos].github}
-                              display={'inline'}
-                            >
-                              <FaGithub className='gfg-div'   />
-                            </Link>
-                            <Link
-                              href={posArray[selectedPos].github}
-                              display={'inline'}
-                            >
-                              <Text
+                        <Box height="35px">
+                          <Box
+                            _hover={{ color: 'Black' }}
+                            color={'white'}
+                            width={{ base: '20px', md: '35px' }}
+                            height={{ base: '20px', md: '40px' }}
+                            display="inline"
+                          >
+                            <HStack>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.github
+                                }
                                 display={'inline'}
-                                fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
-                                {posArray[selectedPos].githubhandle}
-                              </Text>
-                            </Link>
-                          </HStack>
-                        </Box>
-                      </Box>
-                      <Box height="35px">
-                        <Box
-                          _hover={{ color: "#7289d9"}}
-                          color={'white'}
-                          width={{ base: '20px', md: '35px' }}
-                          height={{ base: '20px', md: '40px' }}
-                          display="inline"
-                        >
-                          <HStack>
-                            <Link
-                              href={posArray[selectedPos].discord}
-                              display={'inline'}
-                            >
-                              <FaDiscord className='gfg-div' />{' '}
-                            </Link>
-                            <Link
-                              href={posArray[selectedPos].discord}
-                              display={'inline'}
-                            >
-                              <Text
+                                <FaGithub className="gfg-div" />
+                              </Link>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.github
+                                }
                                 display={'inline'}
-                                fontFamily={'Gilroy-Medium'}
-                                fontSize={{ base: '3vw', md: '1.2vw' }}
                               >
-                                {posArray[selectedPos].discordhandle}
-                              </Text>
-                            </Link>
-                          </HStack>
+                                <Text
+                                  display={'inline'}
+                                  fontFamily={'Gilroy-Medium'}
+                                  fontSize={{ base: '3vw', md: '1.2vw' }}
+                                >
+                                  {
+                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                      ?.githubhandle
+                                  }
+                                </Text>
+                              </Link>
+                            </HStack>
+                          </Box>
                         </Box>
-                      </Box>
-                    </SimpleGrid>
-                  </GridItem>
-                </Grid>
-              </Box>
-            </Flex>
-
-            <Flex align={'center'} justify="center">
-              <VStack>
-                <Box>
-                  <Box textAlign={'center'} alignItems="center" color={'white'}>
-                    <Text
-                      mb={'0.61%'}
-                      fontSize={{ base: '4vw', md: 30 }}
-                      mt={5}
-                      fontFamily={'Gilroy-Bold'}
-                      _hover={{
-                        bgGradient:
-                          'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
-                        bgClip: 'text',
-                      }}
-                    >
-                      Core Team
-                    </Text>
-
-                    <Image
-                      src="/Line 3.png"
-                      ml={'auto'}
-                      mr={'auto'}
-                      align="center"
-                      width={{ base: '50%', md: '80%' }}
-                    />
-                  </Box>
+                        <Box height="35px">
+                          <Box
+                            _hover={{ color: '#7289d9' }}
+                            color={'white'}
+                            width={{ base: '20px', md: '35px' }}
+                            height={{ base: '20px', md: '40px' }}
+                            display="inline"
+                          >
+                            <HStack>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.discord
+                                }
+                                display={'inline'}
+                              >
+                                <FaDiscord className="gfg-div" />{' '}
+                              </Link>
+                              <Link
+                                href={
+                                  posArrayCoreTeam[selectedPosCoreTeam]?.discord
+                                }
+                                display={'inline'}
+                              >
+                                <Text
+                                  display={'inline'}
+                                  fontFamily={'Gilroy-Medium'}
+                                  fontSize={{ base: '3vw', md: '1.2vw' }}
+                                >
+                                  {
+                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                      ?.discordhandle
+                                  }
+                                </Text>
+                              </Link>
+                            </HStack>
+                          </Box>
+                        </Box>
+                      </SimpleGrid>
+                    </GridItem>
+                  </Grid>
                 </Box>
-                <Flex maxW={'100vw'}>
-                  <Box
-                    mt={4}
-                    alignContent="center"
-                    position={'relative'}
-                    w="100%"
-                    ml={50}
-                  >
-                    <CurrentTeamNav
-                      posArray={posArray}
-                      parentSetSelectedPos={setSelectedPos}
-                    />
+              </Flex>
+
+              <Flex align={'center'} justify="center">
+                <VStack>
+                  <Box>
+                    <Box
+                      textAlign={'center'}
+                      alignItems="center"
+                      
+                    >
+                      <HStack
+                        mt={5}
+                        // center align
+                        spacing={5}
+                        alignItems="center"
+                        justifyContent="center"
+                      >
+                        <VStack
+                          onClick={() => {
+                            setPosArray(TeamLeads);
+                            setSelectedPosCoreTeam(
+                              Math.floor((TeamLeads.length - 1) / 2)
+                            );
+                            setSelectedTeam("leads")
+                          }}
+                          opacity={selectedTeam === "leads" ? 1 : 0.5}
+                          color="white"
+                        >
+                          <Text
+                            fontSize={{ base: '4vw', md: 30 }}
+                            fontFamily={'Gilroy-Bold'}
+                            
+                            _hover={{
+                              bgGradient:
+                                'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
+                              bgClip: 'text',
+                            }}  
+                            
+                            
+                            >
+                            Team Leads
+                          </Text>
+                          <Image
+                            src="/Line 3.png"
+                            ml={'auto'}
+                            mr={'auto'}
+                            align="center"
+                            width={{ base: '50%', md: '80%' }}
+                          />
+                        </VStack>
+
+                        <VStack
+                          onClick={() => {
+                            setPosArray(CoreTeam);
+                            setSelectedPosCoreTeam(
+                              Math.floor((CoreTeam.length - 1) / 2)
+                            );
+                            setSelectedTeam("core")
+                          }}
+                          opacity= {selectedTeam === "core" ? "1" : "0.5"}
+                          color="white"
+                        >
+                          <Text
+                            fontSize={{ base: '4vw', md: 30 }}
+                            fontFamily={'Gilroy-Bold'}
+                            _hover={{
+                              bgGradient:
+                                'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
+                              bgClip: 'text',
+                            }}
+                            //color = {selectedTeam === "core" ? "white" : "gray.600"}
+                            
+                            >
+                            Core Team
+                          </Text>
+                          <Image
+                            src="/Line 3.png"
+                            ml={'auto'}
+                            mr={'auto'}
+                            align="center"
+                            width={{ base: '50%', md: '80%' }}
+                          />
+                        </VStack>
+                      </HStack>
+                    </Box>
                   </Box>
-                </Flex>
-              </VStack>
-            </Flex>
+                  <Flex maxW={'100vw'}>
+                    <Box
+                      mt={4}
+                      alignContent="center"
+                      position={'relative'}
+                      w="100%"
+                      ml={50}
+                    >
+                      {mountState ? (
+                        <CurrentTeamNav
+                          posArrayCoreTeam={posArrayCoreTeam}
+                          parentSetSelectedPos={setSelectedPosCoreTeam}
+                          selectedPosCoreTeam={selectedPosCoreTeam}
+                        />
+                      ) : (
+                        <Box>
+                          <CurrentTeamNav
+                          posArrayCoreTeam={TeamLeads}
+                          parentSetSelectedPos={setSelectedPosCoreTeamX}
+                          selectedPosCoreTeam={selectedPosCoreTeamX}
+                        />
+                        </Box>
+                        
+                      )}
+                    </Box>
+                  </Flex>
+                </VStack>
+              </Flex>
             </VStack>
           </Box>
         </Box>
