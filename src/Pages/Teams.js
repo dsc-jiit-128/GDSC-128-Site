@@ -592,10 +592,6 @@ function Teampage() {
     key: '13',
   },
  
-  
-  
-  
-  
  
   ]
 
@@ -992,6 +988,7 @@ function Teampage() {
                           selectedPosCoreTeam={selectedPosCoreTeam}
                         />
                       ) : (
+                        // This will force a re-render of the component
                         <Box>
                           <CurrentTeamNav
                           posArrayCoreTeam={TeamLeads}
