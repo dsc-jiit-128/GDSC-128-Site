@@ -15,7 +15,7 @@ import Home from './Pages/Home';
 import Teampage from './Pages/Teams';
 import Events from './Pages/Events';
 
-import Fonts from './fonts';
+
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import ForgotPass from './Pages/ForgotPassword';
@@ -29,7 +29,7 @@ function App() {
   return (
     <>
     <ChakraProvider theme={theme}>
-      <Fonts/>
+
     
       
      {
