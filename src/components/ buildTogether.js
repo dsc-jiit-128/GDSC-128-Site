@@ -35,14 +35,28 @@ export default function BuildTogether() {
               overflow={'visible'}
               >
               <Image
-                  src="/blurblob1.png"
+                  src="/blur1.png"
                   position="absolute"
-                  top="50%"
+                  top={{ base: '15%', md: '3%' }}
                   left="50%"
                   transform="translate(-50%, -30%)"
                   ml={'auto'}
                   mr={'auto'}
-                  width={'55%'}
+                  width={'75%'}
+                  objectFit={'contain'}
+                  size={'auto'}
+                  mt={{ base: '1%', md: 12 }}
+                  flexShrink={0}
+                />
+                <Image
+                  src="/blur2.png"
+                  position="absolute"
+                  top={{ base: '15%', md: '3%' }}
+                  left="50%"
+                  transform="translate(-50%, -30%)"
+                  ml={'auto'}
+                  mr={'auto'}
+                  width={'75%'}
                   objectFit={'contain'}
                   size={'auto'}
                   mt={{ base: '1%', md: 12 }}
