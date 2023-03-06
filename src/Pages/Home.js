@@ -37,36 +37,12 @@ function Home() {
         overscrollBehaviorX={'hidden'}
         overscrollBehaviorY={'hidden'}
         overscroll={'hidden'}
-       
-        
-      
-      >
-        
-                <Image
-            src="/blursideleft.webp"
-            position="absolute"
-            top="200%"
-            left="-30%"
-            ml={'auto'}
-            overflow={'hidden'}
-            overflowX={'hidden'}
-            mr={'auto'}
-            width={{ base: '80%', md: '65%'}}
-            objectFit={'contain'}
-            size={{ base: 'auto', md: 'contain' }}
-            mt={{ base: '1%', md: 12 }}
-            flexShrink={0}
-           
-                />
-                
-                  
-            
+      >    
         <Nav />
         <Head />
         <BuildTogether />
         <WhatDoWeDo />
         <HomepageEvents />
-
       </Box>
     </>
   );

@@ -12,6 +12,7 @@ import {
 import "../Pages/xyz.css"
 import { useMediaQuery } from '@chakra-ui/react';
 
+
 import { BsEnvelope } from 'react-icons/bs';
 
 import { Route } from 'react-router-dom';
@@ -47,10 +48,11 @@ export default function HomepageEvents() {
         </Box>
 
 <Box>
-   
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacingX='16vw' spacingY='5' mt='10' ml='5' mr='5' mb='10'>
 
-  <Box background="rgba(0, 0, 0, 0.3)" 
+   
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacingX='16vw' spacingY='5' mt='10' ml='5' mr='5' mb='10' >
+
+  <Box background="rgba(0, 0, 0, 0.3)" zIndex={3}
   border={'1px'}  borderColor="#EA4335" borderRadius="20px"
    height={{base:"22vw",md:"15vw"}} w={{base:"50vw",md:"30vw"}} 
    >
@@ -115,6 +117,7 @@ Small sessions for the students to showcase their projects, achievements and for
 
   
 </SimpleGrid>
+
 </Box>
 
 

@@ -243,24 +243,6 @@ const CurrentTeamNav = props => {
 function Teampage() {
   const TeamLeads = [
     {
-      image: '/aasmi.webp',
-      image1: '/aasmi_w.webp',
-      insta: 'https://instagram.com/_.medusaa.a._?igshid=ZmZhODViOGI=',
-      linkedin: 'https://www.linkedin.com/in/aasmi-gill-a2268621b ',
-      github:'https://github.com/aasmigill',
-      githubhandle:'aasmigill',
-      discord:'http://discordapp.com/users/Aasmi#8369',
-      discordhandle:'Aasmi#8369',
-      instahandle: '@_.medusaa.a._',
-      Linkedinhandle: 'Aasmi Gill',
-
-      id: 'Aasmi Gill',
-      name: 'Management Lead',
-      content:
-        'an open book written in a cryptic dead language ',
-      key: '1',
-    },
-    {
       image: '/sagar_w.webp',
       image1: '/sagar.webp',
       id: 'Sagar Maurya',
@@ -277,7 +259,44 @@ function Teampage() {
      
       content:
       'I am inclined towards distinct process consisting of planning, organising, actuating and controlling; utilising in each both science and art, and followed in order to accomplish pre-determined objectives.',
+      key: '1',
+    },
+   {
+      image: '/sarthak.webp',
+      image1: '/sarthak_w.webp',
+      id: 'Sarthak Pant',
+      insta: '',
+      instahandle: '',
+      linkedin: 'https://www.linkedin.com/in/sarthak-pant-8844521b7/',
+      Linkedinhandle: 'Sarthak Pant',
+      github: 'https://github.com/sarthakpant772',
+      githubhandle: 'sarthakpant772',
+      discord:'http://discordapp.com/users/Cyanide#0711',
+      discordhandle:'Cyanide#0711',
+     
+      content:
+        '',
+      name: 'Tech Lead',
       key: '2',
+    },
+    
+    {
+      image: '/amvi.webp',
+      image1: '/amvi_w.webp',
+      id: 'Amvi Sinha',
+      insta: 'https://instagram.com/itsamviii?igshid=ZDdkNTZiNTM=',
+      instahandle: '@itsamviii',
+      linkedin: 'https://www.linkedin.com/in/amvi-sinha-59a953203/',
+      Linkedinhandle: 'Amvi Sinha',
+      github: 'https://github.com/as0213',
+      githubhandle: 'as0213',
+      discord:'http://discordapp.com/users/Amvi#2596',
+      discordhandle:'mv#2596',
+     
+      content:
+        'Hi, I am your GDSC Lead',
+      name: 'Community Lead',
+      key: '3',
     },
     {
       image: '/sambhav.webp',
@@ -295,7 +314,7 @@ function Teampage() {
       content:
         ' Stressed Blessed and Caffeine Obsessed ',
       name: 'Social Media and Content ',
-      key: '3',
+      key: '4',
     },
     {
       image: '/bhavya.webp',
@@ -313,45 +332,28 @@ function Teampage() {
       content:
       'Figuring out cheat codes for the game called Life',
       name: 'Web Lead',
-      key: '4',
-    },
-    
-    {
-      image: '/amvi.webp',
-      image1: '/amvi_w.webp',
-      id: 'Amvi Sinha',
-      insta: '',
-      instahandle: '',
-      linkedin: 'https://www.linkedin.com/in/amvi-sinha-59a953203/',
-      Linkedinhandle: 'Amvi Sinha',
-      github: 'https://github.com/as0213',
-      githubhandle: 'as0213',
-      discord:'',
-      discordhandle:'',
-     
-      content:
-        'Sarthak decide karlena',
-      name: 'Community Lead',
       key: '5',
     },
     {
-      image: '/sarthak.webp',
-      image1: '/sarthak_w.webp',
-      id: 'Sarthak Pant',
-      insta: '',
-      instahandle: '',
-      linkedin: 'https://www.linkedin.com/in/sarthak-pant-8844521b7/',
-      Linkedinhandle: 'Sarthak Pant',
-      github: 'https://github.com/sarthakpant772',
-      githubhandle: 'sarthakpant772',
-      discord:'http://discordapp.com/users/Cyanide#0711',
-      discordhandle:'Cyanide#0711',
-     
+      image: '/aasmi.webp',
+      image1: '/aasmi_w.webp',
+      insta: 'https://instagram.com/_.medusaa.a._?igshid=ZmZhODViOGI=',
+      linkedin: 'https://www.linkedin.com/in/aasmi-gill-a2268621b ',
+      github:'https://github.com/aasmigill',
+      githubhandle:'aasmigill',
+      discord:'http://discordapp.com/users/Aasmi#8369',
+      discordhandle:'Aasmi#8369',
+      instahandle: '@_.medusaa.a._',
+      Linkedinhandle: 'Aasmi Gill',
+
+      id: 'Aasmi Gill',
+      name: 'Management Lead',
       content:
-        '',
-      name: 'Tech Lead',
+        'an open book written in a cryptic dead language ',
       key: '6',
-    }
+    },
+   
+    
   ]
 
   const CoreTeam = [
