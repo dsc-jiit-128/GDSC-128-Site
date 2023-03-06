@@ -22,13 +22,23 @@ function Home() {
         bgColor={'#111111'}
         height={'100%'}
         w={'100%'}
-        minWidth={'100%'}
+        textOverflow={'hidden'}
+    
+    
         m={'0'}
         p={'0'}
         overflowX={'hidden'}
         overflowY={'hidden'}
-        position={'relative'}
         overflow={'hidden'}
+        overflowWrap={'hidden'}
+        overscrollX={'hidden'}
+        overscrollY={'hidden'}
+        overscrollBehavior={'hidden'}
+        overscrollBehaviorX={'hidden'}
+        overscrollBehaviorY={'hidden'}
+        overscroll={'hidden'}
+       
+        
       
       >
         
@@ -38,6 +48,8 @@ function Home() {
             top="200%"
             left="-30%"
             ml={'auto'}
+            overflow={'hidden'}
+            overflowX={'hidden'}
             mr={'auto'}
             width={{ base: '80%', md: '65%'}}
             objectFit={'contain'}
@@ -46,20 +58,8 @@ function Home() {
             flexShrink={0}
            
                 />
-                   <Image
-            src="/blurrightside.png"
-            position="absolute"
-            top="120%"
-           right="-25%"
-            ml={'auto'}
-            mr={'auto'}
-            width={{ base: '70%', md: '65%'}}
-            objectFit={'contain'}
-            size={{ base: 'auto', md: 'contain' }}
-            mt={{ base: '1%', md: 12 }}
-            flexShrink={0}
-           
-                />
+                
+                  
             
         <Nav />
         <Head />

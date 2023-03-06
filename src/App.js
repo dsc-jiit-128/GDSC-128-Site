@@ -30,6 +30,7 @@ function App() {
      {
 
       <Route path="/" exact component={Home} />
+      
       }
 
       <Route path="/teams" exact component={Teampage} />
