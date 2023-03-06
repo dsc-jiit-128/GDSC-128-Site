@@ -88,7 +88,7 @@ Small sessions for the students to showcase their projects, achievements and for
   >
     <Text color="#4285F4" fontFamily={'Gilroy-Medium'}
      align='center' pt={{base:'2', md:'4'}} pl='5' pr='5'      
-    fontSize={{ base: '25vw', md: '1.8vw' }}>
+    fontSize={{ base: '3vw', md: '1.8vw' }}>
     Study Jams
         </Text>
         <Text color="#4285F4" fontFamily={'Gilroy-Medium'}
