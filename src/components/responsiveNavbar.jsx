@@ -38,8 +38,8 @@ function ResponsiveNavbar() {
         <MenuItem
           fontFamily={'Gilroy-Bold'}
         >
-          <NavLink to="/events">
-            Events
+          <NavLink to="/events" >
+           Events
           </NavLink>
         </MenuItem>
         <MenuItem
@@ -49,13 +49,7 @@ function ResponsiveNavbar() {
             Teams
           </NavLink>
         </MenuItem>
-        <MenuItem
-          fontFamily={'Gilroy-Bold'}
-        >
-          <NavLink to="/login">
-            Login
-          </NavLink>
-        </MenuItem>
+       
       </MenuList>
     </Menu>
     
