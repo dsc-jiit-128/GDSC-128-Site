@@ -25,7 +25,7 @@ export default function Nav() {
                 <Image
                   borderRadius="full"
                   boxSize={[12, 20]}
-                  src="/image 2.png"
+                  src="/image 2.webp"
                 />
                 {
                   <Text

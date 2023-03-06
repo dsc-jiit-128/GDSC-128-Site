@@ -90,7 +90,7 @@ export default function Eventsbar() {
                   </Text>
 
                   <Image
-                    src="/Line 3.png"
+                    src="/Line 3.webp"
                     ml={'auto'}
                     mr={'auto'}
                     align="center"

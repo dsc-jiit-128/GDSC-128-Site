@@ -15,7 +15,7 @@ function StudyJams() {
   return (
     <Box alignItems={'center'}>
       <Image
-        src="/image 23.png"
+        src="/image 23.webp"
         width={{ base: '50vw', md: '28vw' }}
         height={{ base: '25vw', md: '14vw' }}
         ml="auto"

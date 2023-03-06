@@ -7,7 +7,7 @@ export default function Bottomteam() {
         <Box mt={4} ml={20} mr={20} alignContent="center">
           <HStack spacing={19}>
             <Image
-              src="/14.png"
+              src="/14.webp"
               position="relative"
               ml={200}
               mb={3}
@@ -16,7 +16,7 @@ export default function Bottomteam() {
               mt={1}
             />
             <Image
-              src="/15.png"
+              src="/15.webp"
               position="relative"
               ml={200}
               mb={3}
@@ -25,7 +25,7 @@ export default function Bottomteam() {
               mt={1}
             />
             <Image
-              src="/13.png"
+              src="/13.webp"
               position="relative"
               ml={200}
               mb={3}
@@ -34,7 +34,7 @@ export default function Bottomteam() {
               mt={1}
             />
             <Image
-              src="/16.png"
+              src="/16.webp"
               position="relative"
               ml={200}
               mb={3}
@@ -43,7 +43,7 @@ export default function Bottomteam() {
               mt={1}
             />
             <Image
-              src="/17.png"
+              src="/17.webp"
               position="relative"
               ml={200}
               mb={3}

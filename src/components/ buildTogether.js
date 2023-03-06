@@ -17,7 +17,7 @@ export default function BuildTogether() {
   <Fonts></Fonts>  
   
       <Box
-        bgImage="url('/image 3.png')"
+        bgImage="url('/image 3.webp')"
         bgPosition="center"
         backgroundSize={'cover'}
         width={'100%'}
@@ -35,7 +35,7 @@ export default function BuildTogether() {
               overflow={'visible'}
               >
               <Image
-                  src="/blur1.png"
+                  src="/blur1.webp"
                   position="absolute"
                   top={{ base: '15%', md: '3%' }}
                   left="50%"
@@ -49,7 +49,7 @@ export default function BuildTogether() {
                   flexShrink={0}
                 />
                 <Image
-                  src="/blur2.png"
+                  src="/blur2.webp"
                   position="absolute"
                   top={{ base: '15%', md: '3%' }}
                   left="50%"
@@ -63,7 +63,7 @@ export default function BuildTogether() {
                   flexShrink={0}
                 />
                 <Image
-                  src="/image 2.png"
+                  src="/image 2.webp"
                   position="relative"
                   top="0"
                   left="0"
@@ -76,7 +76,7 @@ export default function BuildTogether() {
                 />
                 {/* <Image
                   // border= "2px solid green"
-                  src="/image4-Ref.png"
+                  src="/image4-Ref.webp"
                   position="absolute"
                   width="528px"
                   height="518px"
@@ -90,7 +90,7 @@ export default function BuildTogether() {
                 /> */}
                 {/* <Image
                   //   border= "2px solid green"
-                  src="/image 5 gdsc.png"
+                  src="/image 5 gdsc.webp"
                   position="absolute"
                   width="528px"
                   height="518px"

@@ -14,7 +14,7 @@ export default function Teamnav() {
                 Core Team
               </Text>
 
-              <Image src="/Line 3.png" ml={'auto'} mr={'auto'} align="center" />
+              <Image src="/Line 3.webp" ml={'auto'} mr={'auto'} align="center" />
             </Box>
           </Box>
 
@@ -27,7 +27,7 @@ export default function Teamnav() {
           >
             <HStack spacing={19} align={'center'} position="relative">
               <Image
-                src="/14.png"
+                src="/14.webp"
                 position="relative"
                 ml={200}
                 mb={3}
@@ -39,7 +39,7 @@ export default function Teamnav() {
                 }}
               />
               <Image
-                src="/15.png"
+                src="/15.webp"
                 position="relative"
                 ml={200}
                 mb={3}
@@ -51,7 +51,7 @@ export default function Teamnav() {
                 }}
               />
               <Image
-                src="/13.png"
+                src="/13.webp"
                 position="relative"
                 ml={200}
                 mb={3}
@@ -63,7 +63,7 @@ export default function Teamnav() {
                 }}
               />
               <Image
-                src="/16.png"
+                src="/16.webp"
                 position="relative"
                 ml={200}
                 mb={3}
@@ -75,7 +75,7 @@ export default function Teamnav() {
                 }}
               />
               <Image
-                src="/17.png"
+                src="/17.webp"
                 position="relative"
                 ml={200}
                 mb={3}

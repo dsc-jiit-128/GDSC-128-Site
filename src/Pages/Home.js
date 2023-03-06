@@ -43,7 +43,7 @@ function Home() {
       >
         
                 <Image
-            src="/blursideleft.png"
+            src="/blursideleft.webp"
             position="absolute"
             top="200%"
             left="-30%"

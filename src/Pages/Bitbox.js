@@ -176,7 +176,7 @@ export default function Bitbox() {
               <Head />
             </Box>
           </Box>
-          <Image src='/Group 23.png' w={'70%'} mt="-48vw" ml={'auto'} mr='auto'/>
+          <Image src='/Group 23.webp' w={'70%'} mt="-48vw" ml={'auto'} mr='auto'/>
           <VStack w={'100%'} mt={{base:'20vw', md:-30}}>
             <HStack
               w={'100%'}

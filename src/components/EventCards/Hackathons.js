@@ -15,7 +15,7 @@ function Hackathons() {
   return (
    <Box alignItems={'center'}>
       <Image
-        src="/image 21.png"
+        src="/image 21.webp"
         width={{ base: '50vw', md: '28vw' }}
         height={{ base: '25vw', md: '14vw' }}
         ml = 'auto'

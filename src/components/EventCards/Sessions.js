@@ -50,20 +50,20 @@ function Sessions() {
   return (
     <>
       <EventCard
-        image="/techworldabc.jpg"
+        image="/techworldabc.webp"
         badge="SESSION-1"
         heading="Roadmap"
         text="Introduction to Web development, Competitive programming, DSA and internship opportunities."
       />
 
       <EventCard
-        image="githubabc.jpg"
+        image="githubabc.webp"
         badge="SESSION-2"
         heading="Git & Github"
         text="Hands-on session of git and GitHub and introduction to HacktoberFest."
       />
       <EventCard
-        image="/composeabc.jpg"
+        image="/composeabc.webp"
         badge="SESSION-3"
         heading="Compose-Camp"
         text="Hands-on session on Android development using Jetpack Compose"

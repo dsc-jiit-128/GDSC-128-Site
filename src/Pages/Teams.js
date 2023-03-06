@@ -243,8 +243,8 @@ const CurrentTeamNav = props => {
 function Teampage() {
   const TeamLeads = [
     {
-      image: '/aasmi.png',
-      image1: '/aasmi_w.png',
+      image: '/aasmi.webp',
+      image1: '/aasmi_w.webp',
       insta: 'https://instagram.com/_.medusaa.a._?igshid=ZmZhODViOGI=',
       linkedin: 'https://www.linkedin.com/in/aasmi-gill-a2268621b ',
       github:'https://github.com/aasmigill',
@@ -261,8 +261,8 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/sagar_w.png',
-      image1: '/sagar.png',
+      image: '/sagar_w.webp',
+      image1: '/sagar.webp',
       id: 'Sagar Maurya',
       insta: 'https://instagram.com/_sagar27_?igshid=YmMyMTA2M2Y=',
       instahandle: '@_sagar27_',
@@ -280,8 +280,8 @@ function Teampage() {
       key: '2',
     },
     {
-      image: '/sambhav.png',
-      image1: '/sambhav_w.png',
+      image: '/sambhav.webp',
+      image1: '/sambhav_w.webp',
       id: 'Sambhav Jain',
       insta: 'https://instagram.com/sambhavjn_17',
       instahandle: '@sambhavjn_17',
@@ -298,8 +298,8 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/bhavya.png',
-      image1: '/bhavya_w.png',
+      image: '/bhavya.webp',
+      image1: '/bhavya_w.webp',
       id: 'Bhavya Aggarwal',
       insta: 'https://www.instagram.com/bhavya.aggarwall/',
       instahandle: '@bhavya.aggarwall',
@@ -317,8 +317,8 @@ function Teampage() {
     },
     
     {
-      image: '/amvi.png',
-      image1: '/amvi_w.png',
+      image: '/amvi.webp',
+      image1: '/amvi_w.webp',
       id: 'Amvi Sinha',
       insta: '',
       instahandle: '',
@@ -335,8 +335,8 @@ function Teampage() {
       key: '5',
     },
     {
-      image: '/sarthak.png',
-      image1: '/sarthak_w.png',
+      image: '/sarthak.webp',
+      image1: '/sarthak_w.webp',
       id: 'Sarthak Pant',
       insta: '',
       instahandle: '',
@@ -356,8 +356,8 @@ function Teampage() {
 
   const CoreTeam = [
     {
-      image: '/sanat.png',
-      image1: '/sanat_white.png',
+      image: '/sanat.webp',
+      image1: '/sanat_white.webp',
       insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
       linkedin: 'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
       github:'https://github.com/TheCringedSoul',
@@ -374,8 +374,8 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/Tanay.png',
-      image1: '/Tanay_w.png',
+      image: '/Tanay.webp',
+      image1: '/Tanay_w.webp',
       id: 'Tanay Kedia',
       insta: 'https://instagram.com/tanay_7',
       instahandle: '@tanay_7',
@@ -393,8 +393,8 @@ function Teampage() {
     },
     
     {
-      image: '/doyel.png',
-      image1: '/doyel_white.png',
+      image: '/doyel.webp',
+      image1: '/doyel_white.webp',
       id: 'Doyel Agrawal',
       insta: 'https://instagram.com/_.doyel._',
       instahandle: '@_.doyel._',
@@ -411,8 +411,8 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/Vishesh.png',
-      image1: '/Vishesh_w.png',
+      image: '/Vishesh.webp',
+      image1: '/Vishesh_w.webp',
       id: 'Vishesh Raheja',
       insta: 'https://instagram.com/rogue__amoeba',
       instahandle: '@rogue__amoeba',
@@ -430,8 +430,8 @@ function Teampage() {
     },
     
     {
-      image: '/Bhav.png',
-      image1: '/Bhav_w.png',
+      image: '/Bhav.webp',
+      image1: '/Bhav_w.webp',
       id: 'Bhav Goyal',
       insta: 'https://www.instagram.com/goyalbhav/',
       instahandle: '@goyalbhav',
@@ -448,8 +448,8 @@ function Teampage() {
       key: '5',
     },
     {
-      image: '/Sahil.png',
-      image1: '/Sahil_w.png',
+      image: '/Sahil.webp',
+      image1: '/Sahil_w.webp',
       id: 'Sahilsher Singh',
       insta: 'https://instagram.com/sandhu._.sahil_',
       instahandle: '@sandhu._.sahil_',
@@ -466,8 +466,8 @@ function Teampage() {
       key: '6',
     },
     {
-      image: '/Shivansh.png',
-      image1: '/Shivansh_w.png',
+      image: '/Shivansh.webp',
+      image1: '/Shivansh_w.webp',
       id: 'Shivansh Pandey',
       insta: 'https://www.instagram.com/_shivansh04/',
       instahandle: '@_shivansh04',
@@ -485,8 +485,8 @@ function Teampage() {
     },
     
     {
-      image: '/Ritik.png',
-      image1: '/Ritik_w.png',
+      image: '/Ritik.webp',
+      image1: '/Ritik_w.webp',
       id: 'Ritik Shukla',
       insta: 'https://github.com/rittik112',
       instahandle: '@rittik112',
@@ -503,8 +503,8 @@ function Teampage() {
       key: '8',
     },
     {
-      image: '/chaaya.png',
-      image1: '/chaaya_white.png',
+      image: '/chaaya.webp',
+      image1: '/chaaya_white.webp',
       id: 'Chaaya Agarwal',
       insta: 'https://www.instagram.com/chaaya._06/',
       instahandle: '@chaaya._06',
@@ -520,8 +520,8 @@ function Teampage() {
       key: '9',
     },
     {
-      image: '/parth_garg.png',
-      image1: '/parth_garg_white.png',
+      image: '/parth_garg.webp',
+      image1: '/parth_garg_white.webp',
       insta: 'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
       instahandle: '@_parthahuja12_',
       linkedin: 'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
@@ -537,8 +537,8 @@ function Teampage() {
       key: '10',
     },
     {
-      image: '/pariyashi.png',
-      image1: '/pariyashi_white.png',
+      image: '/pariyashi.webp',
+      image1: '/pariyashi_white.webp',
       insta: 'https://instagram.com/_justhappy.uknow?igshid=YmMyMTA2M2Y',
       instahandle: '@_justhappy.uknow',
       linkedin: 'https://www.linkedin.com/in/pariyashi-sahu-b91614243/',
@@ -556,8 +556,8 @@ function Teampage() {
 
  
     {
-      image: '/kanavagarwal.png',
-      image1: '/kanavagarwal_white.png',
+      image: '/kanavagarwal.webp',
+      image1: '/kanavagarwal_white.webp',
       id: 'Kanav Agarwal',
       insta: 'https://www.instagram.com/kanav_ag/',
       instahandle: '@kanav_ag',
@@ -576,8 +576,8 @@ function Teampage() {
  
    
   {
-    image: '/AryanK.png',
-    image1: '/AryanK_white.png',
+    image: '/AryanK.webp',
+    image1: '/AryanK_white.webp',
     id: 'Aryan Kulshrestha',
     insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
     instahandle: '@_aryan_15_9',
@@ -932,7 +932,7 @@ function Teampage() {
                             Team Leads
                           </Text>
                           <Image
-                            src="/Line 3.png"
+                            src="/Line 3.webp"
                             ml={'auto'}
                             mr={'auto'}
                             align="center"
@@ -965,7 +965,7 @@ function Teampage() {
                             Core Team
                           </Text>
                           <Image
-                            src="/Line 3.png"
+                            src="/Line 3.webp"
                             ml={'auto'}
                             mr={'auto'}
                             align="center"

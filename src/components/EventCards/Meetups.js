@@ -15,7 +15,7 @@ function Meetups() {
   return (
    <Box alignItems={'center'}>
       <Image
-        src="/image 24.png"
+        src="/image 24.webp"
         width={{ base: '50vw', md: '28vw' }}
         height={{ base: '25vw', md: '14vw' }}
         ml="auto"

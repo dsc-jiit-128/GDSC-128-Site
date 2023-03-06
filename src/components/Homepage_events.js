@@ -234,7 +234,7 @@ Small sessions for the students to showcase their projects, achievements and for
           </Text>
           <Flex alignItems={'center'} justifyContent="center">
             <Image
-              src="/white logo.png"
+              src="/white logo.webp"
               width={{ base: '5%', md: '3%' }}
               mr={'1%'}
             />
