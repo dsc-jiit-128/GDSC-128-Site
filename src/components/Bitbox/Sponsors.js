@@ -40,7 +40,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
+            <a href='https://rosenfeldmedia.com/books/'>
             <Image src= "/rosenfeld.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem>
           <GridItem
             w="17vw"
