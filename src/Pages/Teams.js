@@ -3,12 +3,13 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Box, Heading, HStack } from '@chakra-ui/react';
 import { Stack, VStack } from '@chakra-ui/react';
+
 import './xyz.css';
 import {
   GridItem,
   SimpleGrid,
   Grid,
-  Image,
+  Image as ChakraImage,
   Text,
   Flex,
   Link,
@@ -55,7 +56,7 @@ const TeamNavMember = props => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <Image
+      <ChakraImage
         src={props.image}
         width={{ base: '100%', md: '100%' }}
         height={{ base: '100%', md: '100%' }}
@@ -140,6 +141,10 @@ const TeamNav = props => {
   );
 };
 
+const Img = src => {
+  return <img src={src} alt="team" />;
+};
+
 const CurrentTeamNav = props => {
   const allPosArray = props.posArrayCoreTeam;
   const [selectedPosArray, setSelectedPosArray] = useState(0);
@@ -153,9 +158,6 @@ const CurrentTeamNav = props => {
     console.log('key', key);
     props.parentSetSelectedPos(key - 1);
   }, [posArrayCoreTeam]);
-
-  
-
 
   const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
     Math.floor((posArrayCoreTeam.length - 1) / 2)
@@ -252,16 +254,16 @@ function Teampage() {
       Linkedinhandle: 'Sagar Maurya',
       github: 'https://github.com/rookkiee?',
       githubhandle: 'rookkiee',
-      discord:'http://discordapp.com/users/Sagar#7961',
-      discordhandle:'Sagar#7961',
+      discord: 'http://discordapp.com/users/Sagar#7961',
+      discordhandle: 'Sagar#7961',
 
       name: ' Management Lead',
-     
+
       content:
-      'I am inclined towards distinct process consisting of planning, organising, actuating and controlling; utilising in each both science and art, and followed in order to accomplish pre-determined objectives.',
+        'I am inclined towards distinct process consisting of planning, organising, actuating and controlling; utilising in each both science and art, and followed in order to accomplish pre-determined objectives.',
       key: '1',
     },
-   {
+    {
       image: '/sarthak.webp',
       image1: '/sarthak_w.webp',
       id: 'Sarthak Pant',
@@ -271,15 +273,14 @@ function Teampage() {
       Linkedinhandle: 'Sarthak Pant',
       github: 'https://github.com/sarthakpant772',
       githubhandle: 'sarthakpant772',
-      discord:'http://discordapp.com/users/Cyanide#0711',
-      discordhandle:'Cyanide#0711',
-     
-      content:
-        '',
+      discord: 'http://discordapp.com/users/Cyanide#0711',
+      discordhandle: 'Cyanide#0711',
+
+      content: '',
       name: 'Tech Lead',
       key: '2',
     },
-    
+
     {
       image: '/amvi.webp',
       image1: '/amvi_w.webp',
@@ -290,11 +291,10 @@ function Teampage() {
       Linkedinhandle: 'Amvi Sinha',
       github: 'https://github.com/as0213',
       githubhandle: 'as0213',
-      discord:'http://discordapp.com/users/Amvi#2596',
-      discordhandle:'mv#2596',
-     
-      content:
-        'Hi, I am your GDSC Lead',
+      discord: 'http://discordapp.com/users/Amvi#2596',
+      discordhandle: 'mv#2596',
+
+      content: 'Hi, I am your GDSC Lead',
       name: 'Community Lead',
       key: '3',
     },
@@ -306,13 +306,12 @@ function Teampage() {
       instahandle: '@sambhavjn_17',
       github: 'https://github.com/Sambhavjain9812',
       githubhandle: 'Sambhavjain9812',
-      discord:'http://discordapp.com/users/Sambhav#7534',
-      discordhandle:'Sambhav#7534',
+      discord: 'http://discordapp.com/users/Sambhav#7534',
+      discordhandle: 'Sambhav#7534',
       linkedin: 'https://www.linkedin.com/in/sambhav-jain-40907021b/',
       Linkedinhandle: 'Sambhav Jain',
-      
-      content:
-        ' Stressed Blessed and Caffeine Obsessed ',
+
+      content: ' Stressed Blessed and Caffeine Obsessed ',
       name: 'Social Media and Content ',
       key: '4',
     },
@@ -326,11 +325,10 @@ function Teampage() {
       Linkedinhandle: 'Bhavya Aggarwal',
       github: 'https://github.com/Bhavya0404',
       githubhandle: 'Bhavya0404',
-      discord:'http://discordapp.com/users/GameOnSpot#8227',
-      discordhandle:'GameOnSpot#8227',
-     
-      content:
-      'Figuring out cheat codes for the game called Life',
+      discord: 'http://discordapp.com/users/GameOnSpot#8227',
+      discordhandle: 'GameOnSpot#8227',
+
+      content: 'Figuring out cheat codes for the game called Life',
       name: 'Web Lead',
       key: '5',
     },
@@ -339,22 +337,19 @@ function Teampage() {
       image1: '/aasmi_w.webp',
       insta: 'https://instagram.com/_.medusaa.a._?igshid=ZmZhODViOGI=',
       linkedin: 'https://www.linkedin.com/in/aasmi-gill-a2268621b ',
-      github:'https://github.com/aasmigill',
-      githubhandle:'aasmigill',
-      discord:'http://discordapp.com/users/Aasmi#8369',
-      discordhandle:'Aasmi#8369',
+      github: 'https://github.com/aasmigill',
+      githubhandle: 'aasmigill',
+      discord: 'http://discordapp.com/users/Aasmi#8369',
+      discordhandle: 'Aasmi#8369',
       instahandle: '@_.medusaa.a._',
       Linkedinhandle: 'Aasmi Gill',
 
       id: 'Aasmi Gill',
       name: 'Management Lead',
-      content:
-        'an open book written in a cryptic dead language ',
+      content: 'an open book written in a cryptic dead language ',
       key: '6',
     },
-   
-    
-  ]
+  ];
 
   const CoreTeam = [
     {
@@ -362,17 +357,16 @@ function Teampage() {
       image1: '/sanat_white.webp',
       insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
       linkedin: 'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
-      github:'https://github.com/TheCringedSoul',
-      githubhandle:'TheCringedSoul',
-      discord:'http://discordapp.com/users/TheCringedSoul#7900',
-      discordhandle:'TheCringedSoul#7900',
+      github: 'https://github.com/TheCringedSoul',
+      githubhandle: 'TheCringedSoul',
+      discord: 'http://discordapp.com/users/TheCringedSoul#7900',
+      discordhandle: 'TheCringedSoul#7900',
       instahandle: '@sanatbhatia',
       Linkedinhandle: 'Sanat Bhatia',
 
       id: 'Sanat Bhatia',
       name: 'UI/UX Designer;',
-      content:
-        '"I am silently judging your font choice."',
+      content: '"I am silently judging your font choice."',
       key: '1',
     },
     {
@@ -385,15 +379,14 @@ function Teampage() {
       Linkedinhandle: 'Tanay Kedia',
       github: 'https://github.com/tanayk07',
       githubhandle: 'tanayk07',
-      discord:'http://discordapp.com/users/Tanay#3729',
-      discordhandle:'Tanay#3729',
-     
-      content:
-        '"Making the World a better place" -Gavin Belson',
+      discord: 'http://discordapp.com/users/Tanay#3729',
+      discordhandle: 'Tanay#3729',
+
+      content: '"Making the World a better place" -Gavin Belson',
       name: 'Android/Web-Dev',
       key: '2',
     },
-    
+
     {
       image: '/doyel.webp',
       image1: '/doyel_white.webp',
@@ -402,13 +395,12 @@ function Teampage() {
       instahandle: '@_.doyel._',
       github: 'https://github.com/DoyelA',
       githubhandle: 'DoyelA',
-      discord:'http://discordapp.com/users/DolaMandola#9233',
-      discordhandle:'DolaMandola#9233',
+      discord: 'http://discordapp.com/users/DolaMandola#9233',
+      discordhandle: 'DolaMandola#9233',
       linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
       Linkedinhandle: 'Doyel Agrawal',
-      
-      content:
-        ' Always pet a cat when you meet one.',
+
+      content: ' Always pet a cat when you meet one.',
       name: 'Backend Dev',
       key: '3',
     },
@@ -422,15 +414,15 @@ function Teampage() {
       Linkedinhandle: 'Vishesh Raheja',
       github: 'https://github.com/entropyconquers',
       githubhandle: 'entropyconquers',
-      discord:'https://discordapp.com/users/deadbeat_galvanometer#2452',
-      discordhandle:'ViShEsH#2452',
-     
+      discord: 'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle: 'ViShEsH#2452',
+
       content:
         'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
       name: 'Mobile/Web Dev',
       key: '4',
     },
-    
+
     {
       image: '/Bhav.webp',
       image1: '/Bhav_w.webp',
@@ -441,11 +433,10 @@ function Teampage() {
       Linkedinhandle: ' Bhav Goyal',
       github: 'https://github.com/w3rew0lf',
       githubhandle: 'w3rew0lf',
-      discord:'http://discordapp.com/users/w3rew01f#4027',
-      discordhandle:'w3rew01f#4027',
-     
-      content:
-        'I like to explore, travel and know more people. ',
+      discord: 'http://discordapp.com/users/w3rew01f#4027',
+      discordhandle: 'w3rew01f#4027',
+
+      content: 'I like to explore, travel and know more people. ',
       name: 'Cyber Security',
       key: '5',
     },
@@ -459,9 +450,9 @@ function Teampage() {
       Linkedinhandle: ' Sahilsher Singh',
       github: 'hhttps://github.com/Sandhu-Sahil',
       githubhandle: 'Sandhu-Sahil',
-      discord:'http://discordapp.com/users/Sahil Sandhu#5673',
-      discordhandle:'Sahil Sandhu#5673',
-     
+      discord: 'http://discordapp.com/users/Sahil Sandhu#5673',
+      discordhandle: 'Sahil Sandhu#5673',
+
       content:
         'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
       name: 'Web Dev ',
@@ -477,15 +468,14 @@ function Teampage() {
       Linkedinhandle: 'Shivansh Pandey',
       github: 'https://github.com/Shivansh-25',
       githubhandle: 'Shivansh-25',
-      discord:'https://discordapp.com/users/513042268190408714',
-      discordhandle:'Shivansh#4027',
-     
-      content:
-        '“If you think math is hard, try web design.” ',
+      discord: 'https://discordapp.com/users/513042268190408714',
+      discordhandle: 'Shivansh#4027',
+
+      content: '“If you think math is hard, try web design.” ',
       name: 'Web Dev  ',
       key: '7',
     },
-    
+
     {
       image: '/Ritik.webp',
       image1: '/Ritik_w.webp',
@@ -496,11 +486,10 @@ function Teampage() {
       Linkedinhandle: 'Ritik Shukla',
       github: 'https://github.com/rittik112',
       githubhandle: 'rittik112',
-      discord:'http://discordapp.com/users/bruhhtik#9344',
-      discordhandle:'bruhhtik#9344',
-     
-      content:
-       'I like to play around with cp every now and then.',
+      discord: 'http://discordapp.com/users/bruhhtik#9344',
+      discordhandle: 'bruhhtik#9344',
+
+      content: 'I like to play around with cp every now and then.',
       name: 'Competitive Programming',
       key: '8',
     },
@@ -510,10 +499,10 @@ function Teampage() {
       id: 'Chaaya Agarwal',
       insta: 'https://www.instagram.com/chaaya._06/',
       instahandle: '@chaaya._06',
-      github:'https://github.com/Chaaya0605',
-      githubhandle:'Chaaya0605',
-      discord:'http://discordapp.com/users/Chaaya Agarwal#5763',
-      discordhandle:'Chaaya Agarwal#5763',
+      github: 'https://github.com/Chaaya0605',
+      githubhandle: 'Chaaya0605',
+      discord: 'http://discordapp.com/users/Chaaya Agarwal#5763',
+      discordhandle: 'Chaaya Agarwal#5763',
       Linkedinhandle: 'Chaaya Agarwal',
       linkedin: 'https://www.linkedin.com/in/chaaya-agarwal-992812246/',
       content:
@@ -530,8 +519,8 @@ function Teampage() {
       Linkedinhandle: 'Parth Ahuja',
       github: 'https://github.com/ravenclaw03',
       githubhandle: 'ravenclaw03',
-      discord:'http://discordapp.com/users/ravenclaw03#4283',
-      discordhandle:'ravenclaw03#4283',
+      discord: 'http://discordapp.com/users/ravenclaw03#4283',
+      discordhandle: 'ravenclaw03#4283',
       id: 'Parth Ahuja',
       content:
         'What is meant for you will find you even if you feel like it has already passed you.',
@@ -547,8 +536,8 @@ function Teampage() {
       Linkedinhandle: 'Pariyashi Sahu',
       github: 'https://github.com/justhappyuknow',
       githubhandle: 'justhappyuknow',
-      discord:'http://discordapp.com/users/Pariyashihere#9072',
-      discordhandle:'Pariyashihere#9072',
+      discord: 'http://discordapp.com/users/Pariyashihere#9072',
+      discordhandle: 'Pariyashihere#9072',
       id: 'Pariyashi Sahu',
       content:
         'Void full of space, learning and improving myself while gazing the stars at night!',
@@ -556,7 +545,6 @@ function Teampage() {
       key: '11',
     },
 
- 
     {
       image: '/kanavagarwal.webp',
       image1: '/kanavagarwal_white.webp',
@@ -567,40 +555,53 @@ function Teampage() {
       Linkedinhandle: 'Kanav Agarwal',
       github: 'https://github.com/Kanav31',
       githubhandle: 'Kanav31',
-      discord:'http://discordapp.com/users/Kanav Agarwal#9540',
-      discordhandle:'Kanav Agarwal#9540',
+      discord: 'http://discordapp.com/users/Kanav Agarwal#9540',
+      discordhandle: 'Kanav Agarwal#9540',
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
       name: 'Management  ',
       key: '12',
     },
- 
- 
-   
-  {
-    image: '/AryanK.webp',
-    image1: '/AryanK_white.webp',
-    id: 'Aryan Kulshrestha',
-    insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
-    instahandle: '@_aryan_15_9',
-    linkedin: 'https://www.linkedin.com/in/aryan-kulshrestha-993248221',
-    Linkedinhandle: ' Aryan Kulshrestha',
-    github: 'https://github.com/aryankul15',
-    githubhandle: 'aryankul15',
-    discord:'https://discordapp.com/users/Aryan Kulshrestha#5249',
-    discordhandle:'Aryan Kulshrestha#5249',
-   
-    content:
-      'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
-    name: 'Management    ',
-    key: '13',
-  },
- 
- 
-  ]
+
+    {
+      image: '/AryanK.webp',
+      image1: '/AryanK_white.webp',
+      id: 'Aryan Kulshrestha',
+      insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
+      instahandle: '@_aryan_15_9',
+      linkedin: 'https://www.linkedin.com/in/aryan-kulshrestha-993248221',
+      Linkedinhandle: ' Aryan Kulshrestha',
+      github: 'https://github.com/aryankul15',
+      githubhandle: 'aryankul15',
+      discord: 'https://discordapp.com/users/Aryan Kulshrestha#5249',
+      discordhandle: 'Aryan Kulshrestha#5249',
+
+      content:
+        'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
+      name: 'Management    ',
+      key: '13',
+    },
+  ];
+
+  const loadImages = () => {
+    //load images from image and image1 in the CoreTeam and TeamLeads array
+    var cache = [];
+    TeamLeads.forEach(member => {
+      var img = new Image().src = member.image;
+      cache.push(img);
+    });
+    CoreTeam.forEach(member => {
+      var img = new Image().src = member.image;
+      cache.push(img);
+    });
 
 
-  
+  };
+
+  useEffect(() => {
+    loadImages();
+  }, []);
+
   const [posArrayCoreTeam, setPosArray] = useState(TeamLeads);
   const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
     Math.floor((posArrayCoreTeam.length - 1) / 2)
@@ -611,15 +612,15 @@ function Teampage() {
   const [mountState, setMountState] = useState(true);
   useEffect(() => {
     setMountState(false);
-  }, [posArrayCoreTeam])
+  }, [posArrayCoreTeam]);
 
   useEffect(() => {
     //50 ms timeout to allow the animation to finish
     setTimeout(() => {
       setMountState(true);
     }, 50);
-  }, [mountState])
-  
+  }, [mountState]);
+
   const [selectedTeam, setSelectedTeam] = useState('leads');
 
   const [parent] = useAutoAnimate(/* optional config */);
@@ -670,8 +671,9 @@ function Teampage() {
                     gridTemplateColumns={{ md: '0.5fr  1fr' }}
                   >
                     <GridItem pl="2" area={'nav'}>
-                      <Image
+                      <ChakraImage
                         src={posArrayCoreTeam[selectedPosCoreTeam]?.image}
+                        fallbackSrc={posArrayCoreTeam[selectedPosCoreTeam]?.image1}
                         position="relative"
                         ml={{ base: -4, md: 4 }}
                         mb={3}
@@ -896,11 +898,7 @@ function Teampage() {
               <Flex align={'center'} justify="center">
                 <VStack>
                   <Box>
-                    <Box
-                      textAlign={'center'}
-                      alignItems="center"
-                      
-                    >
+                    <Box textAlign={'center'} alignItems="center">
                       <HStack
                         mt={5}
                         // center align
@@ -914,26 +912,23 @@ function Teampage() {
                             setSelectedPosCoreTeam(
                               Math.floor((TeamLeads.length - 1) / 2)
                             );
-                            setSelectedTeam("leads")
+                            setSelectedTeam('leads');
                           }}
-                          opacity={selectedTeam === "leads" ? 1 : 0.5}
+                          opacity={selectedTeam === 'leads' ? 1 : 0.5}
                           color="white"
                         >
                           <Text
                             fontSize={{ base: '4vw', md: 30 }}
                             fontFamily={'Gilroy-Bold'}
-                            
                             _hover={{
                               bgGradient:
                                 'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
                               bgClip: 'text',
-                            }}  
-                            
-                            
-                            >
+                            }}
+                          >
                             Team Leads
                           </Text>
-                          <Image
+                          <ChakraImage
                             src="/Line 3.webp"
                             ml={'auto'}
                             mr={'auto'}
@@ -948,9 +943,9 @@ function Teampage() {
                             setSelectedPosCoreTeam(
                               Math.floor((CoreTeam.length - 1) / 2)
                             );
-                            setSelectedTeam("core")
+                            setSelectedTeam('core');
                           }}
-                          opacity= {selectedTeam === "core" ? "1" : "0.5"}
+                          opacity={selectedTeam === 'core' ? '1' : '0.5'}
                           color="white"
                         >
                           <Text
@@ -962,11 +957,10 @@ function Teampage() {
                               bgClip: 'text',
                             }}
                             //color = {selectedTeam === "core" ? "white" : "gray.600"}
-                            
-                            >
+                          >
                             Core Team
                           </Text>
-                          <Image
+                          <ChakraImage
                             src="/Line 3.webp"
                             ml={'auto'}
                             mr={'auto'}
@@ -995,12 +989,11 @@ function Teampage() {
                         // This will force a re-render of the component
                         <Box>
                           <CurrentTeamNav
-                          posArrayCoreTeam={TeamLeads}
-                          parentSetSelectedPos={setSelectedPosCoreTeamX}
-                          selectedPosCoreTeam={selectedPosCoreTeamX}
-                        />
+                            posArrayCoreTeam={TeamLeads}
+                            parentSetSelectedPos={setSelectedPosCoreTeamX}
+                            selectedPosCoreTeam={selectedPosCoreTeamX}
+                          />
                         </Box>
-                        
                       )}
                     </Box>
                   </Flex>
