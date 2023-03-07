@@ -11,7 +11,7 @@ import {
   Button,
   IconButton
 } from '@chakra-ui/react'
-import {  NavLink } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { useMediaQuery } from '@chakra-ui/react'
 function ResponsiveNavbar() {
   const [activate] = useMediaQuery('(max-width: 900px)')
@@ -38,16 +38,16 @@ function ResponsiveNavbar() {
         <MenuItem
           fontFamily={'Gilroy-Bold'}
         >
-          <NavLink to="/events" >
+          <Link to="/events" >
            Events
-          </NavLink>
+          </Link>
         </MenuItem>
         <MenuItem
           fontFamily={'Gilroy-Bold'}
         >
-          <NavLink to="/teams">
+          <Link to="/teams">
             Teams
-          </NavLink>
+          </Link>
         </MenuItem>
        
       </MenuList>

@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "bitbox-staging",
     "public": "build",
     "ignore": [
       "firebase.json",
