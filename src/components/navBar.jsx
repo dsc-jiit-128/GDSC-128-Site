@@ -5,7 +5,7 @@ import '../css/navBar.css'
 function NavigationBar() {
   return (
     <>
-      <div className=''>
+      <div className="">
         <div className="navbar-links desktop-navbar">
           <div className="nav-link">
             <NavLink to="/events">
@@ -14,12 +14,21 @@ function NavigationBar() {
             <NavLink to="/teams">
               <li>TEAMS</li>
             </NavLink>
-            
+
+            <li>
+              <a
+                href="/bitbox"
+                //style undecorated
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                BITBOX 3.0
+              </a>
+            </li>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default NavigationBar
