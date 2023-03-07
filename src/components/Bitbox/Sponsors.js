@@ -31,8 +31,8 @@ export default function Sponsors() {
           // w={'50vw'}
         >
           <GridItem
-            w="17vw"
-            h="17vw"
+            w=""
+            h=""
             bg="#161515"
             border={'1px solid white'}
             className='sponsor'
@@ -40,7 +40,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <Image src= "/rosenfeld.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           <GridItem
             w="17vw"
