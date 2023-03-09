@@ -54,7 +54,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://gen.xyz/'>
+            <Image src= "/xyzz.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -65,7 +67,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://hoverrobotix.com/'>
+            <Image src= "/robotix.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -76,7 +80,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://thementorx.com/'>
+            <Image src= "/MENTORx.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -87,7 +93,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://rosenfeldmedia.com/books/'>
+            <Image src= "/revup.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -98,7 +106,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://www.echo3d.com/'>
+            <Image src= "/echo3D.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
