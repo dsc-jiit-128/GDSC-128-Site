@@ -34,7 +34,7 @@ export default function Video() {
           <AspectRatio maxW="70%" maxH="50%" margin="auto">
             <iframe
               title="naruto"
-              src="https://www.youtube.com/embed/XJ7E5l2YfB0"
+              src="https://www.youtube.com/embed/cyiWHbY6pnA"
               allowFullScreen
             />
           </AspectRatio>
