@@ -119,7 +119,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href='https://www.axure.com/'>
+            <Image src= "/axure.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"

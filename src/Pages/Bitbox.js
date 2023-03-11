@@ -19,6 +19,7 @@ import Video from '../components/Bitbox/Video';
 import Sponsors from '../components/Bitbox/Sponsors';
 import FAQ from '../components/Bitbox/FAQ';
 import '../css/bitbox.css';
+import Milestones from '../components/Bitbox/Timeline';
 const isMobile = window.innerWidth <= 500;
 
 const TimerCard = ({ type, number }) => {
@@ -138,6 +139,7 @@ export default function Bitbox() {
             </HStack>
           </VStack>
           <Video />
+      
           <Sponsors />
           <FAQ />
         </Box>
@@ -214,6 +216,9 @@ export default function Bitbox() {
             </HStack>
           </VStack>
           <Video />
+          <Box>
+        
+          </Box>
           <Sponsors />
           <FAQ />
      </Box>
