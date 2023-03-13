@@ -11,38 +11,57 @@ import {
   useBreakpointValue
 } from '@chakra-ui/react';
 
-const milestones = [
+const timeline = [
   {
     id: 1,
-    date: 'MARCH 30, 2022',
-    title: 'Chakra Hackathon',
-    description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que travailler avec du texte lisible et contenant du sens.`
+    date: 'March 17, 2023 to March 31 2023',
+    title: 'Registration begins',
+    description: `Get, set and be ready to code for Hackathon!`
   },
   {
     id: 2,
-    date: 'July 30, 2021',
-    title: 'Open Source, first contribution',
-    description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating to improve technology for everyone, Ahmad's world changed again!.`
+    date: 'March 31, 20233 to April 8, 2023',
+    title: 'Idea submission',
+    description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
   {
     id: 3,
-    date: 'July 30, 2018',
-    title: 'Freelancing, started working for myself',
-    description:
-      'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+    date: 'April 9, 2023 to April 14, 2023',
+    title: 'Mini Event - Cryptonic',
+    description:`Crypto is not a game, but can be played, so why not come online and join us for our event Cryptonic!`
+  },
+  {
+    id: 4,
+    date : 'April 14, 2023 to April 15, 2023',
+    title: 'Speaker Session',
+    description: `Get to know about the latest trends in the tech industry and how to stay updated with the same.`
+  },
+  {
+    id: 5,
+    date: 'April 14, 2023 to April 15, 2023',
+    title: 'Mini Event - Surprise',
+    description:`A surprise event to keep you on your toes`
+  },
+  {
+    id: 6, 
+    date: 'April 14, 2023 to April 15, 2023',
+    title: 'Hackathon',
+    description: `Get ready to code and build and present your hard work!`
   }
 ];
 
-const Milestones = () => {
+const Timeline = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
-      <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
-        Milestones
+      <chakra.h3 fontSize={{base:'8vw', md:'6xl'}} align="center" p ={3} fontFamily="Gilroy-Bold" fontWeight="bold" mb={18} textAlign="center" color={'white'}  >
+        Timeline
+        
       </chakra.h3>
-      {milestones.map((milestone) => (
+      
+      {timeline.map((milestone) => (
         <Flex key={milestone.id} mb="10px">
           {/* Desktop view(left card) */}
           {isDesktop && milestone.id % 2 === 0 && (
@@ -92,21 +111,26 @@ const Card = ({ id, title, description, date }: CardProps) => {
   let rightValue = isEvenId ? 'unset' : '-15px';
 
   const isMobile = useBreakpointValue({ base: true, md: false });
+  const cardPadding = isMobile ? { base: 2, sm: 3 } : { base: 3, sm: 6 };
+  const titleFontSize = isMobile ? 'xl' : '2xl';
+  const descriptionFontSize = isMobile ? 'sm' : 'md';
+  
   if (isMobile) {
-    leftValue = '-15px';
+    leftValue = '-5px';
     rightValue = 'unset';
-    borderWidthValue = '15px 15px 15px 0';
+    borderWidthValue = '10px 10px 10px 0';
   }
 
   return (
     <HStack
       flex={1}
-      p={{ base: 3, sm: 6 }}
+      p={cardPadding}
       bg={useColorModeValue('gray.100', 'gray.800')}
       spacing={5}
       rounded="lg"
       alignItems="center"
       pos="relative"
+      mb={10}
       _before={{
         content: `""`,
         w: '0',
@@ -126,15 +150,16 @@ const Card = ({ id, title, description, date }: CardProps) => {
         </Text>
 
         <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+          <chakra.h1 fontSize={titleFontSize} lineHeight={1.2} fontWeight="bold" w="100%">
             {title}
           </chakra.h1>
-          <Text fontSize="md">{description}</Text>
+          <Text fontSize={descriptionFontSize}>{description}</Text>
         </VStack>
       </Box>
     </HStack>
   );
 };
+
 
 const LineWithDot = () => {
   return (
@@ -178,4 +203,4 @@ const EmptyCard = () => {
   return <Box flex={{ base: 0, md: 1 }} p={{ base: 0, md: 6 }} bg="transparent"></Box>;
 };
 
-export default Milestones;
+export default Timeline;
