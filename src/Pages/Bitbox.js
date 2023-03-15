@@ -149,12 +149,17 @@ export default function Bitbox() {
               </Text>
             </HStack>
           </VStack>
+             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50'>
+            
           <div 
-            class="apply-button" 
-            data-hackathon-slug="bitbox-2-ac5c" 
-            data-button-theme="dark-inverted"
-            style="height: 44px; width: 312px"
-          ></div>
+	class="apply-button" 
+  
+	data-hackathon-slug="bitbox-2-ac5c" 
+	data-button-theme="light"
+style={{width: '100%', height: '100%'}}
+	
+></div>
+            </Box>
           <Video />
           <Timeline/>
       
@@ -234,14 +239,17 @@ export default function Bitbox() {
               </Text>
             </HStack>
           </VStack>
-          <Box>
-            <div 
-              class="apply-button" 
-              data-hackathon-slug="bitbox-2-ac5c" 
-              data-button-theme="dark-inverted"
-              style="height: 44px; width: 312px"
-            ></div>
-          </Box>
+             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50'>
+            
+          <div 
+	class="apply-button" 
+  
+	data-hackathon-slug="bitbox-2-ac5c" 
+	data-button-theme="light"
+style={{width: '100%', height: '100%'}}
+	
+></div>
+            </Box>
           <Video />
           <Box>
         
