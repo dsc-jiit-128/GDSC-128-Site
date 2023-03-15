@@ -151,14 +151,14 @@ export default function Bitbox() {
           </VStack>
              <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50'>
             
-          <div 
-	class="apply-button" 
-  
-	data-hackathon-slug="bitbox-2-ac5c" 
-	data-button-theme="light"
-style={{width: '100%', height: '100%'}}
-	
-></div>
+              <div 
+                class="apply-button" 
+                
+                data-hackathon-slug="bitbox-2-ac5c" 
+                data-button-theme="light"
+              style={{width: '100%', height: '100%'}}
+                
+              ></div>
             </Box>
           <Video />
           <Timeline/>
@@ -241,14 +241,14 @@ style={{width: '100%', height: '100%'}}
           </VStack>
              <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50'>
             
-          <div 
-	class="apply-button" 
-  
-	data-hackathon-slug="bitbox-2-ac5c" 
-	data-button-theme="light"
-style={{width: '100%', height: '100%'}}
-	
-></div>
+              <div 
+                class="apply-button" 
+                
+                data-hackathon-slug="bitbox-2-ac5c" 
+                data-button-theme="light"
+              style={{width: '100%', height: '100%'}}
+                
+              ></div>
             </Box>
           <Video />
           <Box>
