@@ -42,6 +42,17 @@ const TimerCard = ({ type, number }) => {
 };
 
 export default function Bitbox() {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
+
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
   const [date, setDate] = React.useState(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000));
@@ -138,6 +149,12 @@ export default function Bitbox() {
               </Text>
             </HStack>
           </VStack>
+          <div 
+            class="apply-button" 
+            data-hackathon-slug="bitbox-2-ac5c" 
+            data-button-theme="light"
+            style="height: 44px; width: 312px"
+          ></div>
           <Video />
           <Timeline/>
       
@@ -150,6 +167,7 @@ export default function Bitbox() {
   else
   {
     return (
+      <>
       <Box
         bgColor={'#161515'}
         height={'100%'}
@@ -216,6 +234,14 @@ export default function Bitbox() {
               </Text>
             </HStack>
           </VStack>
+          <Box>
+            <div 
+              class="apply-button" 
+              data-hackathon-slug="bitbox-2-ac5c" 
+              data-button-theme="light"
+              style="height: 44px; width: 312px"
+            ></div>
+          </Box>
           <Video />
           <Box>
         
@@ -224,6 +250,7 @@ export default function Bitbox() {
           <FAQ />
      </Box>
      </Box>
+     </>
     );
   }
 }
