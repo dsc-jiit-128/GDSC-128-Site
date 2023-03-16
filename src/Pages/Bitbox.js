@@ -256,6 +256,7 @@ export default function Bitbox() {
           <Box>
         
           </Box>
+          <SDGs/>
           <Sponsors />
           <FAQ />
      </Box>

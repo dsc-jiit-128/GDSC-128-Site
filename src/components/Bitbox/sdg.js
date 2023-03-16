@@ -10,7 +10,7 @@ import '../../css/SDGs.css'
 export default function SDGs() {
     return (
       <>
-             <Box margin={'50px'} mt={{base: '-15vw', md:'3vw'}}>
+             <Box margin={'50px'} mt={{base: '0vw', md:'3vw'}}>
         <Text fontSize={{base:'8vw', md:'6xl'}} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
           Project Themes
         </Text>
@@ -21,7 +21,7 @@ export default function SDGs() {
           justifyContent={'center'}
           ml={{base:'auto',md:'310px'}}
           mr={{base:'auto',md:'310px'}}
-          mt={{base:'10vw',md:'10vw'}}
+          mt={{base:'3vw',md:'3vw'}}
         >
           <GridItem
             w=""
