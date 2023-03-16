@@ -20,6 +20,7 @@ import Sponsors from '../components/Bitbox/Sponsors';
 import FAQ from '../components/Bitbox/FAQ';
 import '../css/bitbox.css';
 import Timeline from '../components/Bitbox/Timeline';
+import SDGs from '../components/Bitbox/sdg';
 const isMobile = window.innerWidth <= 500;
 
 const TimerCard = ({ type, number }) => {
@@ -163,6 +164,7 @@ export default function Bitbox() {
           <Video />
           <Timeline/>
       
+          <SDGs/>
           <Sponsors />
           <FAQ />
         </Box>

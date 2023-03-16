@@ -40,7 +40,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://rosenfeldmedia.com/books/'>
+            <a target="_blank" href='https://rosenfeldmedia.com/books/'>
             <Image src= "/rosenfeld.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem>
@@ -54,7 +54,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://gen.xyz/'>
+            <a target="_blank" href='https://gen.xyz/'>
             <Image src= "/xyzz.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -67,7 +67,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://hoverrobotix.com/'>
+            <a target="_blank" href='https://hoverrobotix.com/'>
             <Image src= "/robotix.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -80,7 +80,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://thementorx.com/'>
+            <a target="_blank" href='https://thementorx.com/'>
             <Image src= "/MENTORx.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -93,7 +93,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='#'>
+            <a target="_blank" href='#'>
             <Image src= "/revup.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -106,7 +106,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://www.echo3d.com/'>
+            <a target="_blank" href='https://www.echo3d.com/'>
             <Image src= "/echo3D.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -119,7 +119,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://www.axure.com/'>
+            <a target="_blank" href='https://www.axure.com/'>
             <Image src= "/axure.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -132,7 +132,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://devfolio.co/'>
+            <a target="_blank" href='https://devfolio.co/'>
             <Image src= "/devfolio.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
@@ -145,7 +145,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <a href='https://www.wolfram.com/language/'>
+            <a target="_blank" href='https://www.wolfram.com/language/'>
             <Image src= "/wolf.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem><GridItem
