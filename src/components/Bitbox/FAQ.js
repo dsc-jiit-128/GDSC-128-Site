@@ -62,7 +62,7 @@ export default function FAQ() {
                       alignSelf={'center'}
                       fontSize={{ base: '15px', md: '1.5vw' }}
                     >
-                      What is hackathon?{' '}
+                      What is a hackathon?{' '}
                     </Box>
                     {isExpanded ? (
                       <CloseIcon
@@ -173,7 +173,7 @@ export default function FAQ() {
                       alignSelf={'center'}
                       fontSize={{ base: '15px', md: '1.5vw' }}
                     >
-                      Who can participate? Are there any perquisites?{' '}
+                      Who can participate? Are there any prerequisites?{' '}
                     </Box>
                     {isExpanded ? (
                       <CloseIcon
