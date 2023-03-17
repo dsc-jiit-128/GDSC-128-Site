@@ -149,18 +149,19 @@ export default function Bitbox() {
                 {'}'}
               </Text>
             </HStack>
-          </VStack>
-             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100">
+            <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100">
             
-              <div 
-                class="apply-button" 
-                
-                data-hackathon-slug="bitbox-2-ac5c" 
-                data-button-theme="light"
-              style={{width: '100%', height: '100%'}}
-                
-              ></div>
-            </Box>
+            <div 
+              class="apply-button" 
+              
+              data-hackathon-slug="bitbox-2-ac5c" 
+              data-button-theme="light"
+            style={{width: '100%', height: '100%'}}
+              
+            ></div>
+          </Box>
+          </VStack>
+            
           <Video />
           <Timeline/>
       
