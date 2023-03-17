@@ -241,7 +241,7 @@ export default function Bitbox() {
               </Text>
             </HStack>
           </VStack>
-             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50'>
+             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100" position="relative">
             
               <div 
                 class="apply-button" 
