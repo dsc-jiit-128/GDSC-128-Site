@@ -157,7 +157,7 @@ export default function Bitbox() {
                 
                 data-hackathon-slug="bitbox-2-ac5c" 
                 data-button-theme="light"
-              style={{width: '100%', height: '100%', zIndex:"100"}}
+              style={{width: '100%', height: '100%'}}
                 
               ></div>
             </Box>
