@@ -56,7 +56,7 @@ export default function Bitbox() {
 
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
-  const [date, setDate] = React.useState(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000));
+  const [date, setDate] = React.useState(new Date(Date.now() + 23 * 24 * 60 * 60 * 1000));
   useEffect(() => {
     setTimeout(() => {
       if (inputRef) {

@@ -44,9 +44,9 @@ const timeline = [
   },
   {
     id: 6, 
-    date: 'April 14, 2023 to April 15, 2023',
+    date: 'April 15, 2023',
     title: 'Hackathon',
-    description: `Get ready to code and build and present your hard work!`
+    description: `Get ready for 12 hours of code sprint!`
   }
 ];
 
