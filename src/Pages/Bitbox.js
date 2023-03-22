@@ -255,7 +255,8 @@ export default function Bitbox() {
             </Box>
           <Video />
           <Box>
-        
+                  <Timeline/>
+
           </Box>
           <SDGs/>
           <Sponsors />
