@@ -498,7 +498,7 @@ m={'auto'}
             
             <ListItem color='white' fontFamily="Gilroy-Bold"       mb={1.5}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
-                 The best solution developed gets Rs. 8,000/team<br/> +$3000 additional benefits
+                 The best solution developed gets Rs. 5,000/team<br/> +$3000 additional benefits
                     </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
