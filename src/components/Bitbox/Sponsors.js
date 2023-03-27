@@ -197,7 +197,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a target="_blank" href='https://twitter.com/Web3Panjab'>
+            <Image src= "/WEB3Panjab.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+        </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
