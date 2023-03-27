@@ -184,6 +184,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >            <a target="_blank" href='https://tezosindia.org.in/'>
+            {/* abc */}
 
             <Image src= "/tezos.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
         </a>  </GridItem><GridItem
