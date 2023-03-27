@@ -183,9 +183,10 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
             
-          >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-          </GridItem><GridItem
+          >            <a target="_blank" href='https://tezosindia.org.in/'>
+
+            <Image src= "/tezos.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+        </a>  </GridItem><GridItem
             w="17vw"
             h="17vw"
             bg="#161515"

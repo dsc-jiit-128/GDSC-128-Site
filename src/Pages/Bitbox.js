@@ -21,6 +21,7 @@ import FAQ from '../components/Bitbox/FAQ';
 import '../css/bitbox.css';
 import Timeline from '../components/Bitbox/Timeline';
 import SDGs from '../components/Bitbox/sdg';
+import ThreeTierPricing from '../components/Bitbox/Prizes';
 const isMobile = window.innerWidth <= 500;
 
 const TimerCard = ({ type, number }) => {
@@ -164,9 +165,10 @@ export default function Bitbox() {
             
           <Video />
           <Timeline/>
-      
           <SDGs/>
           <Sponsors />
+          
+          <ThreeTierPricing/>
           <FAQ />
         </Box>
       </Box>
@@ -260,6 +262,9 @@ export default function Bitbox() {
           </Box>
           <SDGs/>
           <Sponsors />
+          <ThreeTierPricing/>
+
+          
           <FAQ />
      </Box>
      </Box>

@@ -25,7 +25,7 @@ export default function Video() {
           color={'white'}
         >
           {' '}
-          Watch the teaser{' '}
+          BITBOX 3.0 Is Out{' '}
         </Text>
         <Box mt="8vw">
           <Box className="outer2 redd">
@@ -34,7 +34,7 @@ export default function Video() {
           <AspectRatio maxW="70%" maxH="50%" margin="auto">
             <iframe
               title="naruto"
-              src="https://www.youtube.com/embed/cyiWHbY6pnA"
+              src="https://youtu.be/-FkQqYktMRY"
               allowFullScreen
             />
           </AspectRatio>
