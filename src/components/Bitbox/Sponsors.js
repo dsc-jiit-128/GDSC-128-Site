@@ -197,7 +197,23 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a target="_blank" href='https://twitter.com/Web3Panjab'>
+            <Image src= "/WEB3Panjab.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+        </a>
+          </GridItem>
+          <GridItem
+            w="17vw"
+            h="17vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >
+            <a target="_blank" href='https://polygon.technology/'>
+            <Image src= "/poly.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+        </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -208,7 +224,49 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a target="_blank" href='https://filecoin.io/'>
+            <Image src= "/filecoin.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+        </a>
+          </GridItem><GridItem
+            w="17vw"
+            h="17vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >
+            <a target="_blank" href='https://replit.com/~'>
+            <Image src= "/replit.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+        </a>
+          </GridItem><GridItem
+            w="17vw"
+            h="17vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >
+            <a target="_blank" href='https://solana.com/'>
+            <Image src= "/sol.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'} display={'flex'} alignItems={'center'}/>
+        </a>
+          </GridItem>
+          <GridItem
+            w="17vw"
+            h="17vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >
+            <a target="_blank" href='https://www.threeway.studio/'>
+            <Image src= "/threeway.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
