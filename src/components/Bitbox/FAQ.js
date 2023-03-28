@@ -306,6 +306,56 @@ export default function FAQ() {
               </>
             )}
           </AccordionItem>
+          <AccordionItem
+             ml={{base:'5vw',md:20}}
+             mr={{base:'5vw',md:20}}
+             mt={{base:'5vw', md:5}}
+             pt={{base:0, md:2}}
+            bgColor={'#191919'}
+            border={'transparent'}
+          >
+            {({ isExpanded }) => (
+              <>
+                <h2>
+                  <AccordionButton>
+                    <Box
+                      as="span"
+                      flex="1"
+                      textAlign="left"
+                      textColor={'white'}
+                      fontFamily={'Gilroy-Medium'}
+                      alignSelf={'center'}
+                      fontSize={{ base: '15px', md: '1.5vw' }}
+                    >
+                     Can I submit a pre-made project?
+                    </Box>
+                    {isExpanded ? (
+                      <CloseIcon
+                        fontSize="18px"
+                        color={'white'}
+                        bgColor={'#FBBC04'}
+                      />
+                    ) : (
+                      <AddIcon
+                        fontSize="18px"
+                        color={'white'}
+                        bgColor={'#FBBC04'}
+                      />
+                    )}
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  <Text
+                    color={'#838181'}
+                    fontFamily={'Gilroy-Medium'}
+                    fontSize={{ base: '15px', md: '1.5vw' }}
+                  >
+                   You are supposed to build your project in the designated 12 hours.
+                  </Text>
+                </AccordionPanel>
+              </>
+            )}
+          </AccordionItem>
         </Accordion>
       </Box>
     </>

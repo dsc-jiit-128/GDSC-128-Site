@@ -57,7 +57,7 @@ export default function Bitbox() {
 
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
-  const [date, setDate] = React.useState(new Date(Date.now() + 23 * 24 * 60 * 60 * 1000));
+  const [date, setDate] = React.useState(new Date(Date.now() + 18 * 24 * 60 * 60 * 1000));
   useEffect(() => {
     setTimeout(() => {
       if (inputRef) {
@@ -164,11 +164,12 @@ export default function Bitbox() {
           </VStack>
             
           <Video />
+          <ThreeTierPricing/>
           <Timeline/>
           <SDGs/>
           <Sponsors />
           
-          <ThreeTierPricing/>
+         
           <FAQ />
         </Box>
       </Box>
@@ -256,13 +257,14 @@ export default function Bitbox() {
               ></div>
             </Box>
           <Video />
+          <ThreeTierPricing/>
+
           <Box>
                   <Timeline/>
 
           </Box>
           <SDGs/>
           <Sponsors />
-          <ThreeTierPricing/>
 
           
           <FAQ />

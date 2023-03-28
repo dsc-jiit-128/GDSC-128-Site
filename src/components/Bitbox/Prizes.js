@@ -179,47 +179,66 @@ m={'auto'}
             
         <ListItem color='white' fontFamily="Gilroy-Bold"       mb={1.5}
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
              The best solution developed gets Rs. 12,000/team<br/> +$3000 additional benefits
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+              <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Goodies from Devfolio(T-shirts & stickers)<br/> worth a million smiles                </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                             <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+                           
 Axure one-year subscription certificates $504
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 .xyz domain registration on Gen .xyz
                 </ListItem>
 
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Wolfram subscription to all members worth $375 * x 4 <br/>+ one year Wolfram Pro subscription worth $375
                 </ListItem>
 
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Echo 3D 1-month free subscription $99 <br/> and free resources worth Rs 8000
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}      
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Interview Cake 30-day full access license <br/> via pdf code, $249 x 4
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}        
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Gift vouchers from HoverRobotix Hoverboards <br/> India worth Rs. 10000
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"      mb={1}    
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Digital Ocean providing $250 credits to team <br/>and one year subscription worth $50 x 4
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                                        <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Rosenfeld subscription worth $1645 to the team 
                 </ListItem>
 
@@ -282,42 +301,58 @@ mr={12}
             <ListItem color='white' fontFamily="Gilroy-Bold"       
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left' mb={1.5}  p={-3}>
              
-                
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+              
 
              The best solution developed gets Rs. 18,000/team
-             <br/> +$3000 additional benefits
+             <br/>  &nbsp;   &nbsp; +$3000 additional benefits
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-              Goodies from Devfolio(T-shirts & stickers) worth a million smiles
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+             Goodies from Devfolio(T-shirts & stickers) worth a million smiles
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}   
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
 Axure one-year subscription certificates $504
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}     
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >                            
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
 .xyz domain registration on Gen .xyz
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}  
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
-Interview Cake 30-day full access<br/> license via pdf code, $249 x 4
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >                           
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
+Interview Cake 30-day full access<br/> &nbsp;   &nbsp;license via pdf code, $249 x 4
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}   
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-Wolfram subscription to all members worth $375 * x 4 <br/> + one year Wolfram Pro subscription worth $375
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                           
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
+Wolfram subscription to all members worth $375 * x 4 <br/>&nbsp;   &nbsp; + one year Wolfram Pro subscription worth $375
+                </ListItem>
+        
+
+                <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}    
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >                            
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
+Echo 3D 1-month free subscription $99<br/> &nbsp;   &nbsp;and free resources worth Rs 8000
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}    
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
-Echo 3D 1-month free subscription $99<br/> and free resources worth Rs 8000
-                </ListItem>
-                <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}    
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >                     
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
 Digital Ocean providing $250 credits to team<br/> and one year subscription worth $50 x 4
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"       
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left'  >                            
+             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
 Rosenfeld subscription worth $1645 to the team 
                 </ListItem>
 
@@ -380,48 +415,58 @@ m={'auto'}
                  
         <ListItem color='white' fontFamily="Gilroy-Bold"       
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  mb={1}    >
-             The best solution developed gets Rs. 8,000/team<br/> +$3000 additional benefits
+                                 <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+        The best solution developed gets Rs. 8,000/team<br/> +$3000 additional benefits
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"        mb={1}  
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
 Goodies from Devfolio(T-shirts & stickers)<br/> worth a million smiles                </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"        mb={1}  
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Axure one-year subscription certificates $504
                 </ListItem>
                 <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 .xyz domain registration on Gen .xyz
                 </ListItem>
 
                 <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Wolfram subscription to all members worth $375 * x 4 <br/>+ one year Wolfram Pro subscription worth $375
                 </ListItem>
 
                 <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}        
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Echo 3D 1-month free subscription $99 <br/> and free resources worth Rs 8000
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}      
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Interview Cake 30-day full access license <br/> via pdf code, $249 x 4
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Gift vouchers from HoverRobotix Hoverboards <br/> India worth Rs. 10000
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Digital Ocean providing $250 credits to team <br/>and one year subscription worth $50 x 4
                 </ListItem>
                 
                 <ListItem color='white' fontFamily="Gilroy-Medium"       
-                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                          fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
+
 Rosenfeld subscription worth $1645 to the team 
                 </ListItem>
 
@@ -498,28 +543,40 @@ m={'auto'}
             
             <ListItem color='white' fontFamily="Gilroy-Bold"       mb={1.5}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
                  The best solution developed gets Rs. 5,000/team<br/> +$3000 additional benefits
                     </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
     Goodies from Devfolio(T-shirts & stickers)<br/> worth a million smiles                </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
     Axure one-year subscription certificates $504
                     </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
     .xyz domain registration on Gen .xyz
                     </ListItem>
     
                     <ListItem color='white' fontFamily="Gilroy-Medium"     mb={1}     
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
     Wolfram subscription to all members worth $375 * x 4 <br/>+ one year Wolfram Pro subscription worth $375
                     </ListItem>
   
                     
                     <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}        
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
+
     Gift vouchers from HoverRobotix Hoverboards <br/> India worth Rs. 10000
                     </ListItem>
 
@@ -670,12 +727,18 @@ mr={6}
             
             <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 MASTER GLASSEATER: $500 <br/> Best Advanced Project Built <br/>using Solana                 </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"    mb={2}    
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 RISK TENOKING: $250 <br/>Project with Indepth code </ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 YOUNG GUN: $100   : <br/>best beginner project starting <br/>out in solana              </ListItem>
                   
     
@@ -744,9 +807,13 @@ m={'auto'}
             
             <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 BEST OF POLYGON: $200 <br/>Best hack built on Ethereum <br/>+Polygon: $200</ListItem>
                     <ListItem color='white' fontFamily="Gilroy-Medium"    mb={2}    
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 BEST OF ETH: $150 <br/>Best hack built on Ethereum
 
 </ListItem>
@@ -816,6 +883,8 @@ m={'auto'}
             
             <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
 $250 Prize: <br/>Best use of Filecoin and/or IPFS <br/>Use of peer to peer <br/>hypermedia protocols</ListItem>
 
 
@@ -883,6 +952,8 @@ m={'auto'}
             
             <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
+                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
+
  $50 Prize: <br/>Winning Project deployed on <br/>Replit
 
 </ListItem>
