@@ -212,7 +212,7 @@ export default function Sponsors() {
             
           >
             <a target="_blank" href='https://polygon.technology/'>
-            <Image src= "/poly.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+            <Image src= "/poly_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
         </a>
           </GridItem><GridItem
             w="17vw"
@@ -225,7 +225,7 @@ export default function Sponsors() {
             
           >
             <a target="_blank" href='https://filecoin.io/'>
-            <Image src= "/filecoin.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+            <Image src= "/filecoin_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
         </a>
           </GridItem><GridItem
             w="17vw"
@@ -238,7 +238,7 @@ export default function Sponsors() {
             
           >
             <a target="_blank" href='https://replit.com/~'>
-            <Image src= "/replit.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+            <Image src= "/replit_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
         </a>
           </GridItem><GridItem
             w="17vw"
@@ -251,7 +251,7 @@ export default function Sponsors() {
             
           >
             <a target="_blank" href='https://solana.com/'>
-            <Image src= "/sol.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'} display={'flex'} alignItems={'center'}/>
+            <Image src= "/sol_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'} display={'flex'} alignItems={'center'}/>
         </a>
           </GridItem>
           <GridItem
