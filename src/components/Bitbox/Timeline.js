@@ -14,13 +14,13 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'March 17, 2023 to March 31 2023',
+    date: 'March 17, 2023 to April 2, 2023',
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },
   {
     id: 2,
-    date: 'March 31, 20233 to April 8, 2023',
+    date: 'April 2, 20233 to April 8, 2023',
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
