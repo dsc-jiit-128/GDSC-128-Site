@@ -24,26 +24,21 @@ const timeline = [
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
+
   {
     id: 3,
-    date: 'April 9, 2023 to April 14, 2023',
-    title: 'Mini Event - Cryptonic',
-    description:`Crypto is not a game, but can be played, so why not come online and join us for our event Cryptonic!`
-  },
-  {
-    id: 4,
     date : 'April 14, 2023 to April 15, 2023',
     title: 'Speaker Session',
     description: `Get to know about the latest trends in the tech industry and how to stay updated with the same.`
   },
   {
-    id: 5,
+    id: 4,
     date: 'April 14, 2023 to April 15, 2023',
     title: 'Mini Event - Surprise',
     description:`A surprise event to keep you on your toes`
   },
   {
-    id: 6, 
+    id: 5, 
     date: 'April 15, 2023',
     title: 'Hackathon',
     description: `Get ready for 12 hours of code sprint!`
