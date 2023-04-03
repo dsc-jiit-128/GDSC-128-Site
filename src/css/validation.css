@@ -1,0 +1,49 @@
+.outterbox{
+    width: 100%;
+    height: 100%;
+}
+
+.innerbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GDSC{
+    width: 25%;
+}
+
+.Validation{
+    width: 25%;
+}
+
+@media (max-width:1000px) {
+    .GDSC{
+        width: 40%;
+    }
+    .Validation{
+        width: 40%;
+    }
+}
+
+@media (max-width:600px) {
+    .GDSC{
+        width: 60%;
+    }
+    .Validation{
+        width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .GDSC{
+        width: 70%;
+    }
+    .Validation{
+        width:100%;
+    }
+}

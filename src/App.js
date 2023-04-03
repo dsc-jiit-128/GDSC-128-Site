@@ -19,6 +19,7 @@ import { theme } from './theme'
 import ResetP from './Pages/ResetPassword';
 import verifyemail from './Pages/VerifyEmail';
 import Bitbox from './Pages/Bitbox';
+import Validation from './Pages/Validation';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path="/login" exact component={Login} />
       <Route path="/signup" exact component={Signup} />
       <Route path="/bitbox" exact component={Bitbox} />
+      <Route path="/bitbox-validation" exact component={Validation} />
      {<Route path="/forgotpass" exact component={ForgotPass}/>
       }
      {
