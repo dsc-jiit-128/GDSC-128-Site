@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Box, Center, Heading, HStack, VStack } from '@chakra-ui/react';
 import {
@@ -8,35 +9,48 @@ import {
   Flex,
   Link,
   SimpleGrid,
+  Badge,
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Highlight } from '@chakra-ui/react';
-function Meetups() {
+const EventCard = (props) => {
   return (
-   <Box alignItems={'center'}>
+    <Box alignItems={'center'}>
       <Image
-        src="/image 24.webp"
+        src={props.image}
+        //src="/techworldabc.jpg"
         width={{ base: '50vw', md: '28vw' }}
         height={{ base: '25vw', md: '14vw' }}
         ml="auto"
         mr="auto"
       />
       <Box p={6} textAlign={{ base: 'center', md: 'left' }}>
-        <Text color="white">
-          <Highlight
-            color="white"
-            query="MEETUPS"
-            styles={{ color: 'white', bg: '#0F9D58' }}
-          >
-            MEETUPS
-          </Highlight>
+        <Text color="white" fontFamily={'Gilroy-Medium'}>
+          <Badge colorScheme={'green'}>{
+            props.badge
+          }</Badge>
 
-          <Heading mb={4}>ANCD</Heading>
-          <Text fontSize="xl">Lorem Ipsum abcd check 1</Text>
+          <Heading mb={4} fontFamily={'Gilroy-SemiBold'}>
+            {props.heading}
+            {/* Roadmap */}
+          </Heading>
+          <Text fontSize="m" fontFamily={'Gilroy-Medium'}>
+            {props.text}
+            {/* Introduction to Web development, Competitive programming, DSA and
+            internship opportunities. */}
+          </Text>
         </Text>
         <Text></Text>
       </Box>
     </Box>
+  );
+}
+function Meetups() {
+  return (
+   <>
+   
+
+   </>
   );
 }
 export default Meetups;

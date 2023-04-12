@@ -77,7 +77,7 @@ export default function Eventsbar() {
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                  
+                  <Hackathons />
                 
                 </SimpleGrid>
               </TabPanel>
@@ -98,7 +98,7 @@ export default function Eventsbar() {
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-              
+                  <Meetups />
                 </SimpleGrid>
               </TabPanel>
             </TabPanels>
