@@ -33,9 +33,9 @@ const timeline = [
   },
   {
     id: 4,
-    date: 'April 14, 2023 to April 15, 2023',
-    title: 'Mini Event - Surprise',
-    description:`A surprise event to keep you on your toes`
+    date: 'April 13 2023',
+    title: 'Cipher-Dash ',
+    description:`A fun event to test your coding skills and win exciting prizes!`
   },
   {
     id: 5,
