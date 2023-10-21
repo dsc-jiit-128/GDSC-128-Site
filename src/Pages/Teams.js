@@ -95,24 +95,24 @@ const TeamNav = props => {
 
   // available pos must be in odd numbers
 
-  var posArrayCoreTeam = props.posArrayCoreTeam;
-  const selectedPosCoreTeam = props.selectedPosCoreTeam;
-  const setSelectedPosCoreTeam = props.setSelectedPosCoreTeam;
+  var posArrayTeamLeads = props.posArrayTeamLeads;
+  const selectedPosTeamLeads = props.selectedPosTeamLeads;
+  const setSelectedPosTeamLeads = props.setSelectedPosTeamLeads;
   const setPosArray = props.setPosArray;
-  // selectedPosCoreTeam will always be in the center and bigger than the other positions
+  // selectedPosTeamLeads will always be in the center and bigger than the other positions
 
   const handleClicked = it => {
     //find the index of the clicked item
-    const index = posArrayCoreTeam.findIndex(item => item.name === it.name);
-    // if the selectedPosCoreTeam is clicked, do nothing
-    if (index === selectedPosCoreTeam) return;
-    // if the selectedPosCoreTeam is not clicked, set the selectedPosCoreTeam to the clicked index
+    const index = posArrayTeamLeads.findIndex(item => item.name === it.name);
+    // if the selectedPosTeamLeads is clicked, do nothing
+    if (index === selectedPosTeamLeads) return;
+    // if the selectedPosTeamLeads is not clicked, set the selectedPosTeamLeads to the clicked index
 
-    const temp = [...posArrayCoreTeam];
+    const temp = [...posArrayTeamLeads];
     //get element at index and put it in the center
     const selectedElement = temp.splice(index, 1);
     temp.splice(temp.length / 2, 0, selectedElement[0]);
-    setSelectedPosCoreTeam(Math.floor(temp.length - 1) / 2);
+    setSelectedPosTeamLeads(Math.floor(temp.length - 1) / 2);
     //set the new array
     setPosArray(temp);
   };
@@ -128,13 +128,13 @@ const TeamNav = props => {
       // border={'4px red solid'}
       display="flex"
     >
-      {posArrayCoreTeam.map(it => (
+      {posArrayTeamLeads.map(it => (
         <TeamNavMember
           image={it.image1}
           name={it.name}
           onClick={() => handleClicked(it)}
           key={it.key}
-          isSelected={posArrayCoreTeam.indexOf(it) === selectedPosCoreTeam}
+          isSelected={posArrayTeamLeads.indexOf(it) === selectedPosTeamLeads}
         />
       ))}
     </HStack>
@@ -146,21 +146,21 @@ const Img = src => {
 };
 
 const CurrentTeamNav = props => {
-  const allPosArray = props.posArrayCoreTeam;
+  const allPosArray = props.posArrayTeamLeads;
   const [selectedPosArray, setSelectedPosArray] = useState(0);
-  const [posArrayCoreTeam, setPosArray] = useState(
+  const [posArrayTeamLeads, setPosArray] = useState(
     // get the first 5 elements
     allPosArray.slice(selectedPosArray, 5)
   );
   useEffect(() => {
-    console.log('posArrayCoreTeam', posArrayCoreTeam);
-    const key = posArrayCoreTeam[selectedPosCoreTeam]?.key;
+    console.log('posArrayTeamLeads', posArrayTeamLeads);
+    const key = posArrayTeamLeads[selectedPosTeamLeads]?.key;
     console.log('key', key);
     props.parentSetSelectedPos(key - 1);
-  }, [posArrayCoreTeam]);
+  }, [posArrayTeamLeads]);
 
-  const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
-    Math.floor((posArrayCoreTeam.length - 1) / 2)
+  const [selectedPosTeamLeads, setSelectedPosTeamLeads] = useState(
+    Math.floor((posArrayTeamLeads.length - 1) / 2)
   );
 
   return (
@@ -196,9 +196,9 @@ const CurrentTeamNav = props => {
         </Box>
       )}
       <TeamNav
-        posArrayCoreTeam={posArrayCoreTeam}
-        selectedPosCoreTeam={selectedPosCoreTeam}
-        setSelectedPosCoreTeam={setSelectedPosCoreTeam}
+        posArrayTeamLeads={posArrayTeamLeads}
+        selectedPosTeamLeads={selectedPosTeamLeads}
+        setSelectedPosTeamLeads={setSelectedPosTeamLeads}
         setPosArray={setPosArray}
       />
 
@@ -243,7 +243,7 @@ const CurrentTeamNav = props => {
 };
 
 function Teampage() {
-  const TeamLeads = [
+  const Mentors = [
     {
       image: '/sagar_w.webp',
       image1: '/sagar.webp',
@@ -327,7 +327,6 @@ function Teampage() {
       githubhandle: 'Bhavya0404',
       discord: 'http://discordapp.com/users/GameOnSpot#8227',
       discordhandle: 'GameOnSpot#8227',
-
       content: 'Figuring out cheat codes for the game called Life',
       name: 'Web Lead',
       key: '5',
@@ -351,7 +350,7 @@ function Teampage() {
     },
   ];
 
-  const CoreTeam = [
+  const TeamLeads = [
     {
       image: '/sanat.webp',
       image1: '/sanat_white.webp',
@@ -363,9 +362,8 @@ function Teampage() {
       discordhandle: 'TheCringedSoul#7900',
       instahandle: '@sanatbhatia',
       Linkedinhandle: 'Sanat Bhatia',
-
       id: 'Sanat Bhatia',
-      name: 'UI/UX Designer;',
+      name: 'UI/UX Lead',
       content: '"I am silently judging your font choice."',
       key: '1',
     },
@@ -381,29 +379,11 @@ function Teampage() {
       githubhandle: 'tanayk07',
       discord: 'http://discordapp.com/users/Tanay#3729',
       discordhandle: 'Tanay#3729',
-
       content: '"Making the World a better place" -Gavin Belson',
-      name: 'Android/Web-Dev',
+      name: 'Technical Advisor',
       key: '2',
     },
 
-    {
-      image: '/doyel.webp',
-      image1: '/doyel_white.webp',
-      id: 'Doyel Agrawal',
-      insta: 'https://instagram.com/_.doyel._',
-      instahandle: '@_.doyel._',
-      github: 'https://github.com/DoyelA',
-      githubhandle: 'DoyelA',
-      discord: 'http://discordapp.com/users/DolaMandola#9233',
-      discordhandle: 'DolaMandola#9233',
-      linkedin: 'https://www.linkedin.com/in/doyel-agrawal-aaa6621b6/',
-      Linkedinhandle: 'Doyel Agrawal',
-
-      content: ' Always pet a cat when you meet one.',
-      name: 'Backend Dev',
-      key: '3',
-    },
     {
       image: '/Vishesh.webp',
       image1: '/Vishesh_w.webp',
@@ -416,29 +396,10 @@ function Teampage() {
       githubhandle: 'entropyconquers',
       discord: 'https://discordapp.com/users/deadbeat_galvanometer#2452',
       discordhandle: 'ViShEsH#2452',
-
       content:
         'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
-      name: 'Mobile/Web Dev',
-      key: '4',
-    },
-
-    {
-      image: '/Bhav.webp',
-      image1: '/Bhav_w.webp',
-      id: 'Bhav Goyal',
-      insta: 'https://www.instagram.com/goyalbhav/',
-      instahandle: '@goyalbhav',
-      linkedin: 'https://www.linkedin.com/in/goyalbhav',
-      Linkedinhandle: ' Bhav Goyal',
-      github: 'https://github.com/w3rew0lf',
-      githubhandle: 'w3rew0lf',
-      discord: 'http://discordapp.com/users/w3rew01f#4027',
-      discordhandle: 'w3rew01f#4027',
-
-      content: 'I like to explore, travel and know more people. ',
-      name: 'Cyber Security',
-      key: '5',
+      name: 'Web Dev Lead',
+      key: '3',
     },
     {
       image: '/Sahil.webp',
@@ -452,63 +413,27 @@ function Teampage() {
       githubhandle: 'Sandhu-Sahil',
       discord: 'http://discordapp.com/users/Sahil Sandhu#5673',
       discordhandle: 'Sahil Sandhu#5673',
-
+      
       content:
-        'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
-      name: 'Web Dev ',
-      key: '6',
+      'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
+      name: 'Technical Lead',
+      key: '4',
     },
     {
-      image: '/Shivansh.webp',
-      image1: '/Shivansh_w.webp',
-      id: 'Shivansh Pandey',
-      insta: 'https://www.instagram.com/_shivansh04/',
-      instahandle: '@_shivansh04',
-      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
-      Linkedinhandle: 'Shivansh Pandey',
-      github: 'https://github.com/Shivansh-25',
-      githubhandle: 'Shivansh-25',
-      discord: 'https://discordapp.com/users/513042268190408714',
-      discordhandle: 'Shivansh#4027',
-
-      content: '“If you think math is hard, try web design.” ',
-      name: 'Web Dev  ',
-      key: '7',
-    },
-
-    {
-      image: '/Ritik.webp',
-      image1: '/Ritik_w.webp',
-      id: 'Ritik Shukla',
-      insta: 'https://github.com/rittik112',
-      instahandle: '@rittik112',
-      linkedin: 'https://www.linkedin.com/in/ritik-shukla-8b3928203',
-      Linkedinhandle: 'Ritik Shukla',
-      github: 'https://github.com/rittik112',
-      githubhandle: 'rittik112',
-      discord: 'http://discordapp.com/users/bruhhtik#9344',
-      discordhandle: 'bruhhtik#9344',
-
-      content: 'I like to play around with cp every now and then.',
-      name: 'Competitive Programming',
-      key: '8',
-    },
-    {
-      image: '/chaaya.webp',
-      image1: '/chaaya_white.webp',
-      id: 'Chaaya Agarwal',
-      insta: 'https://www.instagram.com/chaaya._06/',
-      instahandle: '@chaaya._06',
-      github: 'https://github.com/Chaaya0605',
-      githubhandle: 'Chaaya0605',
-      discord: 'http://discordapp.com/users/Chaaya Agarwal#5763',
-      discordhandle: 'Chaaya Agarwal#5763',
-      Linkedinhandle: 'Chaaya Agarwal',
-      linkedin: 'https://www.linkedin.com/in/chaaya-agarwal-992812246/',
-      content:
-        '"Never give up on something you really want, it may be difficult to wait but it is much more difficult to regret!"',
-      name: 'Content Writer',
-      key: '9',
+      image: '/shivangi.webp', //
+      image1: '/shivangi_white.webp', //
+      id: 'Shivangi Suyash',
+      insta: 'https://instagram.com/mid.nightmemories10',
+      instahandle: '@mid.nightmemories10',
+      github: 'https://github.com/Shivangi10-10',
+      githubhandle: 'Shivangi10-10',
+      discord: 'http://discordapp.com/users/shivangi_suyash',
+      discordhandle: 'shivangi_suyash',
+      linkedin: 'https://www.linkedin.com/in/shivangi-suyash-05a484259',
+      Linkedinhandle: 'Shivangi Suyash',
+      content: ' "The only way to do great work is to love what you do." - Steve Jobs',
+      name: 'Community Lead',
+      key: '5',
     },
     {
       image: '/parth_garg.webp',
@@ -524,8 +449,8 @@ function Teampage() {
       id: 'Parth Ahuja',
       content:
         'What is meant for you will find you even if you feel like it has already passed you.',
-      name: 'Social Media',
-      key: '10',
+      name: 'Social Media Lead',
+      key: '6',
     },
     {
       image: '/pariyashi.webp',
@@ -541,8 +466,8 @@ function Teampage() {
       id: 'Pariyashi Sahu',
       content:
         'Void full of space, learning and improving myself while gazing the stars at night!',
-      name: 'Content Writer  ',
-      key: '11',
+      name: 'Content Lead',
+      key: '7',
     },
 
     {
@@ -559,8 +484,8 @@ function Teampage() {
       discordhandle: 'Kanav Agarwal#9540',
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
-      name: 'Management  ',
-      key: '12',
+      name: 'Management & PR Lead   ',
+      key: '8',
     },
 
     {
@@ -578,19 +503,19 @@ function Teampage() {
 
       content:
         'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
-      name: 'Management    ',
-      key: '13',
+      name: 'Management & PR Lead      ',
+      key: '9',
     },
   ];
 
   const loadImages = () => {
-    //load images from image and image1 in the CoreTeam and TeamLeads array
+    //load images from image and image1 in the TeamLeads and Mentors array
     var cache = [];
-    TeamLeads.forEach(member => {
+    Mentors.forEach(member => {
       var img = new Image().src = member.image;
       cache.push(img);
     });
-    CoreTeam.forEach(member => {
+    TeamLeads.forEach(member => {
       var img = new Image().src = member.image;
       cache.push(img);
     });
@@ -602,17 +527,17 @@ function Teampage() {
     loadImages();
   }, []);
 
-  const [posArrayCoreTeam, setPosArray] = useState(TeamLeads);
-  const [selectedPosCoreTeam, setSelectedPosCoreTeam] = useState(
-    Math.floor((posArrayCoreTeam.length - 1) / 2)
+  const [posArrayTeamLeads, setPosArray] = useState(Mentors);
+  const [selectedPosTeamLeads, setSelectedPosTeamLeads] = useState(
+    Math.floor((posArrayTeamLeads.length - 1) / 2)
   );
-  const [selectedPosCoreTeamX, setSelectedPosCoreTeamX] = useState(
-    Math.floor((posArrayCoreTeam.length - 1) / 2)
+  const [selectedPosTeamLeadsX, setSelectedPosTeamLeadsX] = useState(
+    Math.floor((posArrayTeamLeads.length - 1) / 2)
   );
   const [mountState, setMountState] = useState(true);
   useEffect(() => {
     setMountState(false);
-  }, [posArrayCoreTeam]);
+  }, [posArrayTeamLeads]);
 
   useEffect(() => {
     //50 ms timeout to allow the animation to finish
@@ -672,8 +597,8 @@ function Teampage() {
                   >
                     <GridItem pl="2" area={'nav'}>
                       <ChakraImage
-                        src={posArrayCoreTeam[selectedPosCoreTeam]?.image}
-                        fallbackSrc={posArrayCoreTeam[selectedPosCoreTeam]?.image1}
+                        src={posArrayTeamLeads[selectedPosTeamLeads]?.image}
+                        fallbackSrc={posArrayTeamLeads[selectedPosTeamLeads]?.image1}
                         position="relative"
                         ml={{ base: -4, md: 4 }}
                         mb={3}
@@ -689,7 +614,7 @@ function Teampage() {
                         ml={{ base: 0, md: 4 }}
                         className="fade-in"
                         textAlign={'left'}
-                        key={posArrayCoreTeam[selectedPosCoreTeam]?.key}
+                        key={posArrayTeamLeads[selectedPosTeamLeads]?.key}
                         fontFamily={'Gilroy-SemiBold'}
                         fontSize={{ base: '5vw', md: '4xl' }}
                         display="inline"
@@ -699,7 +624,7 @@ function Teampage() {
                       >
                         Hi, my name is{' '}
                         <span className="gradient-text">
-                          {posArrayCoreTeam[selectedPosCoreTeam]?.id}
+                          {posArrayTeamLeads[selectedPosTeamLeads]?.id}
                         </span>
                       </Text>
                     </GridItem>
@@ -718,14 +643,14 @@ function Teampage() {
                         ml={{ base: 0, md: 4 }}
                         className="fade-in"
                         textAlign={'left'}
-                        key={posArrayCoreTeam[selectedPosCoreTeam]?.key}
+                        key={posArrayTeamLeads[selectedPosTeamLeads]?.key}
                         // mb={{ base: '0', md: '0' }}
 
                         // mb = '20px'
                         display={'box'}
                         p={0}
                       >
-                        {posArrayCoreTeam[selectedPosCoreTeam]?.content}
+                        {posArrayTeamLeads[selectedPosTeamLeads]?.content}
                       </Text>
                     </GridItem>
                     <GridItem area={'social'}>
@@ -748,7 +673,7 @@ function Teampage() {
                             <HStack>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.insta
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
                               >
@@ -756,7 +681,7 @@ function Teampage() {
                               </Link>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.insta
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
                               >
@@ -767,7 +692,7 @@ function Teampage() {
                                   mr={1}
                                 >
                                   {
-                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                    posArrayTeamLeads[selectedPosTeamLeads]
                                       ?.instahandle
                                   }
                                 </Text>
@@ -786,7 +711,7 @@ function Teampage() {
                             <HStack>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]
+                                  posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.linkedin
                                 }
                                 display={'inline'}
@@ -795,7 +720,7 @@ function Teampage() {
                               </Link>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]
+                                  posArrayTeamLeads[selectedPosTeamLeads]
                                     ?.linkedin
                                 }
                                 display={'inline'}
@@ -806,7 +731,7 @@ function Teampage() {
                                   fontSize={{ base: '3vw', md: '1.2vw' }}
                                 >
                                   {
-                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                    posArrayTeamLeads[selectedPosTeamLeads]
                                       ?.Linkedinhandle
                                   }
                                 </Text>
@@ -826,7 +751,7 @@ function Teampage() {
                             <HStack>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.github
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.github
                                 }
                                 display={'inline'}
                               >
@@ -834,7 +759,7 @@ function Teampage() {
                               </Link>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.github
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.github
                                 }
                                 display={'inline'}
                               >
@@ -844,7 +769,7 @@ function Teampage() {
                                   fontSize={{ base: '3vw', md: '1.2vw' }}
                                 >
                                   {
-                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                    posArrayTeamLeads[selectedPosTeamLeads]
                                       ?.githubhandle
                                   }
                                 </Text>
@@ -863,7 +788,7 @@ function Teampage() {
                             <HStack>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.discord
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.discord
                                 }
                                 display={'inline'}
                               >
@@ -871,7 +796,7 @@ function Teampage() {
                               </Link>
                               <Link
                                 href={
-                                  posArrayCoreTeam[selectedPosCoreTeam]?.discord
+                                  posArrayTeamLeads[selectedPosTeamLeads]?.discord
                                 }
                                 display={'inline'}
                               >
@@ -881,7 +806,7 @@ function Teampage() {
                                   fontSize={{ base: '3vw', md: '1.2vw' }}
                                 >
                                   {
-                                    posArrayCoreTeam[selectedPosCoreTeam]
+                                    posArrayTeamLeads[selectedPosTeamLeads]
                                       ?.discordhandle
                                   }
                                 </Text>
@@ -908,9 +833,9 @@ function Teampage() {
                       >
                         <VStack
                           onClick={() => {
-                            setPosArray(TeamLeads);
-                            setSelectedPosCoreTeam(
-                              Math.floor((TeamLeads.length - 1) / 2)
+                            setPosArray(Mentors);
+                            setSelectedPosTeamLeads(
+                              Math.floor((Mentors.length - 1) / 2)
                             );
                             setSelectedTeam('leads');
                           }}
@@ -926,7 +851,7 @@ function Teampage() {
                               bgClip: 'text',
                             }}
                           >
-                            Team Leads
+                            Mentors
                           </Text>
                           <ChakraImage
                             src="/Line 3.webp"
@@ -939,9 +864,9 @@ function Teampage() {
 
                         <VStack
                           onClick={() => {
-                            setPosArray(CoreTeam);
-                            setSelectedPosCoreTeam(
-                              Math.floor((CoreTeam.length - 1) / 2)
+                            setPosArray(TeamLeads);
+                            setSelectedPosTeamLeads(
+                              Math.floor((TeamLeads.length - 1) / 2)
                             );
                             setSelectedTeam('core');
                           }}
@@ -958,7 +883,7 @@ function Teampage() {
                             }}
                             //color = {selectedTeam === "core" ? "white" : "gray.600"}
                           >
-                            Core Team
+                            Team Leads
                           </Text>
                           <ChakraImage
                             src="/Line 3.webp"
@@ -981,17 +906,17 @@ function Teampage() {
                     >
                       {mountState ? (
                         <CurrentTeamNav
-                          posArrayCoreTeam={posArrayCoreTeam}
-                          parentSetSelectedPos={setSelectedPosCoreTeam}
-                          selectedPosCoreTeam={selectedPosCoreTeam}
+                          posArrayTeamLeads={posArrayTeamLeads}
+                          parentSetSelectedPos={setSelectedPosTeamLeads}
+                          selectedPosTeamLeads={selectedPosTeamLeads}
                         />
                       ) : (
                         // This will force a re-render of the component
                         <Box>
                           <CurrentTeamNav
-                            posArrayCoreTeam={TeamLeads}
-                            parentSetSelectedPos={setSelectedPosCoreTeamX}
-                            selectedPosCoreTeam={selectedPosCoreTeamX}
+                            posArrayTeamLeads={Mentors}
+                            parentSetSelectedPos={setSelectedPosTeamLeadsX}
+                            selectedPosTeamLeads={selectedPosTeamLeadsX}
                           />
                         </Box>
                       )}
