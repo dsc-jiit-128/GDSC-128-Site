@@ -30,13 +30,16 @@ import {
   FaInstagram,
   FaLinkedin,
 } from 'react-icons/fa';
+
 //import css
 import '../App.css';
 import '../css/Animation.css';
 
 const TeamNavMember = props => {
+
   //hover state
   const [hover, setHover] = useState(false);
+
   return (
     <Box
       pos="inherit"
@@ -508,6 +511,109 @@ function Teampage() {
     },
   ];
 
+  const CoreTeam = [
+    {
+      image: '/samarpreet.webp',
+      image1: '/samarpreet_white.webp',
+      id: 'Samarpreet Singh',
+      insta: 'https://www.instagram.com/sam_p_28',
+      instahandle: 'sam_p_28',
+      linkedin: 'www.linkedin.com/in/samar28',
+      Linkedinhandle: 'Samarpeet Singh',
+      github: 'https://github.com/Samar-28',
+      githubhandle: 'Samar-28',
+      discord: 'http://discordapp.com/users/sam28p',
+      discordhandle: 'Sam_28',
+      content:'Crafting Digital Excellence, One Line of Code at a Time.',
+      name: 'Full Stack Dev              ',
+      key: '1',
+    },
+    {
+      image: '/sunpreet.webp',
+      image1: '/sunpreet_white.webp',
+      id: 'Sunpreet Singh',
+      insta: 'https://instagram.com/sunpreet_singh_28',
+      instahandle: '@sunpreet_singh_28',
+      linkedin: 'https://www.linkedin.com/in/sun28',
+      Linkedinhandle: 'Sunpreet Singh',
+      github: 'https://github.com/sun-28',
+      githubhandle: 'sun-28',
+      discord: 'http://discordapp.com/users/_sun_28',
+      discordhandle: '_sun_28',
+      content: 'What does magic mean? The fact that I typed this message without any bugs.',
+      name: 'Full Stack Dev             ',
+      key: '2',
+    },
+    {
+      image: '/Vishesh.webp',
+      image1: '/Vishesh_w.webp',
+      id: 'Vishesh Raheja',
+      insta: 'https://instagram.com/rogue__amoeba',
+      instahandle: '@rogue__amoeba',
+      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
+      Linkedinhandle: 'Vishesh Raheja',
+      github: 'https://github.com/entropyconquers',
+      githubhandle: 'entropyconquers',
+      discord: 'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle: 'ViShEsH#2452',
+      content:
+        'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
+      name: 'Web Dev Lead',
+      key: '3',
+    },
+    {
+      image: '/Sahil.webp',
+      image1: '/Sahil_w.webp',
+      id: 'Sahilsher Singh',
+      insta: 'https://instagram.com/sandhu._.sahil_',
+      instahandle: '@sandhu._.sahil_',
+      linkedin: 'https://www.linkedin.com/in/sahilsher-singh/',
+      Linkedinhandle: ' Sahilsher Singh',
+      github: 'hhttps://github.com/Sandhu-Sahil',
+      githubhandle: 'Sandhu-Sahil',
+      discord: 'http://discordapp.com/users/Sahil Sandhu#5673',
+      discordhandle: 'Sahil Sandhu#5673',
+      
+      content:
+      'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
+      name: 'Technical Lead',
+      key: '4',
+    },
+    {
+      image: '/shivangi.webp', //
+      image1: '/shivangi_white.webp', //
+      id: 'Shivangi Suyash',
+      insta: 'https://instagram.com/mid.nightmemories10',
+      instahandle: '@mid.nightmemories10',
+      github: 'https://github.com/Shivangi10-10',
+      githubhandle: 'Shivangi10-10',
+      discord: 'http://discordapp.com/users/shivangi_suyash',
+      discordhandle: 'shivangi_suyash',
+      linkedin: 'https://www.linkedin.com/in/shivangi-suyash-05a484259',
+      Linkedinhandle: 'Shivangi Suyash',
+      content: ' "The only way to do great work is to love what you do." - Steve Jobs',
+      name: 'Community Lead',
+      key: '5',
+    },
+    {
+      image: '/parth_garg.webp',
+      image1: '/parth_garg_white.webp',
+      insta: 'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
+      instahandle: '@_parthahuja12_',
+      linkedin: 'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
+      Linkedinhandle: 'Parth Ahuja',
+      github: 'https://github.com/ravenclaw03',
+      githubhandle: 'ravenclaw03',
+      discord: 'http://discordapp.com/users/ravenclaw03#4283',
+      discordhandle: 'ravenclaw03#4283',
+      id: 'Parth Ahuja',
+      content:
+        'What is meant for you will find you even if you feel like it has already passed you.',
+      name: 'Social Media Lead',
+      key: '6',
+    },
+  ];
+
   const loadImages = () => {
     //load images from image and image1 in the TeamLeads and Mentors array
     var cache = [];
@@ -546,7 +652,7 @@ function Teampage() {
     }, 50);
   }, [mountState]);
 
-  const [selectedTeam, setSelectedTeam] = useState('leads');
+  const [selectedTeam, setSelectedTeam] = useState('mentors');
 
   const [parent] = useAutoAnimate(/* optional config */);
   return (
@@ -837,9 +943,9 @@ function Teampage() {
                             setSelectedPosTeamLeads(
                               Math.floor((Mentors.length - 1) / 2)
                             );
-                            setSelectedTeam('leads');
+                            setSelectedTeam('mentors');
                           }}
-                          opacity={selectedTeam === 'leads' ? 1 : 0.5}
+                          opacity={selectedTeam === 'mentors' ? 1 : 0.5}
                           color="white"
                         >
                           <Text
@@ -868,6 +974,37 @@ function Teampage() {
                             setSelectedPosTeamLeads(
                               Math.floor((TeamLeads.length - 1) / 2)
                             );
+                            setSelectedTeam('leads');
+                          }}
+                          opacity={selectedTeam === 'leads' ? '1' : '0.5'}
+                          color="white"
+                        >
+                          <Text
+                            fontSize={{ base: '4vw', md: 30 }}
+                            fontFamily={'Gilroy-Bold'}
+                            _hover={{
+                              bgGradient:
+                                'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
+                              bgClip: 'text',
+                            }}
+                            //color = {selectedTeam === "leads" ? "white" : "gray.600"}
+                          >
+                            Team Leads
+                          </Text>
+                          <ChakraImage
+                            src="/Line 3.webp"
+                            ml={'auto'}
+                            mr={'auto'}
+                            align="center"
+                            width={{ base: '50%', md: '80%' }}
+                          />
+                        </VStack>
+                        <VStack
+                          onClick={() => {
+                            setPosArray(CoreTeam);
+                            setSelectedPosTeamLeads(
+                              Math.floor((CoreTeam.length - 1) / 2)
+                            );
                             setSelectedTeam('core');
                           }}
                           opacity={selectedTeam === 'core' ? '1' : '0.5'}
@@ -881,9 +1018,9 @@ function Teampage() {
                                 'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
                               bgClip: 'text',
                             }}
-                            //color = {selectedTeam === "core" ? "white" : "gray.600"}
+                            //color = {selectedTeam === "leads" ? "white" : "gray.600"}
                           >
-                            Team Leads
+                            Core Team
                           </Text>
                           <ChakraImage
                             src="/Line 3.webp"
