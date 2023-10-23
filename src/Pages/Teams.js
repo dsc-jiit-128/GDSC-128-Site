@@ -368,40 +368,6 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/tanay.webp',
-      image1: '/tanay_white.webp',
-      id: 'Tanay Kedia',
-      insta: 'https://instagram.com/tanay_7',
-      instahandle: '@tanay_7',
-      linkedin: 'https://www.linkedin.com/in/tanay-k-755340177',
-      Linkedinhandle: 'Tanay Kedia',
-      github: 'https://github.com/tanayk07',
-      githubhandle: 'tanayk07',
-      discord: 'http://discordapp.com/users/Tanay#3729',
-      discordhandle: 'Tanay#3729',
-      content: '"Making the World a better place" -Gavin Belson',
-      name: 'Technical Advisor',
-      key: '2',
-    },
-
-    {
-      image: '/vishesh.webp',
-      image1: '/vishesh_white.webp',
-      id: 'Vishesh Raheja',
-      insta: 'https://instagram.com/rogue__amoeba',
-      instahandle: '@rogue__amoeba',
-      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
-      Linkedinhandle: 'Vishesh Raheja',
-      github: 'https://github.com/entropyconquers',
-      githubhandle: 'entropyconquers',
-      discord: 'https://discordapp.com/users/deadbeat_galvanometer#2452',
-      discordhandle: 'ViShEsH#2452',
-      content:
-        'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
-      name: 'Web Dev Lead',
-      key: '3',
-    },
-    {
       image: '/sahil_sandhu.webp',
       image1: '/sahil_sandhu_white.webp',
       id: 'Sahilsher Singh',
@@ -415,9 +381,9 @@ function Teampage() {
       discordhandle: 'Sahil Sandhu#5673',
       
       content:
-      'I am not a traitor to my class. I am just an extreme example of what a working man can achieve.',
+      'Who cares? I mean, it\'s sort of exciting, isn\'t it? Breaking the rules.',
       name: 'Technical Lead',
-      key: '4',
+      key: '2',
     },
     {
       image: '/shivangi.webp', //
@@ -433,7 +399,25 @@ function Teampage() {
       Linkedinhandle: 'Shivangi Suyash',
       content: ' "The only way to do great work is to love what you do." - Steve Jobs',
       name: 'Community Lead',
-      key: '5',
+      key: '3',
+    },
+    {
+      image: '/aryan.webp',
+      image1: '/aryan_white.webp',
+      id: 'Aryan Kulshrestha',
+      insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
+      instahandle: '@_aryan_15_9',
+      linkedin: 'https://www.linkedin.com/in/aryan-kulshrestha-993248221',
+      Linkedinhandle: ' Aryan Kulshrestha',
+      github: 'https://github.com/aryankul15',
+      githubhandle: 'aryankul15',
+      discord: 'https://discordapp.com/users/Aryan Kulshrestha#5249',
+      discordhandle: 'Aryan Kulshrestha#5249',
+
+      content:
+        'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
+      name: 'Management & PR Lead      ',
+      key: '4',
     },
     {
       image: '/parth.webp',
@@ -450,7 +434,7 @@ function Teampage() {
       content:
         'What is meant for you will find you even if you feel like it has already passed you.',
       name: 'Social Media Lead',
-      key: '6',
+      key: '5',
     },
     {
       image: '/pariyashi.webp',
@@ -467,7 +451,7 @@ function Teampage() {
       content:
         'Void full of space, learning and improving myself while gazing the stars at night!',
       name: 'Content Lead',
-      key: '7',
+      key: '6',
     },
 
     {
@@ -485,25 +469,40 @@ function Teampage() {
       content:
         ' Learning captivates me as it is not attained by chance, it must be sought for with ardor and attended to with diligence.',
       name: 'Management & PR Lead   ',
+      key: '7',
+    },
+    {
+      image: '/tanay.webp',
+      image1: '/tanay_white.webp',
+      id: 'Tanay Kedia',
+      insta: 'https://instagram.com/tanay_7',
+      instahandle: '@tanay_7',
+      linkedin: 'https://www.linkedin.com/in/tanay-k-755340177',
+      Linkedinhandle: 'Tanay Kedia',
+      github: 'https://github.com/tanayk07',
+      githubhandle: 'tanayk07',
+      discord: 'http://discordapp.com/users/Tanay#3729',
+      discordhandle: 'Tanay#3729',
+      content: '"Making the World a better place" -Gavin Belson',
+      name: 'Technical Advisor',
       key: '8',
     },
 
     {
-      image: '/aryan.webp',
-      image1: '/aryan_white.webp',
-      id: 'Aryan Kulshrestha',
-      insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
-      instahandle: '@_aryan_15_9',
-      linkedin: 'https://www.linkedin.com/in/aryan-kulshrestha-993248221',
-      Linkedinhandle: ' Aryan Kulshrestha',
-      github: 'https://github.com/aryankul15',
-      githubhandle: 'aryankul15',
-      discord: 'https://discordapp.com/users/Aryan Kulshrestha#5249',
-      discordhandle: 'Aryan Kulshrestha#5249',
-
+      image: '/vishesh.webp',
+      image1: '/vishesh_white.webp',
+      id: 'Vishesh Raheja',
+      insta: 'https://instagram.com/rogue__amoeba',
+      instahandle: '@rogue__amoeba',
+      linkedin: 'https://www.linkedin.com/in/vishesh-raheja',
+      Linkedinhandle: 'Vishesh Raheja',
+      github: 'https://github.com/entropyconquers',
+      githubhandle: 'entropyconquers',
+      discord: 'https://discordapp.com/users/deadbeat_galvanometer#2452',
+      discordhandle: 'ViShEsH#2452',
       content:
-        'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
-      name: 'Management & PR Lead      ',
+        'I spend most of my time failing to automate tasks that I could have done manually in 5 minutes.',
+      name: 'Web Dev Lead',
       key: '9',
     },
   ];
@@ -525,40 +524,6 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/sunpreet.webp',
-      image1: '/sunpreet_white.webp',
-      id: 'Sunpreet Singh',
-      insta: 'https://instagram.com/sunpreet_singh_28',
-      instahandle: 'sunpreet_singh_28',
-      linkedin: 'https://www.linkedin.com/in/sun28',
-      Linkedinhandle: 'Sunpreet Singh',
-      github: 'https://github.com/sun-28',
-      githubhandle: 'sun-28',
-      discord: 'http://discordapp.com/users/_sun_28',
-      discordhandle: '_sun_28',
-      content: `"Programming isn't about what you know; it's about what you can figure out." - Chris Pine`,
-      name: 'Full Stack Dev             ',
-      key: '2',
-    },
-
-    {
-      image: '/Shivansh.webp',
-      image1: '/Shivansh_w.webp',
-      id: 'Shivansh Pandey',
-      insta: 'https://www.instagram.com/_shivansh04/',
-      instahandle: '@_shivansh04',
-      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
-      Linkedinhandle: 'Shivansh Pandey',
-      github: 'https://github.com/Shivansh-25',
-      githubhandle: 'Shivansh-25',
-      discord: 'https://discordapp.com/users/513042268190408714',
-      discordhandle: 'Shivansh#4027',
-
-      content: '“If you think math is hard, try web design.” ',
-      name: 'Web Dev',
-      key: '3',
-    },
-    {
       image: '/jinendra.webp',
       image1: '/jinendra_white.webp',
       id: 'Jinendra Jain',
@@ -574,7 +539,23 @@ function Teampage() {
       content:
       "Code is like humour. If you have to explain it, it's bad",
       name: 'Full Stack & App Developer',
-      key: '4',
+      key: '2',
+    },
+    {
+      image: '/sunpreet.webp',
+      image1: '/sunpreet_white.webp',
+      id: 'Sunpreet Singh',
+      insta: 'https://instagram.com/sunpreet_singh_28',
+      instahandle: 'sunpreet_singh_28',
+      linkedin: 'https://www.linkedin.com/in/sun28',
+      Linkedinhandle: 'Sunpreet Singh',
+      github: 'https://github.com/sun-28',
+      githubhandle: 'sun-28',
+      discord: 'http://discordapp.com/users/_sun_28',
+      discordhandle: '_sun_28',
+      content: `"Programming isn't about what you know; it's about what you can figure out." - Chris Pine`,
+      name: 'Full Stack Dev             ',
+      key: '3',
     },
     {
       image: '/harsh.webp',
@@ -592,7 +573,7 @@ function Teampage() {
       content:
       "Fascinated by learning since it is something that requires ardent pursuit and diligent attention.",
       name: "ML Developer",
-      key: '5',
+      key: '4',
     },
     {
       image: '/nishant.webp',
@@ -615,7 +596,7 @@ function Teampage() {
       "   Your words are the code that unlocks the future    ",
 
       name : "   Content writer    ",
-      key: '6',
+      key: '5',
     },
     {
       image: '/siddhant.webp',
@@ -633,7 +614,7 @@ function Teampage() {
       content:
       "Strategically navigating the digital landscape",
       name: "Management     ",
-      key: '7',
+      key: '6',
     },
     {
       image: '/atharva.webp', 
@@ -650,7 +631,7 @@ function Teampage() {
       content:
       "Juggling tasks and laughs, that's our management craft.",
       name: "Management and PR",
-      key: '8',
+      key: '7',
     },
     {
       image: '/samarth.webp',
@@ -668,7 +649,7 @@ function Teampage() {
       content:
       "I'm a frontend developer transitioning to full-stack & mastering Java-based Data Structures & Algorithms (DSA).",
       name: "Frontend Developer",
-      key: '9',
+      key: '8',
     },
 
     {
@@ -687,7 +668,7 @@ function Teampage() {
       content:
       "Coordinating algorithms to sway in rhythm",
       name: "Social Media",
-      key: '10',
+      key: '9',
     },
 
    {
@@ -706,7 +687,7 @@ function Teampage() {
       content:
       "Either write something worth reading or do something worth writing ",
       name: "Content Writer",
-      key: '11',
+      key: '10',
     },{
       image: '/khushi.webp',
       image1: '/khushi_white.webp',
@@ -722,7 +703,7 @@ function Teampage() {
       content:
       "Nothing can dim the light that shines from within",
       name: "Management and PR",
-      key: '12  ',
+      key: '11',
     },{
       image: '/PriyanshiRana.webp',
       image1: '/PriyanshiRana_white.webp',
@@ -734,7 +715,7 @@ function Teampage() {
       content:
       "I have discovered in life that there are ways of getting almost anywhere you want to go, if you really want to go",
       name: "Management And PR",
-      key: '13',
+      key: '12',
     },{
       image: '/anmol.webp',
       image1: '/anmol_white.webp',
@@ -751,7 +732,7 @@ function Teampage() {
       content:
       "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
  name: "Social media and designing",
-      key: '14',
+      key: '13',
     }, {
       image: '/Jigyasa.webp',
       image1: '/Jigyasa_white.webp',
@@ -768,7 +749,7 @@ function Teampage() {
       content:
       "I'm a little scary sometimes, you know that? Brilliant... but scary",
       name: "Web Developer",
-      key: '15',
+      key: '14',
     }, {
       image: '/tushar.webp',
       image1: '/tushar_white.webp',
@@ -784,7 +765,7 @@ function Teampage() {
       content:
       "Not all engineers develop codes, some capture memories and develop photographs",
       name: "Photgrapher",
-      key: '16',
+      key: '15',
     },
     {
       image: '/sahil_bansal.webp',
@@ -800,8 +781,25 @@ function Teampage() {
       discordhandle: "sahil_0810",
       content:`A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
       name: "Management & PR",
-      key: '17'
-    }
+      key: '16'
+    },
+    {
+      image: '/Shivansh.webp',
+      image1: '/Shivansh_w.webp',
+      id: 'Shivansh Pandey',
+      insta: 'https://www.instagram.com/_shivansh04/',
+      instahandle: '@_shivansh04',
+      linkedin: 'https://www.linkedin.com/in/shivansh-pandey-03619a166/',
+      Linkedinhandle: 'Shivansh Pandey',
+      github: 'https://github.com/Shivansh-25',
+      githubhandle: 'Shivansh-25',
+      discord: 'https://discordapp.com/users/513042268190408714',
+      discordhandle: 'Shivansh#4027',
+
+      content: '“If you think math is hard, try web design.” ',
+      name: 'Web Dev',
+      key: '17',
+    },
   ];
 
   const loadImages = () => {
@@ -826,7 +824,7 @@ function Teampage() {
     loadImages();
   }, []);
 
-  const [posArrayTeamLeads, setPosArray] = useState(Mentors);
+  const [posArrayTeamLeads, setPosArray] = useState(TeamLeads);
   const [selectedPosTeamLeads, setSelectedPosTeamLeads] = useState(
     Math.floor((posArrayTeamLeads.length - 1) / 2)
   );
@@ -845,7 +843,7 @@ function Teampage() {
     }, 50);
   }, [mountState]);
 
-  const [selectedTeam, setSelectedTeam] = useState('mentors');
+  const [selectedTeam, setSelectedTeam] = useState('leads');
 
   const [parent] = useAutoAnimate(/* optional config */);
   return (
