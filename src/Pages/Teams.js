@@ -785,6 +785,22 @@ function Teampage() {
       "Not all engineers develop codes, some capture memories and develop photographs",
       name: "Photgrapher",
       key: '16',
+    },
+    {
+      image: '/sahil_bansal.webp',
+      image1: '/sahil_bansal_white.webp',
+      id: "SAHIL BANSAL",
+      insta: "https://instagram.com/sahil_0810?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
+      instahandle: "sahil_0810",
+      linkedin: "https://www.linkedin.com/in/sahil-bansal-22321224a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      Linkedinhandle: "Sahil Bansal",
+      github: "https://github.com/Sahill0810",
+      githubhandle: " sahill0810",
+      discord: "https://discord.com/channels/1165930677368262678/1165930677368262681",
+      discordhandle: "sahil_0810",
+      content:`A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
+      name: "Management & PR",
+      key: '17'
     }
   ];
 
