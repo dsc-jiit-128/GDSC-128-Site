@@ -375,7 +375,7 @@ function Teampage() {
       instahandle: 'Instagram',
       linkedin: 'https://www.linkedin.com/in/sahilsher-singh/',
       Linkedinhandle: ' Sahilsher Singh',
-      github: 'hhttps://github.com/Sandhu-Sahil',
+      github: 'https://github.com/Sandhu-Sahil',
       githubhandle: 'Sandhu-Sahil',
       discord: 'http://discordapp.com/users/Sahil Sandhu#5673',
       discordhandle: 'Sahil Sandhu#5673',
