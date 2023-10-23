@@ -368,8 +368,8 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/Tanay.webp',
-      image1: '/Tanay_w.webp',
+      image: '/tanay.webp',
+      image1: '/tanay_white.webp',
       id: 'Tanay Kedia',
       insta: 'https://instagram.com/tanay_7',
       instahandle: '@tanay_7',
@@ -385,8 +385,8 @@ function Teampage() {
     },
 
     {
-      image: '/Vishesh.webp',
-      image1: '/Vishesh_w.webp',
+      image: '/vishesh.webp',
+      image1: '/vishesh_white.webp',
       id: 'Vishesh Raheja',
       insta: 'https://instagram.com/rogue__amoeba',
       instahandle: '@rogue__amoeba',
@@ -402,8 +402,8 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/Sahil.webp',
-      image1: '/Sahil_w.webp',
+      image: '/sahil_sandhu.webp',
+      image1: '/sahil_sandhu_white.webp',
       id: 'Sahilsher Singh',
       insta: 'https://media.tenor.com/e-OsuDsXxgEAAAAd/nouns-dao.gif',
       instahandle: 'Instagram',
@@ -436,8 +436,8 @@ function Teampage() {
       key: '5',
     },
     {
-      image: '/parth_garg.webp',
-      image1: '/parth_garg_white.webp',
+      image: '/parth.webp',
+      image1: '/parth_white.webp',
       insta: 'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
       instahandle: '@_parthahuja12_',
       linkedin: 'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
@@ -471,8 +471,8 @@ function Teampage() {
     },
 
     {
-      image: '/kanavagarwal.webp',
-      image1: '/kanavagarwal_white.webp',
+      image: '/kanav.webp',
+      image1: '/kanav_white.webp',
       id: 'Kanav Agarwal',
       insta: 'https://www.instagram.com/kanav_ag/',
       instahandle: '@kanav_ag',
@@ -489,8 +489,8 @@ function Teampage() {
     },
 
     {
-      image: '/AryanK.webp',
-      image1: '/AryanK_white.webp',
+      image: '/aryan.webp',
+      image1: '/aryan_white.webp',
       id: 'Aryan Kulshrestha',
       insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
       instahandle: '@_aryan_15_9',
@@ -536,7 +536,7 @@ function Teampage() {
       githubhandle: 'sun-28',
       discord: 'http://discordapp.com/users/_sun_28',
       discordhandle: '_sun_28',
-      content: 'What does magic mean? The fact that I typed this message without any bugs.',
+      content: `"Programming isn't about what you know; it's about what you can figure out." - Chris Pine`,
       name: 'Full Stack Dev             ',
       key: '2',
     },
@@ -577,8 +577,8 @@ function Teampage() {
       key: '4',
     },
     {
-      image: '/user_icon.webp',
-      image1: '/user_icon.webp',
+      image: '/harsh.webp',
+      image1: '/harsh_white.webp',
       id: "Harsh Kumawat",
       insta: "https://instagram.com/harshk04/",
       instahandle: "harshk04",
@@ -736,8 +736,8 @@ function Teampage() {
       name: "Management And PR",
       key: '13',
     },{
-      image: '/user_icon.webp',
-      image1: '/user_icon.webp',
+      image: '/anmol.webp',
+      image1: '/anmol_white.webp',
       id: "Anmol Dhuwalia",
       insta: "https://www.instagram.com/anmoxll/",
       instahandle: "anmoxll",
