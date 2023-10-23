@@ -632,7 +632,7 @@ function Teampage() {
       
       content:
       "Strategically navigating the digital landscape",
-      name: "Management",
+      name: "Management     ",
       key: '7',
     },
     {
@@ -769,8 +769,23 @@ function Teampage() {
       "I'm a little scary sometimes, you know that? Brilliant... but scary",
       name: "Web Developer",
       key: '15',
-    },
-
+    }, {
+      image: '/tushar.webp',
+      image1: '/tushar_white.webp',
+      id: "Tushar Jaiswal",
+      insta: "https://instagram.com/tushar.zeno",
+      instahandle: "tushar.zeno",
+      linkedin: "https://in.linkedin.com/in/tushar-jaiswal-6755701b7",
+      Linkedinhandle: "Tushar Jaiswal",
+      github: "https://github.com/zeno29",
+      githubhandle: "zeno29",
+      discord: "https://discordapp.com/users/tushar0704#0000",
+      discordhandle: "tushar0704",
+      content:
+      "Not all engineers develop codes, some capture memories and develop photographs",
+      name: "Photgrapher",
+      key: '16',
+    }
   ];
 
   const loadImages = () => {
