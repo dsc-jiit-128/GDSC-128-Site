@@ -20,7 +20,7 @@ const timeline = [
   },
   {
     id: 2,
-    date: 'April 2, 20233 to April 8, 2023',
+    date: 'April 2, 2023 to April 8, 2023',
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
