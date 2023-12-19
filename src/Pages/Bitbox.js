@@ -109,7 +109,7 @@ export default function Bitbox() {
             }}
           ></div>
 
-          <Image src="/frontBg.svg" w={'100%'} />
+         { <Image src="/frontBg.svg" w={'100%'} />}
           <Box pos={'absolute'} top={'0'} zIndex={'1'} w={'100%'}>
             <Nav />
             <Box>
@@ -152,13 +152,13 @@ export default function Bitbox() {
             </HStack>
             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100">
             
-            <div 
+            {/* <div 
               class="apply-button" 
               
               data-hackathon-slug="bitbox-2-ac5c" 
               data-button-theme="light"
-            style={{width: '100%', height: '100%',pointerEvents: "none"}}
-            ></div>
+            style={{width: '100%', height: '100%',pointerEvents: "none",display:"none"}}
+            ></div> */}
           </Box>
           </VStack>
             
@@ -207,7 +207,7 @@ export default function Bitbox() {
               <Head />
             </Box>
           </Box>
-          <Image src='/Group 23.webp' w={'70%'} mt="-48vw" ml={'auto'} mr='auto'/>
+          <Image src='/Group 23.png' w={'70%'} mt="-48vw" ml={'auto'} mr='auto'/>
           <VStack w={'100%'} mt={{base:'20vw', md:-30}}>
             <HStack
               w={'100%'}
@@ -246,13 +246,13 @@ export default function Bitbox() {
           </VStack>
              <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100" position="relative">
             
-              <div 
+              {/* <div 
                 class="apply-button" 
                 data-hackathon-slug="bitbox-2-ac5c" 
                 data-button-theme="light"
-              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none"}}
+              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none",display:"none"}}
                 
-              ></div>
+              ></div> */}
             </Box>
           <Video />
           <ThreeTierPricing/>
