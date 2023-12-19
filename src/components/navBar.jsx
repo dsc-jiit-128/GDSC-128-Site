@@ -21,7 +21,7 @@ function NavigationBar() {
                 //style undecorated
                 style={{ textDecoration: 'none', color: 'white' }}
               >
-                BITBOX 3.0
+                BITBOX 4.0
               </a>
             </li>
           </div>

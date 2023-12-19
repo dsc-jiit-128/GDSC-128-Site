@@ -113,7 +113,7 @@ export default function BuildTogether() {
               >
                 <Text color="white" fontFamily={'Gilroy-Bold'} fontSize={{ base: '14px', md: '1.7vw' }} >
                   <Link href="/bitbox">
-                  BITBOX 3.0
+                  BITBOX 4.0
                   </Link>
                 </Text>
               </Button>

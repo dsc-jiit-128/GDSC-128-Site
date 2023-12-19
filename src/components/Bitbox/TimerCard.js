@@ -45,27 +45,27 @@ const TimerCard = ({type, number}) => {
 const Timer = ({futureDate}) => {
     //countdown date
     //futureDate - current date
-    const [date, setTimeLeft] = React.useState(new Date(futureDate.getTime() - new Date().getTime()))
+    const [date, setTimeLeft] = React.useState((futureDate.getTime() - new Date().getTime()))
     //update every second
     React.useEffect(() => {
         const interval = setInterval(() => {
-            setTimeLeft(new Date(futureDate.getTime() - new Date().getTime()))
+            setTimeLeft((futureDate.getTime() - new Date().getTime()))
         }, 1000)
         return () => clearInterval(interval)
     }, [futureDate])
 
     return <HStack spacing={{base:3, md:10}} ml={{base: '-5vw', md: '3vw'}}>
         <TimerCard type="D" 
-            number={date.getDate()}
+            number={Math.floor(date / (1000 * 60 * 60 * 24))}
         />
         <TimerCard type="H"
-            number={date.getHours()}
+            number={Math.floor((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}
         />
         <TimerCard type="M"
-            number={date.getMinutes()}
+            number={Math.floor((date % (1000 * 60 * 60)) / (1000 * 60))}
             />
         <TimerCard type="S"
-            number={date.getSeconds()}
+            number={Math.floor((date % (1000 * 60)) / 1000)}
         />
         </HStack>
 

@@ -24,7 +24,7 @@ import {
   }
 
 
-  function PriceWrapper({ children }: { children: ReactNode }) {
+  function PriceWrapper({ children }) {
     return (
       <Box
         mb={4}
@@ -115,7 +115,14 @@ m={'auto'}
         >
           Prizes
         </Text>
+        <Text fontSize={{base:'4vw', md:'3xl'}} 
+        align="center"  margin = 'auto' 
+        marginTop={'120px'} color='grey'
+        >
+          to be announced ...
+        </Text>
         </VStack>
+{/*         
         <Stack
           direction={{ base: 'column', md: 'row' }}
           textAlign="center"
@@ -583,7 +590,7 @@ m={'auto'}
     
                 </List>
             </VStack>
-         </PriceWrapper>
+         </PriceWrapper> */}
 
          {/* SOLANA */}
 
@@ -660,7 +667,7 @@ YOUNG GUN: $100 <br/>$USDC 100 for the best project beginners <br/>just starting
          </PriceWrapper> */}
 
 
-            </Stack>
+            {/* </Stack>
             <Line></Line>
             <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -745,10 +752,10 @@ YOUNG GUN: $100   : <br/>best beginner project starting <br/>out in solana      
                 </List>
             </VStack>
          </PriceWrapper> 
-
+ */}
 
          {/* POLYGON */}
-         <PriceWrapper>
+         {/* <PriceWrapper>
             <Box py={4} px={{ base: 1, md: 8 }}
             borderTopLeftRadius={'xl'}
             borderTopRightRadius={'xl'}   
@@ -822,9 +829,9 @@ BEST OF ETH: $150 <br/>Best hack built on Ethereum
     
                 </List>
             </VStack>
-         </PriceWrapper> 
+         </PriceWrapper>  */}
 
-         {/* FILECOIN */}<PriceWrapper>
+         {/* FILECOIN<PriceWrapper>
             <Box py={4} px={{ base: 1, md: 8 }}
             borderTopLeftRadius={'xl'}
             borderTopRightRadius={'xl'}   
@@ -890,10 +897,10 @@ $250 Prize: <br/>Best use of Filecoin and/or IPFS <br/>Use of peer to peer <br/>
 
                 </List>
             </VStack>
-         </PriceWrapper> 
+         </PriceWrapper>  */}
 
          {/* REPLIT */}
-         <PriceWrapper>
+         {/* <PriceWrapper>
             <Box py={4} px={{ base: 1, md: 8 }}
             borderTopLeftRadius={'xl'}
             borderTopRightRadius={'xl'}   
@@ -965,7 +972,7 @@ m={'auto'}
 
 
 
-            </Stack>
+            </Stack> */}
       </Box>
     );
   }

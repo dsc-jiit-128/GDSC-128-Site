@@ -25,7 +25,7 @@ export default function Video() {
           color={'white'}
         >
           {' '}
-          BITBOX 3.0 Is Out{' '}
+          BITBOX 4.0 soon ...{' '}
         </Text>
         <Box mt="8vw">
           <Box className="outer2 redd">

@@ -14,7 +14,7 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'March 17, 2023 to April 2, 2023',
+    date: 'Feb 15, 2024',
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },
@@ -63,7 +63,7 @@ const Timeline = () => {
       </chakra.h3>
       
       {timeline.map((milestone) => (
-        <Flex key={milestone.id} mb="10px">
+        <Flex key={milestone.id} mb="10px" >
           {/* Desktop view(left card) */}
           {isDesktop && milestone.id % 2 === 0 && (
             <>
@@ -144,6 +144,8 @@ const Card = ({ id, title, description, date }: CardProps) => {
         right: rightValue,
         display: 'block'
       }}
+      filter='auto'
+      blur={id===1?"":"5px"}
     >
       <Box>
         <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}>

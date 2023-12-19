@@ -42,10 +42,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            {/* <a target="_blank" href='https://rosenfeldmedia.com/books/'> */}
-            <a target="_blank" href='https://shop.continental.coffee/'>
-            <Image src= "/cofesponsor.png" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+        <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           <GridItem
             w="20vw"
@@ -57,11 +54,7 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            {/* <a target="_blank" href='https://gen.xyz/'> */}
-            <a target="_blank" href='https://www.vehant.com/'>
-
-            <Image src= "/vehantsponsor.png" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           </Grid>
           <Text fontSize={{base:'6vw', md:'4xl'}} align="center"  margin = 'auto'
@@ -102,9 +95,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://hoverrobotix.com/'>
-            <Image src= "/robotix.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+        <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -115,9 +106,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://thementorx.com/'>
-            <Image src= "/MENTORx.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -128,9 +117,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='#'>
-            <Image src= "/revup.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -141,247 +128,8 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://www.echo3d.com/'>
-            <Image src= "/echo3D.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.axure.com/'>
-            <Image src= "/axure.webp" w={'60%'} h={'60%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://streamyard.com/'>
-            <Image src= "/streamyardsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.wolfram.com/language/'>
-            <Image src= "/wolf.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
-
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://rosenfeldmedia.com/books/'>
-            <Image src= "/rosenfeld.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem>
-          
-          
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.interviewcake.com/'>
-            <Image src= "/cake.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >            <a target="_blank" href='https://flipr.ai//'>
-            
-            <Image src= "/fliprsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-        </a>  </GridItem><GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://twitter.com/Web3Panjab'>
-            <Image src= "/WEB3Panjab.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-        </a>
-          </GridItem>
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.threeway.studio/'>
-            <Image src= "/threeway.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-          
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://filecoin.io/'>
-            <Image src= "/filecoin_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-
-  
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://gen.xyz/'>
-            <Image src= "/xyzz.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-
-
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://yhills.com/'>
-            <Image src= "/yhillsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.grabon.in/'>
-            <Image src= "/grabonsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-          
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://solana.com//'>
-            <Image src= "/sol.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://replit.com/'>
-            <Image src= "/replit.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://www.elearnmarkets.com/webinars/stock-market-for-everyone?aff_code=ELMAFF10953&utm_source=ELMAFF10953&utm_medium=affiliate'>
-            <Image src= "/elm.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-            </GridItem> 
-
-          <GridItem
-            w="17vw"
-            h="17vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://pwskills.com/'>
-            <Image src= "/pwsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-          
-
-
-
-
-
-
 
 
 
@@ -452,11 +200,9 @@ color='white'>
             display={'flex'}
             justifyContent={'center'}
             
-          >            <a target="_blank" href='https://tezosindia.org.in/'>
-            
-
-            <Image src= "/tezos.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-        </a>  </GridItem>
+          >       
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </GridItem>
         
         <GridItem
             w="14vw"
@@ -468,9 +214,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://devfolio.co/'> 
-            <Image src= "/devfolio.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
                
           <GridItem
@@ -483,9 +227,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://www.digitalocean.com/'>
-            <Image src= "/meta.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           <GridItem
             w="14vw"
@@ -497,9 +239,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://polygon.technology/'>
-            <Image src= "/poly_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem>
           {/* <GridItem
             w="14vw"
@@ -511,9 +251,9 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://www.elearnmarkets.com/webinars/stock-market-for-everyone?aff_code=ELMAFF10953&utm_source=ELMAFF10953&utm_medium=affiliate'>
-            <Image src= "/elm.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
+            // <a target="_blank" href='https://www.elearnmarkets.com/webinars/stock-market-for-everyone?aff_code=ELMAFF10953&utm_source=ELMAFF10953&utm_medium=affiliate'>
+            // <Image src= "/elm.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            // </a>
             </GridItem> */}
             
         </Grid> 

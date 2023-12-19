@@ -57,7 +57,7 @@ export default function Bitbox() {
 
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
-  const [date, setDate] = React.useState(new Date(2023, 3, 15, 0, 0, 0, 0));
+  const [date, setDate] = React.useState(new Date("2024-02-15"));
   useEffect(() => {
     setTimeout(() => {
       if (inputRef) {
@@ -157,8 +157,7 @@ export default function Bitbox() {
               
               data-hackathon-slug="bitbox-2-ac5c" 
               data-button-theme="light"
-            style={{width: '100%', height: '100%'}}
-              
+            style={{width: '100%', height: '100%',pointerEvents: "none"}}
             ></div>
           </Box>
           </VStack>
@@ -249,10 +248,9 @@ export default function Bitbox() {
             
               <div 
                 class="apply-button" 
-                
                 data-hackathon-slug="bitbox-2-ac5c" 
                 data-button-theme="light"
-              style={{width: '100%', height: '100%', zIndex:"100"}}
+              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none"}}
                 
               ></div>
             </Box>

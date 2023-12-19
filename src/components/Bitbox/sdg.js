@@ -14,7 +14,12 @@ export default function SDGs() {
         <Text fontSize={{base:'8vw', md:'6xl'}} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
           Project Themes
         </Text>
-        <Grid
+        <Text fontSize={{base:'4vw', md:'3xl'}} 
+        align="center"  margin = 'auto'  color='grey'
+        >
+          to be announced ...
+        </Text>
+        {/* <Grid
           templateColumns={{ base: "repeat(3, 0fr)", md: "repeat(6, 0fr)" }}
           gap={{base:'5px',md:'0px'}}
           alignContent={'center'}
@@ -260,7 +265,7 @@ export default function SDGs() {
             <Image src= "/global-goals.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
-        </Grid>
+        </Grid> */}
       </Box>
          
 

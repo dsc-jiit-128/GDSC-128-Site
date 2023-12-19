@@ -103,7 +103,7 @@ class CreateParticles {
 
         this.data = {
 
-            text: 'BITBOX 3.0',
+            text: 'BITBOX 4.0',
             amount: 1500,
             particleSize: 1.3,
             particleColor: 0xffffff,
