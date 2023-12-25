@@ -57,7 +57,7 @@ export default function Bitbox() {
 
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
-  const [date, setDate] = React.useState(new Date("2024-02-15"));
+  const [date, setDate] = React.useState(new Date("2024-01-01"));
   useEffect(() => {
     setTimeout(() => {
       if (inputRef) {
@@ -152,13 +152,12 @@ export default function Bitbox() {
             </HStack>
             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100">
             
-            {/* <div 
+            <div 
               class="apply-button" 
-              
-              data-hackathon-slug="bitbox-2-ac5c" 
+              data-hackathon-slug="bitbox-4-gfc5hyh" 
               data-button-theme="light"
-            style={{width: '100%', height: '100%',pointerEvents: "none",display:"none"}}
-            ></div> */}
+            style={{width: '100%', height: '100%',pointerEvents: "none",display:"none",marginTop:'20px'}}
+            ></div>
           </Box>
           </VStack>
             
@@ -246,13 +245,13 @@ export default function Bitbox() {
           </VStack>
              <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100" position="relative">
             
-              {/* <div 
+              <div 
                 class="apply-button" 
-                data-hackathon-slug="bitbox-2-ac5c" 
+                data-hackathon-slug="bitbox-4-gfc5hyh" 
                 data-button-theme="light"
-              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none",display:"none"}}
+              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none",display:"none",marginTop:'20px'}}
                 
-              ></div> */}
+              ></div>
             </Box>
           <Video />
           <ThreeTierPricing/>

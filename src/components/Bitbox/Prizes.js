@@ -115,14 +115,8 @@ m={'auto'}
         >
           Prizes
         </Text>
-        <Text fontSize={{base:'4vw', md:'3xl'}} 
-        align="center"  margin = 'auto' 
-        marginTop={'120px'} color='grey'
-        >
-          to be announced ...
-        </Text>
         </VStack>
-{/*         
+        
         <Stack
           direction={{ base: 'column', md: 'row' }}
           textAlign="center"
@@ -187,9 +181,9 @@ m={'auto'}
         <ListItem color='white' fontFamily="Gilroy-Bold"       mb={1.5}
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
                             <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
-             The best solution developed gets Rs. 12,000/team<br/> +$3000 additional benefits
+             The best solution developed gets Rs. 20,000/team<br/> + additional benefits
                 </ListItem>
-                <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
+                {/* <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
               <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
 
@@ -247,7 +241,7 @@ Digital Ocean providing $250 credits to team <br/>and one year subscription wort
                                                         <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
 
 Rosenfeld subscription worth $1645 to the team 
-                </ListItem>
+                </ListItem> */}
 
             </List>
             </VStack>
@@ -311,11 +305,11 @@ mr={12}
              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
               
 
-             The best solution developed gets Rs. 18,000/team
-             <br/>  &nbsp;   &nbsp; +$3000 additional benefits
+             The best solution developed gets Rs. 25,000/team
+             <br/>  &nbsp;   &nbsp; + additional benefits
                 </ListItem>
                 
-                <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}     
+                {/* <ListItem color='white' fontFamily="Gilroy-Medium"  mb={1}     
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
              Goodies from Devfolio(T-shirts & stickers) worth a million smiles
@@ -361,7 +355,7 @@ Digital Ocean providing $250 credits to team<br/> and one year subscription wort
              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
 
 Rosenfeld subscription worth $1645 to the team 
-                </ListItem>
+                </ListItem> */}
 
             </List>
             </VStack>
@@ -423,10 +417,10 @@ m={'auto'}
         <ListItem color='white' fontFamily="Gilroy-Bold"       
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  mb={1}    >
                                  <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
-        The best solution developed gets Rs. 8,000/team<br/> +$3000 additional benefits
+        The best solution developed gets Rs. 10,000/team<br/> + additional benefits
                 </ListItem>
                 
-                <ListItem color='white' fontFamily="Gilroy-Medium"        mb={1}  
+                {/* <ListItem color='white' fontFamily="Gilroy-Medium"        mb={1}  
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
                             <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
 Goodies from Devfolio(T-shirts & stickers)<br/> worth a million smiles                </ListItem>
@@ -475,7 +469,7 @@ Digital Ocean providing $250 credits to team <br/>and one year subscription wort
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >                            <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
 
 Rosenfeld subscription worth $1645 to the team 
-                </ListItem>
+                </ListItem> */}
 
             </List>
             </VStack>
@@ -552,9 +546,9 @@ m={'auto'}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
                                              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
 
-                 The best solution developed gets Rs. 5,000/team<br/> +$3000 additional benefits
+                 The best solution developed gets Rs. 5,000/team<br/> + additional benefits
                     </ListItem>
-                    <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
+                    {/* <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                               fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
                                              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
 
@@ -585,89 +579,13 @@ m={'auto'}
                                              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
 
     Gift vouchers from HoverRobotix Hoverboards <br/> India worth Rs. 10000
-                    </ListItem>
+                    </ListItem> */}
 
     
                 </List>
             </VStack>
-         </PriceWrapper> */}
-
-         {/* SOLANA */}
-
-         {/* <PriceWrapper>
-            <Box py={4} px={{ base: 1, md: 8 }}
-            borderTopLeftRadius={'xl'}
-            borderTopRightRadius={'xl'}   
-            alignItems='center'
-            align='center'
-            alignContent='center'
-            border={"0.789726px"}
-            borderColor="rgba(255, 255, 255, 0.3)"
-            bg="linear-gradient(116.25deg, #658FBB 6.27%, #ECBFD0 98.19%);">
-                 <Image
-                 align='center'
-                 textAlign='center'
-                 p={0.8}
-                 w={'50%'}
-                 h={'50%'}
-                 size={'50%'}
-                 
-                 mt={2}
-                 mb={2}
-                src="/sol.png"
-           
-              />
-
-           </Box>
-            <VStack
-              bg={"#1F1F1F"}
-              py={4}
-              
-              px={2}
-              borderBottomRadius={'xl'}>
-            <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '2vw' }}
-                    p={-4}
-                    pl={3}
-                    pr={3}
-                    ml={12}
-mr={12}
-            
-            > SOLANA 
-                </Text>
-                <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '1vw' }}
-                    mt={-9}
-                    
-                    pl={3}
-                    pr={3}
-                    ml={12}
-mr={12}
-m={'auto'}
-            
-            > $850 PRIZE POOL
-                </Text>
-
-<Line></Line>
-<List>
-            
-            <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
-                              fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
-MASTER GLASSEATER: $500 <br/>$USDC 500 for the best advanced project that is<br/> almost ready for full-time development.                    </ListItem>
-                    <ListItem color='white' fontFamily="Gilroy-Medium"    mb={2}    
-                              fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-RISK TENOKING: $250 <br/>$USDC 250 for the best project that goes into depth, <br/>demonstrating higher-order code                 </ListItem>
-                    <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
-                              fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-YOUNG GUN: $100 <br/>$USDC 100 for the best project beginners <br/>just starting out on Solana                 </ListItem>
-                  
-    
-                </List>
-            </VStack>
-         </PriceWrapper> */}
-
-
-            {/* </Stack>
+         </PriceWrapper> 
+            </Stack>
             <Line></Line>
             <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -677,85 +595,10 @@ YOUNG GUN: $100 <br/>$USDC 100 for the best project beginners <br/>just starting
           spacing={{ base: 2, lg: 6 }}
           py={10}
           >
-  <PriceWrapper>
-            <Box py={4} px={{ base: 1, md: 8 }}
-            borderTopLeftRadius={'xl'}
-            borderTopRightRadius={'xl'}   
-            alignItems='center'
-            align='center'
-            alignContent='center'
-            border={"0.789726px"}
-            borderColor="rgba(255, 255, 255, 0.3)"
-            bg="linear-gradient(116.25deg, #658FBB 6.27%, #ECBFD0 98.19%);">
-                 <Image
-                 align='center'
-                 textAlign='center'
-                 p={0.8}
-                 w={'50%'}
-                
-                 
-                 mt={2}
-                 mb={2}
-                src="/sol.png"
-           
-              />
+ 
 
-           </Box>
-            <VStack
-              bg={"#1F1F1F"}
-              py={4}
-              
-              px={2}
-              borderBottomRadius={'xl'}>
-            <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '2vw' }}
-                    p={-4}
-                    pl={1}
-                    pr={1}
-                    ml={6}
-mr={6}
-            
-            > SOLANA 
-                </Text>
-                <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '1vw' }}
-                    mt={-9}
-                    
-                    pl={1}
-                    pr={1}
-                    ml={12}
-
-            
-            > $850 PRIZE POOL
-                </Text>
-
-<Line></Line>
-<List>
-            
-            <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
-                              fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
-                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
-
-MASTER GLASSEATER: $500 <br/> Best Advanced Project Built <br/>using Solana                 </ListItem>
-                    <ListItem color='white' fontFamily="Gilroy-Medium"    mb={2}    
-                              fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
-
-RISK TENOKING: $250 <br/>Project with Indepth code </ListItem>
-                    <ListItem color='white' fontFamily="Gilroy-Medium"   mb={1}       
-                              fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
-                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
-
-YOUNG GUN: $100   : <br/>best beginner project starting <br/>out in solana              </ListItem>
-                  
-    
-                </List>
-            </VStack>
-         </PriceWrapper> 
- */}
-
-         {/* POLYGON */}
-         {/* <PriceWrapper>
+         POLYGON 
+         <PriceWrapper>
             <Box py={4} px={{ base: 1, md: 8 }}
             borderTopLeftRadius={'xl'}
             borderTopRightRadius={'xl'}   
@@ -829,78 +672,11 @@ BEST OF ETH: $150 <br/>Best hack built on Ethereum
     
                 </List>
             </VStack>
-         </PriceWrapper>  */}
-
-         {/* FILECOIN<PriceWrapper>
-            <Box py={4} px={{ base: 1, md: 8 }}
-            borderTopLeftRadius={'xl'}
-            borderTopRightRadius={'xl'}   
-            alignItems='center'
-            align='center'
-            alignContent='center'
-            border={"0.789726px"}
-            borderColor="rgba(255, 255, 255, 0.3)"
-            bg="linear-gradient(116.25deg, #FF9F47 6.27%, #F2FFBC 98.19%);">
-                 <Image
-                 align='center'
-                 textAlign='center'
-                 p={0.8}
-                 w={'50%'}
-                 h={'50%'}
-                 size={'50%'}
-                 
-                 mt={2}
-                 mb={2}
-                src="/filecoin.png"
-           
-              />
-
-           </Box>
-            <VStack
-              bg={"#1F1F1F"}
-              py={4}
-              
-              px={2}
-              borderBottomRadius={'xl'}>
-            <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '2vw' }}
-                    p={-4}
-                    pl={3}
-                    pr={3}
-                    ml={12}
-mr={12}
-            
-            > FILECOIN
-                </Text>
-                <Text color='white' fontFamily="Gilroy-Light"
-                    fontSize={{ base: '4vw', md: '1vw' }}
-                    mt={-9}
-                    
-                    pl={3}
-                    pr={3}
-                    ml={12}
-mr={12}
-m={'auto'}
-            
-            > $250 PRIZE
-                </Text>
-
-<Line></Line>
-<List>
-            
-            <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
-                              fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
-                                             <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
-
-$250 Prize: <br/>Best use of Filecoin and/or IPFS <br/>Use of peer to peer <br/>hypermedia protocols</ListItem>
+         </PriceWrapper>  
 
 
-                </List>
-            </VStack>
-         </PriceWrapper>  */}
-
-         {/* REPLIT */}
-         {/* <PriceWrapper>
+         REPLIT 
+         <PriceWrapper>
             <Box py={4} px={{ base: 1, md: 8 }}
             borderTopLeftRadius={'xl'}
             borderTopRightRadius={'xl'}   
@@ -920,7 +696,7 @@ $250 Prize: <br/>Best use of Filecoin and/or IPFS <br/>Use of peer to peer <br/>
                  
                  mt={2}
                  mb={2}
-                src="/replit.png"
+                src="/l_replit.png"
            
               />
 
@@ -957,7 +733,7 @@ m={'auto'}
 <Line></Line>
 <List>
             
-            <ListItem color='white' fontFamily="Gilroy-Medium"       mb={2}
+            <ListItem color='white' fontFamily="Gilroy-Medium"       mb={14}
                               fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
                                              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-1em"/>
 
@@ -972,7 +748,7 @@ m={'auto'}
 
 
 
-            </Stack> */}
+            </Stack> 
       </Box>
     );
   }

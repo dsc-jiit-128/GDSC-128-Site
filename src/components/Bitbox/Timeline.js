@@ -14,7 +14,7 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'Feb 15, 2024',
+    date: 'Jan 1, 2024',
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },

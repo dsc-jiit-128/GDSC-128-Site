@@ -40,9 +40,10 @@ export default function Sponsors() {
             className='sponsor'
             display={'flex'}
             justifyContent={'center'}
-            
           >
-        <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href="https://devfolio.co/" target="_blank">
+            <Image src= "/devfolio.webp" alt='DEVFOLIO LOGO' w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem>
           <GridItem
             w="20vw"
@@ -54,7 +55,9 @@ export default function Sponsors() {
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href="https://polygon.technology/" target="_blank">
+            <Image src= "/polygon.png" alt='POLYGON LOGO'  w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem>
           </Grid>
           <Text fontSize={{base:'6vw', md:'4xl'}} align="center"  margin = 'auto'
@@ -95,7 +98,9 @@ color='white'>
             justifyContent={'center'}
             
           >
-        <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          <a href="https://replit.com" target='_blank'>
+            <Image src= "/replit.png" alt='REPLIT LOGO' w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>  
           </GridItem><GridItem
             w="17vw"
             h="17vw"
