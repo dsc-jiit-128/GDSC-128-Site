@@ -111,7 +111,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <Image src= "/axure.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
