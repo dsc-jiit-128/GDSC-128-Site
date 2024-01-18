@@ -111,7 +111,9 @@ color='white'>
             justifyContent={'center'}
             
           >
+          <a href="https://www.axure.com" target='_blank'>
             <Image src= "/axure.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
