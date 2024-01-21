@@ -124,7 +124,10 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+
+          <a href="https://www.echo3d.com/" target='_blank'>
+            <Image src= "/echo3d.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem><GridItem
             w="17vw"
             h="17vw"
@@ -135,7 +138,10 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+             <a href="https://givemycertificate.com/" target='_blank'>
+             <Image src= "/gmc.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
+           
           </GridItem>
 
 
