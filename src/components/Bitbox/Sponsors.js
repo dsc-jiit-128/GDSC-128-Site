@@ -153,7 +153,10 @@ color='white'>
             justifyContent={'center'}
             
           >       
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          <a href="https://streamyard.com/" target='_blank'>
+            <Image src= "/streamyardsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
+          
           </GridItem>
         
         <GridItem
