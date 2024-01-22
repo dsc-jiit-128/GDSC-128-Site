@@ -150,8 +150,8 @@ export default function Bitbox() {
                 {'}'}
               </Text>
             </HStack>
-            <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100">
-            
+            <Box mt='20vh' h={28}></Box>
+            <Box  align='center' textAlign='center' display='flex' justifyContent='center'  zIndex="100">
             <div 
               class="apply-button" 
               data-hackathon-slug="bitbox-4-gfc5hyh" 

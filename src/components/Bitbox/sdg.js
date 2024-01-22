@@ -14,12 +14,8 @@ export default function SDGs() {
         <Text fontSize={{base:'8vw', md:'6xl'}} align="center"  margin = 'auto' marginTop={'120px'} color='white'>
           Project Themes
         </Text>
-        <Text fontSize={{base:'4vw', md:'3xl'}} 
-        align="center"  margin = 'auto'  color='grey'
-        >
-          to be announced ...
-        </Text>
-        {/* <Grid
+        
+         <Grid
           templateColumns={{ base: "repeat(3, 0fr)", md: "repeat(6, 0fr)" }}
           gap={{base:'5px',md:'0px'}}
           alignContent={'center'}
@@ -39,9 +35,9 @@ export default function SDGs() {
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://sdgs.un.org/goals/goal1'>
-            <Image src= "/goal-01_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-            </a>
+            
+            <Image src= "/Helthtech.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
+          
           </GridItem>
           <GridItem
             w={{base:"25vw", md: "13vw"}}
@@ -53,10 +49,11 @@ export default function SDGs() {
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://sdgs.un.org/goals/goal2'>
-            <Image src= "/goal-02_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
+            
+            <Image src= "/aiml.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
+            
+          </GridItem>
+          <GridItem
             w={{base:"25vw", md: "13vw"}}
             h={{base:"25vw", md: "13vw"}}
             bg="#161515"
@@ -66,10 +63,11 @@ export default function SDGs() {
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://sdgs.un.org/goals/goal3'>
-            <Image src= "/goal-03_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
+            
+            <Image src= "/Fintech.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
+          
+          </GridItem>
+          {/* <GridItem
             w={{base:"25vw", md: "13vw"}}
             h={{base:"25vw", md: "13vw"}}
             bg="#161515"
@@ -264,8 +262,8 @@ export default function SDGs() {
             <a target="_blank" href='https://sdgs.un.org/goals'>
             <Image src= "/global-goals.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
             </a>
-            </GridItem>
-        </Grid> */}
+            </GridItem> */}
+        </Grid> 
       </Box>
          
 
