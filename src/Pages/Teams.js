@@ -633,7 +633,7 @@ function Teampage() {
       content:
         "I'm a frontend developer transitioning to full-stack & mastering Java-based Data Structures & Algorithms (DSA).",
       name: 'Frontend Developer',
-      key: '9',
+      key: '7',
     },
 
     {
@@ -651,7 +651,7 @@ function Teampage() {
 
       content: 'Coordinating algorithms to sway in rhythm',
       name: 'Social Media',
-      key: '10',
+      key: '8',
     },
 
     {
@@ -670,7 +670,7 @@ function Teampage() {
       content:
         'Either write something worth reading or do something worth writing ',
       name: 'Content Writer',
-      key: '11',
+      key: '9',
     },
     {
       image: '/khushi.webp',
@@ -687,7 +687,7 @@ function Teampage() {
       discordhandle: 'Khushi Agarwal#0157',
       content: 'Nothing can dim the light that shines from within',
       name: 'Management and PR',
-      key: '12',
+      key: '10',
     },
     {
       image: '/PriyanshiRana.webp',
@@ -702,7 +702,7 @@ function Teampage() {
       content:
         'I have discovered in life that there are ways of getting almost anywhere you want to go, if you really want to go',
       name: 'Management And PR',
-      key: '13',
+      key: '11',
     },
     {
       image: '/anmol.webp',
@@ -720,7 +720,7 @@ function Teampage() {
       content:
         "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
       name: 'Social media and designing',
-      key: '14',
+      key: '12',
     },
     {
       image: '/Jigyasa.webp',
@@ -739,7 +739,7 @@ function Teampage() {
       content:
         "I'm a little scary sometimes, you know that? Brilliant... but scary",
       name: 'Web Developer',
-      key: '15',
+      key: '13',
     },
     {
       image: '/tushar.webp',
@@ -756,7 +756,7 @@ function Teampage() {
       content:
         'Not all engineers develop codes, some capture memories and develop photographs',
       name: 'Photgrapher',
-      key: '16',
+      key: '14',
     },
     {
       image: '/sahil_bansal.webp',
@@ -775,7 +775,7 @@ function Teampage() {
       discordhandle: 'sahil_0810',
       content: `A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
       name: 'Management & PR',
-      key: '17',
+      key: '15',
     },
   ];
 
