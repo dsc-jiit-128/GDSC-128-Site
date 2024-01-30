@@ -169,8 +169,8 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a href="https://stockedge.com/" target='_blank'>
-            <Image src= "/stockedge.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href="https://upcomingfest.netlify.app/" target='_blank'>
+            <Image src= "/algocs.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
                
@@ -198,8 +198,8 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a href="https://upcomingfest.netlify.app/" target='_blank'>
-            <Image src= "/algocs.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            <a href="https://stockedge.com/" target='_blank'>
+            <Image src= "/stockedge.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
 
