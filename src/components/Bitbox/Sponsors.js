@@ -169,8 +169,10 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-          </GridItem>
+            <a href="https://stockedge.com/" target='_blank'>
+            <Image src= "/stockedge.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
+            </GridItem>
                
           <GridItem
             w="15vw"
@@ -182,8 +184,10 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-          </GridItem>
+             <a href="https://upcomingfest.netlify.app/" target='_blank'>
+            <Image src= "/uf.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
+            </GridItem>
           <GridItem
             w="15vw"
             h="15vw"
@@ -194,8 +198,10 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-          </GridItem>
+            <a href="https://upcomingfest.netlify.app/" target='_blank'>
+            <Image src= "/algocs.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
+            </GridItem>
 
 </Grid>
 
