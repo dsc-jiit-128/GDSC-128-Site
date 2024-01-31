@@ -169,7 +169,7 @@ color='white'>
             justifyContent={'center'}
             
           >
-            <a href="https://upcomingfest.netlify.app/" target='_blank'>
+            <a href="https://www.algocs.in/" target='_blank'>
             <Image src= "/algocs.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
@@ -202,6 +202,56 @@ color='white'>
             <Image src= "/stockedge.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
+            <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >
+            <a target="_blank" href='https://gen.xyz/'>
+            <Image src= "/xyzz.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
+        </a>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >       
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >       
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >       
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </GridItem>
 
 </Grid>
 
@@ -391,19 +441,6 @@ Old Sponsors
             justifyContent={'center'}
             
           >
-            <a target="_blank" href='https://streamyard.com/'>
-            <Image src= "/streamyardsponsor.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            </a>
-          </GridItem><GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
             <a target="_blank" href='https://www.wolfram.com/language/'>
             <Image src= "/wolf.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
@@ -493,23 +530,6 @@ Old Sponsors
             <Image src= "/filecoin_s.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
         </a>
           </GridItem>
-
-  
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            <a target="_blank" href='https://gen.xyz/'>
-            <Image src= "/xyzz.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'} backgroundColor={'white'}/>
-        </a>
-          </GridItem>
-
 
           <GridItem
             w="14vw"
@@ -613,9 +633,19 @@ Old Sponsors
             <Image src= "/meta.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
             </a>
           </GridItem>
+        <GridItem
+            w="14vw"
+            h="14vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className='sponsor'
+            display={'flex'}
+            justifyContent={'center'}
+            
+          >       
+            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          </GridItem>
         </Grid>
-        
-
    
       </Box>
          
