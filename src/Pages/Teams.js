@@ -780,8 +780,8 @@ function Teampage() {
       key: '15',
     },
     {
-      image: '/lakshay.png',
-      image1: '/lakshay_white.png',
+      image: '/lakshay.webp',
+      image1: '/lakshay_white.webp',
       id: 'Lakshay Rastogi',
       insta:
         'https://www.instagram.com/lakshay._01?igsh=MThoOWN1Znp1c2FsYw%3D%3D&utm_source=qr',
@@ -789,15 +789,15 @@ function Teampage() {
       linkedin:
         'https://www.linkedin.com/in/lakshay-rastogi-935948255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
       Linkedinhandle: 'Lakshay Rastogi',
-      discord: 'discordapp.com/users/765475774429528095',
+      discord: 'https://discordapp.com/users/lakshay._01',
       discordhandle: 'gaitonde sahab#8303',
       content: 'There is always a way out for all the problems . It just depends on your perspective.',
       name: 'Management and PR',
       key: '16',
     },
     {
-      image: '/akansha.png',
-      image1: '/akansha_white.png',
+      image: '/akansha.webp',
+      image1: '/akansha_white.webp',
       id: 'Akansha Vasistha',
       insta: 'https://www.instagram.com/akansha.vasistha?igsh=NDdtZHFobHJzbXRs',
       instahandle: 'akansha.vasistha',
@@ -812,8 +812,8 @@ function Teampage() {
       key: '17',
     },
     {
-      image: '/angel.png',
-      image1: '/angel_white.png',
+      image: '/angel.webp',
+      image1: '/angel_white.webp',
       id: 'Angel',
       insta:
         'https://www.instagram.com/angelsinghall/?igsh=MXNvcHhlMDI2MGdqbQ',
@@ -825,7 +825,7 @@ function Teampage() {
       discord: 'https://discord.com/invite/ej2DZFbS',
       discordhandle: 'gaitonde sahab#8303',
       content: '"The most certain way to succeed is always to try just one more time." —Thomas Edison',
-      name: " Management and PR ",
+      name: 'Management and PR',
       key: '18',
     },
   ];
