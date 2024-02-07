@@ -808,7 +808,7 @@ function Teampage() {
     discord: "discordapp.com/users/1041063739694260254",
     discordhandle: "rockin5250",
     content: "Either you run the day or the day runs you.",
-      name: "Management and PR",
+      name: "  Management and PR  ",
       key: '17',
   },
   ];
