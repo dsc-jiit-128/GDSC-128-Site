@@ -780,8 +780,8 @@ function Teampage() {
       key: '15',
     },
     {
-      image: '/lakshay.svg',
-      image1: '/lakshay_white.svg',
+      image: '/lakshay.png',
+      image1: '/lakshay_white.png',
       id: "Lakshay Rastogi",
       insta: 
         'https://www.instagram.com/lakshay._01?igsh=MThoOWN1Znp1c2FsYw%3D%3D&utm_source=qr',
@@ -795,6 +795,22 @@ function Teampage() {
       name: "Management and PR",
       key: '16',
     },
+    {
+      image: '/akansha.png',
+      image1: '/akansha_white.png',
+      id: "Akansha Vasistha",
+    insta: "https://www.instagram.com/akansha.vasistha?igsh=NDdtZHFobHJzbXRs",
+    instahandle: "akansha.vasistha",
+    linkedin: "https://www.linkedin.com/in/akansha-vasistha-67b8b724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    Linkedinhandle: "Akansha Vasistha",
+    github: "https://github.com/akansha598",
+    githubhandle: "akansha598",
+    discord: "discordapp.com/users/1041063739694260254",
+    discordhandle: "rockin5250",
+    content: "Either you run the day or the day runs you.",
+      name: "Management and PR",
+      key: '17',
+  },
   ];
 
   const loadImages = () => {
