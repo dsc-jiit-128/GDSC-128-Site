@@ -635,6 +635,24 @@ function Teampage() {
       name: 'Frontend Developer',
       key: '7',
     },
+    {
+      image: '/anmol.webp',
+      image1: '/anmol_white.webp',
+      id: 'Anmol Dhuwalia',
+      insta: 'https://www.instagram.com/anmoxll/',
+      instahandle: 'anmoxll',
+      linkedin: 'www.linkedin.com/in/anmol-dhuwalia',
+      Linkedinhandle: 'Anmol Dhuwalia',
+      github: 'https://github.com/anmoldhuwalia',
+      githubhandle: 'anmoldhuwalia',
+      discord: 'https://discord.com/channels/953524336784982038',
+      discordhandle: 'Andhu',
+
+      content:
+        "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
+      name: 'Social media and designing',
+      key: '8',
+    },
 
     {
       image: '/ankita.webp',
@@ -651,27 +669,10 @@ function Teampage() {
 
       content: 'Coordinating algorithms to sway in rhythm',
       name: 'Social Media',
-      key: '8',
-    },
-
-    {
-      image: '/rishita.webp',
-      image1: '/rishita_white.webp',
-      id: 'Rishita Singh',
-      insta: 'https://www.instagram.com/rishitasingh.18/',
-      instahandle: 'rishitasingh.18',
-      linkedin: 'https://www.linkedin.com/in/rishita-singh-3b139a259',
-      Linkedinhandle: 'Rishita Singh',
-      github: 'https://github.com/rishitas18',
-      githubhandle: 'rishitas18',
-      discord: 'https://discord.com/channels/@rishita.18',
-      discordhandle: 'rishita.18',
-
-      content:
-        'Either write something worth reading or do something worth writing ',
-      name: 'Content Writer',
       key: '9',
     },
+
+   
     {
       image: '/khushi.webp',
       image1: '/khushi_white.webp',
@@ -690,6 +691,24 @@ function Teampage() {
       key: '10',
     },
     {
+      image: '/rishita.webp',
+      image1: '/rishita_white.webp',
+      id: 'Rishita Singh',
+      insta: 'https://www.instagram.com/rishitasingh.18/',
+      instahandle: 'rishitasingh.18',
+      linkedin: 'https://www.linkedin.com/in/rishita-singh-3b139a259',
+      Linkedinhandle: 'Rishita Singh',
+      github: 'https://github.com/rishitas18',
+      githubhandle: 'rishitas18',
+      discord: 'https://discord.com/channels/@rishita.18',
+      discordhandle: 'rishita.18',
+
+      content:
+        'Either write something worth reading or do something worth writing ',
+      name: 'Content Writer',
+      key: '11',
+    },
+    {
       image: '/PriyanshiRana.webp',
       image1: '/PriyanshiRana_white.webp',
       id: 'Priyanshi Rana',
@@ -702,26 +721,9 @@ function Teampage() {
       content:
         'I have discovered in life that there are ways of getting almost anywhere you want to go, if you really want to go',
       name: 'Management And PR',
-      key: '11',
-    },
-    {
-      image: '/anmol.webp',
-      image1: '/anmol_white.webp',
-      id: 'Anmol Dhuwalia',
-      insta: 'https://www.instagram.com/anmoxll/',
-      instahandle: 'anmoxll',
-      linkedin: 'www.linkedin.com/in/anmol-dhuwalia',
-      Linkedinhandle: 'Anmol Dhuwalia',
-      github: 'https://github.com/anmoldhuwalia',
-      githubhandle: 'anmoldhuwalia',
-      discord: 'https://discord.com/channels/953524336784982038',
-      discordhandle: 'Andhu',
-
-      content:
-        "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
-      name: 'Social media and designing',
       key: '12',
     },
+    
     {
       image: '/Jigyasa.webp',
       image1: '/Jigyasa_white.webp',
@@ -776,6 +778,22 @@ function Teampage() {
       content: `A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
       name: 'Management & PR',
       key: '15',
+    },
+    {
+      image: '/lakshay.svg',
+      image1: '/lakshay_white.svg',
+      id: "Lakshay Rastogi",
+      insta: 
+        'https://www.instagram.com/lakshay._01?igsh=MThoOWN1Znp1c2FsYw%3D%3D&utm_source=qr',
+      instahandle: "lakshay._01",
+      linkedin: 
+      'https://www.linkedin.com/in/lakshay-rastogi-935948255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      Linkedinhandle: "Lakshay Rastogi",
+      discord: "765475774429528095",
+      discordhandle: "gaitonde sahab#8303",
+      content: "There is always a way out for all the problems . It just depends on your perspective.",
+      name: "Management and PR",
+      key: '16',
     },
   ];
 
