@@ -225,8 +225,10 @@ color='white'>
             display={'flex'}
             justifyContent={'center'}
             
-          >       
-            <Image src= "/logo-google.webp" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+          >      
+           <a target="_blank" href='https://www.codingninjas.com/'> 
+            <Image src= "/codingninja.svg" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
+            </a>
           </GridItem>
           <GridItem
             w="15vw"
