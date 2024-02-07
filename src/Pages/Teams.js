@@ -808,7 +808,7 @@ function Teampage() {
       discord: 'discordapp.com/users/1041063739694260254',
       discordhandle: 'rockin5250',
       content: 'Either you run the day or the day runs you.',
-      name: 'Management and PR',
+      name: " Management and PR ",
       key: '17',
     },
     {
@@ -825,7 +825,7 @@ function Teampage() {
       discord: 'https://discord.com/invite/ej2DZFbS',
       discordhandle: 'gaitonde sahab#8303',
       content: '"The most certain way to succeed is always to try just one more time." —Thomas Edison',
-      name: 'Management and PR',
+      name: " Management and PR ",
       key: '18',
     },
   ];
