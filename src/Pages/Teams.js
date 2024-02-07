@@ -61,7 +61,7 @@ const TeamNavMember = props => {
         width={{ base: '100%', md: '100%' }}
         height={{ base: '100%', md: '100%' }}
         objectFit="cover"
-        // border={'4px solid yellow'}
+      // border={'4px solid yellow'}
       />
       {hover && (
         <Box
@@ -73,7 +73,7 @@ const TeamNavMember = props => {
           bg="rgba(0,0,0,0.5)"
           display="flex"
           borderRadius={{ base: '100', md: 100 }}
-          // border={'4px solid yellow'}
+        // border={'4px solid yellow'}
         >
           <Text
             color="white"
@@ -672,7 +672,7 @@ function Teampage() {
       key: '9',
     },
 
-   
+
     {
       image: '/khushi.webp',
       image1: '/khushi_white.webp',
@@ -723,7 +723,7 @@ function Teampage() {
       name: 'Management And PR',
       key: '12',
     },
-    
+
     {
       image: '/Jigyasa.webp',
       image1: '/Jigyasa_white.webp',
@@ -763,7 +763,7 @@ function Teampage() {
     {
       image: '/sahil_bansal.webp',
       image1: '/sahil_bansal_white.webp',
-      id: 'SAHIL BANSAL',
+      id: 'Sahil Bansal',
       insta:
         'https://instagram.com/sahil_0810?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
       instahandle: 'sahil_0810',
@@ -783,13 +783,13 @@ function Teampage() {
       image: '/lakshay.png',
       image1: '/lakshay_white.png',
       id: "Lakshay Rastogi",
-      insta: 
+      insta:
         'https://www.instagram.com/lakshay._01?igsh=MThoOWN1Znp1c2FsYw%3D%3D&utm_source=qr',
       instahandle: "lakshay._01",
-      linkedin: 
-      'https://www.linkedin.com/in/lakshay-rastogi-935948255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      linkedin:
+        'https://www.linkedin.com/in/lakshay-rastogi-935948255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
       Linkedinhandle: "Lakshay Rastogi",
-      discord: "765475774429528095",
+      discord: "discordapp.com/users/765475774429528095",
       discordhandle: "gaitonde sahab#8303",
       content: "There is always a way out for all the problems . It just depends on your perspective.",
       name: "Management and PR",
@@ -799,18 +799,35 @@ function Teampage() {
       image: '/akansha.png',
       image1: '/akansha_white.png',
       id: "Akansha Vasistha",
-    insta: "https://www.instagram.com/akansha.vasistha?igsh=NDdtZHFobHJzbXRs",
-    instahandle: "akansha.vasistha",
-    linkedin: "https://www.linkedin.com/in/akansha-vasistha-67b8b724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    Linkedinhandle: "Akansha Vasistha",
-    github: "https://github.com/akansha598",
-    githubhandle: "akansha598",
-    discord: "discordapp.com/users/1041063739694260254",
-    discordhandle: "rockin5250",
-    content: "Either you run the day or the day runs you.",
-      name: "  Management and PR  ",
+      insta: "https://www.instagram.com/akansha.vasistha?igsh=NDdtZHFobHJzbXRs",
+      instahandle: "akansha.vasistha",
+      linkedin: "https://www.linkedin.com/in/akansha-vasistha-67b8b724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      Linkedinhandle: "Akansha Vasistha",
+      github: "https://github.com/akansha598",
+      githubhandle: "akansha598",
+      discord: "discordapp.com/users/1041063739694260254",
+      discordhandle: "rockin5250",
+      content: "Either you run the day or the day runs you.",
+      name: "Management and PR",
       key: '17',
-  },
+    },
+    {
+      image: '/angel.png',
+      image1: '/angel_white.png',
+      id: "Angel",
+      insta:
+        'https://www.instagram.com/angelsinghall/?igsh=MXNvcHhlMDI2MGdqbQ',
+      instahandle: "angelsinghall",
+      linkedin:
+        'https://www.linkedin.com/in/angel-singhal-44b372248/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      Linkedinhandle: "Angel Singhal",
+      githubhandle: "anggel.",
+      discord: "https://discord.com/invite/ej2DZFbS",
+      discordhandle: "gaitonde sahab#8303",
+      content: '"The most certain way to succeed is always to try just one more time." —Thomas Edison',
+      name: "Management and PR",
+      key: '18',
+    },
   ];
 
   const loadImages = () => {
@@ -878,7 +895,7 @@ function Teampage() {
               flexGrow={1}
               py={{ base: '5', md: '10' }}
               pb={{ base: '5', md: '20' }}
-              //fill remaining height
+            //fill remaining height
             >
               <Flex justify={'center'} align={'center'}>
                 <Box
@@ -929,7 +946,7 @@ function Teampage() {
                         display="inline"
                         mb={2}
 
-                        //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
+                      //  bgGradient="linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)"
                       >
                         Hi, my name is{' '}
                         <span className="gradient-text">
@@ -969,7 +986,7 @@ function Teampage() {
                         spacingY={{ base: '0px', md: '30px' }}
                         ml={{ base: 2, md: 4 }}
                         mt={{ base: 2, md: 2 }}
-                        // border = {'4px green solid '}
+                      // border = {'4px green solid '}
                       >
                         <Box height="35px">
                           <Box
@@ -1194,7 +1211,7 @@ function Teampage() {
                                 'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
                               bgClip: 'text',
                             }}
-                            //color = {selectedTeam === "core" ? "white" : "gray.600"}
+                          //color = {selectedTeam === "core" ? "white" : "gray.600"}
                           >
                             Team Leads
                           </Text>
@@ -1225,7 +1242,7 @@ function Teampage() {
                                 'linear-gradient(99.23deg, #EA4335 2.35%, #4285F4 39.86%, #0F9D58 66.07%, #FBBC04 94.29%)',
                               bgClip: 'text',
                             }}
-                            //color = {selectedTeam === "core" ? "white" : "gray.600"}
+                          //color = {selectedTeam === "core" ? "white" : "gray.600"}
                           >
                             Core Team
                           </Text>
