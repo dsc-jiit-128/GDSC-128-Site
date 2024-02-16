@@ -14,6 +14,7 @@ import { Highlight } from '@chakra-ui/react';
 import Hackathons from './EventCards/Hackathons';
 import Meetups from './EventCards/Meetups';
 import Sessions from './EventCards/Sessions';
+import SessionBarEvents from './session_bar_events'
 import StudyJams from './EventCards/StudyJams';
 export default function Eventsbar() {
   return (
@@ -71,9 +72,7 @@ export default function Eventsbar() {
             </TabList>
             <TabPanels>
               <TabPanel>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                <Sessions />
-                </SimpleGrid>
+                <SessionBarEvents />
               </TabPanel>
               <TabPanel pt={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>

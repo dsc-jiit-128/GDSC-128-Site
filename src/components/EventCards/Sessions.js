@@ -1,22 +1,15 @@
 
 import React from 'react';
-import { Box, Center, Heading, HStack, VStack } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import {
-  GridItem,
-  Grid,
   Image,
   Text,
-  Flex,
-  Link,
-  SimpleGrid,
 } from '@chakra-ui/react';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import { Highlight } from '@chakra-ui/react';
 import { Badge } from '@chakra-ui/react'
 
 const EventCard = (props) => {
   return (
-    <Box alignItems={'center'}>
+    <Box alignItems={'center'} style={{marginTop:25}}>
       <Image
         src={props.image}
         //src="/techworldabc.jpg"
