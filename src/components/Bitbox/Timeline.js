@@ -14,38 +14,38 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'Jan 1, 2024',
+    date: 'Jan 1, 2024 to March 5, 2024',
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },
   {
     id: 2,
-    date: 'April 2, 2023 to April 8, 2023',
+    date: 'March 6, 2024 to March 8, 2024',
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
 
   {
     id: 3,
-    date : 'April 13, 2023 to April 15, 2023',
+    date : 'March 13, 2024 & March 15, 2024',
     title: 'Speaker Session',
-    description: `Get to know about the latest trends in the tech industry and how to stay updated with the same.`
+    description: `Get to know about the latest trends in the tech industry by our speakers Mahima hans and Urvi Goel.`
   },
+  // {
+  //   id: 4,
+  //   date: 'April 13 2023',
+  //   // title: 'Cipher-Dash ',codeburn
+  //   description:`A fun event to test your coding skills and win exciting prizes!`
+  // },
+  // {
+  //   id: 5,
+  //   date: 'April 14, 2023',
+  //   title: 'Chess Tourney',
+  //   description:`An exciting chess tournament to test your intellect!`
+  // },
   {
-    id: 4,
-    date: 'April 13 2023',
-    title: 'Cipher-Dash ',
-    description:`A fun event to test your coding skills and win exciting prizes!`
-  },
-  {
-    id: 5,
-    date: 'April 14, 2023',
-    title: 'Chess Tourney',
-    description:`An exciting chess tournament to test your intellect!`
-  },
-  {
-    id: 6, 
-    date: 'April 15, 2023',
+    id: 4, 
+    date: 'March 16, 2024',
     title: 'Hackathon',
     description: `Get ready for 12 hours of code sprint!`
   }
@@ -96,17 +96,11 @@ const Timeline = () => {
   );
 };
 
-interface CardProps {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-}
 
-const Card = ({ id, title, description, date }: CardProps) => {
+const Card = ({ id, title, description, date }) => {
   // For even id show card on left side
   // For odd id show card on right side
-  const isEvenId = id % 2 == 0;
+  const isEvenId = id % 2 === 0;
   let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px';
   let leftValue = isEvenId ? '-15px' : 'unset';
   let rightValue = isEvenId ? 'unset' : '-15px';
@@ -145,7 +139,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
         display: 'block'
       }}
       filter='auto'
-      blur={id===1?"":"5px"}
+      // blur={(id===1||id===2)?"":"5px"}
     >
       <Box>
         <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}>

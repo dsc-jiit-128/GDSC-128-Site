@@ -181,7 +181,7 @@ m={'auto'}
         <ListItem color='white' fontFamily="Gilroy-Bold"       mb={1.5}
                           fontSize={{ base: '2vw', md: '1vw' }} textAlign='left'  >
                             <ListIcon as={FaCircle } color="white"  boxSize="0.5em" mb="0.2em"/>
-             The best solution developed gets Rs. 20,000/team<br/> + additional benefits
+             The best solution developed gets Rs. 17,500/team<br/> + additional benefits
                 </ListItem>
                 {/* <ListItem color='white' fontFamily="Gilroy-Medium"    mb={1}    
                           fontSize={{ base: '2vw', md: '0.9vw' }} textAlign='left' >
@@ -305,7 +305,7 @@ mr={12}
              <ListIcon as={FaCircle } color="white"  boxSize="0.7em" mb="0.2em" ml="-0.7em"/>
               
 
-             The best solution developed gets Rs. 25,000/team
+             The best solution developed gets Rs. 20,000/team
              <br/>  &nbsp;   &nbsp; + additional benefits
                 </ListItem>
                 
