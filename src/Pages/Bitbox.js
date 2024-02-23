@@ -263,6 +263,7 @@ export default function Bitbox() {
 
           </Box>
           <SDGs/>
+          <Speaker/>
           <Sponsors />
 
           

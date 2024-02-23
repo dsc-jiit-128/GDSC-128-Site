@@ -29,7 +29,7 @@ export default function Speaker() {
           ml={{ base: 'auto', md: '310px' }}
           mr={{ base: 'auto', md: '310px' }}
           mt={{ base: '3vw', md: '3vw' }}
-          style={{ display: 'flex', justifyContent: 'space-between' }}
+          style={{ display: 'flex', justifyContent: 'space-evenly' }}
         >
           <div style={{display:'flex',flexDirection:'column'}}>
 
