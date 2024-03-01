@@ -447,14 +447,16 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+            <a href="https://www.trickortreatfoods.com/" target="_blank">
+              <Image
+                src="/trick.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
           </GridItem>
 
           <GridItem
