@@ -25,7 +25,7 @@ export default function SDGs() {
           mt={{base:'3vw',md:'3vw'}}
           // w={{base:'70%',md:'100%'}}
         >
-          <GridItem
+          {/* <GridItem
             w={{base:"25vw", md: "13vw"}}
             h={{base:"25vw", md: "13vw"}}
             bg="#161515"
@@ -66,8 +66,8 @@ export default function SDGs() {
             
             <Image src= "/Fintech.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
           
-          </GridItem>
-          {/* <GridItem
+          </GridItem> */}
+          <GridItem
             w={{base:"25vw", md: "13vw"}}
             h={{base:"25vw", md: "13vw"}}
             bg="#161515"
@@ -260,9 +260,9 @@ export default function SDGs() {
             
           >
             <a target="_blank" href='https://sdgs.un.org/goals'>
-            <Image src= "/global-goals.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
+            <Image src= "/ETC.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
             </a>
-            </GridItem> */}
+            </GridItem>
         </Grid> 
       </Box>
          
