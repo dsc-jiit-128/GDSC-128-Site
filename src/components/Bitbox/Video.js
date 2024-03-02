@@ -33,8 +33,8 @@ export default function Video() {
           </Box>
           <AspectRatio maxW="70%" maxH="50%" margin="auto">
             <iframe
-              title="naruto"
-              src="https://youtube.com/embed/-FkQqYktMRY"
+              title="BitBox 4.0"
+              src="https://www.youtube.com/embed/5bKiXx6MJTg"
               allowFullScreen
             />
           </AspectRatio>
