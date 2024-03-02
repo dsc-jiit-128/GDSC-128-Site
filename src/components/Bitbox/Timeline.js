@@ -18,20 +18,21 @@ const timeline = [
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },
+  // {
+  //     id: 2,
+  //     date: 'March 2, 2024 @ 16:30PM',
+  //     title: 'Webinar',
+  //     description:`Webinar in collaboration with Coding Ninjas on "How students can prepare for Product Based Companies" by Himanshu Gusain (Amazon Programmer Analyst).`
+  // },
   {
-      id: 2,
-      date: 'March 2, 2024 @ 16:30PM',
-      title: 'Webinar',
-      description:`Webinar in collaboration with Coding Ninjas on "How students can prepare for Product Based Companies" by Himanshu Gusain (Amazon Programmer Analyst).`
-  },{
-    id: 3,
+    id: 2,
     date: 'March 6, 2024 to March 8, 2024',
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
 
   {
-    id: 4,
+    id: 3,
     date : 'March 13, 2024 & March 15, 2024',
     title: 'Speaker Session',
     description: `Get to know about the latest trends in the tech industry by our speakers Mahima hans and Urvi Goel.`
@@ -43,13 +44,13 @@ const timeline = [
   //   description:`A fun event to test your coding skills and win exciting prizes!`
   // },
   {
-    id: 5,
+    id: 4,
     date: 'March 14, 2024',
     title: 'CodeBurn🔥',
     description:`Ignite your DSA skills in this engaging coding competition!`
   },
   {
-    id: 6, 
+    id: 5, 
     date: 'March 16, 2024',
     title: 'Hackathon',
     description: `Get ready for 12 hours of code sprint!`
@@ -157,7 +158,7 @@ const Card = ({ id, title, description, date }) => {
           </chakra.h1>
           <Text fontSize={descriptionFontSize}>{description}</Text>
           {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT14Mar' target='_blank'>Register Here</a></div>:<></>}
-          {id===2?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT2March' target='_blank'>Register Here</a></div>:<></>}
+          {/* {id===2?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT2March' target='_blank'>Register Here</a></div>:<></>} */}
         </VStack>
       </Box>
     </HStack>
