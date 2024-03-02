@@ -157,7 +157,7 @@ const Card = ({ id, title, description, date }) => {
             {title}
           </chakra.h1>
           <Text fontSize={descriptionFontSize}>{description}</Text>
-          {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT14Mar' target='_blank'>Register Here</a></div>:<></>}
+          {id===4?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT14Mar' target='_blank'>Register Here</a></div>:<></>}
           {/* {id===2?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT2March' target='_blank'>Register Here</a></div>:<></>} */}
         </VStack>
       </Box>
