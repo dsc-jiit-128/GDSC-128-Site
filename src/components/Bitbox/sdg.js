@@ -36,8 +36,9 @@ export default function SDGs() {
             
           >
             
+            <a target="_blank" href='https://sdgs.un.org/goals/goal1'>
             <Image src= "/goal-01_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-          
+            </a>
           </GridItem>
           <GridItem
             w={{base:"25vw", md: "13vw"}}
@@ -50,8 +51,9 @@ export default function SDGs() {
             
           >
             
+            <a target="_blank" href='https://sdgs.un.org/goals/goal2'>
             <Image src= "/goal-02_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-            
+            </a>
           </GridItem>
           <GridItem
             w={{base:"25vw", md: "13vw"}}
@@ -64,8 +66,9 @@ export default function SDGs() {
             
           >
             
+            <a target="_blank" href='https://sdgs.un.org/goals/goal3'>
             <Image src= "/goal-03_480.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
-          
+            </a>
           </GridItem>
           <GridItem
             w={{base:"25vw", md: "13vw"}}
