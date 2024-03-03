@@ -260,7 +260,7 @@ export default function SDGs() {
             
           >
             <a target="_blank" href='https://sdgs.un.org/goals'>
-            <Image src= "/ETC.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
+            <Image src= "/global-goals.png" w={{base:'100%',md:'60%'}} h={{base:'100%',md:'60%'}} className='image' margin='auto' position={'relative'}/>
             </a>
             </GridItem>
         </Grid> 
