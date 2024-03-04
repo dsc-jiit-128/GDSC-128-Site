@@ -814,7 +814,7 @@ function Teampage() {
     {
       image: '/angel.webp',
       image1: '/angel_white.webp',
-      id: 'Angel',
+      id: 'Angel Singhal',
       insta:
         'https://www.instagram.com/angelsinghall/?igsh=MXNvcHhlMDI2MGdqbQ',
       instahandle: 'angelsinghall',
@@ -825,8 +825,25 @@ function Teampage() {
       discord: 'https://discord.com/invite/ej2DZFbS',
       discordhandle: 'gaitonde sahab#8303',
       content: '"The most certain way to succeed is always to try just one more time." —Thomas Edison',
-      name: 'Management and PR',
+      name: 'Management & PR ',
       key: '18',
+    },
+    {
+      image: '/pragya.png',
+      image1: '/pragya_white.png',
+      id: 'Pragya Sharma',
+      insta:
+        'https://www.instagram.com/sharmaapragyaa?igsh=OWd0d2Ezb25odHpz',
+      instahandle: 'sharmaapragyaa',
+      linkedin:        'https://www.linkedin.com/in/pragya-sharma-659978294/',
+      Linkedinhandle: 'Pragya Sharma',
+      github: 'https://github.com/PragyaSharma03',
+      githubhandle: 'PragyaSharma03',
+      discord: 'https://discordapp.com/users/parofire',
+      discordhandle: 'parofire',
+      content: 'A computer science aficionado with a vibrant spirit, infusing my life with music, poetry and wanderlust.',
+      name: 'Management ',
+      key: '19',
     },
   ];
 
