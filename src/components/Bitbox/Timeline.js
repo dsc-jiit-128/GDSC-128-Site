@@ -14,13 +14,13 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'Jan 1, 2024 to March 5, 2024',
+    date: 'Jan 1, 2024 to March 8, 2024',
     title: 'Registration begins',
     description: `Get, set and be ready to code for Hackathon!`
   },
   {
     id: 2,
-    date: 'March 6, 2024 to March 8, 2024',
+    date: 'March 8, 2024 to March 10, 2024',
     title: 'Idea submission',
     description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
   },
@@ -54,6 +54,12 @@ const timeline = [
     date: 'March 16, 2024',
     title: 'Hackathon',
     description: `Get ready for 12 hours of code sprint!`
+  },
+  {
+    id: 8, 
+    date: 'March 23, 2024',
+    title: 'Technical Workshop',
+    description: `Discover DevOps: Streamline development, foster collaboration. Join us!`
   }
 ];
 
@@ -158,7 +164,7 @@ const Card = ({ id, title, description, date }) => {
           </chakra.h1>
           <Text fontSize={descriptionFontSize}>{description}</Text>
           {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT14Mar' target='_blank'>Register Here</a></div>:<></>}
-          {/* {id===2?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT2March' target='_blank'>Register Here</a></div>:<></>} */}
+          {id===8?<div style={{color:'red',textDecorationLine:'underline'}}><a href='https://www.geeksforgeeks.org/event/bitbox-4' target='_blank'>Register Here</a></div>:<></>}
         </VStack>
       </Box>
     </HStack>

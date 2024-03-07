@@ -128,6 +128,68 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
+            <a target="_blank" href="https://www.instagram.com/wahterevolution/">
+            <Image
+              src="/wahter.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+            </a>
+          </GridItem>
+         
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a target="_blank" href="https://www.geeksforgeeks.org/">
+            <Image
+              src="/gfg.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+            </a>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a target="_blank" href="https://www.codingninjas.com/">
+              <Image
+                src="/codingninja.svg"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
+          </GridItem>
+         
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
             <a href="https://www.axure.com" target="_blank">
               <Image
                 src="/axure.webp"
@@ -291,26 +353,6 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <a target="_blank" href="https://www.codingninjas.com/">
-              <Image
-                src="/codingninja.svg"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
             <a target="_blank" href="https://rosenfeldmedia.com">
               <Image
                 src="/rosenfeld.webp"
@@ -371,50 +413,16 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
+            <a target="_blank" href="https://www.threeway.studio/">
             <Image
-              src="/logo-google.webp"
+              src="/threeway.png"
               w={'50%'}
               h={'50%'}
               className="image"
               margin="auto"
               position={'relative'}
             />
-          </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+            </a>
           </GridItem>
         </Grid>
 
@@ -711,7 +719,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-          <GridItem
+          {/* <GridItem
             w="14vw"
             h="14vw"
             bg="#161515"
@@ -731,7 +739,7 @@ export default function Sponsors() {
                 backgroundColor={'white'}
               />
             </a>
-          </GridItem>
+          </GridItem> */}
 
           <GridItem
             w="14vw"
@@ -821,7 +829,7 @@ export default function Sponsors() {
             </a>
           </GridItem>
 
-          <GridItem
+          {/* <GridItem
             w="14vw"
             h="14vw"
             bg="#161515"
@@ -843,7 +851,7 @@ export default function Sponsors() {
                 position={'relative'}
               />
             </a>
-          </GridItem>
+          </GridItem> */}
 
           <GridItem
             w="14vw"
@@ -926,42 +934,8 @@ export default function Sponsors() {
               position={'relative'}
             />
           </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
+          
+          
         </Grid>
       </Box>
     </>
