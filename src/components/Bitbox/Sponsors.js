@@ -65,9 +65,9 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://polygon.technology/" target="_blank">
+            <a href="https://tezosindia.org.in/" target="_blank">
               <Image
-                src="/polygon.png"
+                src="/tezos.png"
                 alt="POLYGON LOGO"
                 w={'50%'}
                 h={'50%'}
@@ -189,7 +189,26 @@ export default function Sponsors() {
             </a>
           </GridItem>
   
-         
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a target="_blank" href="https://polygon.technology/">
+            <Image
+              src="/polygon.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+            </a>
+          </GridItem>
           <GridItem
             w="15vw"
             h="15vw"
@@ -474,26 +493,7 @@ export default function Sponsors() {
             />
             </a>
           </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://tezosindia.org.in/">
-            <Image
-              src="/tezos.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-            </a>
-          </GridItem>
+          
           
         </Grid>
         <Text
