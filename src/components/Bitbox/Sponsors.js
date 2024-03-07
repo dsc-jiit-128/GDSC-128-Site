@@ -78,6 +78,75 @@ export default function Sponsors() {
             </a>
           </GridItem>
         </Grid>
+
+
+        <Text
+          fontSize={{ base: '4vw', md: '3xl' }}
+          align="center"
+          margin="auto"
+          marginTop={8}
+          color="white"
+        >
+          {/* ASSOCIATE SPONSORS */}
+          Powered By
+        </Text>
+
+        <Grid
+          templateColumns="repeat(4, 0fr)"
+          gap={0}
+          alignContent={'center'}
+          justifyContent={'center'}
+          ml={{ base: 'auto', md: '310px' }}
+          mr={{ base: 'auto', md: '310px' }}
+          mt={{ base: '3vw', md: '3vw' }}
+        >
+                 <GridItem
+            w="14vw"
+            h="14vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a target="_blank" href="https://www.instagram.com/wahterevolution/">
+            <Image
+              src="/wahter.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+            </a>
+          </GridItem>
+          <GridItem
+            w="14vw"
+            h="14vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a href="https://www.trickortreatfoods.com/" target="_blank">
+              <Image
+                src="/trick.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
+          </GridItem>
+
+   
+
+        
+        </Grid>
+
+
         <Text
           fontSize={{ base: '6vw', md: '4xl' }}
           align="center"
@@ -119,26 +188,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://www.instagram.com/wahterevolution/">
-            <Image
-              src="/wahter.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-            </a>
-          </GridItem>
+  
          
           <GridItem
             w="15vw"
@@ -424,120 +474,28 @@ export default function Sponsors() {
             />
             </a>
           </GridItem>
-        </Grid>
-
-        <Text
-          fontSize={{ base: '4vw', md: '3xl' }}
-          align="center"
-          margin="auto"
-          marginTop={8}
-          color="white"
-        >
-          {/* ASSOCIATE SPONSORS */}
-          Associate Sponsors
-        </Text>
-
-        <Grid
-          templateColumns="repeat(4, 0fr)"
-          gap={0}
-          alignContent={'center'}
-          justifyContent={'center'}
-          ml={{ base: 'auto', md: '310px' }}
-          mr={{ base: 'auto', md: '310px' }}
-          mt={{ base: '3vw', md: '3vw' }}
-        >
           <GridItem
-            w="14vw"
-            h="14vw"
+            w="15vw"
+            h="15vw"
             bg="#161515"
             border={'1px solid white'}
             className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://www.trickortreatfoods.com/" target="_blank">
-              <Image
-                src="/trick.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
+            <a target="_blank" href="https://tezosindia.org.in/">
+            <Image
+              src="/tezos.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
             </a>
           </GridItem>
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          {/* <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className='sponsor'
-            display={'flex'}
-            justifyContent={'center'}
-            
-          >
-            // <a target="_blank" href='https://www.elearnmarkets.com/webinars/stock-market-for-everyone?aff_code=ELMAFF10953&utm_source=ELMAFF10953&utm_medium=affiliate'>
-            // <Image src= "/elm.png" w={'50%'} h={'50%'} className='image' margin='auto' position={'relative'}/>
-            // </a>
-            </GridItem> */}
+          
         </Grid>
-
         <Text
           fontSize={{ base: '6vw', md: '4xl' }}
           align="center"
@@ -719,27 +677,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-          {/* <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://www.threeway.studio/">
-              <Image
-                src="/threeway.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem> */}
+          
 
           <GridItem
             w="14vw"
@@ -829,29 +767,7 @@ export default function Sponsors() {
             </a>
           </GridItem>
 
-          {/* <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a
-              target="_blank"
-              href="https://www.elearnmarkets.com/webinars/stock-market-for-everyone?aff_code=ELMAFF10953&utm_source=ELMAFF10953&utm_medium=affiliate"
-            >
-              <Image
-                src="/elm.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem> */}
+         
 
           <GridItem
             w="14vw"
@@ -875,27 +791,7 @@ export default function Sponsors() {
             </a>
           </GridItem>
 
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            {' '}
-            <a target="_blank" href="https://tezosindia.org.in/">
-              <Image
-                src="/tezos.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>{' '}
-          </GridItem>
+          
           <GridItem
             w="14vw"
             h="14vw"
@@ -915,6 +811,24 @@ export default function Sponsors() {
                 position={'relative'}
               />
             </a>
+          </GridItem>
+          <GridItem
+            w="14vw"
+            h="14vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
           </GridItem>
           <GridItem
             w="14vw"
