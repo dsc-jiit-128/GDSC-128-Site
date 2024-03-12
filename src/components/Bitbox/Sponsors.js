@@ -493,6 +493,80 @@ export default function Sponsors() {
             />
             </a>
           </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <a target="_blank" href="https://interviewbuddy.net/">
+            <Image
+              src="/interview_buddy.png"
+              w={'50%'}
+              h={'50%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+            </a>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
           
           
         </Grid>
@@ -823,8 +897,8 @@ export default function Sponsors() {
           >
             <Image
               src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
+              w={'40%'}
+              h={'40%'}
               className="image"
               margin="auto"
               position={'relative'}
@@ -841,8 +915,8 @@ export default function Sponsors() {
           >
             <Image
               src="/logo-google.webp"
-              w={'50%'}
-              h={'50%'}
+              w={'40%'}
+              h={'40%'}
               className="image"
               margin="auto"
               position={'relative'}
