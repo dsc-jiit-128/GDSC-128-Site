@@ -513,6 +513,7 @@ export default function Sponsors() {
             />
             </a>
           </GridItem>
+
           <GridItem
             w="15vw"
             h="15vw"
@@ -522,14 +523,16 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+            <a target="_blank" href="https://www.wolfram.com/language/">
+              <Image
+                src="/wolf.webp"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
           </GridItem>
           <GridItem
             w="15vw"
@@ -684,26 +687,6 @@ export default function Sponsors() {
                 src="/revup.webp"
                 w={'60%'}
                 h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://www.wolfram.com/language/">
-              <Image
-                src="/wolf.webp"
-                w={'50%'}
-                h={'50%'}
                 className="image"
                 margin="auto"
                 position={'relative'}
@@ -885,6 +868,24 @@ export default function Sponsors() {
                 position={'relative'}
               />
             </a>
+          </GridItem>
+          <GridItem
+            w="14vw"
+            h="14vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
           </GridItem>
           <GridItem
             w="14vw"
