@@ -515,7 +515,7 @@ function Teampage() {
       id: 'Samarpreet Singh',
       insta: 'https://www.instagram.com/sam_p_28',
       instahandle: 'sam_p_28',
-      linkedin: 'https://www.linkedin.com/in/samar28',
+      linkedin: 'https://www.linkedin.com/in/sun28',
       Linkedinhandle: 'Samarpeet Singh',
       github: 'https://github.com/Samar-28',
       githubhandle: 'Samar-28',
