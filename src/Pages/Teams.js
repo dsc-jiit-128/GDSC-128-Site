@@ -275,7 +275,6 @@ function Teampage() {
       githubhandle: 'Sandhu-Sahil',
       discord: 'http://discordapp.com/users/Sahil Sandhu#5673',
       discordhandle: 'Sahil Sandhu#5673',
-
       content:
         "Who cares? I mean, it's sort of exciting, isn't it? Breaking the rules.",
       name: 'Technical Lead',
@@ -313,7 +312,7 @@ function Teampage() {
 
       content:
         'Good management is the art of making problems so interesting and their solutions so constructive that everyone wants to get to work and deal with them ',
-      name: 'Management & PR Lead      ',
+      name: 'Management & PR Lead',
       key: '4',
     },
     {
@@ -403,6 +402,7 @@ function Teampage() {
       key: '9',
     },
   ];
+
   const TeamLeads = [
     {
       image: '/samarpreet.webp',
@@ -483,11 +483,10 @@ function Teampage() {
       githubhandle: 'samarth-5',
       discord: 'https://discordapp.com/users/957355819538735196',
       discordhandle: 'samarth_5_',
-
       content:
         "I'm a frontend developer transitioning to full-stack & mastering Java-based Data Structures & Algorithms (DSA).",
       name: 'Frontend Developer',
-      key: '7',
+      key: '5',
     },
     {
       image: '/anmol.webp',
@@ -505,7 +504,7 @@ function Teampage() {
       content:
         "Hello, I'm Anmol Dhuwalia, and I'm thrilled to be the social media and design enthusiast at our GDSC Hub. ",
       name: 'Social media and designing',
-      key: '5',
+      key: '6',
     },
     {
       image: '/khushi.webp',
@@ -522,7 +521,7 @@ function Teampage() {
       discordhandle: 'Khushi Agarwal#0157',
       content: 'Nothing can dim the light that shines from within',
       name: 'Management and PR',
-      key: '6',
+      key: '7',
     },
     {
       image: '/rishita.webp',
@@ -540,7 +539,7 @@ function Teampage() {
       content:
         'Either write something worth reading or do something worth writing ',
       name: 'Content Writer',
-      key: '7',
+      key: '8',
     },
     {
       image: '/sahil_bansal.webp',
@@ -559,7 +558,7 @@ function Teampage() {
       discordhandle: 'sahil_0810',
       content: `A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
       name: 'Management & PR',
-      key: '8',
+      key: '9',
     },
   ];
 
@@ -979,7 +978,8 @@ function Teampage() {
                           />
                         </VStack>
 
-                        <VStack
+                          {/* Removed the core team section as requested. To bring it back, simply uncomment the code below */}
+                        {/* <VStack
                           onClick={() => {
                             setPosArray(CoreTeam);
                             setSelectedPosTeamLeads(
@@ -1010,7 +1010,7 @@ function Teampage() {
                             align="center"
                             width={{ base: '50%', md: '80%' }}
                           />
-                        </VStack>
+                        </VStack> */}
                       </HStack>
                     </Box>
                   </Box>
