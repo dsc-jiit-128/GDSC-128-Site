@@ -174,14 +174,7 @@ export default function BuildTogether() {
               // width={{ base: '85%', md: '65%' }}
               fontSize={{ base: '3vw', md: '1.35vw' }}
             >
-              GDSC(Google Developer Student Clubs) - JIIT128 is a Google
-              Developers program aimed for college students to help them build
-              their mobile, web, machine learning, cloud skills, etc. We are
-              basically a community with connections all over the world. Open to
-              any student, ranging from novice developers who are just starting,
-              to advanced developers who want to further enhance their skills,
-              we provide a platform for students to learn and collaborate in
-              solving problems around them with the help of technology.
+              GDG (Google Developer Groups) - JIIT128 (formerly known as GDSC), is a Google Developers program aimed at college students to help them build their mobile, web, machine learning, and cloud skills, among others. We are essentially a community with connections all over the world. Open to any student, from novice developers just starting out to advanced developers looking to enhance their skills further, we provide a platform for students to learn and collaborate in solving problems around them with the help of technology.
             </Text>
           </Box>
         </SimpleGrid>

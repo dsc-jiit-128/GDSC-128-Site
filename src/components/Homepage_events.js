@@ -242,7 +242,7 @@ Small sessions for the students to showcase their projects, achievements and for
               mr={'1%'}
             />
             <Text fontSize={{ base: 12, md: 22 }} fontFamily={'Gilroy-Medium'}>
-            Google Developer Student Clubs
+            Google Developer Groups
             </Text>
           </Flex>
           <Text mb={'2%'} fontSize={{ base: 10, md: 18 }} fontFamily={'Gilroy-Medium'}>
