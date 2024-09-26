@@ -485,7 +485,7 @@ function Teampage() {
         'https://discord.com/channels/1165930677368262678/1165930677368262681',
       discordhandle: 'sahil_0810',
       content: `A young and dynamic person who has an eye for keen management tactics, and with apt interpersonal communication skills.`,
-      name: 'Management & PR Lead',
+      name: 'Management & PR Lead      ',
       key: '5',
     },
     {
