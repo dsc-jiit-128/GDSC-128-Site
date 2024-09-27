@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom';
 
 import Nav from '../components/navbar';
 import Head from '../components/heading';
-import BuildTogether from '../components/ buildTogether';
+import BuildTogether from '../components/buildTogether';
 import WhatDoWeDo from '../components/whatDoWeDo';
 
 import HomepageEvents from '../components/Homepage_events';

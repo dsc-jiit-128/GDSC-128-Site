@@ -248,8 +248,8 @@ function Teampage() {
 
   const Mentors = [
     {
-      image: '/sanat.webp',
-      image1: '/sanat_white.webp',
+      image: '/images/2k24-25/mentor/sanat.webp',
+      image1: '/images/2k24-25/mentor/sanat_white.webp',
       insta: 'https://instagram.com/sanatbhatia?igshid=YmMyMTA2M2Y=',
       linkedin: 'https://www.linkedin.com/in/sanat-bhatia-031072233/ ',
       github: 'https://github.com/TheCringedSoul',
@@ -264,8 +264,8 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/sahil_sandhu.webp',
-      image1: '/sahil_sandhu_white.webp',
+      image: '/images/2k24-25/mentor/sahil_sandhu.webp',
+      image1: '/images/2k24-25/mentor/sahil_sandhu_white.webp',
       id: 'Sahilsher Singh',
       insta: 'https://media.tenor.com/e-OsuDsXxgEAAAAd/nouns-dao.gif',
       instahandle: 'Instagram',
@@ -281,8 +281,8 @@ function Teampage() {
       key: '2',
     },
     {
-      image: '/shivangi.webp', //
-      image1: '/shivangi_white.webp', //
+      image: '/images/2k24-25/mentor/shivangi.webp', //
+      image1: '/images/2k24-25/mentor/shivangi_white.webp', //
       id: 'Shivangi Suyash',
       insta: 'https://instagram.com/mid.nightmemories10',
       instahandle: '@mid.nightmemories10',
@@ -298,8 +298,8 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/aryan.webp',
-      image1: '/aryan_white.webp',
+      image: '/images/2k24-25/mentor/aryan.webp',
+      image1: '/images/2k24-25/mentor/aryan_white.webp',
       id: 'Aryan Kulshrestha',
       insta: 'https://instagram.com/_aryan_15_9?igshid=YmMyMTA2M2Y=',
       instahandle: '@_aryan_15_9',
@@ -316,8 +316,8 @@ function Teampage() {
       key: '4',
     },
     {
-      image: '/parth.webp',
-      image1: '/parth_white.webp',
+      image: '/images/2k24-25/mentor/parth.webp',
+      image1: '/images/2k24-25/mentor/parth_white.webp',
       insta: 'https://instagram.com/_parthahuja12_?igshid=YmMyMTA2M2Y=',
       instahandle: '@_parthahuja12_',
       linkedin: 'https://www.linkedin.com/in/parth-ahuja-a0229622b/',
@@ -333,8 +333,8 @@ function Teampage() {
       key: '5',
     },
     {
-      image: '/pariyashi.webp',
-      image1: '/pariyashi_white.webp',
+      image: '/images/2k24-25/mentor/pariyashi.webp',
+      image1: '/images/2k24-25/mentor/pariyashi_white.webp',
       insta: 'https://instagram.com/_justhappy.uknow?igshid=YmMyMTA2M2Y',
       instahandle: '@_justhappy.uknow',
       linkedin: 'https://www.linkedin.com/in/pariyashi-sahu-b91614243/',
@@ -351,8 +351,8 @@ function Teampage() {
     },
 
     {
-      image: '/kanav.webp',
-      image1: '/kanav_white.webp',
+      image: '/images/2k24-25/mentor/kanav.webp',
+      image1: '/images/2k24-25/mentor/kanav_white.webp',
       id: 'Kanav Agarwal',
       insta: 'https://www.instagram.com/kanav_ag/',
       instahandle: '@kanav_ag',
@@ -368,8 +368,8 @@ function Teampage() {
       key: '7',
     },
     {
-      image: '/tanay.webp',
-      image1: '/tanay_white.webp',
+      image: '/images/2k24-25/mentor/tanay.webp',
+      image1: '/images/2k24-25/mentor/tanay_white.webp',
       id: 'Tanay Kedia',
       insta: 'https://instagram.com/tanay_7',
       instahandle: '@tanay_7',
@@ -385,8 +385,8 @@ function Teampage() {
     },
 
     {
-      image: '/vishesh.webp',
-      image1: '/vishesh_white.webp',
+      image: '/images/2k24-25/mentor/vishesh.webp',
+      image1: '/images/2k24-25/mentor/vishesh_white.webp',
       id: 'Vishesh Raheja',
       insta: 'https://instagram.com/rogue__amoeba',
       instahandle: '@rogue__amoeba',
@@ -405,8 +405,8 @@ function Teampage() {
 
   const TeamLeads = [
     {
-      image: '/samarpreet.webp',
-      image1: '/samarpreet_white.webp',
+      image: '/images/2k24-25/leads/samarpreet.webp',
+      image1: '/images/2k24-25/leads/samarpreet_white.webp',
       id: 'Samarpreet Singh',
       insta: 'https://www.instagram.com/sam_p_28',
       instahandle: 'sam_p_28',
@@ -421,8 +421,8 @@ function Teampage() {
       key: '1',
     },
     {
-      image: '/sunpreet.webp',
-      image1: '/sunpreet_white.webp',
+      image: '/images/2k24-25/leads/sunpreet.webp',
+      image1: '/images/2k24-25/leads/sunpreet_white.webp',
       id: 'Sunpreet Singh',
       insta: 'https://instagram.com/sunpreet_singh_28',
       instahandle: 'sunpreet_singh_28',
@@ -437,8 +437,8 @@ function Teampage() {
       key: '2',
     },
     {
-      image: '/jinendra.webp',
-      image1: '/jinendra_white.webp',
+      image: '/images/2k24-25/leads/jinendra.webp',
+      image1: '/images/2k24-25/leads/jinendra_white.webp',
       id: 'Jinendra Jain',
       insta: 'https://instagram.com/hattori.03',
       instahandle: 'hattori.03',
@@ -453,8 +453,8 @@ function Teampage() {
       key: '3',
     },
     {
-      image: '/khushi.webp',
-      image1: '/khushi_white.webp',
+      image: '/images/2k24-25/leads/khushi.webp',
+      image1: '/images/2k24-25/leads/khushi_white.webp',
       id: 'Khushi Agarwal',
       insta: 'https://instagram.com/khushi_agarwal_?igshid=OGQ5ZDc2ODk2ZA==',
       instahandle: 'Khushi_agarwal_',
@@ -470,8 +470,8 @@ function Teampage() {
       key: '4',
     },
     {
-      image: '/sahil_bansal.webp',
-      image1: '/sahil_bansal_white.webp',
+      image: '/images/2k24-25/leads/sahil_bansal.webp',
+      image1: '/images/2k24-25/leads/sahil_bansal_white.webp',
       id: 'Sahil Bansal',
       insta:
         'https://instagram.com/sahil_0810?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
@@ -489,8 +489,8 @@ function Teampage() {
       key: '5',
     },
     {
-      image: '/rishita.webp',
-      image1: '/rishita_white.webp',
+      image: '/images/2k24-25/leads/rishita.webp',
+      image1: '/images/2k24-25/leads/rishita_white.webp',
       id: 'Rishita Singh',
       insta: 'https://www.instagram.com/rishitasingh.18/',
       instahandle: 'rishitasingh.18',
@@ -506,8 +506,8 @@ function Teampage() {
       key: '6',
     },
     {
-      image: '/samarth.webp',
-      image1: '/samarth_white.webp',
+      image: '/images/2k24-25/leads/samarth.webp',
+      image1: '/images/2k24-25/leads/samarth_white.webp',
       id: 'Samarth Narayan',
       insta: 'https://instagram.com/samarth123_',
       instahandle: 'samarth123_',
@@ -523,8 +523,8 @@ function Teampage() {
       key: '7',
     },
     {
-      image: '/harsh.webp',
-      image1: '/harsh_white.webp',
+      image: '/images/2k24-25/leads/harsh.webp',
+      image1: '/images/2k24-25/leads/harsh_white.webp',
       id: 'Harsh Kumawat',
       insta: 'https://instagram.com/harshk04/',
       instahandle: 'harshk04',
@@ -540,8 +540,8 @@ function Teampage() {
       key: '8',
     },
     {
-      image: '/anmol.webp',
-      image1: '/anmol_white.webp',
+      image: '/images/2k24-25/leads/anmol.webp',
+      image1: '/images/2k24-25/leads/anmol_white.webp',
       id: 'Anmol Dhuwalia',
       insta: 'https://www.instagram.com/anmoxll/',
       instahandle: 'anmoxll',
