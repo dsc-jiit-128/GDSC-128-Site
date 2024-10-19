@@ -444,7 +444,7 @@ function Teampage() {
       instahandle: 'hattori.03',
       linkedin: 'https://www.linkedin.com/in/jjinendra3/',
       Linkedinhandle: 'Jinendra  Jain',
-      github: 'hhttps://github.com/jjinendra3',
+      github: 'https://github.com/jjinendra3',
       githubhandle: 'jjinendra3',
       discord: 'http://discordapp.com/users/jim_k_schrute',
       discordhandle: 'jim_k_schrute',
