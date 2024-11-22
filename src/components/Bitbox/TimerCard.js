@@ -42,33 +42,41 @@ const TimerCard = ({type, number}) => {
     </Box>
 }
 
-const Timer = ({futureDate}) => {
-    //countdown date
-    //futureDate - current date
-    const [date, setTimeLeft] = React.useState((futureDate.getTime() - new Date().getTime()))
-    //update every second
+const Timer = ({ futureDate }) => {
+    const calculateTimeLeft = () => {
+        const timeLeft = Math.max(futureDate.getTime() - new Date().getTime(), 0);
+        return timeLeft;
+    };
+
+    const [date, setTimeLeft] = React.useState(calculateTimeLeft());
+
     React.useEffect(() => {
         const interval = setInterval(() => {
-            setTimeLeft((futureDate.getTime() - new Date().getTime()))
-        }, 1000)
-        return () => clearInterval(interval)
-    }, [futureDate])
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [futureDate]);
 
-    return <HStack spacing={{base:3, md:10}} ml={{base: '-5vw', md: '3vw'}}>
-        <TimerCard type="D" 
-            number={Math.floor(date / (1000 * 60 * 60 * 24))}
-        />
-        <TimerCard type="H"
-            number={Math.floor((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}
-        />
-        <TimerCard type="M"
-            number={Math.floor((date % (1000 * 60 * 60)) / (1000 * 60))}
+    return (
+        <HStack spacing={{ base: 3, md: 10 }} ml={{ base: '-5vw', md: '3vw' }}>
+            <TimerCard
+                type="D"
+                number={Math.floor(date / (1000 * 60 * 60 * 24))}
             />
-        <TimerCard type="S"
-            number={Math.floor((date % (1000 * 60)) / 1000)}
-        />
+            <TimerCard
+                type="H"
+                number={Math.floor((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}
+            />
+            <TimerCard
+                type="M"
+                number={Math.floor((date % (1000 * 60 * 60)) / (1000 * 60))}
+            />
+            <TimerCard
+                type="S"
+                number={Math.floor((date % (1000 * 60)) / 1000)}
+            />
         </HStack>
-
-}
+    );
+};
 
 export default Timer;
