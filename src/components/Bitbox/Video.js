@@ -25,7 +25,7 @@ export default function Video() {
           color={'white'}
         >
           {' '}
-          BITBOX 4.0 soon ...{' '}
+          BITBOX 5.0 soon ...{' '}
         </Text>
         <Box mt="8vw">
           <Box className="outer2 redd">
@@ -33,7 +33,7 @@ export default function Video() {
           </Box>
           <AspectRatio maxW="70%" maxH="50%" margin="auto">
             <iframe
-              title="BitBox 4.0"
+              title="BITBOX 5.0"
               src="https://www.youtube.com/embed/5bKiXx6MJTg"
               allowFullScreen
             />

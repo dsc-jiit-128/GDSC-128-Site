@@ -72,13 +72,13 @@ function Sessions() {
         image="/decrypt.webp"
         badge="SESSION-5"
         heading="Decrypt the Crypto"
-        text="GDSC JIIT-128 hosted a session to keep the crypto world to enter the new threshold."
+        text="GDG JIIT-128 hosted a session to keep the crypto world to enter the new threshold."
       />
       <EventCard
         image="/hackathon.webp"
         badge="SESSION-6"
         heading="Intro to Hackathon"
-        text="Come, explore and Code. BITBOX 3.0 the annual hackathon of GDSC JIIT-128, session where we gave an intro about the working of hackathons."
+        text="Come, explore and Code. BITBOX 3.0 the annual hackathon of GDG JIIT-128, session where we gave an intro about the working of hackathons."
       />
       <EventCard
         image="/bootcamp.webp"
