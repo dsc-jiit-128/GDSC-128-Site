@@ -34,7 +34,7 @@ export default function Video() {
           <AspectRatio maxW="70%" maxH="50%" margin="auto">
             <iframe
               title="BITBOX 5.0"
-              src="https://www.youtube.com/embed/5bKiXx6MJTg"
+              src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" // Change the video link here
               allowFullScreen
             />
           </AspectRatio>

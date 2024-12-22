@@ -38,14 +38,13 @@ export default function Speaker() {
             h="17vw"
             bg="#161515"
             border={'1px solid white'}
-            className="sponsor"
             display={'flex'}
             justifyContent={'center'}
             >
-            <a href="https://www.linkedin.com/in/mahima-hans-3b9976155/" target="_blank">
+            <a href="https://www.linkedin.com/in/#/" target="_blank">
               <Image
-                src="/mahima.jpg"
-                alt="Mahima Hans"
+                src="/placeholder.jpeg"
+                alt="Demo Name 1"
                 margin="auto"
                 position={'relative'}
               />
@@ -58,7 +57,7 @@ export default function Speaker() {
           color="white"
           fontSize={{ base: '3vw', md: '2xl' }}
           >
-          Mahima Hans
+          John Doe
           </Text>
           <Text
           align="center"
@@ -67,7 +66,7 @@ export default function Speaker() {
           color="white"
           fontSize={{ base: '1vw', md: 'l' }}
           > 
-          SDE@Adobe | Ex-Microsoft
+          SDE 1 @ Google
         </Text>
             </div>
             <div style={{display:'flex',flexDirection:'column'}}>
@@ -76,14 +75,13 @@ export default function Speaker() {
             h="17vw"
             bg="#161515"
             border={'1px solid white'}
-            className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://www.linkedin.com/in/urvi-goel/" target="_blank">
+            <a href="https://www.linkedin.com/in/#/" target="_blank">
               <Image
-                src="/urvi.jpg"
-                alt="Urvi Goel"
+                src="/placeholder.jpeg"
+                alt="Demo Name 2"
                 margin="auto"
                 position={'relative'}
               />
@@ -97,7 +95,7 @@ export default function Speaker() {
           color="white"
           fontSize={{ base: '3vw', md: '2xl' }}
           >
-          Urvi Goel
+          Jane Doe
           </Text>
           <Text
           align="center"
@@ -106,7 +104,7 @@ export default function Speaker() {
           color="white"
           fontSize={{ base: '1vw', md: 'l' }}
           > 
-          SDE@Microsoft | Teacher@PW Skills
+          SDE 2 @ Microsoft
         </Text>
           </div>
         </Grid>
