@@ -14,52 +14,51 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'Jan 1, 2024 to March 8, 2024',
-    title: 'Registration begins',
-    description: `Get, set and be ready to code for Hackathon!`
+    date: 'Date 1',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `Consectetur adipiscing elit.`
   },
   {
     id: 2,
-    date: 'March 8, 2024 to March 10, 2024',
-    title: 'Idea submission',
-    description: `Ideate, brainstorm and form a structure and your thoughts for the problem statement.`
+    date: 'Date 2',
+    title: 'Sed do eiusmod tempor',
+    description: `Incididunt ut labore et dolore magna aliqua.`
   },
-
   {
     id: 3,
-    date : 'March 13, 2024',
-    title: 'Speaker Session - Urvi Goel',
-    description: `Get to know about the latest trends in the tech industry by our speaker Urvi Goel.`
+    date : 'Date 3',
+    title: 'Ut enim ad minim veniam',
+    description: `Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
   },
   {
     id: 4,
-    date: 'March 14, 2024',
-    title: 'Mystery Event',
-    description:`A mystery event that will test your AI game.`
+    date: 'Date 4',
+    title: 'Duis aute irure dolor',
+    description: `In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
   },
-   {
+  {
     id: 5,
-    date: 'March 14, 2024',
-    title: 'CodeBurn🔥',
-    description:`Ignite your DSA skills in this engaging coding competition!`
+    date: 'Date 5',
+    title: 'Excepteur sint occaecat',
+    description: `Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
   },
   {
     id: 6,
-    date: 'March 15, 2024',
-    title: 'Speaker Session - Mahima Hans',
-    description:`Get to know about the latest trends in the tech industry by our speaker Mahima Hans.`
+    date: 'Date 6',
+    title: 'Lorem ipsum dolor sit amet',
+    description: `Consectetur adipiscing elit.`
   },
   {
     id: 7, 
-    date: 'March 16, 2024',
-    title: 'Hackathon',
-    description: `Get ready for 12 hours of code sprint!`
+    date: 'Date 7',
+    title: 'Sed do eiusmod tempor',
+    description: `Incididunt ut labore et dolore magna aliqua.`
   },
   {
     id: 8, 
-    date: 'March 23, 2024',
-    title: 'Technical Workshop',
-    description: `Discover DevOps: Streamline development, foster collaboration. Join us!`
+    date: 'Date 8',
+    title: 'Ut enim ad minim veniam',
+    description: `Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
   }
 ];
 
@@ -163,8 +162,8 @@ const Card = ({ id, title, description, date }) => {
             {title}
           </chakra.h1>
           <Text fontSize={descriptionFontSize}>{description}</Text>
-          {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='http://tinyurl.com/JIIT14Mar' target='_blank'>Register Here</a></div>:<></>}
-          {id===8?<div style={{color:'red',textDecorationLine:'underline'}}><a href='https://www.geeksforgeeks.org/event/bitbox-4' target='_blank'>Register Here</a></div>:<></>}
+          {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='#' target='_blank'>Register Here</a></div>:<></>}
+          {id===8?<div style={{color:'red',textDecorationLine:'underline'}}><a href='#' target='_blank'>Register Here</a></div>:<></>}
         </VStack>
       </Box>
     </HStack>
