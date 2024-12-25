@@ -36,46 +36,40 @@ export default function Sponsors() {
           mt={{ base: '3vw', md: '3vw' }}
         >
           <GridItem
-            w="17vw"
-            h="17vw"
+            w="15vw"
+            h="15vw"
             bg="#161515"
             border={'1px solid white'}
             className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://devfolio.co/" target="_blank">
-              <Image
-                src="/devfolio.webp"
-                alt="DEVFOLIO LOGO"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
           </GridItem>
           <GridItem
-            w="17vw"
-            h="17vw"
+            w="15vw"
+            h="15vw"
             bg="#161515"
             border={'1px solid white'}
             className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://tezosindia.org.in/" target="_blank">
-              <Image
-                src="/tezos.png"
-                alt="POLYGON LOGO"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
           </GridItem>
         </Grid>
 
@@ -100,52 +94,44 @@ export default function Sponsors() {
           mr={{ base: 'auto', md: '310px' }}
           mt={{ base: '3vw', md: '3vw' }}
         >
-                 <GridItem
-            w="14vw"
-            h="14vw"
+          <GridItem
+            w="15vw"
+            h="15vw"
             bg="#161515"
             border={'1px solid white'}
             className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a target="_blank" href="https://www.instagram.com/wahterevolution/">
             <Image
-              src="/wahter.png"
-              w={'50%'}
-              h={'50%'}
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
               className="image"
               margin="auto"
               position={'relative'}
             />
-            </a>
           </GridItem>
+
           <GridItem
-            w="14vw"
-            h="14vw"
+            w="15vw"
+            h="15vw"
             bg="#161515"
             border={'1px solid white'}
             className="sponsor"
             display={'flex'}
             justifyContent={'center'}
           >
-            <a href="https://www.trickortreatfoods.com/" target="_blank">
-              <Image
-                src="/trick.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
           </GridItem>
-
-   
-
-        
         </Grid>
-
 
         <Text
           fontSize={{ base: '6vw', md: '4xl' }}
@@ -165,7 +151,175 @@ export default function Sponsors() {
           ml={{ base: 'auto', md: '310px' }}
           mr={{ base: 'auto', md: '310px' }}
           mt={{ base: '3vw', md: '3vw' }}
-          // w={'50vw'}
+        // w={'50vw'}
+        >
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
+            <Image
+              src="/logo-google.webp"
+              w={'40%'}
+              h={'40%'}
+              className="image"
+              margin="auto"
+              position={'relative'}
+            />
+          </GridItem>
+
+        </Grid>
+
+        <Text
+          fontSize={{ base: '6vw', md: '4xl' }}
+          align="center"
+          margin="auto"
+          marginTop={8}
+          color="white"
+        >
+          {/* OLD SPONSORS */}
+          Old Sponsors
+        </Text>
+        <Grid
+          templateColumns="repeat(4, 0fr)"
+          gap={0}
+          alignContent={'center'}
+          justifyContent={'center'}
+          ml={{ base: 'auto', md: '310px' }}
+          mr={{ base: 'auto', md: '310px' }}
+          mt={{ base: '3vw', md: '3vw' }}
+        // w={'50vw'}
         >
           <GridItem
             w="15vw"
@@ -188,7 +342,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-  
+
           <GridItem
             w="15vw"
             h="15vw"
@@ -199,14 +353,14 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <a target="_blank" href="https://polygon.technology/">
-            <Image
-              src="/polygon.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+              <Image
+                src="/polygon.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
             </a>
           </GridItem>
           <GridItem
@@ -219,14 +373,14 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <a target="_blank" href="https://www.geeksforgeeks.org/">
-            <Image
-              src="/gfg.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+              <Image
+                src="/gfg.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
             </a>
           </GridItem>
           <GridItem
@@ -249,7 +403,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-         
+
           <GridItem
             w="15vw"
             h="15vw"
@@ -483,14 +637,14 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <a target="_blank" href="https://www.threeway.studio/">
-            <Image
-              src="/threeway.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+              <Image
+                src="/threeway.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
             </a>
           </GridItem>
           <GridItem
@@ -503,14 +657,14 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <a target="_blank" href="https://interviewbuddy.net/">
-            <Image
-              src="/interview_buddy.png"
-              w={'50%'}
-              h={'50%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+              <Image
+                src="/interview_buddy.png"
+                w={'50%'}
+                h={'50%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
             </a>
           </GridItem>
 
@@ -570,361 +724,6 @@ export default function Sponsors() {
               position={'relative'}
             />
           </GridItem>
-          
-          
-        </Grid>
-        <Text
-          fontSize={{ base: '6vw', md: '4xl' }}
-          align="center"
-          margin="auto"
-          marginTop={20}
-          color="white"
-        >
-          Old Sponsors
-        </Text>
-        <Grid
-          templateColumns="repeat(4, 0fr)"
-          gap={0}
-          alignContent={'center'}
-          justifyContent={'center'}
-          ml={{ base: 'auto', md: '310px' }}
-          mr={{ base: 'auto', md: '310px' }}
-          mt={{ base: '3vw', md: '3vw' }}
-          // w={'50vw'}
-        >
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://shop.continental.coffee/">
-              <Image
-                src="/cofesponsor.png"
-                w={'60%'}
-                h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            {/* <a target="_blank" href='https://gen.xyz/'> */}
-            <a target="_blank" href="https://www.vehant.com/">
-              <Image
-                src="/vehantsponsor.png"
-                w={'60%'}
-                h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://hoverrobotix.com/">
-              <Image
-                src="/robotix.webp"
-                w={'60%'}
-                h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://thementorx.com/">
-              <Image
-                src="/MENTORx.webp"
-                w={'60%'}
-                h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="#">
-              <Image
-                src="/revup.webp"
-                w={'60%'}
-                h={'60%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            {' '}
-            <a target="_blank" href="https://flipr.ai//">
-              <Image
-                src="/fliprsponsor.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>{' '}
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://twitter.com/Web3Panjab">
-              <Image
-                src="/WEB3Panjab.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://filecoin.io/">
-              <Image
-                src="/filecoin_s.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem>
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://yhills.com/">
-              <Image
-                src="/yhillsponsor.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem>
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://www.grabon.in/">
-              <Image
-                src="/grabonsponsor.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem>
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://solana.com//">
-              <Image
-                src="/sol.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem>
-
-         
-
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://pwskills.com/">
-              <Image
-                src="/pwsponsor.png"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-                backgroundColor={'white'}
-              />
-            </a>
-          </GridItem>
-
-          
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target="_blank" href="https://www.digitalocean.com/">
-              <Image
-                src="/meta.webp"
-                w={'50%'}
-                h={'50%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          <GridItem
-            w="14vw"
-            h="14vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
-          </GridItem>
-          
-          
         </Grid>
       </Box>
     </>

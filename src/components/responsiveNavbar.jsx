@@ -57,7 +57,7 @@ function ResponsiveNavbar() {
               }}
               to="/bitbox"
             >
-              Bitbox 4.0
+              BITBOX 5.0
             </Link>
           </MenuItem>
         </MenuList>
