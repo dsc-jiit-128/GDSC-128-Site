@@ -31,7 +31,7 @@ export default function Speaker() {
           mt={{ base: '3vw', md: '3vw' }}
           style={{ display: 'flex', justifyContent: 'space-evenly' }}
         >
-          <div style={{display:'flex',flexDirection:'column'}}>
+          <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
 
           <GridItem
             w="17vw"
@@ -40,13 +40,18 @@ export default function Speaker() {
             border={'1px solid white'}
             display={'flex'}
             justifyContent={'center'}
+            borderRadius={{ base: '5px', md: '20px' }}
+            overflow={'hidden'}
+            
             >
             <a href="https://www.linkedin.com/in/#/" target="_blank">
               <Image
-                src="/placeholder.jpeg"
+                src="https://avatars.githubusercontent.com/u/11613311?v=4"
                 alt="Demo Name 1"
                 margin="auto"
                 position={'relative'}
+
+                filter={'blur(20px)'}
               />
             </a>
           </GridItem>
@@ -56,8 +61,9 @@ export default function Speaker() {
           marginTop={'10px'}
           color="white"
           fontSize={{ base: '3vw', md: '2xl' }}
+          filter={'blur(5px)'}
           >
-          John Doe
+          Hitesh Choudhary
           </Text>
           <Text
           align="center"
@@ -65,37 +71,43 @@ export default function Speaker() {
           marginTop={'10px'}
           color="white"
           fontSize={{ base: '1vw', md: 'l' }}
+          filter={'blur(5px)'}
           > 
-          SDE 1 @ Google
+          CTO @ iNeuron.Ai
         </Text>
             </div>
-            <div style={{display:'flex',flexDirection:'column'}}>
-          <GridItem
+            <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+            <GridItem
             w="17vw"
             h="17vw"
             bg="#161515"
             border={'1px solid white'}
             display={'flex'}
             justifyContent={'center'}
-          >
+            borderRadius={{ base: '5px', md: '20px' }}
+            overflow={'hidden'}
+            >
             <a href="https://www.linkedin.com/in/#/" target="_blank">
               <Image
-                src="/placeholder.jpeg"
-                alt="Demo Name 2"
+                src="https://media.licdn.com/dms/image/v2/C4D03AQGFTnOaQa4fUQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1623400654607?e=2147483647&v=beta&t=Dbw-wAPI94paWJMLjKOo2gFas-v9suBYv3335jRSGiM"
+                alt="Demo Name 1"
                 margin="auto"
                 position={'relative'}
+                objectFit={'cover'}
+                filter={'blur(20px)'}
+                height={'100%'}
               />
             </a>
-           
           </GridItem>
-          <Text
+           <Text
           align="center"
           margin="auto"
           marginTop={'10px'}
           color="white"
           fontSize={{ base: '3vw', md: '2xl' }}
+          filter={'blur(5px)'}
           >
-          Jane Doe
+          Raj Vikramaditya
           </Text>
           <Text
           align="center"
@@ -103,10 +115,11 @@ export default function Speaker() {
           marginTop={'10px'}
           color="white"
           fontSize={{ base: '1vw', md: 'l' }}
+          filter={'blur(5px)'}
           > 
-          SDE 2 @ Microsoft
+          SDE @ Google
         </Text>
-          </div>
+      </div>
         </Grid>
        
       </Box>
