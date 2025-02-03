@@ -14,51 +14,51 @@ import {
 const timeline = [
   {
     id: 1,
-    date: 'Date 1',
-    title: 'Lorem ipsum dolor sit amet',
-    description: `Consectetur adipiscing elit.`
+    date: 'January 1, 2023',
+    title: 'Project Kickoff',
+    description: 'The project officially begins with the kickoff meeting.'
   },
   {
     id: 2,
-    date: 'Date 2',
-    title: 'Sed do eiusmod tempor',
-    description: `Incididunt ut labore et dolore magna aliqua.`
+    date: 'February 14, 2023',
+    title: 'Design Phase Completion',
+    description: 'The design phase is completed and approved by stakeholders.'
   },
   {
     id: 3,
-    date : 'Date 3',
-    title: 'Ut enim ad minim veniam',
-    description: `Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+    date: 'March 30, 2023',
+    title: 'Prototype Development',
+    description: 'The first prototype is developed and ready for testing.'
   },
   {
     id: 4,
-    date: 'Date 4',
-    title: 'Duis aute irure dolor',
-    description: `In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
+    date: 'April 15, 2023',
+    title: 'User Testing',
+    description: 'User testing is conducted to gather feedback on the prototype.'
   },
   {
     id: 5,
-    date: 'Date 5',
-    title: 'Excepteur sint occaecat',
-    description: `Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+    date: 'May 10, 2023',
+    title: 'Final Adjustments',
+    description: 'Final adjustments are made based on user feedback.'
   },
   {
     id: 6,
-    date: 'Date 6',
-    title: 'Lorem ipsum dolor sit amet',
-    description: `Consectetur adipiscing elit.`
+    date: 'June 1, 2023',
+    title: 'Project Launch',
+    description: 'The project is officially launched and goes live.'
   },
   {
-    id: 7, 
-    date: 'Date 7',
-    title: 'Sed do eiusmod tempor',
-    description: `Incididunt ut labore et dolore magna aliqua.`
+    id: 7,
+    date: 'July 20, 2023',
+    title: 'Post-Launch Review',
+    description: 'A review meeting is held to assess the project’s success.'
   },
   {
-    id: 8, 
-    date: 'Date 8',
-    title: 'Ut enim ad minim veniam',
-    description: `Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+    id: 8,
+    date: 'August 15, 2023',
+    title: 'Future Planning',
+    description: 'Planning for future updates and improvements begins.'
   }
 ];
 
@@ -68,7 +68,7 @@ const Timeline = () => {
 
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
-      <chakra.h3 fontSize={{base:'8vw', md:'6xl'}} align="center" p ={3} fontFamily="Gilroy-Bold" fontWeight="bold" mb={18} textAlign="center" color={'white'}  >
+      <chakra.h3 fontSize={{base:'8vw', md:'7xl'}} align="center" p ={3} fontFamily="Gilroy-Bold" fontWeight="bold" mb={14} mt={-20} textAlign="center" color={'white'}  >
         Timeline
         
       </chakra.h3>
@@ -109,8 +109,6 @@ const Timeline = () => {
 
 
 const Card = ({ id, title, description, date }) => {
-  // For even id show card on left side
-  // For odd id show card on right side
   const isEvenId = id % 2 === 0;
   let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px';
   let leftValue = isEvenId ? '-15px' : 'unset';
@@ -131,7 +129,8 @@ const Card = ({ id, title, description, date }) => {
     <HStack
       flex={1}
       p={cardPadding}
-      bg={useColorModeValue('gray.100', 'gray.800')}
+      bg={useColorModeValue('#1f1f1f', '#303134')} // Google-inspired dark theme
+      color={useColorModeValue('white', 'gray.300')}
       spacing={5}
       rounded="lg"
       alignItems="center"
@@ -141,7 +140,7 @@ const Card = ({ id, title, description, date }) => {
         content: `""`,
         w: '0',
         h: '0',
-        borderColor: `transparent ${useColorModeValue('#edf2f6', '#1a202c')} transparent`,
+        borderColor: `transparent ${useColorModeValue('#303134', '#1a202c')} transparent`,
         borderStyle: 'solid',
         borderWidth: borderWidthValue,
         position: 'absolute',
@@ -149,26 +148,24 @@ const Card = ({ id, title, description, date }) => {
         right: rightValue,
         display: 'block'
       }}
-      filter='auto'
-      // blur={(id===1||id===2)?"":"5px"}
     >
-      <Box>
+      <Box filter="blur(5px)" _hover={{ filter: "blur(4px)" }}>
         <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}>
           {date}
         </Text>
-
         <VStack spacing={2} mb={3} textAlign="left">
           <chakra.h1 fontSize={titleFontSize} lineHeight={1.2} fontWeight="bold" w="100%">
             {title}
           </chakra.h1>
           <Text fontSize={descriptionFontSize}>{description}</Text>
-          {id===5?<div style={{color:'red',textDecorationLine:'underline'}}><a href='#' target='_blank'>Register Here</a></div>:<></>}
-          {id===8?<div style={{color:'red',textDecorationLine:'underline'}}><a href='#' target='_blank'>Register Here</a></div>:<></>}
+          {id === 5 && <div style={{ color: 'red', textDecorationLine: 'underline' }}><a href='#' target='_blank'>Register Here</a></div>}
+          {id === 8 && <div style={{ color: 'red', textDecorationLine: 'underline' }}><a href='#' target='_blank'>Register Here</a></div>}
         </VStack>
       </Box>
     </HStack>
   );
 };
+
 
 
 const LineWithDot = () => {
