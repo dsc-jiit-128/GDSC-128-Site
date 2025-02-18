@@ -53,12 +53,12 @@ export default function Bitbox() {
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
-}, []);
+    };
+  }, []);
 
   const inputRef = React.useRef(null);
   //Date 20 days 2 hours 5 minutes 30 seconds in future
-  const [date, setDate] = React.useState(new Date("2025-04-19T09:00:00"));
+  const [date, setDate] = React.useState(new Date('2025-04-19T09:00:00'));
   useEffect(() => {
     setTimeout(() => {
       if (inputRef) {
@@ -110,7 +110,7 @@ export default function Bitbox() {
             }}
           ></div>
 
-         { <Image src="/frontBg.svg" w={'100%'} />}
+          {<Image src="/frontBg.svg" w={'100%'} />}
           <Box pos={'absolute'} top={'0'} zIndex={'1'} w={'100%'}>
             <Nav />
             <Box>
@@ -137,8 +137,7 @@ export default function Bitbox() {
                   style={{
                     color: '#0F9D58',
                   }}
-                >
-                </i>
+                ></i>
                 <br></br>
                 {'if (sad() === true) {'}
                 <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -151,126 +150,150 @@ export default function Bitbox() {
                 {'}'}
               </Text>
             </HStack>
-            <Box mt='20vh' h={28}></Box>
-            <Box  align='center' textAlign='center' display='flex' justifyContent='center'  zIndex="100">
-            <div 
-              class="apply-button" 
-              data-hackathon-slug="bitbox-4-gfc5hyh" 
-              data-button-theme="light"
-            style={{width: '100%', height: '100%',pointerEvents: "none",display:"none",marginTop:'20px'}}
-            ></div>
-          </Box>
+            <Box mt="20vh" h={28}></Box>
+            <Box
+              align="center"
+              textAlign="center"
+              display="flex"
+              justifyContent="center"
+              zIndex="100"
+            >
+              <div
+                class="apply-button"
+                data-hackathon-slug="bitbox-5"
+                data-button-theme="dark"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  pointerEvents: 'none',
+                  display: 'none',
+                  marginTop: '20px',
+                }}
+              ></div>
+            </Box>
           </VStack>
-            
+
           <Video />
-          <ThreeTierPricing/>
-          <Timeline/>
-          <SDGs/>
-          <Speaker/>
+          <ThreeTierPricing />
+          <Timeline />
+          <SDGs />
+          <Speaker />
           <Sponsors />
-          
-         
+
           <FAQ />
         </Box>
       </Box>
     );
-  }
-  else
-  {
+  } else {
     return (
       <>
-      <Box
-        bgColor={'#161515'}
-        height={'100%'}
-        minH="100vh"
-        m={0}
-        margin={0}
-        overflowX="hidden"
-        pos={'relative'}
-      >
-        <Box className="desktop">
-          <div
-            // id="magic"
-            ref={inputRef}
-            style={{
-              position: 'absolute',
-              top: '0',
-              zIndex: '0',
-              width: '100vw',
-              height: '200vh',
-            }}
-          ></div>
+        <Box
+          bgColor={'#161515'}
+          height={'100%'}
+          minH="100vh"
+          m={0}
+          margin={0}
+          overflowX="hidden"
+          pos={'relative'}
+        >
+          <Box className="desktop">
+            <div
+              // id="magic"
+              ref={inputRef}
+              style={{
+                position: 'absolute',
+                top: '0',
+                zIndex: '0',
+                width: '100vw',
+                height: '200vh',
+              }}
+            ></div>
 
-          <Image src="/frontBg.svg" w={'100%'} />
-          <Box pos={'absolute'} top={'0'} zIndex={'1'} w={'100%'}>
-            <Nav />
-            <Box>
-              <Head />
+            <Image src="/frontBg.svg" w={'100%'} />
+            <Box pos={'absolute'} top={'0'} zIndex={'1'} w={'100%'}>
+              <Nav />
+              <Box>
+                <Head />
+              </Box>
             </Box>
-          </Box>
-          <Image src='/Group 23.png' w={'70%'} mt="-48vw" ml={'auto'} mr='auto'/>
-          <VStack w={'100%'} mt={{base:'20vw', md:-30}}>
-            <HStack
-              w={'100%'}
-              p={10}
-              spacing={1}
-              bg={
-                'linear-gradient(93.71deg, rgba(255, 0, 0, 0.05) 0%, rgba(255, 168, 0, 0.05) 34.2%, rgba(15, 157, 88, 0.05) 69.62%, rgba(66, 133, 244, 0.05) 100%);'
-              }
-            >
-              <Timer futureDate={date} />
-              <Text
-                fontSize={{base:'2vw', md:15}}
-                fontFamily={'Gilroy-Regular'}
-                color="white"
-                pl={{base:5, md:10}}
+            <Image
+              src="/Group 23.png"
+              w={'70%'}
+              mt="-48vw"
+              ml={'auto'}
+              mr="auto"
+            />
+            <VStack w={'100%'} mt={{ base: '20vw', md: -30 }}>
+              <HStack
+                w={'100%'}
+                p={10}
+                spacing={1}
+                bg={
+                  'linear-gradient(93.71deg, rgba(255, 0, 0, 0.05) 0%, rgba(255, 168, 0, 0.05) 34.2%, rgba(15, 157, 88, 0.05) 69.62%, rgba(66, 133, 244, 0.05) 100%);'
+                }
               >
-                <i
-                  style={{
-                    color: '#0F9D58',
-                  }}
+                <Timer futureDate={date} />
+                <Text
+                  fontSize={{ base: '2vw', md: 15 }}
+                  fontFamily={'Gilroy-Regular'}
+                  color="white"
+                  pl={{ base: 5, md: 10 }}
                 >
-                
-                </i>
-                <br></br>
-                {'if (sad() === true) {'}
-                <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
-                {'   sad.stop();'}
-                <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
-                {'   beAwesome(); '}
-                <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
-                {'   initiateCountDown(); '}
-                <br></br>
-                {'}'}
-              </Text>
-            </HStack>
-          </VStack>
-             <Box align='center' textAlign='center' display='flex' justifyContent='center' mt='50' zIndex="100" position="relative">
-            
-              <div 
-                class="apply-button" 
-                data-hackathon-slug="bitbox-4-gfc5hyh" 
-                data-button-theme="light"
-              style={{width: '100%', height: '100%', zIndex:"100",pointerEvents: "none",display:"none",marginTop:'20px'}}
-                
+                  <i
+                    style={{
+                      color: '#0F9D58',
+                    }}
+                  ></i>
+                  <br></br>
+                  {'if (sad() === true) {'}
+                  <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {'   sad.stop();'}
+                  <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {'   beAwesome(); '}
+                  <br></br>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {'   initiateCountDown(); '}
+                  <br></br>
+                  {'}'}
+                </Text>
+              </HStack>
+            </VStack>
+            <Box
+              align="center"
+              textAlign="center"
+              display="flex"
+              justifyContent="center"
+              mt="50"
+              zIndex="100"
+              position="relative"
+            >
+              <div
+                class="apply-button"
+                data-hackathon-slug="bitbox-5"
+                data-button-theme="dark"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  zIndex: '100',
+                  pointerEvents: 'none',
+                  display: 'none',
+                  marginTop: '20px',
+                }}
               ></div>
             </Box>
-          <Video />
-          <ThreeTierPricing/>
+            <Video />
+            <ThreeTierPricing />
 
-          <Box>
-                  <Timeline/>
+            <Box>
+              <Timeline />
+            </Box>
+            <SDGs />
+            <Speaker />
+            <Sponsors />
 
+            <FAQ />
           </Box>
-          <SDGs/>
-          <Speaker/>
-          <Sponsors />
-
-          
-          <FAQ />
-     </Box>
-     </Box>
-     </>
+        </Box>
+      </>
     );
   }
 }
