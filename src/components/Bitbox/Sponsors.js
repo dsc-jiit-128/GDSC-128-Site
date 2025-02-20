@@ -107,13 +107,14 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <Image
-              src="/bb25IMG/ethindia.webp"
+              src="/bb25IMG/ethindia.png"
               className="image"
-              width={'75%'}
+              width={'80%'}
               height={'75%'}
               margin="auto"
               alt='ETHINDIA LOGO'
               position={'relative'}
+              object={'contain'}
             />
           </GridItem>
 
