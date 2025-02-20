@@ -70,8 +70,8 @@ const Timeline = () => {
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
       <chakra.h3 fontSize={{base:'8vw', md:'7xl'}} align="center" p ={3} fontFamily="Gilroy-Bold" fontWeight="bold" mb={14} mt={-20} textAlign="center" color={'white'}  >
         Timeline
-        
       </chakra.h3>
+      <chakra.h5 fontSize={{base:'3vw', md:'3xl'}} align="center" p ={3} fontFamily="Gilroy-Bold" fontWeight="bold" mb={14} mt={-20} textAlign="center" color={'white'}  >Comming soon....</chakra.h5>
       
       {timeline.map((milestone) => (
         <Flex key={milestone.id} mb="10px" >

@@ -46,7 +46,7 @@ export default function Nav() {
                       bgClip: 'text',
                     }}
                   >
-                    GDG JIIT 128
+                    GDG JIIT
                   </Text>
                 }
               </Link>
