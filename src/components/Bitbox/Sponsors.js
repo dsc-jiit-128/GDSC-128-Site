@@ -44,14 +44,17 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
+            <a target="_blank" href="https://devfolio.co/">
             <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
+              src="/devfolio.webp"
+              alt='DEVFOLIO LOGO'
+              width={'80%'}
+              height={'80%'}
               className="image"
               margin="auto"
               position={'relative'}
             />
+            </a>
           </GridItem>
           <GridItem
             w="15vw"
@@ -104,11 +107,12 @@ export default function Sponsors() {
             justifyContent={'center'}
           >
             <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
+              src="/bb25IMG/ethindia.webp"
               className="image"
+              width={'75%'}
+              height={'75%'}
               margin="auto"
+              alt='ETHINDIA LOGO'
               position={'relative'}
             />
           </GridItem>
@@ -122,14 +126,16 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+            <a target="_blank" href="https://polygon.technology/">
+              <Image
+                src="/polygon.png"
+                w={'75%'}
+                h={'75%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
           </GridItem>
         </Grid>
 
@@ -171,7 +177,7 @@ export default function Sponsors() {
               position={'relative'}
             />
           </GridItem>
-          
+
           <GridItem
             w="15vw"
             h="15vw"
