@@ -283,7 +283,7 @@ export default function Bitbox() {
             <Video />
             <ThreeTierPricing />
 
-            <Box>
+            <Box my={12}>
               <Timeline />
             </Box>
             <SDGs />
