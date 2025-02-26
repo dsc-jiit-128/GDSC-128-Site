@@ -807,7 +807,7 @@ m={'auto'}
          </PriceWrapper> 
             </Stack>
             <Line></Line>
-            <Stack
+            {/* <Stack
           direction={{ base: 'column', md: 'row' }}
           textAlign="center"
           justify="center"
@@ -968,7 +968,7 @@ m={'auto'}
 
 
 
-            </Stack> 
+            </Stack>  */}
       </Box>
     );
   }
