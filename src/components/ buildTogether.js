@@ -8,14 +8,14 @@ import {
   fontFamily,
   Divider,
   Link
-  
+
 } from '@chakra-ui/react';
 import Fonts from '../fonts';
 export default function BuildTogether() {
   return (
     <>
-  <Fonts></Fonts>  
-  
+      <Fonts></Fonts>
+
       <Box
         bgImage="url('/image 3.webp')"
         bgPosition="center"
@@ -24,17 +24,17 @@ export default function BuildTogether() {
         height={'100%'}
         backgroundRepeat={'no-repeat'}
         position={'relative'}
-        // display={{ md: 'flex' }}
+      // display={{ md: 'flex' }}
       >
-   
+
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={0}>
           <Box>
             <Box textAlign={'center'}>
-            <Box
-              position={'relative'}
-              overflow={'visible'}
+              <Box
+                position={'relative'}
+                overflow={'visible'}
               >
-              <Image
+                <Image
                   src="/blur1.webp"
                   position="absolute"
                   top={{ base: '15%', md: '3%' }}
@@ -113,7 +113,7 @@ export default function BuildTogether() {
               >
                 <Text color="white" fontFamily={'Gilroy-Bold'} fontSize={{ base: '14px', md: '1.7vw' }} >
                   <Link href="/bitbox">
-                  BITBOX 5.0
+                    BITBOX 5.0
                   </Link>
                 </Text>
               </Button>
@@ -148,7 +148,7 @@ export default function BuildTogether() {
               pr={{ base: '6%' }}
               mt="5%"
             >
-            Build
+              Build
             </Text>
             <Text
               as={'b'}

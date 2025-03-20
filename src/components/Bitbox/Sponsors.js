@@ -118,7 +118,7 @@ export default function Sponsors() {
             />
           </GridItem>
 
-          <GridItem
+          {/* <GridItem
             w="15vw"
             h="15vw"
             bg="#161515"
@@ -137,7 +137,7 @@ export default function Sponsors() {
                 position={'relative'}
               />
             </a>
-          </GridItem>
+          </GridItem> */}
         </Grid>
 
         <Text
@@ -172,8 +172,8 @@ export default function Sponsors() {
             <a target="_blank" href="https://thementorx.com/">
               <Image
                 src="/Sponsors/MentorXGlobal.png"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 backgroundColor={''}
                 className="image"
                 margin="auto"
@@ -194,8 +194,8 @@ export default function Sponsors() {
             <a target="_blank" href="https://hoverrobotix.com/">
               <Image
                 src="/Sponsors/HoverRobotix.png"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 backgroundColor={'white'}
                 className="image"
                 margin="auto"
@@ -215,8 +215,8 @@ export default function Sponsors() {
             <a target='_blank' href='https://sybgen.com/'>
               <Image
                 src="/Sponsors/Sybgen.png"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 backgroundColor={'white'}
                 className="image"
                 margin="auto"
@@ -236,8 +236,8 @@ export default function Sponsors() {
             <a target="_blank" href="https://interviewbuddy.net/">
               <Image
                 src="/Sponsors/InterviewBuddy.svg"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 backgroundColor={'white'}
                 className="image"
                 margin="auto"
@@ -257,8 +257,8 @@ export default function Sponsors() {
             <a target="_blank" href="https://www.instagram.com/revuplifeskills/">
               <Image
                 src="/Sponsors/RevupLifeSkills.jpg"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 className="image"
                 margin="auto"
                 position={'relative'}
@@ -277,8 +277,8 @@ export default function Sponsors() {
             <a target='_blank' href='https://www.instagram.com/envision_thapar/'>
               <Image
                 src="/Sponsors/Lucr8Ventures.jpg"
-                w={'40%'}
-                h={'40%'}
+                w={'50%'}
+                h={'50%'}
                 className="image"
                 margin="auto"
                 position={'relative'}
@@ -296,8 +296,8 @@ export default function Sponsors() {
           >
             <Image
               src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
+              w={'50%'}
+              h={'50%'}
               className="image"
               margin="auto"
               position={'relative'}
@@ -314,8 +314,8 @@ export default function Sponsors() {
           >
             <Image
               src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
+              w={'50%'}
+              h={'50%'}
               className="image"
               margin="auto"
               position={'relative'}
