@@ -65,14 +65,16 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
-            <Image
-              src="/logo-google.webp"
-              w={'40%'}
-              h={'40%'}
-              className="image"
-              margin="auto"
-              position={'relative'}
-            />
+            <a target='_blank' href='https://www.geeksforgeeks.org/'>
+              <Image
+                src="/gfg.png"
+                w={'80%'}
+                h={'80%'}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
           </GridItem>
         </Grid>
 
@@ -285,7 +287,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-          <GridItem
+          {/* <GridItem
             w="15vw"
             h="15vw"
             bg="#161515"
@@ -320,7 +322,7 @@ export default function Sponsors() {
               margin="auto"
               position={'relative'}
             />
-          </GridItem>
+          </GridItem> */}
 
         </Grid>
 
