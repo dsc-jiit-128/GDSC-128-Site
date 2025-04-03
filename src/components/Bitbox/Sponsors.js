@@ -56,26 +56,7 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-          <GridItem
-            w="15vw"
-            h="15vw"
-            bg="#161515"
-            border={'1px solid white'}
-            className="sponsor"
-            display={'flex'}
-            justifyContent={'center'}
-          >
-            <a target='_blank' href='https://www.geeksforgeeks.org/'>
-              <Image
-                src="/gfg.png"
-                w={'80%'}
-                h={'80%'}
-                className="image"
-                margin="auto"
-                position={'relative'}
-              />
-            </a>
-          </GridItem>
+
         </Grid>
 
 
@@ -171,6 +152,27 @@ export default function Sponsors() {
             display={'flex'}
             justifyContent={'center'}
           >
+            <a target="_blank" href="https://geeksforgeeks.org/">
+              <Image
+                src="/gfg.png"
+                w={'50%'}
+                h={'50%'}
+                backgroundColor={''}
+                className="image"
+                margin="auto"
+                position={'relative'}
+              />
+            </a>
+          </GridItem>
+          <GridItem
+            w="15vw"
+            h="15vw"
+            bg="#161515"
+            border={'1px solid white'}
+            className="sponsor"
+            display={'flex'}
+            justifyContent={'center'}
+          >
             <a target="_blank" href="https://thementorx.com/">
               <Image
                 src="/Sponsors/MentorXGlobal.png"
@@ -183,7 +185,6 @@ export default function Sponsors() {
               />
             </a>
           </GridItem>
-
           <GridItem
             w="15vw"
             h="15vw"
