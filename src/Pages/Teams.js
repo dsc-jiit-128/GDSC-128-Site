@@ -969,6 +969,23 @@ function Teampage() {
       name: 'UI/UX',
       key: '25',
     },
+    {
+      image: '/CT2425/aditi.png',
+      image1: '/CT2425/aditi.png',
+      id: 'Aditi Kansal',
+      insta: 'https://www.instagram.com/aditikansal_/',
+      instahandle: 'aditikansal_',
+      linkedin: 'https://www.linkedin.com/in/aditi-kansal-37b09a314',
+      Linkedinhandle: 'Aditi Kansal',
+      github: 'https://github.com/aditikansal01',
+      githubhandle: 'aditikansal01',
+      discord: 'https://discord.com/users/01aditi',
+      discordhandle: '01aditi',
+      content: 'Building tech, crafting content, and managing events — because impact needs all three',
+      name: 'Content',
+      key: '26',
+    }
+    
   ];
 
   const loadImages = () => {
