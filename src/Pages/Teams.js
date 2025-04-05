@@ -1160,6 +1160,7 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <FaInstagram className="gfg-div" />{' '}
                               </Link>
@@ -1168,6 +1169,7 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <Text
                                   display={'inline'}
@@ -1199,6 +1201,7 @@ function Teampage() {
                                     ?.linkedin
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <FaLinkedin className="gfg-div" />{' '}
                               </Link>
@@ -1208,6 +1211,7 @@ function Teampage() {
                                     ?.linkedin
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <Text
                                   display={'inline'}
@@ -1239,6 +1243,7 @@ function Teampage() {
                                     ?.github
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <FaGithub className="gfg-div" />
                               </Link>
@@ -1248,6 +1253,7 @@ function Teampage() {
                                     ?.github
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <Text
                                   display={'inline'}
@@ -1278,6 +1284,7 @@ function Teampage() {
                                     ?.discord
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <FaDiscord className="gfg-div" />{' '}
                               </Link>
@@ -1287,6 +1294,7 @@ function Teampage() {
                                     ?.discord
                                 }
                                 display={'inline'}
+                                target='_blank'
                               >
                                 <Text
                                   display={'inline'}
