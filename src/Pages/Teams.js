@@ -291,6 +291,22 @@ function Teampage() {
   const [selectedTeam, setSelectedTeam] = useState('leads');
 
   const [parent] = useAutoAnimate(/* optional config */);
+
+  useEffect(() => {
+    loadImages();
+
+    // Check URL hash when component mounts
+    const hash = window.location.hash;
+    if (hash === '#core') {
+      setPosArray(CoreTeam);
+      setSelectedPosTeamLeads(Math.floor((CoreTeam.length - 1) / 2));
+      setSelectedTeam('core');
+    } else if (hash === '#lead') {
+      setPosArray(TeamLeads);
+      setSelectedPosTeamLeads(Math.floor((TeamLeads.length - 1) / 2));
+      setSelectedTeam('leads');
+    }
+  }, []);
   return (
     <ChakraProvider>
       <>
@@ -420,7 +436,7 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <FaInstagram className="gfg-div" />{' '}
                               </Link>
@@ -429,7 +445,7 @@ function Teampage() {
                                   posArrayTeamLeads[selectedPosTeamLeads]?.insta
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <Text
                                   display={'inline'}
@@ -461,7 +477,7 @@ function Teampage() {
                                     ?.linkedin
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <FaLinkedin className="gfg-div" />{' '}
                               </Link>
@@ -471,7 +487,7 @@ function Teampage() {
                                     ?.linkedin
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <Text
                                   display={'inline'}
@@ -503,7 +519,7 @@ function Teampage() {
                                     ?.github
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <FaGithub className="gfg-div" />
                               </Link>
@@ -513,7 +529,7 @@ function Teampage() {
                                     ?.github
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <Text
                                   display={'inline'}
@@ -544,7 +560,7 @@ function Teampage() {
                                     ?.discord
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <FaDiscord className="gfg-div" />{' '}
                               </Link>
@@ -554,7 +570,7 @@ function Teampage() {
                                     ?.discord
                                 }
                                 display={'inline'}
-                                target='_blank'
+                                target="_blank"
                               >
                                 <Text
                                   display={'inline'}
