@@ -143,7 +143,7 @@ Small sessions for the students to showcase their projects, achievements and for
                       color="#8a8a8a"
                       height={{ base: '20px', md: '35px' }}
                     >
-                      <a href="https://www.instagram.com/gdscj128/">
+                      <a href="https://www.instagram.com/gdg_jiit/">
                         <FaInstagram className='gfg-div1' />
                       </a>
                     </Box>
@@ -180,7 +180,7 @@ Small sessions for the students to showcase their projects, achievements and for
                       height={{ base: '20px', md: '35px' }}
                       color="#8a8a8a"
                     >
-                      <a href="https://twitter.com/Dsc128">
+                      <a href="https://x.com/gdgjiit">
                         <FaTwitter className='gfg-div1'/>
                       </a>
                     </Box>
